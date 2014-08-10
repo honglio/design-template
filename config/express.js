@@ -34,7 +34,7 @@ module.exports = function (app, passport) {
     }));
 
     if(process.env.NODE_ENV === 'development') {
-        app.use(favicon(config.root + '/public/img/ico/favicon.ico'));
+        // app.use(favicon(config.root + '/public/img/ico/favicon.ico'));
         app.use(express.static(config.root + '/public'));
     } else {
         app.use(favicon(config.root + '/built/img/ico/favicon.ico'));
@@ -82,11 +82,7 @@ module.exports = function (app, passport) {
     app.use(session({
         saveUninitialized: true,
         resave: true,
-        secret: config.sessionSecret,
-        store: new mongoStore({
-            url: config.db,
-            auto_reconnect: true
-        })
+        secret: config.sessionSecret
     }));
     // use passport session
     app.use(passport.initialize());
@@ -130,24 +126,3 @@ module.exports = function (app, passport) {
     // Nginx support
     app.enable('trust proxy');
 };
-
-// Connect to mongodb
-var connect = function () {
-    var options = {
-        server: {
-            socketOptions: {
-                keepAlive: 1
-            }
-        }
-    };
-    mongoose.connect(config.db, options);
-};
-connect();
-// Error handler
-mongoose.connection.on('error', function (err) {
-    console.log(err);
-});
-// Reconnect when closed
-mongoose.connection.on('disconnected', function () {
-    connect();
-});
