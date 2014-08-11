@@ -1,0 +1,23 @@
+- if (messages.errors)
+  .alert.alert-error.fade.in
+    button.close(type='button', data-dismiss='alert') ×
+    span.alert-icon
+      i.fa.fa-fire.icon-white
+    | &#160; &#160;
+    strong= messages.errors[messages.errors.length - 1].msg
+
+- if (messages.inform)
+  .alert.alert-info.fade.in
+    button.close(type='button', data-dismiss='alert') ×
+    span.alert-icon
+      i.fa.fa-bullhorn.icon-white
+    | &#160; &#160;
+    strong= messages.inform[messages.inform.length -1].msg
+
+- if (messages.successful)
+  .alert.alert-success.fade.in
+    button.close(type='button', data-dismiss='alert') ×
+    span.alert-icon
+      i.fa.fa-thumbs-up.icon-white
+    | &#160; &#160;
+    strong= messages.successful[messages.successful.length -1].msg

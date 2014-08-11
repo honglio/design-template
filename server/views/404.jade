@@ -1,0 +1,32 @@
+extends layout
+
+block content
+    //- Screen Header
+    .container-fluid.parallax-three.modul-bt-one(data-speed='5', data-type='background')
+      .container
+        .row
+          .col-md-12
+            .big-title
+              h1 Ooops!
+    //- Screen
+    .container-fluid.modul-bt-one
+      .container.modul-space-sixteen
+        .row
+          .col-md-12
+            .error-template.text-center
+              h1 404
+              h2 Page Not Found
+              p
+                | Sorry, an error has occured, Requested page not found!
+    //- Page Navi
+    .container-fluid.module-background-one.modul-bt-one.hidden-xs
+      .container.modul-space-fifteen
+        .row
+          .col-md-12.text-center
+            .pagination.pagination-default
+              a.btn.btn-default.previous(href='#fakelink')
+                span.fui-arrow-left
+                | TAKE ME HOME
+              a.btn.btn-default.next(href='#fakelink')
+                | CONTACT SUPPORT
+                span.fui-arrow-right
