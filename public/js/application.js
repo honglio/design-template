@@ -95,7 +95,9 @@ String.prototype.repeat = function(num) {
     });
 
     // Placeholders for input/textarea
-    $("input, textarea").placeholder();
+    if($.placeholder) {
+      $("input, textarea").placeholder();
+    }
 
     // Make pagination demo work
     $(".pagination a").on('click', function() {

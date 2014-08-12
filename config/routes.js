@@ -24,6 +24,8 @@ var index = require('../server/controllers/index');
 
 module.exports = function (app, passport) {
 
+    app.get('/', index.home);
+
     // page not found
     app.get('*', index.notfound);
 };
