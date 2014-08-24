@@ -30,8 +30,14 @@ html.js.no-touch
     link(rel='alternate stylesheet', type='text/css', href='css/style-red.css', title='red', media='all')
     //- END Skins
 
+    <!-- Slider -->
+    link(rel='stylesheet', href='/rs-plugin/css/settings.css', type='text/css')
+    link(rel='stylesheet', href='/showbizpro/css/settings.css', type='text/css' media="screen")
+
+    <!-- JS -->
     script(type='text/javascript', src='/js/vendors/jquery.js')
     script(type='text/javascript', src='/js/vendors/modernizr.custom.js')
+
     //- IE6-8 support of HTML5 elements, RAW html, Do not compile to Jade.
     <!--[if lt IE 9]>
     <link rel="stylesheet" href="css/nill-box-menu-ie8.css">
@@ -60,17 +66,82 @@ html.js.no-touch
     include partials/footer
 
     block scripts
-        script(type='text/javascript', src='/js/vendors/jquery-ui-1.10.3.custom.min.js')
-        script(type='text/javascript', src='/js/vendors/jquery.ui.touch-punch.min.js')
-        script(type='text/javascript', src='/js/vendors/jquery.tagsinput.js')
-        script(type='text/javascript', src='/js/vendors/jquery.mixitup.js')
-        script(type='text/javascript', src='/js/vendors/jquery.scrollUp.js')
-        script(type='text/javascript', src='/js/vendors/bootstrap.js')
-        script(type='text/javascript', src='/js/vendors/bootstrap-select.js')
-        script(type='text/javascript', src='/js/vendors/bootstrap-switch.js')
-        script(type='text/javascript', src='/js/vendors/bootstrap-typeahead.js')
-        script(type='text/javascript', src='/js/vendors/flatui-checkbox.js')
-        script(type='text/javascript', src='/js/vendors/flatui-radio.js')
-        script(type='text/javascript', src='/js/application.js')
-        script(type='text/javascript', src='/js/toucheffects.js')
-        script(type='text/javascript', src='/js/theme.js')
+      script(type='text/javascript', src='/js/vendors/jquery-ui-1.10.3.custom.min.js')
+      script(type='text/javascript', src='/js/vendors/jquery.ui.touch-punch.min.js')
+      script(type='text/javascript', src='/js/vendors/jquery.tagsinput.js')
+      script(type='text/javascript', src='/js/vendors/jquery.mixitup.js')
+      script(type='text/javascript', src='/js/vendors/jquery.scrollUp.js')
+      script(type='text/javascript', src='/js/vendors/bootstrap.js')
+      script(type='text/javascript', src='/js/vendors/bootstrap-select.js')
+      script(type='text/javascript', src='/js/vendors/bootstrap-switch.js')
+      script(type='text/javascript', src='/js/vendors/bootstrap-typeahead.js')
+      script(type='text/javascript', src='/js/vendors/flatui-checkbox.js')
+      script(type='text/javascript', src='/js/vendors/flatui-radio.js')
+      script(type='text/javascript', src='/rs-plugin/js/jquery.themepunch.plugins.min.js')
+      script(type='text/javascript', src='/rs-plugin/js/jquery.themepunch.revolution.min.js')
+      script(type='text/javascript', src='/showbizpro/js/jquery.themepunch.showbizpro.min.js')
+      script(type='text/javascript', src='/js/application.js')
+      script(type='text/javascript', src='/js/toucheffects.js')
+      script(type='text/javascript', src='/js/theme.js')
+
+      script(type='text/javascript').
+        var revapi;
+        jQuery(document).ready(function() {
+          //- Slider Options
+          revapi = jQuery('.tp-banner').revolution({
+            delay: 90000,
+            startwidth: 1170,
+            startheight: 500,
+            hideThumbs: 10,
+            fullScreen: "on",
+            fullScreenAlignForce: "on",
+            fullScreenOffsetContainer: ".navigation-menu"
+          });
+          revapi = jQuery('.tp-banner-two').revolution({
+            delay: 9000000,
+            startwidth: 1200,
+            startheight: 356,
+            hideThumbs: 200,
+            thumbWidth: 100,
+            thumbHeight: 50,
+            thumbAmount: 3,
+            navigationType: "none", // use none, bullet or thumb
+            soloArrowLeftHalign: "left", // left,center,right
+            soloArrowLeftValign: "center", // top,center,bottom
+            soloArrowLeftHOffset: 0, // offset position from aligned position
+            soloArrowLeftVOffset: 0, // offset position from aligned position
+            soloArrowRightHalign: "right", // left,center,right
+            soloArrowRightValign: "center", // top,center,bottom
+            soloArrowRightHOffset: 0, // offset position from aligned position
+            soloArrowRightVOffset: 0, // offset position from aligned position
+            touchenabled: "on",
+            onHoverStop: "on"
+          }); //ready
+
+          //- Portfolio Filter
+          jQuery('#Grid').mixitup();
+
+          //- Carusel Slider
+          jQuery('#example6').showbizpro({
+            dragAndScroll: "off",
+            visibleElementsArray: [4, 4, 1, 1],
+            carousel: "on",
+            entrySizeOffset: 0,
+            allEntryAtOnce: "off",
+            rewindFromEnd: "off",
+            autoPlay: "off",
+            delay: 2000,
+            speed: 500
+            });
+            jQuery('#example7').showbizpro({
+            dragAndScroll: "off",
+            visibleElementsArray: [2, 2, 1, 1],
+            carousel: "on",
+            entrySizeOffset: 0,
+            allEntryAtOnce: "off",
+            rewindFromEnd: "off",
+            autoPlay: "off",
+            delay: 2000,
+            speed: 500
+          });
+        });
