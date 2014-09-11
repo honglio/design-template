@@ -1,12 +1,12 @@
 {
-    "name": "HTMLTheme",
-    "description": "quick, easy and reuseble HTML Tamplate",
+    "name": "design-template",
+    "description": "Showcase of Several Design Tamplates",
     "version": "0.1.0",
     "private": true,
     "author": "Hong Liu <hong.liu@live.cn> (http://honglio.github.io)",
     "repository": {
         "type": "git",
-        "url": "git@gitlab.com:honglio/htmltheme.git"
+        "url": "https://github.com/honglio/design-template.git"
     },
     "engines": {
         "node": "0.10.x",
