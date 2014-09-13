@@ -1,0 +1,92 @@
+extends layout
+
+block content
+  //
+     Blog Header
+  .container-fluid.parallax-three.modul-bt-one(data-speed='5', data-type='background')
+    .container
+      .row
+        .col-md-12
+          .big-title
+            h1 Contact Page
+  .container-fluid
+    iframe.contact-map(src='http://mapsengine.google.com/map/embed?mid=z-InZ1PKw-Cc.kAPRVIdwLHVA')
+  //
+     Contact
+  .container-fluid.modul-bt-one
+    .container.modul-space-seventeen
+      .row
+        //
+           Services One
+        .col-xs-12.col-sm-6.col-md-3.modul-phone
+          .modul-services-one.mso-icon
+            .hi-icon-wrap.hi-icon-effect-9.hi-icon-effect-9b.mso-icon-space
+              i.fa.fa-location-arrow.fa-2x.hi-icon
+            h6 Adres
+            p Cras eget mattis justo. Fusce eget viendose commodo enim, quis.
+        //
+           Services Two
+        .col-xs-12.col-sm-6.col-md-3.modul-phone
+          .modul-services-one.mso-icon
+            .hi-icon-wrap.hi-icon-effect-9.hi-icon-effect-9b.mso-icon-space
+              i.fa.fa-phone.fa-2x.hi-icon
+            h6 Phone Number
+            p
+              | +90 555 444 333
+              br
+              | +90 555 444 222
+        //
+           Services Three
+        .col-xs-12.col-sm-6.col-md-3.modul-phone
+          .modul-services-one.mso-icon
+            .hi-icon-wrap.hi-icon-effect-9.hi-icon-effect-9b.mso-icon-space
+              i.fa.fa-envelope.fa-2x.hi-icon
+            h6 E-Mail
+            p
+              | john.doe@nillbox.com.tr
+              br
+              | marry.doe@nillbox.com.tr
+        //
+           Services Four
+        .col-xs-12.col-sm-6.col-md-3.modul-phone
+          .modul-services-one.mso-icon
+            .hi-icon-wrap.hi-icon-effect-9.hi-icon-effect-9b.mso-icon-space
+              i.fa.fa-anchor.fa-2x.hi-icon
+            h6 Other Web Page
+            p
+              | www.johndoesmith.com
+              br
+              | www.marrydoe.com
+        .clearfix
+  .container-fluid.parallax-four.modul-bt-one(data-speed='5', data-type='background')
+    .container.modul-space-eightteen
+      .row
+        .col-md-12
+          h4 CONTACT FORM:
+          hr
+          //
+             Leave Comment
+          .leave-comment
+            .row.comment-forms
+              .col-xs-12.col-sm-12.col-md-6
+                .form-group
+                  .input-group.input-group
+                    span.input-group-addon
+                      span.fui-user
+                    input#prependedInput-01.form-control(type='text', placeholder='Name:')
+                .form-group
+                  .input-group.input-group
+                    span.input-group-addon
+                      span.fui-mail
+                    input#prependedInput-02.form-control(type='text', placeholder='E-Mail:')
+                .form-group
+                  .input-group.input-group
+                    span.input-group-addon
+                      span.fui-link
+                    input#prependedInput-03.form-control(type='text', placeholder='Web:')
+              .col-xs-12.col-sm-12.col-md-6
+                .form-group
+                  textarea.form-control(rows='8', placeholder='Add Message...')
+                .form-group.pull-right
+                  a.btn.btn-info(href='#fakelink') Send Message
+

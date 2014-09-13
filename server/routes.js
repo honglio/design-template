@@ -58,6 +58,29 @@ module.exports = function (app, passport) {
     app.get('/module-team', index.module_team);
     app.get('/module-twitter', index.module_twitter);
 
+    app.get('/page-about-1', index.page_about_1);
+    app.get('/page-about-2', index.page_about_2);
+    app.get('/page-about-3', index.page_about_3);
+
+    app.get('/page-services-1', index.page_services_1);
+    app.get('/page-services-2', index.page_services_2);
+
+    app.get('/page-portfolio-single-1', index.page_portfolio_single_1);
+    app.get('/page-portfolio-single-2', index.page_portfolio_single_2);
+
+    app.get('/page-contact', index.page_contact);
+
+    app.get('/blog-1', index.blog_1);
+    app.get('/blog-2', index.blog_2);
+
+    app.get('/blog-single-1', index.blog_single_1);
+    app.get('/blog-single-2', index.blog_single_2);
+    app.get('/blog-single-3', index.blog_single_3);
+
+    app.get('/shop', index.shop);
+    app.get('/shop-detail', index.shop_detail);
+    app.get('/shop-checkout', index.shop_checkout);
+
     // page not found
     app.get('*', index.notfound);
 };

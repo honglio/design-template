@@ -29,8 +29,8 @@ String.prototype.repeat = function(num) {
       $(this).tab("show");
     })
 
-    // Tooltips
-    $("[data-toggle=tooltip]").tooltip("hide");
+    // Tooltips TODO: This is not work due to $ initialize not ready .
+    // $("[data-toggle=tooltip]").tooltip("hide");
 
     // Tags Input
     $(".tagsinput").tagsInput();

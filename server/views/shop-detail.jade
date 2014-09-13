@@ -1,0 +1,340 @@
+extends layout
+
+block content
+  //Header
+  .container-fluid.parallax-three.modul-bt-one(data-speed='5', data-type='background')
+    .container
+      .row
+        .col-md-12
+          .big-title
+            h1 Shop Detail Page
+  //Blog
+  .container-fluid.modul-bt-one
+    .container.modul-space-twentytwo
+      .row
+        .col-md-9
+          //Post Detail
+          .post-detail
+            //Image
+            .tp-banner-container
+              .tp-banner
+                ul
+                  //SLIDE ONE
+                  li(data-transition='boxfade', data-slotamount='5', data-masterspeed='1000')
+                    //MAIN IMAGE
+                    img(src='img/theme/s7.jpg', alt='slidebg1', data-bgfit='cover', data-bgposition='center center', data-bgrepeat='no-repeat')
+                  li(data-transition='boxfade', data-slotamount='5', data-masterspeed='1000')
+                    //MAIN IMAGE
+                    img(src='img/theme/s8.jpg', alt='slidebg1', data-bgfit='cover', data-bgposition='center center', data-bgrepeat='no-repeat')
+                  li(data-transition='boxfade', data-slotamount='5', data-masterspeed='1000')
+                    //MAIN IMAGE
+                    img(src='img/theme/s9.jpg', alt='slidebg1', data-bgfit='cover', data-bgposition='center center', data-bgrepeat='no-repeat')
+                .tp-bannertimer
+            .blog-slider-list.post-page-list.portfolio-single-title.phone-space-three
+              h1 Donec Venenatis Mattis
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget enim elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas nibh sapien, adipiscing vitae tellus at, imperdiet convallis urna. Integer vel tempus massa. Sed lobortis mi eget aliquet vehicula. Morbi in posuere sem, blandit hendrerit lorem. Nulla nec nibh sed libero convallis convallis rhoncus ac velit. Nam dapibus diam sed scelerisque imperdiet. Curabitur vehicula eleifend sapien sit amet tincidunt. Donec sed aliquet lectus, quis pharetra velit. Aliquam aliquet interdum gravida. Duis tincidunt mi eu urna vestibulum, id rutrum metus elementum. Cras adipiscing, felis sed pulvinar semper, nunc lacus porta urna, nec porttitor magna tellus et metus. Fusce venenatis consectetur dui id sodales. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+          .clearfix
+          .modul-space-thirtythree
+            // /tabs
+            ul.nav.nav-tabs
+              li.active
+                a(href='#tab1') Description
+              li
+                a(href='#tab2') Reviews
+              li
+                a(href='#tab3') Product Tags
+            // /tabs
+            .tab-content
+              #tab1.tab-pane.active
+                p Description is here...
+              // /tabs
+              #tab2.tab-pane
+                //Comments
+                .comments-area
+                  h5 32 COMMENTS:
+                  hr
+                  .comment-list
+                    ul.media-list
+                      // #1
+                      li
+                        a.pull-left(href='#')
+                          img.media-object.comment-img.img-circle(src='img/theme/c1.jpg', alt='User', width='80', height='80')
+                        .media-body
+                          h6
+                            | John Doe:
+                            span.label.label-primary.badge-comment.pull-right 21 Jan
+                          small
+                            a(href='#')
+                              i.fa.fa-plus-square.comment-button
+                              strong Reply
+                            a(href='#')
+                              i.fa.fa-shield.comment-button-two
+                              strong Report
+                          p
+                            | Ut et turpis nisl. Nam ultricies quam vitae dui pellentesque, at gravida nisi ullamcorper. Suspendisse pretium mauris lorem, quis vehicula felis tincidunt sit amet. Curabitur a ultrices sem. Nunc iaculis nisi id aliquam felis tincidunt lobortis.
+                      // #2
+                      li
+                        a.pull-left(href='#')
+                          img.media-object.comment-img.img-circle(src='img/theme/c2.jpg', alt='User', width='80', height='80')
+                        .media-body
+                          h6
+                            | Marry Smith:
+                            span.label.label-primary.badge-comment.pull-right 19 Jan
+                          small
+                            a(href='#')
+                              i.fa.fa-plus-square.comment-button
+                              strong Reply
+                            a(href='#')
+                              i.fa.fa-shield.comment-button-two
+                              strong Report
+                          p
+                            | Ut et turpis nisl. Nam ultricies quam vitae dui pellentesque, at gravida nisi ullamcorper. Suspendisse pretium mauris lorem, quis vehicula felis tincidunt sit amet. Curabitur a ultrices sem. Nunc iaculis nisi id aliquam felis tincidunt lobortis.
+                      // #3
+                      li
+                        a.pull-left(href='#')
+                          img.media-object.comment-img.img-circle(src='img/theme/c3.jpg', alt='User', width='80', height='80')
+                        .media-body
+                          h6
+                            | Micheal Doe:
+                            span.label.label-primary.badge-comment.pull-right 17 Jan
+                          small
+                            a(href='#')
+                              i.fa.fa-plus-square.comment-button
+                              strong Reply
+                            a(href='#')
+                              i.fa.fa-shield.comment-button-two
+                              strong Report
+                          p
+                            | Ut et turpis nisl. Nam ultricies quam vitae dui pellentesque, at gravida nisi ullamcorper. Suspendisse pretium mauris lorem, quis vehicula felis tincidunt sit amet. Curabitur a ultrices sem. Nunc iaculis nisi id aliquam felis tincidunt lobortis.
+                // Leave Comment
+                .leave-comment
+                  h5 LEAVE COMMENT:
+                  hr
+                  .row.comment-forms
+                    .col-xs-12.col-sm-12.col-md-6
+                      .form-group
+                        .input-group.input-group
+                          span.input-group-addon
+                            span.fui-user
+                          input#prependedInput-01.form-control(type='text', placeholder='Name:')
+                      .form-group
+                        .input-group.input-group
+                          span.input-group-addon
+                            span.fui-mail
+                          input#prependedInput-02.form-control(type='text', placeholder='E-Mail:')
+                      .form-group
+                        .input-group.input-group
+                          span.input-group-addon
+                            span.fui-link
+                          input#prependedInput-03.form-control(type='text', placeholder='Web:')
+                    .col-xs-12.col-sm-12.col-md-6
+                      .form-group
+                        textarea.form-control(rows='8', placeholder='Add comment...')
+                      .form-group.pull-right
+                        a.btn.btn-info(href='#fakelink') Send Comment
+              // /tabs
+              #tab3.tab-pane
+                ul.nav.nav-list.tag-cloud
+                  li
+                    a.badge.tag-cloud-tags(href='#Fakelink') Web
+                  li
+                    a.badge.tag-cloud-tags(href='#Fakelink') Rap
+                  li
+                    a.badge.tag-cloud-tags(href='#Fakelink') Pop
+                  li
+                    a.badge.tag-cloud-tags(href='#Fakelink') Design
+                  li
+                    a.badge.tag-cloud-tags(href='#Fakelink') Wordpress Themes
+                  li
+                    a.badge.tag-cloud-tags(href='#Fakelink') Rock
+                  li
+                    a.badge.tag-cloud-tags(href='#Fakelink') Jazz
+                  li
+                    a.badge.tag-cloud-tags(href='#Fakelink') PSD Design
+            // /tab-content
+          // Share Post
+          .post-share
+            h5 SHARE PRODUCT:
+            hr
+            a.btn.btn-default.share-post(href='#')
+              i.fa.fa-facebook.fa-lg
+            a.btn.btn-default.share-post(href='#')
+              i.fa.fa-twitter.fa-lg
+            a.btn.btn-default.share-post(href='#')
+              i.fa.fa-linkedin.fa-lg
+            a.btn.btn-default.share-post(href='#')
+              i.fa.fa-tumblr.fa-lg
+            a.btn.btn-default.share-post(href='#')
+              i.fa.fa-flickr.fa-lg
+            a.btn.btn-default.share-post(href='#')
+              i.fa.fa-github-alt.fa-lg
+            a.btn.btn-default.share-post(href='#')
+              i.fa.fa-google-plus.fa-lg
+          //Related Post
+          .related-post
+            h5 RELATED PRODUCT:
+            hr
+            .pull-right.related-button
+              a#showbiz_left_relatedpost.btn.btn-primary.blog-nav-button-two(href='#')
+                i.fa.fa-chevron-left
+              a#showbiz_right_relatedpost.btn.btn-primary.blog-nav-button-two(href='#')
+                i.fa.fa-chevron-right
+            #relatedpost.showbiz-container.related-post
+              .showbiz(data-left='#showbiz_left_relatedpost', data-right='#showbiz_right_relatedpost')
+                .overflowholder
+                  ul
+                    //Post One
+                    li
+                      .blog-slider
+                        .grid.cs-style-3
+                          figure
+                            .blog-date-circle
+                              h5 Hot
+                              p Shot
+                            img.blog-slider-list-img(src='img/theme/s7.jpg', alt='img04')
+                            figcaption
+                              .image-buttons-three
+                                a.btn.btn-primary
+                                  i.fa.fa-shopping-cart(data-toggle='tooltip', data-placement='top', title='Add to Cart')
+                                a.btn.btn-primary
+                                  i.fa.fa-plus(data-toggle='tooltip', data-placement='top', title='Read More')
+                        .blog-slider-list
+                          h6 Pellen Matti
+                          p $19.90
+                    // Post One
+                    li
+                      .blog-slider
+                        .grid.cs-style-3
+                          figure
+                            img.blog-slider-list-img(src='img/theme/s8.jpg', alt='img04')
+                            figcaption
+                              .image-buttons-three
+                                a.btn.btn-primary
+                                  i.fa.fa-shopping-cart(data-toggle='tooltip', data-placement='top', title='Add to Cart')
+                                a.btn.btn-primary
+                                  i.fa.fa-plus(data-toggle='tooltip', data-placement='top', title='Read More')
+                        .blog-slider-list
+                          h6 Pellen Matti
+                          p $19.90
+                    // Post One
+                    li
+                      .blog-slider
+                        .grid.cs-style-3
+                          figure
+                            .blog-date-circle
+                              h5 New
+                              p Item
+                            img.blog-slider-list-img(src='img/theme/s9.jpg', alt='img04')
+                            figcaption
+                              .image-buttons-three
+                                a.btn.btn-primary
+                                  i.fa.fa-shopping-cart(data-toggle='tooltip', data-placement='top', title='Add to Cart')
+                                a.btn.btn-primary
+                                  i.fa.fa-plus(data-toggle='tooltip', data-placement='top', title='Read More')
+                        .blog-slider-list
+                          h6 Pellen Matti
+                          p $19.90
+                    //
+                       Post One
+                    li
+                      .blog-slider
+                        .grid.cs-style-3
+                          figure
+                            img.blog-slider-list-img(src='img/theme/s10.jpg', alt='img04')
+                            figcaption
+                              .image-buttons-three
+                                a.btn.btn-primary
+                                  i.fa.fa-shopping-cart(data-toggle='tooltip', data-placement='top', title='Add to Cart')
+                                a.btn.btn-primary
+                                  i.fa.fa-plus(data-toggle='tooltip', data-placement='top', title='Read More')
+                        .blog-slider-list
+                          h6 Pellen Matti
+                          p $19.90
+                  .sbclear
+                .sbclear
+        // Shop Sidebar
+        .col-md-3
+          // Social Sidebar
+          .row
+            .col-md-12
+              .hero-widget.well-sm
+                .icon
+                  i.fa.fa-shopping-cart
+                .text
+                  var $29.90
+                  label.text-muted Vehicula Enean Hendrerit
+                hr
+                .btn-group.select.select-block.mbl
+                  button.btn.dropdown-toggle.clearfix.btn-sm.btn-default(data-toggle='dropdown')
+                    span.filter-option.pull-left Size
+                    span.caret
+                  i.dropdown-arrow
+                  ul.dropdown-menu(role='menu', style='overflow-y: auto; min-height: 108px;')
+                    li.selected(rel='0')
+                      a.opt.active(tabindex='-1', href='#')
+                        span.pull-left XLarge
+                    li(rel='1')
+                      a.opt.active(tabindex='-1', href='#')
+                        span.pull-left Medium
+                    li(rel='1')
+                      a.opt.active(tabindex='-1', href='#')
+                        span.pull-left Small
+                .btn-group.select.select-block.mbl
+                  button.btn.dropdown-toggle.clearfix.btn-sm.btn-default(data-toggle='dropdown')
+                    span.filter-option.pull-left Color
+                    span.caret
+                  i.dropdown-arrow
+                  ul.dropdown-menu(role='menu', style='overflow-y: auto; min-height: 108px;')
+                    li.selected(rel='0')
+                      a.opt.active(tabindex='-1', href='#')
+                        span.pull-left Red
+                    li(rel='1')
+                      a.opt.active(tabindex='-1', href='#')
+                        span.pull-left Blue
+                    li(rel='1')
+                      a.opt.active(tabindex='-1', href='#')
+                        span.pull-left Green
+                h6.pull-left Quantity
+                .form-group.pull-left
+                  span.ui-spinner.ui-widget.ui-widget-content.ui-corner-all
+                    input#spinner-01.form-control.spinner.ui-spinner-input(type='text', value='0')
+                .clearfix
+                hr
+                .options
+                  a.btn.btn-primary.btn-block(href='#')
+                    | Add to Cart
+            .col-md-12
+              .hero-widget.well-sm
+                .icon
+                  i.fa.fa-heart
+                .text
+                  #hearts.starrr
+                  label.text-muted
+                    | You gave a rating of
+                    span#count 4
+                    | heart(s)
+                  .options
+                    a.btn.btn-primary.btn-block(href='#')
+                      | My Whishlist
+          .clearfix
+  // Page Navi
+  .container-fluid.module-background-one.modul-bt-one
+    .container.modul-space-fifteen
+      .row
+        .col-md-12.page-navi
+          .pagination.pagination-default.pull-left.hidden-xs
+            a.btn.btn-default.previous(href='#fakelink')
+              span.fui-arrow-left
+              | PREV ITEM
+            a.btn.btn-default.next(href='#fakelink')
+              | NEXT ITEM
+              span.fui-arrow-right
+          .text-center.visible-xs
+            a.btn.btn-default.previous(href='#fakelink')
+              span.fui-arrow-left
+              | PREV ITEM
+            a.btn.btn-default.next(href='#fakelink')
+              | NEXT ITEM
+              span.fui-arrow-right
+

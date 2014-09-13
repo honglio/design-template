@@ -1,0 +1,177 @@
+extends layout
+
+block content
+  //
+     Header
+  .container-fluid.parallax-three.modul-bt-one(data-speed='5', data-type='background')
+    .container
+      .row
+        .col-md-12
+          .big-title
+            h1 Shop Checkout Page
+  //
+     Blog
+  .container-fluid.modul-bt-one
+    .container.modul-space-twentytwo
+      .row
+        .col-md-4
+          //
+             Categories
+          .sidebar.hidden-xs.hidden-sm
+            h6
+              i.fa.fa-cutlery.sidebar-icon
+              | Product Categories
+            ul.nav.nav-list.sidebar-categories
+              li.active
+                a(href='#')
+                  | Blazers
+                  span.badge.pull-right 30
+              li
+                a(href='#')
+                  | Coats and Jackets
+                  span.badge.pull-right 28
+              li
+                a(href='#')
+                  | Cursus Vitae
+                  span.badge.pull-right 74
+              li
+                a(href='#')
+                  | Dresses
+                  span.badge.pull-right 62
+              li
+                a(href='#')
+                  | Eleifend Ultricies
+                  span.badge.pull-right 26
+              li
+                a(href='#')
+                  | Jumpsuits Playsuits
+                  span.badge.pull-right 28
+              li
+                a(href='#')
+                  | T-Shirt
+                  span.badge.pull-right 28
+        .col-md-8.hidden-xs.hidden-sm
+          .shop-checkout
+            .row.checkout-table
+              .col-md-2
+                .checkout-product
+                  h6 Product:
+              .col-md-3
+                .checkout-product
+                  h6 Name:
+              .col-md-2
+                .checkout-product
+                  h6 Quantity:
+              .col-md-2
+                .checkout-product
+                  h6 Price:
+              .col-md-2
+                .checkout-product
+                  h6 Total:
+              .col-md-1
+            .row.checkout-table
+              .col-md-2
+                span.checkout-img
+                  img(src='img/theme/s7.jpg', alt='Image')
+              .col-md-3
+                .checkout-product
+                  h6 Product One Name
+                  p by Brand Name
+                  small
+                    | Status:
+                    span.text-success
+                      strong In Stock
+              .col-md-2
+                .form-group.pull-left.checkout-qu
+                  .ui-spinner.ui-widget.ui-widget-content.ui-corner-all
+                    input#spinner-01.form-control.spinner.ui-spinner-input(type='text', value='0')
+              .col-md-2
+                .checkout-product
+                  h6 $4.60
+              .col-md-2
+                .checkout-product
+                  h6 $14.90
+              .col-md-1
+                .checkout-space-one
+                  button.btn.btn-danger.btn-sm.pull-right(type='button')
+                    span.glyphicon.glyphicon-remove
+            .row.checkout-table-two
+              .col-md-8
+                .checkout-product.pull-right
+                  h6 Subtotal
+              .col-md-4
+                .checkout-product.pull-right
+                  h6 $24.59
+              .col-md-8
+                .checkout-product.pull-right
+                  h6 Estimated shipping
+              .col-md-4
+                .checkout-product.pull-right
+                  h6 $6.94
+              .col-md-8
+                .checkout-product.pull-right
+                  h6 Total:
+              .col-md-4
+                .checkout-product.pull-right
+                  h6
+                    strong $31.53
+        .col-md-12.visible-xs.visible-sm
+          .shop-checkout
+            .row.checkout-table
+              .col-md-12
+                span.checkout-img
+                  img(src='img/theme/s7.jpg', alt='Image')
+              .col-md-12
+                .checkout-space-one
+                  button.btn.btn-danger.btn-sm.pull-right(type='button')
+                    span.glyphicon.glyphicon-remove
+            .checkout-table
+              .col-md-12
+                .checkout-product
+                  h6
+                    | Product:
+                    em Nill Box T-Shirt
+              .col-md-12
+                .checkout-product
+                  h6
+                    | Name:
+                    em Brand Name Here
+              .col-md-12
+                .checkout-product
+                  h6
+                    | Quantity:
+                    em 1
+              .col-md-12
+                .checkout-product
+                  h6
+                    | Price:
+                    em $4.99
+              .col-md-12
+                .checkout-product
+                  h6
+                    | Total:
+                    em $14.99
+              .col-md-12
+            .clearfix
+            .checkout-table-two
+              .col-md-12
+                .checkout-product.pull-right
+                  h6
+                    | Total:
+                    em $31.53
+  //
+     Page Navi
+  .container-fluid.module-background-one.modul-bt-one
+    .container.modul-space-fifteen
+      .row
+        .col-md-12.page-navi
+          .pagination.pagination-default.pull-right.hidden-xs
+            a.btn.btn-default.previous(href='#fakelink')
+              span.fui-arrow-left
+              | Continue Shopping
+            a.btn.btn-success.next(href='#fakelink')
+              | Checkout
+              span.fui-arrow-right
+          .text-center.visible-xs
+            a.btn.btn-success(href='#fakelink')
+              | Checkout

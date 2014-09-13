@@ -1,0 +1,222 @@
+extends layout
+
+block content
+    //
+       Blog Header
+    .container-fluid.parallax-three.modul-bt-one(data-speed='5', data-type='background')
+      .container
+        .row
+          .col-md-12
+            .big-title
+              h1 About Us Page
+    //
+       About Us
+    .container-fluid.modul-bt-one
+      .container.modul-space-twentythree
+        .row
+          .col-md-6
+            //
+               Post Detail
+            .post-detail.phone-about-two
+              .blog-slider-list.post-page-list.aboutus-single-title
+                h1 Donec Venenatis Mattis
+              p
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget enim elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas nibh sapien, adipiscing vitae tellus at, imperdiet convallis urna. Integer vel tempus massa. Sed lobortis mi eget aliquet vehicula. Morbi in posuere sem, blandit hendrerit lorem. Nulla nec nibh sed libero convallis convallis rhoncus ac velit.
+              p
+                | Nam dapibus diam sed scelerisque imperdiet. Curabitur vehicula eleifend sapien sit amet tincidunt. Donec sed aliquet lectus, quis pharetra velit. Aliquam aliquet interdum gravida. Duis tincidunt mi eu urna vestibulum, id rutrum metus elementum. Cras adipiscing, felis sed pulvinar semper, nunc lacus porta urna, nec porttitor magna tellus et metus. Fusce venenatis consectetur dui id sodales. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+            .clearfix
+          .col-md-6
+            //
+               Post Detail
+            .post-detail
+              //
+                 Image
+              .tp-banner-container
+                .tp-banner
+                  ul
+                    //
+                       SLIDE ONE
+                    li(data-transition='boxfade', data-slotamount='5', data-masterspeed='1000')
+                      //
+                         MAIN IMAGE
+                      img(src='img/theme/p3.jpg', alt='slidebg1', data-bgfit='cover', data-bgposition='center center', data-bgrepeat='no-repeat')
+                    li(data-transition='boxfade', data-slotamount='5', data-masterspeed='1000')
+                      //
+                         MAIN IMAGE
+                      img(src='img/theme/p8.jpg', alt='slidebg1', data-bgfit='cover', data-bgposition='center center', data-bgrepeat='no-repeat')
+                    li(data-transition='boxfade', data-slotamount='5', data-masterspeed='1000')
+                      //
+                         MAIN IMAGE
+                      img(src='img/theme/p5.jpg', alt='slidebg1', data-bgfit='cover', data-bgposition='center center', data-bgrepeat='no-repeat')
+                  .tp-bannertimer
+            .clearfix
+    //
+       Advert Module Three
+    .container-fluid.parallax-four.modul-bt-one(data-speed='10', data-type='background')
+      .container.modul-space-twentyfour
+        .row
+          //
+             One
+          .col-xs-12.col-md-4
+            .advert-list-one
+              .grid.cs-style-3
+                figure
+                  img(src='img/theme/bussiness1.jpg', alt='img04')
+                  figcaption
+                    h6 Marry Doe
+                    p Jacob Cummings
+                    .image-buttons-two.pull-right
+                      a.btn.btn-primary
+                        i.fa.fa-plus
+              .advert-list-bottom-shape
+                i.bottom-shape-right
+                  i
+              h6 Our Mission
+              p
+                | Cras sed mauris augue. In at pellentesque sem. Vestibulum suscipit mi sodales tortor vehicula laoreet. Sed a purus vitae nisl sagittis.
+          //
+             Two
+          .col-xs-12.col-md-4
+            .advert-list-one
+              .grid.cs-style-3
+                figure
+                  img(src='img/theme/bussiness2.jpg', alt='img04')
+                  figcaption
+                    h6 John Smith
+                    p Jacob Cummings
+                    .image-buttons-two.pull-right
+                      a.btn.btn-primary
+                        i.fa.fa-plus
+              .advert-list-bottom-shape
+                i.bottom-shape-right
+                  i
+              h6 Our Strategy
+              p
+                | Vivamus eu consectetur tortor, nec facilisis turpis. Aenean malesuada lorem sed ante pharetra, in porta enim pellentesque.
+          //
+             One
+          .col-xs-12.col-md-4
+            .advert-list-one
+              .grid.cs-style-3
+                figure
+                  img(src='img/theme/bussiness3.jpg', alt='img04')
+                  figcaption
+                    h6 Smith Doe
+                    p Jacob Cummings
+                    .image-buttons-two.pull-right
+                      a.btn.btn-primary
+                        i.fa.fa-plus
+              .advert-list-bottom-shape
+                i.bottom-shape-right
+                  i
+              h6 Our Vision
+              p
+                | Suspendisse potenti. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas dapibus placerat.
+    //
+       Product Modul
+    .container-fluid.modul-bt-one
+      .container.modul-space-two
+        .row
+          //
+             Services One
+          .col-xs-12.col-sm-6.col-md-3.modul-phone
+            .modul-services-one.mso-icon
+              .hi-icon-wrap.hi-icon-effect-9.hi-icon-effect-9b.mso-icon-space
+                i.fa.fa-rocket.fa-4x.hi-icon.hi-icon-two
+              h6 Etiam Sodales Justo
+              p
+                | Cras eget mattis justo. Fusce eget viendose commodo enim, quis condimentum use pentumos vel imperdiet sem.
+              a.btn.btn-primary.btn-sm Button Text
+          //
+             Services Two
+          .col-xs-12.col-sm-6.col-md-3.modul-phone
+            .modul-services-one.mso-icon
+              .hi-icon-wrap.hi-icon-effect-9.hi-icon-effect-9b.mso-icon-space
+                i.fa.fa-magic.fa-4x.hi-icon.hi-icon-two
+              h6 Mauris Aliqe Gravida
+              p
+                | Morbi dignissim non dolor non placerat. Ut sit amet lectus at neque quis vel imperdiet ullamcorper auctor.
+              a.btn.btn-primary.btn-sm Button Text
+          //
+             Services Three
+          .col-xs-12.col-sm-6.col-md-3.modul-phone
+            .modul-services-one.mso-icon
+              .hi-icon-wrap.hi-icon-effect-9.hi-icon-effect-9b.mso-icon-space
+                i.fa.fa-briefcase.fa-4x.hi-icon.hi-icon-two
+              h6 Ullamcorper Lobortis
+              p
+                | Sed lobortis, nibh sed dignissim fes porttito, felis odio pharetra metus, non lobortis qe odione augue ut lorem.
+              a.btn.btn-primary.btn-sm Button Text
+          //
+             Services Four
+          .col-xs-12.col-sm-6.col-md-3.modul-phone
+            .modul-services-one.mso-icon
+              .hi-icon-wrap.hi-icon-effect-9.hi-icon-effect-9b.mso-icon-space
+                i.fa.fa-cogs.fa-4x.hi-icon.hi-icon-two
+              h6 Pellentesque Pretium
+              p
+                | Maecenas at gravida quam pedro. Integer flid nunc es dictum, vulputate nulla in, congue pesta oneo justo.
+              a.btn.btn-primary.btn-sm Button Text
+    //
+       Client
+    .container-fluid.parallax-four.modul-bt-one(data-speed='10', data-type='background')
+      .container.modul-space-twentyfive
+        .row
+          .container
+            .row
+              .col-xs-12.col-md-6
+                .mso-icon-nine
+                  .hi-icon-wrap.hi-icon-effect-9.hi-icon-effect-9b.mso-icon-space.pull-left
+                    img.img-circle.mso-nine-img.hi-icon(src='img/theme/c1.jpg', alt='Client')
+                  a.btn.btn-default.btn-sm.btn-mso-nine.pull-right
+                    i.fa.fa-facebook
+                  a.btn.btn-default.btn-sm.btn-mso-nine.pull-right
+                    i.fa.fa-twitter
+                  a.btn.btn-default.btn-sm.btn-mso-nine.pull-right
+                    i.fa.fa-linkedin
+                  h6 Etiam Sodales Justo
+                  small Themeforest / 14 Jan 2013
+                  p Cras eget mattis justo. Fusce eget viendose commodo enim, quis condimentum use.
+                .clearfix
+              .col-xs-12.col-md-6
+                .mso-icon-nine
+                  .hi-icon-wrap.hi-icon-effect-9.hi-icon-effect-9b.mso-icon-space.pull-left
+                    img.img-circle.mso-nine-img.hi-icon(src='img/theme/c2.jpg', alt='Client')
+                  a.btn.btn-default.btn-sm.btn-mso-nine.pull-right
+                    i.fa.fa-facebook
+                  a.btn.btn-default.btn-sm.btn-mso-nine.pull-right
+                    i.fa.fa-twitter
+                  a.btn.btn-default.btn-sm.btn-mso-nine.pull-right
+                    i.fa.fa-linkedin
+                  h6 Etiam Sodales Justo
+                  small Graphicriver / 14 Jan 2013
+                  p Cras eget mattis justo. Fusce eget viendose commodo enim, quis condimentum use.
+                .clearfix
+              .col-xs-12.col-md-6
+                .mso-icon-nine
+                  .hi-icon-wrap.hi-icon-effect-9.hi-icon-effect-9b.mso-icon-space.pull-left
+                    img.img-circle.mso-nine-img.hi-icon(src='img/theme/c3.jpg', alt='Client')
+                  a.btn.btn-default.btn-sm.btn-mso-nine.pull-right
+                    i.fa.fa-facebook
+                  a.btn.btn-default.btn-sm.btn-mso-nine.pull-right
+                    i.fa.fa-twitter
+                  a.btn.btn-default.btn-sm.btn-mso-nine.pull-right
+                    i.fa.fa-linkedin
+                  h6 Etiam Sodales Justo
+                  small Codecanyon / 14 Jan 2013
+                  p Cras eget mattis justo. Fusce eget viendose commodo enim, quis condimentum use.
+                .clearfix
+              .col-xs-12.col-md-6
+                .mso-icon-nine
+                  .hi-icon-wrap.hi-icon-effect-9.hi-icon-effect-9b.mso-icon-space.pull-left
+                    img.img-circle.mso-nine-img.hi-icon(src='img/theme/c4.jpg', alt='Client')
+                  a.btn.btn-default.btn-sm.btn-mso-nine.pull-right
+                    i.fa.fa-facebook
+                  a.btn.btn-default.btn-sm.btn-mso-nine.pull-right
+                    i.fa.fa-twitter
+                  a.btn.btn-default.btn-sm.btn-mso-nine.pull-right
+                    i.fa.fa-linkedin
+                  h6 Etiam Sodales Justo
+                  small Envato / 14 Jan 2013
+                  p Cras eget mattis justo. Fusce eget viendose commodo enim, quis condimentum use.
+                .clearfix

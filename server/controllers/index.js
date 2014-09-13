@@ -313,6 +313,189 @@ exports.module_twitter = function(req, res) {
 };
 
 /**
+ * GET /page-about-1
+ * About page 1.
+ */
+
+exports.page_about_1 = function(req, res) {
+  res.render('page-about-1', {
+    title: '页面-about'
+  });
+};
+
+/**
+ * GET /page-about-2
+ * About page 2.
+ */
+
+exports.page_about_2 = function(req, res) {
+  res.render('page-about-2', {
+    title: '页面-about'
+  });
+};
+
+/**
+ * GET /page-about-3
+ * About page 3.
+ */
+
+exports.page_about_3 = function(req, res) {
+  res.render('page-about-3', {
+    title: '页面-about'
+  });
+};
+
+/**
+ * GET /page-services-1
+ * page services 1.
+ */
+
+exports.page_services_1 = function(req, res) {
+  res.render('page-services-1', {
+    title: '页面-services'
+  });
+};
+
+/**
+ * GET /page-services-2
+ * page services 2.
+ */
+
+exports.page_services_2 = function(req, res) {
+  res.render('page-services-2', {
+    title: '页面-services'
+  });
+};
+
+/**
+ * GET /page-contact
+ * page contact.
+ */
+
+exports.page_contact = function(req, res) {
+  res.render('page-contact', {
+    title: '页面-contact'
+  });
+};
+
+/**
+ * GET /page-portfolio-single-1
+ * page portfolio single 1.
+ */
+
+exports.page_portfolio_single_1 = function(req, res) {
+  res.render('page-portfolio-single-1', {
+    title: '页面-portfolio-single'
+  });
+};
+
+/**
+ * GET /page-portfolio-single-2
+ * page portfolio single 2.
+ */
+
+exports.page_portfolio_single_2 = function(req, res) {
+  res.render('page-portfolio-single-2', {
+    title: '页面-portfolio-single'
+  });
+};
+
+/**
+ * GET /blog-1
+ * blog 1.
+ */
+
+exports.blog_1 = function(req, res) {
+  res.render('blog-1', {
+    title: 'blog'
+  });
+};
+
+/**
+ * GET /blog-2
+ * blog 2.
+ */
+
+exports.blog_2 = function(req, res) {
+  res.render('blog-2', {
+    title: 'blog'
+  });
+};
+
+/**
+ * GET /blog-single-1
+ * blog single 1.
+ */
+
+exports.blog_single_1 = function(req, res) {
+  res.render('blog-single-1', {
+    title: 'blog single'
+  });
+};
+
+/**
+ * GET /blog-single-2
+ * blog single 2.
+ */
+
+exports.blog_single_2 = function(req, res) {
+  res.render('blog-single-2', {
+    title: 'blog single'
+  });
+};
+
+/**
+ * GET /blog-single-3
+ * blog single 3.
+ */
+
+exports.blog_single_3 = function(req, res) {
+  res.render('blog-single-3', {
+    title: 'blog single'
+  });
+};
+
+/**
+ * GET /shop
+ * shop home page.
+ */
+
+exports.shop = function(req, res) {
+  res.render('shop', {
+    title: '购物'
+  });
+};
+
+/**
+ * GET /shop-detail
+ * shop detail page.
+ */
+
+exports.shop_detail = function(req, res) {
+  res.render('shop-detail', {
+    title: '购物 detail'
+  });
+};
+
+/**
+ * GET /shop-checkout
+ * shop checkout page.
+ */
+
+exports.shop_checkout = function(req, res) {
+  res.render('shop-checkout', {
+    title: '购物 结算'
+  });
+};
+
+
+
+
+
+
+
+
+/**
  * GET /login
  * Login page.
  */

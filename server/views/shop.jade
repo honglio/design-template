@@ -1,0 +1,904 @@
+extends layout
+
+block content
+  //
+     Blog Header
+  .container-fluid.parallax-three.modul-bt-one
+    .container
+      .row
+        .col-md-12
+          .big-title
+            h1 Shop Page
+  //
+     Blog
+  .container-fluid.modul-bt-one
+    .container.modul-space-fourteen.hidden-xs
+      .row
+        //
+           Shop
+        .col-md-8
+          //
+             FILTER CONTROLS
+          .portfolio-filter-two.controls.modul-space-thirtytwo.hidden-xs
+            ul
+              li.btn.btn-primary.filter.active(data-filter='all') All
+              li.btn.btn-default.filter(data-filter='category_1') New
+              li.btn.btn-default.filter(data-filter='category_2') Sales
+              li.btn.btn-default.filter(data-filter='category_3') Best
+          //
+             Product
+          #Grid.shop-product
+            //
+               One
+            .col-xs-12.col-sm-12.col-md-4.mix.category_1.mix_all
+              .portlio-list(data-cat='1', style='display: inline-block; opacity: 1;')
+                .grid.cs-style-2
+                  figure
+                    img.portlio-list-img(src='img/theme/s1.jpg', alt='img04')
+                    figcaption
+                      .image-buttons
+                        a.btn.btn-primary
+                          i.fa.fa-shopping-cart(data-toggle='tooltip', data-placement='top', title='Add to Cart')
+                        a.btn.btn-primary
+                          i.fa.fa-plus(data-toggle='tooltip', data-placement='top', title='Read More')
+                h6 Pellen Mattiso
+                p $19.90
+            //
+               Two
+            .col-xs-12.col-sm-12.col-md-4.mix.category_2.mix_all
+              .portlio-list(data-cat='2', style='display: inline-block; opacity: 1;')
+                .grid.cs-style-2
+                  figure
+                    img.portlio-list-img(src='img/theme/s2.jpg', alt='img04')
+                    figcaption
+                      .image-buttons
+                        a.btn.btn-primary
+                          i.fa.fa-shopping-cart(data-toggle='tooltip', data-placement='top', title='Add to Cart')
+                        a.btn.btn-primary
+                          i.fa.fa-plus(data-toggle='tooltip', data-placement='top', title='Read More')
+                h6 Pellen Mattiso
+                p $29.90
+            //
+               Three
+            .col-xs-12.col-sm-12.col-md-4.mix.category_3.mix_all
+              .portlio-list(data-cat='3', style='display: inline-block; opacity: 1;')
+                .grid.cs-style-2
+                  figure
+                    img.portlio-list-img(src='img/theme/s3.jpg', alt='img04')
+                    figcaption
+                      .image-buttons
+                        a.btn.btn-primary
+                          i.fa.fa-shopping-cart(data-toggle='tooltip', data-placement='top', title='Add to Cart')
+                        a.btn.btn-primary
+                          i.fa.fa-plus(data-toggle='tooltip', data-placement='top', title='Read More')
+                h6 Pellen Mattiso
+                p $49.90
+            //
+               One
+            .col-xs-12.col-sm-12.col-md-4.mix.category_1.mix_all
+              .portlio-list(data-cat='1', style='display: inline-block; opacity: 1;')
+                .grid.cs-style-2
+                  figure
+                    img.portlio-list-img(src='img/theme/s7.jpg', alt='img04')
+                    figcaption
+                      .image-buttons
+                        a.btn.btn-primary
+                          i.fa.fa-shopping-cart(data-toggle='tooltip', data-placement='top', title='Add to Cart')
+                        a.btn.btn-primary
+                          i.fa.fa-plus(data-toggle='tooltip', data-placement='top', title='Read More')
+                h6 Pellen Mattiso
+                p $19.90
+            //
+               Two
+            .col-xs-12.col-sm-12.col-md-4.mix.category_2.mix_all
+              .portlio-list(data-cat='2', style='display: inline-block; opacity: 1;')
+                .grid.cs-style-2
+                  figure
+                    img.portlio-list-img(src='img/theme/s8.jpg', alt='img04')
+                    figcaption
+                      .image-buttons
+                        a.btn.btn-primary
+                          i.fa.fa-shopping-cart(data-toggle='tooltip', data-placement='top', title='Add to Cart')
+                        a.btn.btn-primary
+                          i.fa.fa-plus(data-toggle='tooltip', data-placement='top', title='Read More')
+                h6 Pellen Mattiso
+                p $29.90
+            //
+               Three
+            .col-xs-12.col-sm-12.col-md-4.mix.category_3.mix_all
+              .portlio-list(data-cat='3', style='display: inline-block; opacity: 1;')
+                .grid.cs-style-2
+                  figure
+                    img.portlio-list-img(src='img/theme/s9.jpg', alt='img04')
+                    figcaption
+                      .image-buttons
+                        a.btn.btn-primary
+                          i.fa.fa-shopping-cart(data-toggle='tooltip', data-placement='top', title='Add to Cart')
+                        a.btn.btn-primary
+                          i.fa.fa-plus(data-toggle='tooltip', data-placement='top', title='Read More')
+                h6 Pellen Mattiso
+                p $49.90
+            //
+               One
+            .col-xs-12.col-sm-12.col-md-4.mix.category_1.mix_all
+              .portlio-list(data-cat='1', style='display: inline-block; opacity: 1;')
+                .grid.cs-style-2
+                  figure
+                    img.portlio-list-img(src='img/theme/s4.jpg', alt='img04')
+                    figcaption
+                      .image-buttons
+                        a.btn.btn-primary
+                          i.fa.fa-shopping-cart(data-toggle='tooltip', data-placement='top', title='Add to Cart')
+                        a.btn.btn-primary
+                          i.fa.fa-plus(data-toggle='tooltip', data-placement='top', title='Read More')
+                h6 Pellen Mattiso
+                p $19.90
+            //
+               Two
+            .col-xs-12.col-sm-12.col-md-4.mix.category_2.mix_all
+              .portlio-list(data-cat='2', style='display: inline-block; opacity: 1;')
+                .grid.cs-style-2
+                  figure
+                    img.portlio-list-img(src='img/theme/s5.jpg', alt='img04')
+                    figcaption
+                      .image-buttons
+                        a.btn.btn-primary
+                          i.fa.fa-shopping-cart(data-toggle='tooltip', data-placement='top', title='Add to Cart')
+                        a.btn.btn-primary
+                          i.fa.fa-plus(data-toggle='tooltip', data-placement='top', title='Read More')
+                h6 Pellen Mattiso
+                p $29.90
+            //
+               Three
+            .col-xs-12.col-sm-12.col-md-4.mix.category_3.mix_all
+              .portlio-list(data-cat='3', style='display: inline-block; opacity: 1;')
+                .grid.cs-style-2
+                  figure
+                    img.portlio-list-img(src='img/theme/s6.jpg', alt='img04')
+                    figcaption
+                      .image-buttons
+                        a.btn.btn-primary
+                          i.fa.fa-shopping-cart(data-toggle='tooltip', data-placement='top', title='Add to Cart')
+                        a.btn.btn-primary
+                          i.fa.fa-plus(data-toggle='tooltip', data-placement='top', title='Read More')
+                h6 Pellen Mattiso
+                p $49.90
+            //
+               One
+            .col-xs-12.col-sm-12.col-md-4.mix.category_1.mix_all
+              .portlio-list(data-cat='1', style='display: inline-block; opacity: 1;')
+                .grid.cs-style-2
+                  figure
+                    img.portlio-list-img(src='img/theme/s10.jpg', alt='img04')
+                    figcaption
+                      .image-buttons
+                        a.btn.btn-primary
+                          i.fa.fa-shopping-cart(data-toggle='tooltip', data-placement='top', title='Add to Cart')
+                        a.btn.btn-primary
+                          i.fa.fa-plus(data-toggle='tooltip', data-placement='top', title='Read More')
+                h6 Pellen Mattiso
+                p $19.90
+            //
+               Two
+            .col-xs-12.col-sm-12.col-md-4.mix.category_2.mix_all
+              .portlio-list(data-cat='2', style='display: inline-block; opacity: 1;')
+                .grid.cs-style-2
+                  figure
+                    img.portlio-list-img(src='img/theme/s11.jpg', alt='img04')
+                    figcaption
+                      .image-buttons
+                        a.btn.btn-primary
+                          i.fa.fa-shopping-cart(data-toggle='tooltip', data-placement='top', title='Add to Cart')
+                        a.btn.btn-primary
+                          i.fa.fa-plus(data-toggle='tooltip', data-placement='top', title='Read More')
+                h6 Pellen Mattiso
+                p $29.90
+            //
+               Three
+            .col-xs-12.col-sm-12.col-md-4.mix.category_3.mix_all
+              .portlio-list(data-cat='3', style='display: inline-block; opacity: 1;')
+                .grid.cs-style-2
+                  figure
+                    img.portlio-list-img(src='img/theme/s12.jpg', alt='img04')
+                    figcaption
+                      .image-buttons
+                        a.btn.btn-primary
+                          i.fa.fa-shopping-cart(data-toggle='tooltip', data-placement='top', title='Add to Cart')
+                        a.btn.btn-primary
+                          i.fa.fa-plus(data-toggle='tooltip', data-placement='top', title='Read More')
+                h6 Pellen Mattiso
+                p $49.90
+        //
+           Sidebar
+        .col-md-4
+          //
+             Price and Cart
+          .row
+            .col-md-6
+              .hero-widget
+                .icon
+                  i.fa.fa-shopping-cart
+                .text
+                  var 3
+                  label.text-muted Item(s)
+                .options
+                  a.btn.btn-primary.btn-block(href='#')
+                    | Cart
+            .col-md-6
+              .hero-widget
+                .icon
+                  i.fa.fa-money
+                .text
+                  var $1,450
+                  label.text-muted Total 3 Item(s)
+                .options
+                  a.btn.btn-primary.btn-block(href='#')
+                    | Checkout
+          //
+             Easy Filter
+          .sidebar.modul-space-twentynine
+            h6
+              i.fa.fa-usd.sidebar-icon
+              | Price Filter
+            #slider3.ui-slider.ui-slider-horizontal.ui-widget.ui-widget-content.ui-corner-all(aria-disabled='false')
+              span.ui-slider-value.first $300
+              span.ui-slider-value.last $400
+              a.ui-slider-handle.ui-state-default.ui-corner-all(href='#', style='left: 0%;')
+              a.ui-slider-handle.ui-state-default.ui-corner-all(href='#', style='left: 100%;')
+          //
+             Categories
+          .sidebar
+            h6
+              i.fa.fa-cutlery.sidebar-icon
+              | Product Categories
+            ul.nav.nav-list.sidebar-categories
+              li.active
+                a(href='#')
+                  | Blazers
+                  span.badge.pull-right 30
+              li
+                a(href='#')
+                  | Coats and Jackets
+                  span.badge.pull-right 28
+              li
+                a(href='#')
+                  | Cursus Vitae
+                  span.badge.pull-right 74
+              li
+                a(href='#')
+                  | Dresses
+                  span.badge.pull-right 62
+              li
+                a(href='#')
+                  | Eleifend Ultricies
+                  span.badge.pull-right 26
+              li
+                a(href='#')
+                  | Jumpsuits Playsuits
+                  span.badge.pull-right 28
+              li
+                a(href='#')
+                  | T-Shirt
+                  span.badge.pull-right 28
+          //
+             Color Filter
+          .sidebar.modul-space-thirtyone
+            h6
+              i.fa.fa-tint.sidebar-icon
+              | Color Filter
+            ul.shop-color-filter
+              li
+                a(href='#')
+                  img(src='img/blue.jpg', alt='')
+              li
+                a(href='#')
+                  img(src='img/brown.jpg', alt='')
+              li
+                a(href='#')
+                  img(src='img/cyan.jpg', alt='')
+              li
+                a(href='#')
+                  img(src='img/green.jpg', alt='')
+              li
+                a(href='#')
+                  img(src='img/grey.jpg', alt='')
+              li
+                a(href='#')
+                  img(src='img/orange.jpg', alt='')
+              li
+                a(href='#')
+                  img(src='img/pink.jpg', alt='')
+              li
+                a(href='#')
+                  img(src='img/purple.jpg', alt='')
+              li
+                a(href='#')
+                  img(src='img/red.jpg', alt='')
+              li
+                a(href='#')
+                  img(src='img/yellow.jpg', alt='')
+          //
+             Size
+          .sidebar
+            h6
+              i.fa.fa-male.sidebar-icon
+              | Size Select
+            ul.nav.nav-list.sidebar-categories
+              li.active
+                a(href='#')
+                  | Large
+                  span.badge.pull-right 30
+              li
+                a(href='#')
+                  | Medium
+                  span.badge.pull-right 28
+              li
+                a(href='#')
+                  | One Size Fits All
+                  span.badge.pull-right 74
+              li
+                a(href='#')
+                  | XXL
+                  span.badge.pull-right 62
+              li
+                a(href='#')
+                  | Medium
+                  span.badge.pull-right 26
+              li
+                a(href='#')
+                  | Small
+                  span.badge.pull-right 28
+              li
+                a(href='#')
+                  | X Small
+                  span.badge.pull-right 28
+          //
+             Tag Cloud
+          .sidebar
+            h6
+              i.fa.fa-tags.sidebar-icon
+              | Product Tags Cloud
+            ul.nav.nav-list.tag-cloud.sidebar-categories-two
+              li
+                a.badge.tag-cloud-tags(href='#Fakelink') Web
+              li
+                a.badge.tag-cloud-tags(href='#Fakelink') Rap
+              li
+                a.badge.tag-cloud-tags(href='#Fakelink') Pop
+              li
+                a.badge.tag-cloud-tags(href='#Fakelink') Design
+              li
+                a.badge.tag-cloud-tags(href='#Fakelink') Wordpress Themes
+              li
+                a.badge.tag-cloud-tags(href='#Fakelink') Rock
+              li
+                a.badge.tag-cloud-tags(href='#Fakelink') Jazz
+              li
+                a.badge.tag-cloud-tags(href='#Fakelink') PSD Design
+        //
+           Shop
+    .container.modul-space-fourteen.visible-xs
+      .row
+        //
+           Sidebar
+        .col-md-4
+          //
+             Price and Cart
+          .row
+            .col-md-6
+              .hero-widget
+                .icon
+                  i.fa.fa-shopping-cart
+                .text
+                  var 3
+                  label.text-muted Item(s)
+                .options
+                  a.btn.btn-primary.btn-block(href='#')
+                    | Cart
+            .col-md-6
+              .hero-widget
+                .icon
+                  i.fa.fa-money
+                .text
+                  var $1,450
+                  label.text-muted Total 3 Item(s)
+                .options
+                  a.btn.btn-primary.btn-block(href='#')
+                    | Checkout
+          //
+             Easy Filter
+          .sidebar.modul-space-twentynine
+            h6
+              i.fa.fa-usd.sidebar-icon
+              | Price Filter
+            #slider3.ui-slider.ui-slider-horizontal.ui-widget.ui-widget-content.ui-corner-all(aria-disabled='false')
+              span.ui-slider-value.first $300
+              span.ui-slider-value.last $400
+              a.ui-slider-handle.ui-state-default.ui-corner-all(href='#', style='left: 0%;')
+              a.ui-slider-handle.ui-state-default.ui-corner-all(href='#', style='left: 100%;')
+          //
+             Categories
+          .sidebar
+            h6
+              i.fa.fa-cutlery.sidebar-icon
+              | Product Categories
+            ul.nav.nav-list.sidebar-categories
+              li.active
+                a(href='#')
+                  | Blazers
+                  span.badge.pull-right 30
+              li
+                a(href='#')
+                  | Coats and Jackets
+                  span.badge.pull-right 28
+              li
+                a(href='#')
+                  | Cursus Vitae
+                  span.badge.pull-right 74
+              li
+                a(href='#')
+                  | Dresses
+                  span.badge.pull-right 62
+              li
+                a(href='#')
+                  | Eleifend Ultricies
+                  span.badge.pull-right 26
+              li
+                a(href='#')
+                  | Jumpsuits Playsuits
+                  span.badge.pull-right 28
+              li
+                a(href='#')
+                  | T-Shirt
+                  span.badge.pull-right 28
+          //
+             Color Filter
+          .sidebar.modul-space-thirtyone
+            h6
+              i.fa.fa-tint.sidebar-icon
+              | Color Filter
+            ul.shop-color-filter
+              li
+                a(href='#')
+                  img(src='img/blue.jpg', alt='')
+              li
+                a(href='#')
+                  img(src='img/brown.jpg', alt='')
+              li
+                a(href='#')
+                  img(src='img/cyan.jpg', alt='')
+              li
+                a(href='#')
+                  img(src='img/green.jpg', alt='')
+              li
+                a(href='#')
+                  img(src='img/grey.jpg', alt='')
+              li
+                a(href='#')
+                  img(src='img/orange.jpg', alt='')
+              li
+                a(href='#')
+                  img(src='img/pink.jpg', alt='')
+              li
+                a(href='#')
+                  img(src='img/purple.jpg', alt='')
+              li
+                a(href='#')
+                  img(src='img/red.jpg', alt='')
+              li
+                a(href='#')
+                  img(src='img/yellow.jpg', alt='')
+          //
+             Size
+          .sidebar
+            h6
+              i.fa.fa-male.sidebar-icon
+              | Size Select
+            ul.nav.nav-list.sidebar-categories
+              li.active
+                a(href='#')
+                  | Large
+                  span.badge.pull-right 30
+              li
+                a(href='#')
+                  | Medium
+                  span.badge.pull-right 28
+              li
+                a(href='#')
+                  | One Size Fits All
+                  span.badge.pull-right 74
+              li
+                a(href='#')
+                  | XXL
+                  span.badge.pull-right 62
+              li
+                a(href='#')
+                  | Medium
+                  span.badge.pull-right 26
+              li
+                a(href='#')
+                  | Small
+                  span.badge.pull-right 28
+              li
+                a(href='#')
+                  | X Small
+                  span.badge.pull-right 28
+          //
+             Pool Sidebar
+          .sidebar
+            h6
+              i.fa.fa-bar-chart-o.sidebar-icon
+              | Shop Pool
+            .sidebar-categories
+              h5
+                em What is like color?
+              strong Red
+              span.pull-right 30%
+              .progress.progress-striped.active
+                .progress-bar(style='width: 30%;')
+              strong Green
+              span.pull-right 40%
+              .progress.progress-striped.active
+                .progress-bar(style='width: 40%;')
+              strong Blue
+              span.pull-right 10%
+              .progress.progress-striped.active
+                .progress-bar(style='width: 10%;')
+              strong Yellow
+              span.pull-right 5%
+              .progress.progress-striped.active
+                .progress-bar(style='width: 5%;')
+              strong Black
+              span.pull-right 15%
+              .progress.progress-striped.active
+                .progress-bar(style='width: 15%;')
+              p.vote-button
+                a.btn.btn-large.btn-success(href='#') Vote
+                a.pull-right(href='#') View detailed results
+          //
+             Tag Cloud
+          .sidebar
+            h6
+              i.fa.fa-tags.sidebar-icon
+              | Product Tags Cloud
+            ul.nav.nav-list.tag-cloud.sidebar-categories-two
+              li
+                a.badge.tag-cloud-tags(href='#Fakelink') Web
+              li
+                a.badge.tag-cloud-tags(href='#Fakelink') Rap
+              li
+                a.badge.tag-cloud-tags(href='#Fakelink') Pop
+              li
+                a.badge.tag-cloud-tags(href='#Fakelink') Design
+              li
+                a.badge.tag-cloud-tags(href='#Fakelink') Wordpress Themes
+              li
+                a.badge.tag-cloud-tags(href='#Fakelink') Rock
+              li
+                a.badge.tag-cloud-tags(href='#Fakelink') Jazz
+              li
+                a.badge.tag-cloud-tags(href='#Fakelink') PSD Design
+        //
+           Shop
+        .col-md-12
+          //
+             Slider
+          .tp-banner-container.phone-space-four
+            .tp-banner
+              ul
+                //
+                   SLIDE ONE
+                li(data-transition='incube', data-slotamount='5', data-masterspeed='1000')
+                  //
+                     MAIN IMAGE
+                  img(src='img/theme/s12.jpg', alt='slidebg1', data-bgfit='cover', data-bgposition='center center', data-bgrepeat='no-repeat')
+                  .tp-caption.largeblackbg.customin.customout(data-x='center', data-hoffset='0', data-y='center', data-voffset='-50', data-customin='x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;', data-customout='x:0;y:0;z:400;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;', data-speed='1000', data-start='1400', data-easing='Back.easeInOut', data-endeasing='Back.easeInOut', data-endspeed='1000', style='z-index: 11;')
+                    | New London Fashion Style
+                  .tp-caption.largepinkbg.customin.customout(data-x='center', data-hoffset='0', data-y='center', data-voffset='64', data-customin='x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;', data-customout='x:0;y:0;z:400;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;', data-speed='1000', data-start='1700', data-easing='Back.easeInOut', data-endeasing='Back.easeInOut', data-endspeed='1000', style='z-index: 11;')
+                    | $14,99
+                li(data-transition='incube', data-slotamount='5', data-masterspeed='1000')
+                  //
+                     MAIN IMAGE
+                  img(src='img/theme/s10.jpg', alt='slidebg1', data-bgfit='cover', data-bgposition='center center', data-bgrepeat='no-repeat')
+                  .tp-caption.largeblackbg.customin.customout(data-x='center', data-hoffset='0', data-y='center', data-voffset='-50', data-customin='x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;', data-customout='x:0;y:0;z:400;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;', data-speed='1000', data-start='1400', data-easing='Back.easeInOut', data-endeasing='Back.easeInOut', data-endspeed='1000', style='z-index: 11;')
+                    | The Woo Collection 2014
+                  .tp-caption.largegreenbg.customin.customout(data-x='center', data-hoffset='0', data-y='center', data-voffset='64', data-customin='x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;', data-customout='x:0;y:0;z:400;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;', data-speed='1000', data-start='1700', data-easing='Back.easeInOut', data-endeasing='Back.easeInOut', data-endspeed='1000', style='z-index: 11;')
+                    | $9,99
+                li(data-transition='incube', data-slotamount='5', data-masterspeed='1000')
+                  //
+                     MAIN IMAGE
+                  img(src='img/theme/s9.jpg', alt='slidebg1', data-bgfit='cover', data-bgposition='center center', data-bgrepeat='no-repeat')
+                  .tp-caption.largeblackbg.customin.customout(data-x='center', data-hoffset='0', data-y='center', data-voffset='-50', data-customin='x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;', data-customout='x:0;y:0;z:400;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;', data-speed='1000', data-start='1400', data-easing='Back.easeInOut', data-endeasing='Back.easeInOut', data-endspeed='1000', style='z-index: 11;')
+                    | Fashion Nillbox Style
+                  .tp-caption.largewhitebg.customin.customout(data-x='center', data-hoffset='0', data-y='center', data-voffset='64', data-customin='x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;', data-customout='x:0;y:0;z:400;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;', data-speed='1000', data-start='1700', data-easing='Back.easeInOut', data-endeasing='Back.easeInOut', data-endspeed='1000', style='z-index: 11;')
+                    | $49,99
+              .tp-bannertimer
+          //
+             FILTER CONTROLS
+          .portfolio-filter-two.controls.modul-space-thirtytwo.hidden-xs
+            ul
+              li.btn.btn-primary.filter.active(data-filter='all') All
+              li.btn.btn-default.filter(data-filter='category_1') New
+              li.btn.btn-default.filter(data-filter='category_2') Sales
+              li.btn.btn-default.filter(data-filter='category_3') Best
+          //
+             Product
+          #Grid.shop-product
+            //
+               One
+            .col-xs-12.col-sm-12.col-md-4.mix.category_1.mix_all
+              .portlio-list(data-cat='1', style='display: inline-block; opacity: 1;')
+                .grid.cs-style-2
+                  figure
+                    img.portlio-list-img(src='img/theme/s1.jpg', alt='img04')
+                    figcaption
+                      .image-buttons
+                        a.btn.btn-primary
+                          i.fa.fa-shopping-cart(data-toggle='tooltip', data-placement='top', title='Add to Cart')
+                        a.btn.btn-primary
+                          i.fa.fa-plus(data-toggle='tooltip', data-placement='top', title='Read More')
+                h6 Pellen Mattiso
+                p $19.90
+            //
+               Two
+            .col-xs-12.col-sm-12.col-md-4.mix.category_2.mix_all
+              .portlio-list(data-cat='2', style='display: inline-block; opacity: 1;')
+                .grid.cs-style-2
+                  figure
+                    img.portlio-list-img(src='img/theme/s2.jpg', alt='img04')
+                    figcaption
+                      .image-buttons
+                        a.btn.btn-primary
+                          i.fa.fa-shopping-cart(data-toggle='tooltip', data-placement='top', title='Add to Cart')
+                        a.btn.btn-primary
+                          i.fa.fa-plus(data-toggle='tooltip', data-placement='top', title='Read More')
+                h6 Pellen Mattiso
+                p $29.90
+            //
+               Three
+            .col-xs-12.col-sm-12.col-md-4.mix.category_3.mix_all
+              .portlio-list(data-cat='3', style='display: inline-block; opacity: 1;')
+                .grid.cs-style-2
+                  figure
+                    img.portlio-list-img(src='img/theme/s3.jpg', alt='img04')
+                    figcaption
+                      .image-buttons
+                        a.btn.btn-primary
+                          i.fa.fa-shopping-cart(data-toggle='tooltip', data-placement='top', title='Add to Cart')
+                        a.btn.btn-primary
+                          i.fa.fa-plus(data-toggle='tooltip', data-placement='top', title='Read More')
+                h6 Pellen Mattiso
+                p $49.90
+            //
+               One
+            .col-xs-12.col-sm-12.col-md-4.mix.category_1.mix_all
+              .portlio-list(data-cat='1', style='display: inline-block; opacity: 1;')
+                .grid.cs-style-2
+                  figure
+                    img.portlio-list-img(src='img/theme/s7.jpg', alt='img04')
+                    figcaption
+                      .image-buttons
+                        a.btn.btn-primary
+                          i.fa.fa-shopping-cart(data-toggle='tooltip', data-placement='top', title='Add to Cart')
+                        a.btn.btn-primary
+                          i.fa.fa-plus(data-toggle='tooltip', data-placement='top', title='Read More')
+                h6 Pellen Mattiso
+                p $19.90
+            //
+               Two
+            .col-xs-12.col-sm-12.col-md-4.mix.category_2.mix_all
+              .portlio-list(data-cat='2', style='display: inline-block; opacity: 1;')
+                .grid.cs-style-2
+                  figure
+                    img.portlio-list-img(src='img/theme/s8.jpg', alt='img04')
+                    figcaption
+                      .image-buttons
+                        a.btn.btn-primary
+                          i.fa.fa-shopping-cart(data-toggle='tooltip', data-placement='top', title='Add to Cart')
+                        a.btn.btn-primary
+                          i.fa.fa-plus(data-toggle='tooltip', data-placement='top', title='Read More')
+                h6 Pellen Mattiso
+                p $29.90
+            //
+               Three
+            .col-xs-12.col-sm-12.col-md-4.mix.category_3.mix_all
+              .portlio-list(data-cat='3', style='display: inline-block; opacity: 1;')
+                .grid.cs-style-2
+                  figure
+                    img.portlio-list-img(src='img/theme/s9.jpg', alt='img04')
+                    figcaption
+                      .image-buttons
+                        a.btn.btn-primary
+                          i.fa.fa-shopping-cart(data-toggle='tooltip', data-placement='top', title='Add to Cart')
+                        a.btn.btn-primary
+                          i.fa.fa-plus(data-toggle='tooltip', data-placement='top', title='Read More')
+                h6 Pellen Mattiso
+                p $49.90
+            //
+               One
+            .col-xs-12.col-sm-12.col-md-4.mix.category_1.mix_all
+              .portlio-list(data-cat='1', style='display: inline-block; opacity: 1;')
+                .grid.cs-style-2
+                  figure
+                    img.portlio-list-img(src='img/theme/s4.jpg', alt='img04')
+                    figcaption
+                      .image-buttons
+                        a.btn.btn-primary
+                          i.fa.fa-shopping-cart(data-toggle='tooltip', data-placement='top', title='Add to Cart')
+                        a.btn.btn-primary
+                          i.fa.fa-plus(data-toggle='tooltip', data-placement='top', title='Read More')
+                h6 Pellen Mattiso
+                p $19.90
+            //
+               Two
+            .col-xs-12.col-sm-12.col-md-4.mix.category_2.mix_all
+              .portlio-list(data-cat='2', style='display: inline-block; opacity: 1;')
+                .grid.cs-style-2
+                  figure
+                    img.portlio-list-img(src='img/theme/s5.jpg', alt='img04')
+                    figcaption
+                      .image-buttons
+                        a.btn.btn-primary
+                          i.fa.fa-shopping-cart(data-toggle='tooltip', data-placement='top', title='Add to Cart')
+                        a.btn.btn-primary
+                          i.fa.fa-plus(data-toggle='tooltip', data-placement='top', title='Read More')
+                h6 Pellen Mattiso
+                p $29.90
+            //
+               Three
+            .col-xs-12.col-sm-12.col-md-4.mix.category_3.mix_all
+              .portlio-list(data-cat='3', style='display: inline-block; opacity: 1;')
+                .grid.cs-style-2
+                  figure
+                    img.portlio-list-img(src='img/theme/s6.jpg', alt='img04')
+                    figcaption
+                      .image-buttons
+                        a.btn.btn-primary
+                          i.fa.fa-shopping-cart(data-toggle='tooltip', data-placement='top', title='Add to Cart')
+                        a.btn.btn-primary
+                          i.fa.fa-plus(data-toggle='tooltip', data-placement='top', title='Read More')
+                h6 Pellen Mattiso
+                p $49.90
+            //
+               One
+            .col-xs-12.col-sm-12.col-md-4.mix.category_1.mix_all
+              .portlio-list(data-cat='1', style='display: inline-block; opacity: 1;')
+                .grid.cs-style-2
+                  figure
+                    img.portlio-list-img(src='img/theme/s10.jpg', alt='img04')
+                    figcaption
+                      .image-buttons
+                        a.btn.btn-primary
+                          i.fa.fa-shopping-cart(data-toggle='tooltip', data-placement='top', title='Add to Cart')
+                        a.btn.btn-primary
+                          i.fa.fa-plus(data-toggle='tooltip', data-placement='top', title='Read More')
+                h6 Pellen Mattiso
+                p $19.90
+            //
+               Two
+            .col-xs-12.col-sm-12.col-md-4.mix.category_2.mix_all
+              .portlio-list(data-cat='2', style='display: inline-block; opacity: 1;')
+                .grid.cs-style-2
+                  figure
+                    img.portlio-list-img(src='img/theme/s11.jpg', alt='img04')
+                    figcaption
+                      .image-buttons
+                        a.btn.btn-primary
+                          i.fa.fa-shopping-cart(data-toggle='tooltip', data-placement='top', title='Add to Cart')
+                        a.btn.btn-primary
+                          i.fa.fa-plus(data-toggle='tooltip', data-placement='top', title='Read More')
+                h6 Pellen Mattiso
+                p $29.90
+            //
+               Three
+            .col-xs-12.col-sm-12.col-md-4.mix.category_3.mix_all
+              .portlio-list(data-cat='3', style='display: inline-block; opacity: 1;')
+                .grid.cs-style-2
+                  figure
+                    img.portlio-list-img(src='img/theme/s12.jpg', alt='img04')
+                    figcaption
+                      .image-buttons
+                        a.btn.btn-primary
+                          i.fa.fa-shopping-cart(data-toggle='tooltip', data-placement='top', title='Add to Cart')
+                        a.btn.btn-primary
+                          i.fa.fa-plus(data-toggle='tooltip', data-placement='top', title='Read More')
+                h6 Pellen Mattiso
+                p $49.90
+        //
+           Shop
+  //
+     Page Navi
+  .container-fluid.module-background-one.modul-bt-one
+    .container.modul-space-fifteen
+      .row
+        .col-md-12.page-navi
+          .pagination.pagination-default.hidden-xs
+            a.btn.btn-default.previous(href='#fakelink')
+              span.fui-arrow-left
+              | OLDER
+            ul
+              li
+                a(href='#fakelink') 1
+              li
+                a(href='#fakelink') 2
+              li
+                a(href='#fakelink') 3
+              li
+                a(href='#fakelink') 4
+              li
+                a(href='#fakelink') 5
+            a.btn.btn-default.next(href='#fakelink')
+              | NEWER
+              span.fui-arrow-right
+          .pagination.pagination-default.visible-xs
+            a.btn.btn-default.previous(href='#fakelink')
+              span.fui-arrow-left
+              | OLDER
+            ul
+              li
+                a(href='#fakelink') 1
+              li
+                a(href='#fakelink') 2
+              li
+                a(href='#fakelink') 3
+              li
+                a(href='#fakelink') 4
+              li
+                a(href='#fakelink') 5
+            a.btn.btn-default.next(href='#fakelink')
+              | NEWER
+              span.fui-arrow-right
+  //
+     Picture Modal Box
+  #view-post-image.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+    .modal-dialog
+      .modal-content
+        .modal-header
+          button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+          h4.modal-title Image Title
+        .modal-body
+          img.portlio-list-img(src='img/theme/p9.jpg', alt='img04')
+        .modal-footer
+          a.btn.btn-default(href='#fakelink')
+            span.fui-googleplus
+          a.btn.btn-default(href='#fakelink')
+            span.fui-facebook
+          a.btn.btn-default(href='#fakelink')
+            span.fui-twitter
+          button.btn.btn-default(type='button', data-dismiss='modal') Close
+  //
+     Video Modal Box
+  #view-post-video.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+    .modal-dialog
+      .modal-content
+        .modal-header
+          button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+          h4.modal-title Video Title
+        .modal-body
+          iframe.iframe-options(src='http://player.vimeo.com/video/23534361?title=0&byline=0&portrait=0')
+        .modal-footer
+          a.btn.btn-default(href='#fakelink')
+            span.fui-googleplus
+          a.btn.btn-default(href='#fakelink')
+            span.fui-facebook
+          a.btn.btn-default(href='#fakelink')
+            span.fui-twitter
+          button.btn.btn-default(type='button', data-dismiss='modal') Close
+  //
+     Music Modal Box
+  #view-post-music.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+    .modal-dialog
+      .modal-content
+        .modal-header
+          button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+          h4.modal-title Music Title
+        .modal-body
+          iframe.iframe-options-two(src='https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/2384806&color=179ce3&auto_play=false&show_artwork=false')
+        .modal-footer
+          a.btn.btn-default(href='#fakelink')
+            span.fui-googleplus
+          a.btn.btn-default(href='#fakelink')
+            span.fui-facebook
+          a.btn.btn-default(href='#fakelink')
+            span.fui-twitter
+          button.btn.btn-default(type='button', data-dismiss='modal') Close

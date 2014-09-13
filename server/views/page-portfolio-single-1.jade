@@ -1,0 +1,151 @@
+extends layout
+
+block content
+  //
+     Blog Header
+  .container-fluid.parallax-three.modul-bt-one(data-speed='5', data-type='background')
+    .container
+      .row
+        .col-md-12
+          .big-title
+            h1 Portfolio Single Page
+  //
+     Blog
+  .container-fluid.modul-bt-one
+    .container.modul-space-twentytwo
+      .row
+        .col-md-8
+          //
+             Post Detail
+          .post-detail
+            //
+               Image
+            .tp-banner-container
+              .tp-banner
+                ul
+                  //
+                     SLIDE ONE
+                  li(data-transition='boxfade', data-slotamount='5', data-masterspeed='1000')
+                    //
+                       MAIN IMAGE
+                    img(src='img/theme/p4.jpg', alt='slidebg1', data-bgfit='cover', data-bgposition='center center', data-bgrepeat='no-repeat')
+                  li(data-transition='boxfade', data-slotamount='5', data-masterspeed='1000')
+                    //
+                       MAIN IMAGE
+                    img(src='img/theme/p5.jpg', alt='slidebg1', data-bgfit='cover', data-bgposition='center center', data-bgrepeat='no-repeat')
+                  li(data-transition='boxfade', data-slotamount='5', data-masterspeed='1000')
+                    //
+                       MAIN IMAGE
+                    img(src='img/theme/p6.jpg', alt='slidebg1', data-bgfit='cover', data-bgposition='center center', data-bgrepeat='no-repeat')
+                .tp-bannertimer
+            .blog-slider-list.post-page-list.portfolio-single-title
+              h1 Donec Venenatis Mattis
+            p
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eget enim elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas nibh sapien, adipiscing vitae tellus at, imperdiet convallis urna. Integer vel tempus massa. Sed lobortis mi eget aliquet vehicula. Morbi in posuere sem, blandit hendrerit lorem. Nulla nec nibh sed libero convallis convallis rhoncus ac velit. Nam dapibus diam sed scelerisque imperdiet. Curabitur vehicula eleifend sapien sit amet tincidunt. Donec sed aliquet lectus, quis pharetra velit. Aliquam aliquet interdum gravida. Duis tincidunt mi eu urna vestibulum, id rutrum metus elementum. Cras adipiscing, felis sed pulvinar semper, nunc lacus porta urna, nec porttitor magna tellus et metus. Fusce venenatis consectetur dui id sodales. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+          .clearfix
+          //
+             Share Post
+          .post-share
+            h5 SHARE PORTFOLIO:
+            hr
+            a.btn.btn-default.share-post(href='#')
+              i.fa.fa-facebook.fa-lg
+            a.btn.btn-default.share-post(href='#')
+              i.fa.fa-twitter.fa-lg
+            a.btn.btn-default.share-post(href='#')
+              i.fa.fa-linkedin.fa-lg
+            a.btn.btn-default.share-post(href='#')
+              i.fa.fa-tumblr.fa-lg
+            a.btn.btn-default.share-post(href='#')
+              i.fa.fa-flickr.fa-lg
+            a.btn.btn-default.share-post(href='#')
+              i.fa.fa-github-alt.fa-lg
+            a.btn.btn-default.share-post(href='#')
+              i.fa.fa-google-plus.fa-lg
+        .col-md-4
+          //
+             Social Sidebar
+          .row
+            .col-md-6
+              .hero-widget.well-sm
+                .icon
+                  i.fa.fa-trophy
+                .text
+                  var 914.180
+                  label.text-muted Download
+                .options
+                  a.btn.btn-primary.btn-block(href='#')
+                    | Download
+            .col-md-6
+              .hero-widget.well-sm
+                .icon
+                  i.fa.fa-ticket
+                .text
+                  var 22.614
+                  label.text-muted Sales
+                .options
+                  a.btn.btn-primary.btn-block(href='#')
+                    | Purchase
+          //
+             Pool Sidebar
+          .sidebar
+            h6
+              i.fa.fa-flask.sidebar-icon
+              | Job Options
+            .sidebar-categories
+              strong Logo
+              span.pull-right 80%
+              .progress.progress-striped.active
+                .progress-bar(style='width: 80%;')
+              strong PHP Code
+              span.pull-right 60%
+              .progress.progress-striped.active
+                .progress-bar(style='width: 60%;')
+              strong Web Design
+              span.pull-right 75%
+              .progress.progress-striped.active
+                .progress-bar(style='width: 75%;')
+              strong CSS3
+              span.pull-right 35%
+              .progress.progress-striped.active
+                .progress-bar(style='width: 35%;')
+              strong HTML5
+              span.pull-right 45%
+              .progress.progress-striped.active
+                .progress-bar(style='width: 45%;')
+          //
+             Tag Cloud
+          .sidebar
+            h6
+              i.fa.fa-tags.sidebar-icon
+              | Job Tags
+            ul.nav.nav-list.tag-cloud.sidebar-categories-two
+              li
+                a.badge.tag-cloud-tags(href='#Fakelink') Web
+              li
+                a.badge.tag-cloud-tags(href='#Fakelink') Rap
+              li
+                a.badge.tag-cloud-tags(href='#Fakelink') Pop
+              li
+                a.badge.tag-cloud-tags(href='#Fakelink') Design
+              li
+                a.badge.tag-cloud-tags(href='#Fakelink') Wordpress Themes
+              li
+                a.badge.tag-cloud-tags(href='#Fakelink') Rock
+              li
+                a.badge.tag-cloud-tags(href='#Fakelink') Jazz
+              li
+                a.badge.tag-cloud-tags(href='#Fakelink') PSD Design
+  //
+     Page Navi
+  .container-fluid.module-background-one.modul-bt-one
+    .container.modul-space-fifteen
+      .row
+        .col-md-12.page-navi
+          .pagination.pagination-default.pull-left
+            a.btn.btn-default.previous(href='#fakelink')
+              span.fui-arrow-left
+              | PREV PORTFOLIO
+            a.btn.btn-default.next(href='#fakelink')
+              | NEXT PORTFOLIO
+              span.fui-arrow-right
