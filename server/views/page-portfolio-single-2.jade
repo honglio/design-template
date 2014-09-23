@@ -1,5 +1,19 @@
 extends layout
 
+block scripts
+  script(type='text/javascript', src='/rs-plugin/js/jquery.themepunch.plugins.min.js')
+  script(type='text/javascript', src='/rs-plugin/js/jquery.themepunch.revolution.min.js')
+  script(type='text/javascript').
+    jQuery(document).ready(function() {
+      //- Slider Options
+      jQuery('.tp-banner').revolution({
+        delay: 90000,
+        startwidth: 640,
+        startheight: 400,
+        hideThumbs: 10
+      });
+    });
+
 block content
   //
      Blog Header

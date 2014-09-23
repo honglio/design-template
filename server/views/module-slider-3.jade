@@ -1,5 +1,33 @@
 extends layout
 
+block scripts
+  script(type='text/javascript', src='/rs-plugin/js/jquery.themepunch.plugins.min.js')
+  script(type='text/javascript', src='/rs-plugin/js/jquery.themepunch.revolution.min.js')
+  script(type='text/javascript').
+    jQuery(document).ready(function() {
+      //- Slider Options
+      jQuery('.tp-banner-two').revolution({
+        delay: 9000000,
+        startwidth: 1200,
+        startheight: 356,
+        hideThumbs: 200,
+        thumbWidth: 100,
+        thumbHeight: 50,
+        thumbAmount: 3,
+        navigationType: "none", // use none, bullet or thumb
+        soloArrowLeftHalign: "left", // left,center,right
+        soloArrowLeftValign: "center", // top,center,bottom
+        soloArrowLeftHOffset: 0, // offset position from aligned position
+        soloArrowLeftVOffset: 0, // offset position from aligned position
+        soloArrowRightHalign: "right", // left,center,right
+        soloArrowRightValign: "center", // top,center,bottom
+        soloArrowRightHOffset: 0, // offset position from aligned position
+        soloArrowRightVOffset: 0, // offset position from aligned position
+        touchenabled: "on",
+        onHoverStop: "on"
+      }); //ready
+    });
+
 block content
     //
        Header

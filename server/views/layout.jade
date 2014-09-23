@@ -1,60 +1,8 @@
 doctype html
 html.js.no-touch
   head
-    meta(charset='utf-8')
-    meta(http-equiv='X-UA-Compatible', content='IE=edge')
-    meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no')
-
-    meta(name="HandheldFriendly" content="True")
-    meta(name="apple-mobile-web-app-capable" content="yes")
-    meta(name='description', content='Quick, easy and reuseble HTML Tamplate')
-    meta(name='csrf-token', content=_csrf)
-    meta(name='author', content='Honglio')
-
-    title #{title} | HTML Theme
-
-    link(rel='stylesheet', href='/css/lib/bootstrap.min.css', type='text/css')
-    link(rel='stylesheet', href="/css/lib/ui.css", type='text/css')
-    link(rel='stylesheet', href='/css/lib/font-awesome.min.css', type='text/css')
-    link(rel='stylesheet', href='/css/base.css', type='text/css')
-    link(rel='stylesheet', href='/css/style-blue.css', type='text/css')
-
-    //- Skins
-    link(rel='alternate stylesheet', type='text/css', href='css/style-blue.css', title='blue', media='all')
-    link(rel='alternate stylesheet', type='text/css', href='css/style-black.css', title='black', media='all')
-    link(rel='alternate stylesheet', type='text/css', href='css/style-cyan.css', title='cyan', media='all')
-    link(rel='alternate stylesheet', type='text/css', href='css/style-green.css', title='green', media='all')
-    link(rel='alternate stylesheet', type='text/css', href='css/style-orange.css', title='orange', media='all')
-    link(rel='alternate stylesheet', type='text/css', href='css/style-pink.css', title='pink', media='all')
-    link(rel='alternate stylesheet', type='text/css', href='css/style-purple.css', title='purple', media='all')
-    link(rel='alternate stylesheet', type='text/css', href='css/style-red.css', title='red', media='all')
-    //- END Skins
-
-    <!-- Slider -->
-    link(rel='stylesheet', href='/rs-plugin/css/settings.css', type='text/css')
-    link(rel='stylesheet', href='/showbizpro/css/settings.css', type='text/css' media="screen")
-
-    <!-- JS -->
-    script(type='text/javascript', src='/js/vendors/jquery.js')
-    script(type='text/javascript', src='/js/vendors/bootstrap.js')
-    script(type='text/javascript', src='/js/vendors/modernizr.custom.js')
-
-    //- IE6-8 support of HTML5 elements, RAW html, Do not compile to Jade.
-    <!--[if lt IE 9]>
-    <link rel="stylesheet" href="css/nill-box-menu-ie8.css">
-    <script src="/js/vendors/html5shiv.js"></script>
-    <![endif]-->
-
-    <!--[if lt IE 10]>
-    <script src="js/vendors/jquery.placeholder.js"></script>
-    <![endif]-->
-
-    //- Fav and touch icons
-    link(rel='apple-touch-icon-precomposed', sizes='144x144', href='/img/ico/apple-touch-icon-144-precomposed.png')
-    link(rel='apple-touch-icon-precomposed', sizes='114x114', href='/img/ico/apple-touch-icon-114-precomposed.png')
-    link(rel='apple-touch-icon-precomposed', sizes='72x72', href='/img/ico/apple-touch-icon-72-precomposed.png')
-    link(rel='apple-touch-icon-precomposed', href='/img/ico/apple-touch-icon-57-precomposed.png')
-    link(rel='shortcut icon', href='/img/ico/favicon.png')
+    include partials/head
+    block head
 
   body
     header
@@ -68,94 +16,6 @@ html.js.no-touch
     footer
       include partials/footer
 
+    script(type='text/javascript', src='/js/vendors/jquery.scrollUp.js')
+    script(type='text/javascript', src='/js/application.js')
     block scripts
-      script(type='text/javascript', src='/js/vendors/jquery-ui-1.10.3.custom.min.js')
-      script(type='text/javascript', src='/js/vendors/jquery.ui.touch-punch.min.js')
-      script(type='text/javascript', src='/js/vendors/jquery.tagsinput.js')
-      script(type='text/javascript', src='/js/vendors/jquery.mixitup.js')
-      script(type='text/javascript', src='/js/vendors/jquery.scrollUp.js')
-      script(type='text/javascript', src='/rs-plugin/js/jquery.themepunch.plugins.min.js')
-      script(type='text/javascript', src='/rs-plugin/js/jquery.themepunch.revolution.min.js')
-      script(type='text/javascript', src='/showbizpro/js/jquery.themepunch.showbizpro.min.js')
-      script(type='text/javascript', src='/js/vendors/bootstrap-select.js')
-      script(type='text/javascript', src='/js/vendors/bootstrap-switch.js')
-      script(type='text/javascript', src='/js/vendors/bootstrap-typeahead.js')
-      script(type='text/javascript', src='/js/vendors/flatui-checkbox.js')
-      script(type='text/javascript', src='/js/vendors/flatui-radio.js')
-      script(type='text/javascript', src='/js/toucheffects.js')
-      script(type='text/javascript', src='/js/theme.js')
-      script(type='text/javascript', src='/js/application.js')
-      script(type='text/javascript').
-        var revapi;
-        jQuery(document).ready(function() {
-          //- Slider Options
-          revapi = jQuery('.tp-banner').revolution({
-            delay: 90000,
-            startwidth: 1170,
-            startheight: 500,
-            hideThumbs: 10,
-            fullScreen: "on",
-            fullScreenAlignForce: "on",
-            fullScreenOffsetContainer: ".navigation-menu"
-          });
-          revapi = jQuery('.tp-banner-two').revolution({
-            delay: 9000000,
-            startwidth: 1200,
-            startheight: 356,
-            hideThumbs: 200,
-            thumbWidth: 100,
-            thumbHeight: 50,
-            thumbAmount: 3,
-            navigationType: "none", // use none, bullet or thumb
-            soloArrowLeftHalign: "left", // left,center,right
-            soloArrowLeftValign: "center", // top,center,bottom
-            soloArrowLeftHOffset: 0, // offset position from aligned position
-            soloArrowLeftVOffset: 0, // offset position from aligned position
-            soloArrowRightHalign: "right", // left,center,right
-            soloArrowRightValign: "center", // top,center,bottom
-            soloArrowRightHOffset: 0, // offset position from aligned position
-            soloArrowRightVOffset: 0, // offset position from aligned position
-            touchenabled: "on",
-            onHoverStop: "on"
-          }); //ready
-
-          //- Portfolio Filter
-          jQuery('#Grid').mixitup();
-
-          //- Carusel Slider
-          jQuery('#example6').showbizpro({
-            dragAndScroll: "off",
-            visibleElementsArray: [4, 4, 1, 1],
-            carousel: "on",
-            entrySizeOffset: 0,
-            allEntryAtOnce: "off",
-            rewindFromEnd: "off",
-            autoPlay: "off",
-            delay: 2000,
-            speed: 500
-            });
-            jQuery('#example7').showbizpro({
-            dragAndScroll: "off",
-            visibleElementsArray: [2, 2, 1, 1],
-            carousel: "on",
-            entrySizeOffset: 0,
-            allEntryAtOnce: "off",
-            rewindFromEnd: "off",
-            autoPlay: "off",
-            delay: 2000,
-            speed: 500
-          });
-
-          //- Shop Detail
-          jQuery('#relatedpost').showbizpro({
-              dragAndScroll: "off",
-              visibleElementsArray: [3, 3, 2, 1],
-              carousel: "on",
-              entrySizeOffset: 0,
-              allEntryAtOnce: "off",
-              rewindFromEnd: "off",
-              autoPlay: "off",
-              delay: 2000,
-              speed: 500
-          });
-        });

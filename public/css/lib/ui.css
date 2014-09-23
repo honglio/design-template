@@ -1147,7 +1147,7 @@ fieldset[disabled] .btn-link:focus {
     border-bottom:1px solid #ddd;
     padding-bottom:10px;
     margin-top:10px;
-    
+
 }
 .navbar .nav > li:hover > ul {
   opacity: 1;
@@ -1190,7 +1190,7 @@ fieldset[disabled] .btn-link:focus {
   -webkit-transform: rotate(360deg);
 }
 .navbar .nav > li > ul li:hover ul {
-    
+
   opacity: 1;
   -webkit-transform: scale(1, 1);
   visibility: visible;
@@ -1636,13 +1636,13 @@ fieldset[disabled] .btn-link:focus {
   .navbar.navbar-inverse .nav > li.active > a:hover,
   .navbar.navbar-inverse .nav > li.active > a:focus {
     background-color: #efefef;
-    
+
   }
   .navbar.navbar-inverse .nav > li > a,
   .navbar.navbar-inverse .nav > li > a:hover {
     background: none;
     border: none;
-    
+
   }
   .navbar.navbar-inverse .nav > li ul li a {
     color: #ffffff;
@@ -5072,7 +5072,7 @@ a.list-group-item.active > .badge,
 }
 @media screen and (min-width: 768px) {
     .modal-dialog {
-        left: 50%;
+        left: auto;
         right: auto;
         width: 624px;
     }

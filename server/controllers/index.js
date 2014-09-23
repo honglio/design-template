@@ -170,57 +170,68 @@ exports.module_advert_6 = function(req, res) {
 };
 
 /**
- * GET /module-advert-7
- * Module advert page.
+ * GET /module-slider-1
+ * Module slider page.
  */
 
-exports.module_advert_7 = function(req, res) {
-  res.render('module-advert-7', {
-    title: '模块-广告'
+exports.module_slider_1 = function(req, res) {
+  res.render('module-slider-1', {
+    title: '模块-slider'
   });
 };
 
 /**
- * GET /module-blog-1
- * Module blog page.
+ * GET /module-slider-2
+ * Module slider page.
  */
 
-exports.module_blog_1 = function(req, res) {
-  res.render('module-blog-1', {
-    title: '模块-blog'
+exports.module_slider_2 = function(req, res) {
+  res.render('module-slider-2', {
+    title: '模块-slider'
   });
 };
 
 /**
- * GET /module-blog-2
- * Module blog page.
+ * GET /module-slider-3
+ * Module slider page.
  */
 
-exports.module_blog_2 = function(req, res) {
-  res.render('module-blog-2', {
-    title: '模块-blog'
+exports.module_slider_3 = function(req, res) {
+  res.render('module-slider-3', {
+    title: '模块-slider'
   });
 };
 
 /**
- * GET /module-portfolio-1
- * Module portfolio page.
+ * GET /module-slider-4
+ * Module slider page.
  */
 
-exports.module_portfolio_1 = function(req, res) {
-  res.render('module-portfolio-1', {
-    title: '模块-portfolio'
+exports.module_slider_4 = function(req, res) {
+  res.render('module-slider-4', {
+    title: '模块-slider'
   });
 };
 
 /**
- * GET /module-portfolio-2
- * Module portfolio page.
+ * GET /module-mixitup-1
+ * Module mixitup page.
  */
 
-exports.module_portfolio_2 = function(req, res) {
-  res.render('module-portfolio-2', {
-    title: '模块-portfolio'
+exports.module_mixitup_1 = function(req, res) {
+  res.render('module-mixitup-1', {
+    title: '模块-mixitup'
+  });
+};
+
+/**
+ * GET /module-mixitup-2
+ * Module mixitup page.
+ */
+
+exports.module_mixitup_2 = function(req, res) {
+  res.render('module-mixitup-2', {
+    title: '模块-mixitup'
   });
 };
 

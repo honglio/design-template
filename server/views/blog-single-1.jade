@@ -1,5 +1,32 @@
 extends layout
 
+block scripts
+  script(type='text/javascript', src='/rs-plugin/js/jquery.themepunch.plugins.min.js')
+  script(type='text/javascript', src='/rs-plugin/js/jquery.themepunch.revolution.min.js')
+  script(type='text/javascript', src='/showbizpro/js/jquery.themepunch.showbizpro.min.js')
+  script(type='text/javascript').
+    jQuery(document).ready(function() {
+      //- Slider Options
+      jQuery('.tp-banner').revolution({
+        delay: 90000,
+        startwidth: 640,
+        startheight: 400,
+        hideThumbs: 10
+      });
+      //- Related Post
+      $('#relatedpost').showbizpro({
+        dragAndScroll: "off",
+        visibleElementsArray: [3, 3, 3, 1],
+        carousel: "on",
+        entrySizeOffset: 0,
+        allEntryAtOnce: "off",
+        rewindFromEnd: "off",
+        autoPlay: "off",
+        delay: 2000,
+        speed: 500
+      });
+    });
+
 block content
   //
      Blog Header

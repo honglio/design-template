@@ -1,5 +1,27 @@
 extends layout
 
+block scripts
+  script(type='text/javascript', src='/js/vendors/jquery.mixitup.js')
+  script(type='text/javascript', src='/rs-plugin/js/jquery.themepunch.plugins.min.js')
+  script(type='text/javascript', src='/rs-plugin/js/jquery.themepunch.revolution.min.js')
+  script(type='text/javascript', src='/showbizpro/js/jquery.themepunch.showbizpro.min.js')
+  script(type='text/javascript').
+    jQuery(document).ready(function() {
+      //- Slider Options
+      jQuery('.tp-banner').revolution({
+        delay: 90000,
+        startwidth: 1170,
+        startheight: 500,
+        hideThumbs: 10,
+        fullScreen: "on",
+        fullScreenAlignForce: "on",
+        fullScreenOffsetContainer: ".navigation-menu"
+      });
+
+      //- Portfolio Filter
+      jQuery('#Grid').mixitup();
+    });
+
 block content
     //
        Slider

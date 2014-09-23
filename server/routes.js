@@ -40,13 +40,14 @@ module.exports = function (app, passport) {
     app.get('/module-advert-4', index.module_advert_4);
     app.get('/module-advert-5', index.module_advert_5);
     app.get('/module-advert-6', index.module_advert_6);
-    app.get('/module-advert-7', index.module_advert_7);
 
-    app.get('/module-blog-1', index.module_blog_1);
-    app.get('/module-blog-2', index.module_blog_2);
+    app.get('/module-slider-1', index.module_slider_1);
+    app.get('/module-slider-2', index.module_slider_2);
+    app.get('/module-slider-3', index.module_slider_3);
+    app.get('/module-slider-4', index.module_slider_4);
 
-    app.get('/module-portfolio-1', index.module_portfolio_1);
-    app.get('/module-portfolio-2', index.module_portfolio_2);
+    app.get('/module-mixitup-1', index.module_mixitup_1);
+    app.get('/module-mixitup-2', index.module_mixitup_2);
 
     app.get('/module-service-1', index.module_service_1);
     app.get('/module-service-2', index.module_service_2);
