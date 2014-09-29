@@ -434,6 +434,17 @@ exports.blog_2 = function(req, res) {
 };
 
 /**
+ * GET /blog-3
+ * blog 3.
+ */
+
+exports.blog_3 = function(req, res) {
+  res.render('blog-3', {
+    title: 'blog'
+  });
+};
+
+/**
  * GET /blog-single-1
  * blog single 1.
  */

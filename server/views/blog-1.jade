@@ -1,17 +1,26 @@
 extends layout
 
 block content
-  //
-     Blog Header
-  .container-fluid.parallax-three.modul-bt-one(data-speed='5', data-type='background')
+  // Breadcrumb
+  section.breadcrumb
     .container
       .row
-        .col-md-12
-          .big-title
-            h1 Blog Page
+        .col-sm-9
+          h1 Blog
+          ol.breadcrumb.bc-3
+            li
+              a(href='/')
+                i.entypo-home
+                | Home
+            li
+              a(href='/blog-1') Blog
+            li.active
+              strong Blog-1
+        .col-sm-3
+          h2.text-muted.text-right 86 Posts
   //
      Blog
-  .container-fluid.modul-bt-one
+  .container-fluid
     .container.modul-space-fourteen
       .row
         .col-md-8

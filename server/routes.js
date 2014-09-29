@@ -73,6 +73,7 @@ module.exports = function (app, passport) {
 
     app.get('/blog-1', index.blog_1);
     app.get('/blog-2', index.blog_2);
+    app.get('/blog-3', index.blog_3);
 
     app.get('/blog-single-1', index.blog_single_1);
     app.get('/blog-single-2', index.blog_single_2);

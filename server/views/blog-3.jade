@@ -1,0 +1,153 @@
+extends layout
+
+block content
+  // Breadcrumb
+  section.breadcrumb
+    .container
+      .row
+        .col-sm-9
+          h1 Blog
+          ol.breadcrumb.bc-3
+            li
+              a(href='/')
+                i.entypo-home
+                | Home
+            li
+              a(href='/blog-1') Blog
+            li.active
+              strong Blog-3
+        .col-sm-3
+          h2.text-muted.text-right 86 Posts
+  // Blog
+  section.blog
+    .container
+      .row
+        .col-sm-8
+          .blog-posts
+            //
+               Blog Post
+            .blog-post
+              .post-thumb
+                a(href='blog-post.html')
+                  img.img-rounded(src='img/theme/c1.jpg')
+                  span.hover-zoom
+              .post-details
+                h3
+                  a(href='blog-post.html') We hill lady will both sang room by
+                .post-meta
+                  .meta-info
+                    i.entypo-calendar
+                    | 27 March 2014
+                  .meta-info
+                    i.entypo-comment
+                    | 3 comments
+                p
+                  | Paid was hill sir high. For him precaution any advantages dissimilar comparison few terminated projecting. Prevailed discovery immediate objection of ye at. Repair summer one winter living feebly pretty his. In so sense am known these since.
+            //
+               Blog Post
+            .blog-post
+              .post-thumb
+                a(href='blog-post.html')
+                  img.img-rounded(src='img/theme/c2.jpg')
+                  span.hover-zoom
+              .post-details
+                h3
+                  a(href='blog-post.html') Allowance sweetness direction to as...
+                .post-meta
+                  .meta-info
+                    i.entypo-calendar
+                    | 25 March 2014
+                  .meta-info
+                    i.entypo-comment
+                    | 0 comments
+                p
+                  | Paid was hill sir high. For him precaution any advantages dissimilar comparison few terminated projecting. Prevailed discovery immediate objection of ye at. Repair summer one winter living feebly pretty his. In so sense am known these since.
+            //
+               Blog Post
+            .blog-post
+              .post-thumb
+                a(href='blog-post.html')
+                  img.img-rounded(src='img/theme/c3.jpg')
+                  span.hover-zoom
+              .post-details
+                h3
+                  a(href='blog-post.html') Is we miles ready he might going
+                .post-meta
+                  .meta-info
+                    i.entypo-calendar
+                    | 24 March 2014
+                  .meta-info
+                    i.entypo-comment
+                    | 1 comment
+                p
+                  | Paid was hill sir high. For him precaution any advantages dissimilar comparison few terminated projecting. Prevailed discovery immediate objection of ye at. Repair summer one winter living feebly pretty his. In so sense am known these since.
+            //
+               Blog Pagination
+            .text-center
+              ul.pagination
+                li.active
+                  a(href='#') 1
+                li
+                  a(href='#') 2
+                li
+                  a(href='#') 3
+                li
+                  a(href='#') 4
+                li
+                  a(href='#') 5
+                li
+                  a(href='#') Next
+        .col-sm-4
+          //
+             List Sidebar
+          .sidebar
+            h3
+              i.fa.fa-list
+              |  Categories
+            .sidebar-content
+              ul
+                li
+                  a(href='#')
+                    i.fa.fa-angle-right
+                    |  Art Direction
+                    span (3)
+                li
+                  a(href='#')
+                    i.fa.fa-angle-right
+                    |  Photography
+                    span (7)
+                li
+                  a(href='#')
+                    i.fa.fa-angle-right
+                    |  3D Modelling
+                    span (5)
+                li
+                  a(href='#')
+                    i.fa.fa-angle-right
+                    |  Web Design
+                    span (1)
+          // Comments Sidebar
+          .sidebar
+            h3
+              i.entypo-chat
+              | Recent Comments
+            .sidebar-content
+              ul.discussion-list
+                li
+                  a.thumb(href='#')
+                    img.img-circle(src='img/theme/logo.png')
+                  .details
+                    a(href='#') John Doe
+                    p At vero eos et accusamus et iusto odio dignissimos...
+                li
+                  a.thumb(href='#')
+                    img.img-circle(src='img/theme/logo.png')
+                  .details
+                    a(href='#') John Doe
+                    p At vero eos et accusamus et iusto odio dignissimos...
+                li
+                  a.thumb(href='#')
+                    img.img-circle(src='img/theme/logo.png')
+                  .details
+                    a(href='#') John Doe
+                    p At vero eos et accusamus et iusto odio dignissimos...

@@ -28,17 +28,26 @@ block scripts
     });
 
 block content
-  //
-     Blog Header
-  .container-fluid.parallax-three.modul-bt-one(data-speed='5', data-type='background')
+  // Breadcrumb
+  section.breadcrumb
     .container
       .row
-        .col-md-12
-          .big-title
-            h1 Blog Page
+        .col-sm-9
+          h1 Single Blog Page
+          ol.breadcrumb.bc-3
+            li
+              a(href='/')
+                i.entypo-home
+                | Home
+            li
+              a(href='/blog-single-1') Single Blog
+            li.active
+              strong Single Blog 1
+        .col-sm-3
+          h2.text-muted.text-right 86 Posts
   //
      Blog
-  .container-fluid.modul-bt-one
+  .container-fluid
     .container.modul-space-sixteen
       .row
         .col-md-8
