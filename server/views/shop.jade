@@ -45,14 +45,14 @@ block scripts
       }
 
       var $slider3 = $("#slider3")
-        , slider3ValueMultiplier = 100
+        , slider3ValueMultiplier = 1000
         , slider3Options;
 
       if ($slider3.length > 0) {
         $slider3.slider({
           min: 1,
-          max: 5,
-          values: [3, 4],
+          max: 10,
+          values: [3, 7],
           orientation: "horizontal",
           range: true,
           slide: function(event, ui) {
@@ -100,10 +100,10 @@ block content
              FILTER CONTROLS
           .portfolio-filter-two.controls.modul-space-thirtytwo.hidden-xs
             ul
-              li.btn.btn-primary.filter.active(data-filter='all') All
-              li.btn.btn-default.filter(data-filter='category_1') New
-              li.btn.btn-default.filter(data-filter='category_2') Sales
-              li.btn.btn-default.filter(data-filter='category_3') Best
+              li.btn.btn-primary.filter.active(data-filter='all') 全部
+              li.btn.btn-default.filter(data-filter='category_1') 最新
+              li.btn.btn-default.filter(data-filter='category_2') 热销
+              li.btn.btn-default.filter(data-filter='category_3') 评价最高
           //
              Product
           #Grid.shop-product
@@ -121,7 +121,7 @@ block content
                         a.btn.btn-primary
                           i.fa.fa-plus(data-toggle='tooltip', data-placement='top', title='Read More')
                 h6 Pellen Mattiso
-                p $19.90
+                p $1990
             //
                Two
             .col-xs-12.col-sm-12.col-md-4.mix.category_2.mix_all
@@ -136,7 +136,7 @@ block content
                         a.btn.btn-primary
                           i.fa.fa-plus(data-toggle='tooltip', data-placement='top', title='Read More')
                 h6 Pellen Mattiso
-                p $29.90
+                p $2990
             //
                Three
             .col-xs-12.col-sm-12.col-md-4.mix.category_3.mix_all
@@ -151,7 +151,7 @@ block content
                         a.btn.btn-primary
                           i.fa.fa-plus(data-toggle='tooltip', data-placement='top', title='Read More')
                 h6 Pellen Mattiso
-                p $49.90
+                p $4990
             //
                One
             .col-xs-12.col-sm-12.col-md-4.mix.category_1.mix_all
@@ -166,7 +166,7 @@ block content
                         a.btn.btn-primary
                           i.fa.fa-plus(data-toggle='tooltip', data-placement='top', title='Read More')
                 h6 Pellen Mattiso
-                p $19.90
+                p $1990
             //
                Two
             .col-xs-12.col-sm-12.col-md-4.mix.category_2.mix_all
@@ -181,7 +181,7 @@ block content
                         a.btn.btn-primary
                           i.fa.fa-plus(data-toggle='tooltip', data-placement='top', title='Read More')
                 h6 Pellen Mattiso
-                p $29.90
+                p $2990
             //
                Three
             .col-xs-12.col-sm-12.col-md-4.mix.category_3.mix_all
@@ -196,7 +196,7 @@ block content
                         a.btn.btn-primary
                           i.fa.fa-plus(data-toggle='tooltip', data-placement='top', title='Read More')
                 h6 Pellen Mattiso
-                p $49.90
+                p $4990
             //
                One
             .col-xs-12.col-sm-12.col-md-4.mix.category_1.mix_all
@@ -211,7 +211,7 @@ block content
                         a.btn.btn-primary
                           i.fa.fa-plus(data-toggle='tooltip', data-placement='top', title='Read More')
                 h6 Pellen Mattiso
-                p $19.90
+                p $1990
             //
                Two
             .col-xs-12.col-sm-12.col-md-4.mix.category_2.mix_all
@@ -226,7 +226,7 @@ block content
                         a.btn.btn-primary
                           i.fa.fa-plus(data-toggle='tooltip', data-placement='top', title='Read More')
                 h6 Pellen Mattiso
-                p $29.90
+                p $2990
             //
                Three
             .col-xs-12.col-sm-12.col-md-4.mix.category_3.mix_all
@@ -241,7 +241,7 @@ block content
                         a.btn.btn-primary
                           i.fa.fa-plus(data-toggle='tooltip', data-placement='top', title='Read More')
                 h6 Pellen Mattiso
-                p $49.90
+                p $4990
             //
                One
             .col-xs-12.col-sm-12.col-md-4.mix.category_1.mix_all
@@ -256,7 +256,7 @@ block content
                         a.btn.btn-primary
                           i.fa.fa-plus(data-toggle='tooltip', data-placement='top', title='Read More')
                 h6 Pellen Mattiso
-                p $19.90
+                p $1990
             //
                Two
             .col-xs-12.col-sm-12.col-md-4.mix.category_2.mix_all
@@ -271,7 +271,7 @@ block content
                         a.btn.btn-primary
                           i.fa.fa-plus(data-toggle='tooltip', data-placement='top', title='Read More')
                 h6 Pellen Mattiso
-                p $29.90
+                p $2990
             //
                Three
             .col-xs-12.col-sm-12.col-md-4.mix.category_3.mix_all
@@ -286,7 +286,7 @@ block content
                         a.btn.btn-primary
                           i.fa.fa-plus(data-toggle='tooltip', data-placement='top', title='Read More')
                 h6 Pellen Mattiso
-                p $49.90
+                p $4990
         //
            Sidebar
         .col-md-4
@@ -299,29 +299,29 @@ block content
                   i.fa.fa-shopping-cart
                 .text
                   var 3
-                  label.text-muted Item(s)
+                  label.text-muted 件(s)
                 .options
                   a.btn.btn-primary.btn-block(href='#')
-                    | Cart
+                    | 购物车
             .col-md-6
               .hero-widget
                 .icon
                   i.fa.fa-money
                 .text
-                  var $1,450
-                  label.text-muted Total 3 Item(s)
+                  var $1450
+                  label.text-muted 总计 3 件(s)
                 .options
                   a.btn.btn-primary.btn-block(href='#')
-                    | Checkout
+                    | 结算
           //
              Easy Filter
           .sidebar.modul-space-twentynine
             h6
               i.fa.fa-usd.sidebar-icon
-              | Price Filter
+              | 价格区间
             #slider3.ui-slider.ui-slider-horizontal.ui-widget.ui-widget-content.ui-corner-all(aria-disabled='false')
               span.ui-slider-value.first $300
-              span.ui-slider-value.last $400
+              span.ui-slider-value.last $10000
               a.ui-slider-handle.ui-state-default.ui-corner-all(href='#', style='left: 0%;')
               a.ui-slider-handle.ui-state-default.ui-corner-all(href='#', style='left: 100%;')
           //
@@ -329,42 +329,42 @@ block content
           .sidebar
             h6
               i.fa.fa-cutlery.sidebar-icon
-              | Product Categories
+              | 汽车品牌
             ul.nav.nav-list.sidebar-categories
               li.active
                 a(href='#')
-                  | Blazers
+                  | 大众
                   span.badge.pull-right 30
               li
                 a(href='#')
-                  | Coats and Jackets
+                  | 奔驰
                   span.badge.pull-right 28
               li
                 a(href='#')
-                  | Cursus Vitae
+                  | 宝马
                   span.badge.pull-right 74
               li
                 a(href='#')
-                  | Dresses
+                  | Opel
                   span.badge.pull-right 62
               li
                 a(href='#')
-                  | Eleifend Ultricies
+                  | 通用
                   span.badge.pull-right 26
               li
                 a(href='#')
-                  | Jumpsuits Playsuits
+                  | 丰田
                   span.badge.pull-right 28
               li
                 a(href='#')
-                  | T-Shirt
+                  | 本田
                   span.badge.pull-right 28
           //
              Color Filter
           .sidebar.modul-space-thirtyone
             h6
               i.fa.fa-tint.sidebar-icon
-              | Color Filter
+              | 汽车颜色
             ul.shop-color-filter
               li
                 a(href='#')
@@ -401,59 +401,59 @@ block content
           .sidebar
             h6
               i.fa.fa-male.sidebar-icon
-              | Size Select
+              | 车型
             ul.nav.nav-list.sidebar-categories
               li.active
                 a(href='#')
-                  | Large
+                  | 大客
                   span.badge.pull-right 30
               li
                 a(href='#')
-                  | Medium
+                  | 中型
                   span.badge.pull-right 28
               li
                 a(href='#')
-                  | One Size Fits All
+                  | 卡车
                   span.badge.pull-right 74
               li
                 a(href='#')
-                  | XXL
+                  | 3箱
                   span.badge.pull-right 62
               li
                 a(href='#')
-                  | Medium
+                  | 2箱半
                   span.badge.pull-right 26
               li
                 a(href='#')
-                  | Small
+                  | 2箱
                   span.badge.pull-right 28
               li
                 a(href='#')
-                  | X Small
+                  | Mini
                   span.badge.pull-right 28
           //
              Tag Cloud
           .sidebar
             h6
               i.fa.fa-tags.sidebar-icon
-              | Product Tags Cloud
+              | 标签云
             ul.nav.nav-list.tag-cloud.sidebar-categories-two
               li
-                a.badge.tag-cloud-tags(href='#Fakelink') Web
+                a.badge.tag-cloud-tags(href='#Fakelink') 省油
               li
-                a.badge.tag-cloud-tags(href='#Fakelink') Rap
+                a.badge.tag-cloud-tags(href='#Fakelink') 动力强劲
               li
-                a.badge.tag-cloud-tags(href='#Fakelink') Pop
+                a.badge.tag-cloud-tags(href='#Fakelink') 维修方便
               li
-                a.badge.tag-cloud-tags(href='#Fakelink') Design
+                a.badge.tag-cloud-tags(href='#Fakelink') 配件便宜
               li
-                a.badge.tag-cloud-tags(href='#Fakelink') Wordpress Themes
+                a.badge.tag-cloud-tags(href='#Fakelink') 服务周到
               li
-                a.badge.tag-cloud-tags(href='#Fakelink') Rock
+                a.badge.tag-cloud-tags(href='#Fakelink') 车型美观
               li
-                a.badge.tag-cloud-tags(href='#Fakelink') Jazz
+                a.badge.tag-cloud-tags(href='#Fakelink') 进口车
               li
-                a.badge.tag-cloud-tags(href='#Fakelink') PSD Design
+                a.badge.tag-cloud-tags(href='#Fakelink') 二手
         //
            Shop
     .container.modul-space-fourteen.visible-xs
@@ -470,26 +470,26 @@ block content
                   i.fa.fa-shopping-cart
                 .text
                   var 3
-                  label.text-muted Item(s)
+                  label.text-muted 件(s)
                 .options
                   a.btn.btn-primary.btn-block(href='#')
-                    | Cart
+                    | 购物车
             .col-md-6
               .hero-widget
                 .icon
                   i.fa.fa-money
                 .text
-                  var $1,450
-                  label.text-muted Total 3 Item(s)
+                  var $14500
+                  label.text-muted 总计 3 件(s)
                 .options
                   a.btn.btn-primary.btn-block(href='#')
-                    | Checkout
+                    | 结帐
           //
              Easy Filter
           .sidebar.modul-space-twentynine
             h6
               i.fa.fa-usd.sidebar-icon
-              | Price Filter
+              | 价格区间
             #slider3.ui-slider.ui-slider-horizontal.ui-widget.ui-widget-content.ui-corner-all(aria-disabled='false')
               span.ui-slider-value.first $300
               span.ui-slider-value.last $400
@@ -500,35 +500,35 @@ block content
           .sidebar
             h6
               i.fa.fa-cutlery.sidebar-icon
-              | Product Categories
+              | 汽车品牌
             ul.nav.nav-list.sidebar-categories
               li.active
                 a(href='#')
-                  | Blazers
+                  | 大众
                   span.badge.pull-right 30
               li
                 a(href='#')
-                  | Coats and Jackets
+                  | 奔驰
                   span.badge.pull-right 28
               li
                 a(href='#')
-                  | Cursus Vitae
+                  | 宝马
                   span.badge.pull-right 74
               li
                 a(href='#')
-                  | Dresses
+                  | Opel
                   span.badge.pull-right 62
               li
                 a(href='#')
-                  | Eleifend Ultricies
+                  | 通用
                   span.badge.pull-right 26
               li
                 a(href='#')
-                  | Jumpsuits Playsuits
+                  | 丰田
                   span.badge.pull-right 28
               li
                 a(href='#')
-                  | T-Shirt
+                  | 本田
                   span.badge.pull-right 28
           //
              Color Filter
@@ -572,35 +572,35 @@ block content
           .sidebar
             h6
               i.fa.fa-male.sidebar-icon
-              | Size Select
+              | 车型
             ul.nav.nav-list.sidebar-categories
               li.active
                 a(href='#')
-                  | Large
+                  | 大客
                   span.badge.pull-right 30
               li
                 a(href='#')
-                  | Medium
+                  | 中型
                   span.badge.pull-right 28
               li
                 a(href='#')
-                  | One Size Fits All
+                  | 卡车
                   span.badge.pull-right 74
               li
                 a(href='#')
-                  | XXL
+                  | 3箱
                   span.badge.pull-right 62
               li
                 a(href='#')
-                  | Medium
+                  | 2箱半
                   span.badge.pull-right 26
               li
                 a(href='#')
-                  | Small
+                  | 2箱
                   span.badge.pull-right 28
               li
                 a(href='#')
-                  | X Small
+                  | Mini
                   span.badge.pull-right 28
           //
              Pool Sidebar
