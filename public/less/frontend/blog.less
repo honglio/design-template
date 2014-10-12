@@ -7,8 +7,8 @@
 /* Big Title */
 
 .big-title {
-  padding-top: 0px;
-  padding-bottom: 20px;
+  padding-top: 0;
+  padding-bottom: @large-padding;
 }
 .big-title h1 {
   text-transform: uppercase;
@@ -18,79 +18,82 @@
 /* Blog Info & Icon */
 
 .blog-info {
-  margin-top: 27px;
-  margin-bottom: 27px;
-  padding: 6px 0px 8px 24px;
+  margin-top: @base-margin;
+  margin-bottom: @base-margin;
+  padding-top: @small-padding;
+  padding-right: 0;
+  padding-bottom: @base-padding;
+  padding-left: @large-padding;
   width: 100%;
   border-top: 1px solid;
   border-bottom: 1px solid;
 }
 .blog-mini-icon {
-  margin-right: 8px;
+  margin-right: @small-margin;
 }
 .blog-mini-icon-two {
-  margin-right: 8px;
-  margin-left: 8px;
+  margin-right: @small-margin;
+  margin-left: @small-margin;
 }
 
 /* Blog Sidebar */
 
 .sidebar {
-    margin-top: -18px;
+    margin-top: -@base-margin;
     padding: 0;
-    margin-bottom: 64px;
+    margin-bottom: @large-margin;
     h6 {
-        margin-bottom: 25px;
+        margin-bottom: @base-margin;
     }
 }
 .sidebar-icon {
-    margin-right: 10px;
+    margin-right: @small-margin;
 }
 .sidebar-categories {
-    padding: 30px 42px 30px 42px;
+    padding: @large-padding;
     border: 2px solid;
 }
 .sidebar-categories-two {
-    padding: 30px 42px 20px 42px;
+    padding: @large-padding;
     border: 2px solid;
 }
 .vote-button {
-    margin-top: 30px;
+    margin-top: @base-margin;
 }
 .hero-widget {
     text-align: center;
-    padding: 30px 30px 30px 30px;
-    border-radius: 0px;
+    padding: @large-padding;
+    border-radius: 0;
     border: 2px solid;
-    margin-bottom: 46px;
+    margin-bottom: @large-margin;
     .icon {
         display: block;
-        font-size: 50px;
-        line-height: 30px;
-        margin-bottom: 10px;
+        font-size: @large-margin;
+        line-height: @base-margin;
+        margin-bottom: @small-margin;
         text-align: center;
     }
     var {
         display: block;
-        font-size: 20px;
-        line-height: 20px;
+        font-size: @large-padding;
+        line-height: @large-padding;
         font-style: normal;
     }
     label {
         font-size: 14px;
     }
     .options {
-        margin-top: 10px;
+        margin-top: @small-margin;
     }
 }
 .tag-cloud {
     text-align: center;
     li {
         float: left;
-        margin-right: 36px;
-        padding-bottom: 10px;
+        margin-right: @base-margin;
+        padding-bottom: @small-padding;
         &:last-child {
-            padding-bottom: 0px;
+            padding-bottom: 0;
         }
     }
 }
@@ -102,35 +105,35 @@
 }
 .post-page-list {
     h1 {
-        margin-top: 0px;
-        margin-left: -24px;
+        margin-top: 0;
+        margin-left: -@small-margin;
     }
 }
 .alignleft {
-    margin-top: 6px;
-    margin-right: 24px;
-    margin-bottom: 18px;
+    margin-top: @small-margin;
+    margin-right: @base-margin;
+    margin-bottom: @base-margin;
 }
 .alignright {
-    margin-top: 6px;
-    margin-left: 24px;
-    margin-bottom: 18px;
+    margin-top: @small-margin;
+    margin-left: @base-margin;
+    margin-bottom: @base-margin;
 }
 .post-editor-rating {
-    margin-top: 33px;
-    margin-bottom: 30px;
+    margin-top: @base-margin;
+    margin-bottom: @base-margin;
 }
 .post-share {
-    margin-top: 10px;
-    margin-bottom: 45px;
+    margin-top: @small-margin;
+    margin-bottom: @base-margin;
 }
 .share-post {
-    margin-top: 5px;
-    min-width: 50px;
-    margin-right: 8px;
+    margin-top: 0;
+    width: 50px;
+    margin-right: @small-margin;
 }
 .related-post {
-    margin-top: 30px;
+    margin-top: @base-margin;
 }
 .related-button {
     position: relative;
@@ -138,11 +141,11 @@
     margin-right: -8px;
 }
 .comment-list {
-    margin-top: -24px;
+    margin-top: -@base-margin;
     ul {
         li {
-            padding-top: 30px;
-            padding-bottom: 5px;
+            padding-top: @large-padding;
+            padding-bottom: @small-padding;
             border-bottom: 1px solid;
             &:last-child {
                 border-bottom: none;
@@ -152,19 +155,19 @@
 }
 .comment-img {
     border: 8px solid;
-    margin-right: 24px;
+    margin-right: @base-margin;
 }
 .comment-forms {
-    margin-top: 30px;
+    margin-top: @base-margin;
 }
 .media-body {
     h6 {
         font-size: 117%;
-        margin-top: 0px;
-        margin-bottom: 2px;
+        margin-top: 0;
+        margin-bottom: @small-margin;
     }
     p {
-        margin-top: 8px;
+        margin-top: @small-margin;
     }
 }
 .comment-button {
@@ -179,7 +182,7 @@
     border-bottom: none;
     border-left: 8px solid;
     border-radius: 0;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 .post-video {
     width: 100%;

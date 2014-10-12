@@ -7,7 +7,7 @@
 /* Advert Module One */
 
 .advert-one h1, .advert-one h2, .advert-one h3, .advert-one h4, .advert-one h5, .advert-one h6 {
-    margin-bottom: 22px;
+    margin-bottom: @base-margin;
     -webkit-transition: color 1s;
     -moz-transition: color 1s;
     transition: color 1s;
@@ -17,19 +17,19 @@
     font-weight: 400;
 }
 .advert-button-one {
-    margin-top: 7px;
-    margin-right: 10px;
+    margin-top: @base-margin;
+    margin-right: @base-margin;
     min-width: 150px;
 }
 .advert-one-image {
-    margin-top: 62px;
+    margin-top: @large-margin;
     img {
         width: 100%;
         float: right;
     }
 }
 .advert-two-image {
-    margin-top: 60px;
+    margin-top: @large-margin;
     img {
         width: 100%;
         float: right;
@@ -39,16 +39,16 @@
 @media (max-width: 767px) {
   .advert-one-image {
       text-align: center;
-      margin-top: 62px;
+      margin-top: @large-margin;
       img {
           float: none;
       }
   }
   .advert-button-one {
       display: block;
-      margin-top: 20px;
-      margin-bottom: 14px;
-      margin-right: 10px;
+      margin-top: @base-margin;
+      margin-bottom: @base-margin;
+      margin-right: @base-margin;
       min-width: 150px;
   }
 }
@@ -56,8 +56,8 @@
 
 .advert-two-title {
     text-align: center;
-    margin-top: 32px;
-    margin-bottom: 47px;
+    margin-top: @base-margin;
+    margin-bottom: @base-margin;
     p {
         font-style: italic;
     }
@@ -77,7 +77,7 @@
     width: 100%;
     max-height: 2px;
     border: 2px solid;
-    margin-bottom: 22px;
+    margin-bottom: @base-margin;
 }
 .bottom-shape-right {
     position: relative;
@@ -108,19 +108,19 @@
 
 .advert-ul-one {
     list-style: none;
-    margin: 5px 0px 12px 0px;
-    padding: 0;
+    padding: @base-padding 0;
+    margin: 0;
     li {
         margin: 0;
-        padding-bottom: 10px;
+        padding-bottom: @base-padding;
         font-weight: 300;
         i {
-            margin-right: 10px;
+            margin-right: @base-margin - @base-padding;
             text-align: center;
-            padding-top: 5px;
-            width: 22px;
-            height: 22px;
-            font-size: 12px;
+            padding-top: @base-padding;
+            width: @base-margin;
+            height: @base-margin;
+            font-size: 14px;
         }
     }
 }

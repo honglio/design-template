@@ -5,28 +5,31 @@
 /************************************************************************************************************************/
 
 .blog-slider-container {
-    margin-top: 38px;
+    margin-top: @base-margin;
 }
 .blog-slider {
     text-align: left;
-    margin-bottom: 30px;
+    margin-bottom: @base-margin;
 }
 .blog-slider-two {
     text-align: left;
-    margin-bottom: 50px;
+    margin-bottom: @base-margin;
 }
-.blog-slider-list h1, .blog-slider-list h2, .blog-slider-list h3, .blog-slider-list h4, .blog-slider-list h5, .blog-slider-list h6 {
-    margin-top: 20px;
-    margin-bottom: 4px;
-    padding-right: 24px;
-    padding-left: 24px;
+.blog-slider-list h1,
+.blog-slider-list h2,
+.blog-slider-list h3,
+.blog-slider-list h4,
+.blog-slider-list h5,
+.blog-slider-list h6 {
+    margin-top: @base-margin;
+    margin-bottom: @small-margin;
+    padding-right: @base-margin;
+    padding-left: @base-margin;
 }
-.blog-slider-list {
-    p {
-        padding-right: 24px;
-        padding-left: 24px;
-        padding-bottom: 26px;
-    }
+.blog-slider-list p {
+    padding-right: @base-margin;
+    padding-left: @base-margin;
+    padding-bottom: @base-margin;
 }
 .blog-slider-list-img {
     width: 100%;
@@ -34,21 +37,21 @@
 .blog-date-circle {
     h5 {
         text-align: center;
-        margin: 10px 0px 0px 0px;
+        margin-top: @small-margin;
         font-weight: 700;
     }
     p {
         text-align: center;
         font-style: italic;
         font-weight: 500;
-        margin: -8px 0px 0px 0px;
+        margin-top: -@small-margin * 2;
     }
 }
 .blog-nav-button {
-    margin-right: 8px;
+    margin-right: @small-margin;
 }
 .blog-nav-button-two {
-    margin-top: 28px;
-    margin-bottom: -35px;
-    margin-right: 8px;
+    margin-top: @base-margin;
+    margin-bottom: -@base-margin;
+    margin-right: @small-margin;
 }

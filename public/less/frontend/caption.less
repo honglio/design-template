@@ -14,13 +14,13 @@
   -moz-transition:-moz-transform 0.3s, opacity 0.3s;
   transition:transform 0.3s, opacity 0.3s;
   h3 {
-    margin-top:70px;
+    margin-top:@large-margin;
   }
   span {
     display:block;
   }
   a {
-    margin-top:30px;
+    margin-top:@base-margin;
   }
 }
 .no-touch .cs-style-1 figure:hover figcaption, .cs-style-1 figure.cs-hover figcaption {
@@ -45,9 +45,9 @@
   top:auto;
   bottom:0;
   a {
-    margin-top:0px;
-    margin-left:6px;
-    margin-right:6px;
+    margin-top: 0;
+    margin-left: @small-margin;
+    margin-right: @small-margin;
   }
 }
 .no-touch .cs-style-2 figure:hover img, .cs-style-2 figure.cs-hover img {
@@ -105,17 +105,18 @@
   text-align:center;
 }
 .image-buttons-two {
-  margin-top:-65px;
+  margin-top: -@large-margin;
 }
 .image-buttons-three {
   text-align:center;
-  margin-top:8px;
-  margin-left:-5px;
+  margin-top:@small-margin;
+  margin-left:-@small-margin;
 }
 .blog-date-circle {
   position:absolute;
   display:block;
-  margin:-36px 0px 0px 24px;
+  margin-top: -@base-margin;
+  margin-left: @base-margin;
   border-radius:50%;
   opacity:0.8;
   width:60px;
@@ -343,9 +344,9 @@
   }
   figcaption {
     position:absolute;
-    padding:20px;
+    padding:@large-padding;
     h6 {
-      margin:10px 0 0 0;
+      margin-top: @small-margin;
       padding:0;
       font-weight:700;
     }
@@ -357,7 +358,10 @@
 
 @media screen and (max-width: 31.5em) {
   .grid {
-    padding:10px 10px 100px 10px;
+    padding-top:@base-padding;
+    padding-right: @base-padding;
+    padding-bottom: @large-margin + @large-padding;
+    padding-left: @base-padding;
     li {
       width:100%;
       min-width:300px;

@@ -7,27 +7,27 @@
 /* Footer One */
 
 .footer-logo {
-    margin-bottom: 34px;
+    margin-bottom: @base-margin;
 }
 .footer-one {
     p {
-        margin-bottom: 36px;
+        margin-bottom: @base-margin;
         text-align: justify;
     }
 }
 .btn-footer {
     min-width: 50px;
     border: 2px solid;
-    margin-right: 8px;
-    margin-bottom: 14px;
+    margin-right: @small-margin;
+    margin-bottom: @small-margin;
 }
 
 /* Footer Two*/
 
 .footer-two {
     h6 {
-        padding-bottom: 20px;
-        margin-bottom: 25px;
+        padding-bottom: @large-padding;
+        margin-bottom: @base-margin;
         border-bottom: 2px solid;
     }
     ul {
@@ -35,29 +35,29 @@
         margin: 0;
         padding: 0;
         li {
-            margin-bottom: 22px;
+            margin-bottom: @base-margin;
             img {
                 float: left;
                 width: 80px;
                 height: 80px;
-                margin-right: 20px;
-                border: 8px solid;
+                margin-right: @small-margin * 2;
+                border: @base-padding solid;
             }
             small {
                 font-style: italic;
             }
             p {
-                margin-bottom: 2px;
+                margin-bottom: 0;
             }
         }
     }
 }
 .footer-icon {
-    margin-right: 4px;
+    margin-right: @small-margin;
 }
 .footer-icon-two {
-    margin-right: 5px;
-    margin-left: 8px;
+    margin-right: @small-margin;
+    margin-left: @small-margin;
 }
 
 /* Footer Three*/
@@ -65,8 +65,8 @@
 .footer-three {
     text-align: justify;
     h6 {
-        padding-bottom: 20px;
-        margin-bottom: 25px;
+        padding-bottom: @large-padding;
+        margin-bottom: @base-margin;
         border-bottom: 2px solid;
     }
     ul {
@@ -75,34 +75,33 @@
         padding: 0;
         width: 110%;
         li {
-            margin-bottom: 22px;
             img {
                 float: left;
-                width: 74px;
-                height: 74px;
-                margin-right: 20px;
-                margin-bottom: 20px;
-                border: 8px solid;
+                width: 75px;
+                height: 75px;
+                margin-right: @small-margin * 2;
+                margin-bottom: @small-margin * 2;
+                border: @base-padding solid;
             }
             small {
                 font-style: italic;
             }
             p {
-                margin-bottom: 4px;
+                margin-bottom: 0;
             }
         }
     }
 }
 .bottom-links {
-    margin-top: 13px;
-    margin-bottom: 0px;
-    margin-right: -16px;
+    margin-top: @small-margin;
+    margin-bottom: 0;
+    margin-right: -@small-margin;
 }
 @media (max-width: 979px) {
   .footer-one {
-      margin-bottom: 52px;
+      margin-bottom: @large-margin;
   }
   .footer-two {
-      margin-bottom: 66px;
+      margin-bottom: @large-margin;
   }
 }

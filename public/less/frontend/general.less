@@ -9,7 +9,7 @@
 .navigation-menu {
   position:relative;
   min-height:71px;
-  padding-top:8px;
+  padding-top:@base-padding;
   -moz-box-shadow:0px 1px 5px #000000;
   -webkit-box-shadow:0px 1px 5px #000000;
   box-shadow:0px 1px 5px #000000;
@@ -21,23 +21,23 @@
 }
 .nav-search {
   list-style:none;
-  margin-top:16px;
+  margin-top:@small-margin;
 }
 .nav-dropdown {
   border-radius:0;
-  margin-top:60px;
-  padding:15px;
+  margin-top:@large-margin;
+  padding:@base-padding;
   min-width:250px;
   li {
     border-radius:0;
     background-color:none;
     background:none;
     padding-bottom:0;
-    margin-bottom:-10px;
+    margin-bottom:-@small-margin;
   }
 }
 .open > .nav-dropdown {
-  margin-top:27px !important;
+  margin-top:@base-margin !important;
   opacity:1;
   visibility:visible;
 }
@@ -48,11 +48,11 @@
 @media (max-width: 987px) {
   .phone-space-seven {
       h1 {
-          margin-top: 50px;
+          margin-top: @large-margin;
       }
   }
   .nav-finish {
-      margin-top: 0px;
+      margin-top: 0;
   }
 }
 
@@ -86,7 +86,8 @@
   font-size:0;
   line-height:0;
   text-align:right;
-  margin-top:-8px;
+  margin-top:-@small-margin;
+  margin-bottom: 0;
   li:hover > a, li.current > a {
     color:#ffffff;
   }
@@ -94,7 +95,7 @@
     position:relative;
     display:inline-block;
     float:left;
-    padding:5px;
+    padding:@small-padding;
     border-style:solid;
     border-color:rgba(0,0,0,0.1);
     border-right-width:1px;
@@ -103,7 +104,7 @@
     text-align:left;
     a {
       display:block;
-      padding:0 20px;
+      padding:0 @large-padding;
       text-decoration:none;
       color:#707e8b;
       transition:background 0.4s, color 0.4s;
@@ -117,7 +118,7 @@
       z-index:1000;
       top:100%;
       left:-9999px;
-      margin-top:8px;
+      margin-top:@small-margin;
       background:rgba(255,255,255,0.95);
       box-shadow:0 0 8px rgba(0,0,0,0.3);
       opacity:0;
@@ -196,8 +197,8 @@
   border-top-width:1px;
   line-height:21px;
   a {
-    padding-top:12px;
-    padding-bottom:12px;
+    padding-top:@base-padding;
+    padding-bottom:@base-padding;
   }
   > div {
     top:0;
@@ -228,7 +229,7 @@
   left:100%;
 }
 .nill-box-menu .right li > div {
-  margin:0 8px 0 0;
+  margin-right: @small-margin;
   -o-transform-origin-x:100%;
   -ms-transform-origin-x:100%;
   -moz-transform-origin-x:100%;
@@ -318,7 +319,7 @@
         & > div {
             top: auto;
             bottom: 100%;
-            margin: 0 0 8px;
+            margin: 0 0 @small-margin 0;
             -o-transform-origin-y: 100%;
             -ms-transform-origin-y: 100%;
             -moz-transform-origin-y: 100%;
@@ -365,7 +366,7 @@
     li {
         & > div {
             top: 0;
-            margin: 0 0 0 8px;
+            margin: 0 0 0 @small-margin;
             &:after {
                 top: 0;
                 bottom: auto;
@@ -402,7 +403,7 @@
     li {
         & > div {
             top: 0;
-            margin: 0 8px 0 0;
+            margin: 0 @small-margin 0 0;
             -o-transform-origin-x: 100%;
             -ms-transform-origin-x: 100%;
             -moz-transform-origin-x: 100%;
@@ -427,7 +428,7 @@
         }
         li {
             & > div {
-                margin: 0 8px 0 0;
+                margin: 0 @small-margin 0 0;
                 -o-transform-origin-x: 100%;
                 -ms-transform-origin-x: 100%;
                 -moz-transform-origin-x: 100%;
@@ -572,7 +573,7 @@
                 display: block;
                 float: left;
                 width: 16px;
-                margin: 0 10px 0 -4px;
+                margin: 0 @small-margin 0 -4px;
                 font-size: 16px;
                 line-height: inherit;
                 text-align: center;
@@ -584,7 +585,7 @@
             & > .fa-indicator {
                 float: right;
                 width: 10px;
-                margin: 0 -10px 0 10px;
+                margin: 0 -@small-margin 0 @small-margin;
                 font-size: 10px;
             }
         }
@@ -594,11 +595,11 @@
 /* logo */
 
 .logo {
-    padding-top: 6px;
+    padding-top: @small-padding;
 }
 .logo-xtwo {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: @large-padding;
+    padding-bottom: @large-padding;
     text-align: center;
 }
 
@@ -683,7 +684,7 @@
         box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
         width: 178px;
         p {
-            padding: 0 20px;
+            padding: 0 @large-padding;
             font-size: 15px;
             color: #fff;
             font-weight: 500;
@@ -694,7 +695,7 @@
             box-shadow: none;
         }
         form {
-            padding: 0 20px;
+            padding: 0 @large-padding;
         }
     }
 }
