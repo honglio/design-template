@@ -1,16 +1,29 @@
+// Main
+@import "other-less/lesshat.less";
 @import "theme/variables.less";
+
+// Bootstrap
+// Core variables and mixins
+@import "bs-less/variables.less";
+@import "bs-less/mixins.less";
 
 /* Common */
 @import "frontend/typography.less";
 @import "frontend/footer.less";
 
-/* Page */
+// Other
+// @import "other-less/isotope.less";
+@import "frontend/miscellaneous.less";
+@import "frontend/bs-overwrite.less";
+
+/* Page (element) */
 @import "frontend/general.less";
 @import "frontend/blog.less";
 @import "frontend/portfolio.less";
 @import "frontend/about-us.less";
 @import "frontend/contact.less";
 @import "frontend/shop.less";
+
 /* Module */
 @import "frontend/module.less";
 @import "frontend/blog-modul.less";
@@ -22,3 +35,5 @@
 
 /* Effects */
 @import "frontend/caption.less";
+
+// @import "neon-less/responsive.less";
