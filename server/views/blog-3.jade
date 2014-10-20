@@ -7,7 +7,7 @@ block content
       .row
         .col-sm-9
           h1 Blog
-          ol.breadcrumb.bc-3
+          ol.breadcrumb
             li
               a(href='/')
                 | Home
@@ -21,10 +21,11 @@ block content
   section.container-fluid.blog
     .container.modul-space-fourteen
       .row
+        // Blog Post
         .col-md-8
           .blog-posts
             //
-               Blog Post
+               Post One
             .blog-post
               .post-thumb
                 a(href='/blog-single-1')
@@ -40,7 +41,7 @@ block content
                 p
                   | Paid was hill sir high. For him precaution any advantages dissimilar comparison few terminated projecting. Prevailed discovery immediate objection of ye at. Repair summer one winter living feebly pretty his. In so sense am known these since.
             //
-               Blog Post
+               Post Two
             .blog-post
               .post-thumb
                 a(href='/blog-single-1')
@@ -56,7 +57,7 @@ block content
                 p
                   | Paid was hill sir high. For him precaution any advantages dissimilar comparison few terminated projecting. Prevailed discovery immediate objection of ye at. Repair summer one winter living feebly pretty his. In so sense am known these since.
             //
-               Blog Post
+              Post Three
             .blog-post
               .post-thumb
                 a(href='/blog-single-1')
@@ -72,21 +73,28 @@ block content
                 p
                   | Paid was hill sir high. For him precaution any advantages dissimilar comparison few terminated projecting. Prevailed discovery immediate objection of ye at. Repair summer one winter living feebly pretty his. In so sense am known these since.
             //
-               Blog Pagination
-            .text-center
-              ul.pagination
-                li.active
-                  a(href='#') 1
-                li
-                  a(href='#') 2
-                li
-                  a(href='#') 3
-                li
-                  a(href='#') 4
-                li
-                  a(href='#') 5
-                li
-                  a(href='#') Next
+               Page Navi
+            .modul-space-fifteen
+              .row
+                .col-md-12.text-center
+                  .pagination.pagination-default
+                    a.btn.btn-default.previous(href='#fakelink')
+                      span.fui-arrow-left
+                      | OLDER
+                    ul
+                      li.active
+                        a(href='#fakelink') 1
+                      li
+                        a(href='#fakelink') 2
+                      li
+                        a(href='#fakelink') 3
+                      li
+                        a(href='#fakelink') 4
+                      li
+                        a(href='#fakelink') 5
+                    a.btn.btn-default.next(href='#fakelink')
+                      | NEWER
+                      span.fui-arrow-right
         .col-md-4
           //
              List Sidebar
@@ -116,10 +124,11 @@ block content
                     i.fa.fa-angle-right
                     |  Web Design
                     span (1)
-          // Comments Sidebar
-          .sidebar
+
+            //- Comments Sidebar
             h3
-              | Recent Comments
+              i.fa.fa-comments
+              |  Recent Comments
             .sidebar-content
               ul.discussion-list
                 li
