@@ -28,23 +28,13 @@
 /* Blog Sidebar */
 
 .sidebar {
-    margin-top: -@base-margin;
     padding: 0;
     margin-bottom: @large-margin;
     h6 {
         margin-bottom: @base-margin;
     }
 }
-.sidebar .social {
-    margin-top: @base-margin;
-}
-.sidebar .archives {
-    margin-top: @base-margin;
-}
-.sidebar .pool {
-    margin-top: @base-margin;
-}
-.sidebar .tag-cloud {
+.sidebar-content {
     margin-top: @base-margin;
 }
 .sidebar-icon {
@@ -72,7 +62,7 @@
 .blog-slider-list p {
     padding-right: @base-margin;
     padding-left: @base-margin;
-    padding-bottom: @base-margin;
+    padding-bottom: @large-padding;
 }
 .blog-slider-list-img {
     width: 100%;
@@ -125,7 +115,7 @@
     padding: @large-padding;
     border-radius: 0;
     border: 2px solid;
-    margin-bottom: @large-margin;
+    margin-bottom: @base-margin;
     .icon {
         display: block;
         font-size: @large-margin;
@@ -264,7 +254,7 @@
             right: -50px;
             top: 0;
             bottom: 0;
-            width: 1px;
+            width: 2px;
             background: @border-default;
         }
 
@@ -274,11 +264,8 @@
             border-bottom: 1px solid @border-default;
             .clearfix;
 
-            .post-thumb, .post-details {
-                float: left;
-            }
-
             .post-thumb {
+                float: left;
                 width: 35%;
 
                 a {
@@ -292,22 +279,19 @@
             .post-details {
                 width: 65%;
                 float: right;
-                padding-left: @base-padding*2;
-                .box-sizing(border-box);
+                padding-left: @large-padding;
 
                 h3 {
                     margin-top: 0;
                 }
 
                 .post-meta {
-                    margin-bottom: @base-padding;
-
                     .meta-info {
                         display: inline-block;
                         font-size: @font-size-base - 1;
 
                         + .meta-info {
-                            margin-left: @base-margin/2;
+                            margin-left: @small-margin;
 
                             &:before {
                                 display: inline-block;
@@ -322,12 +306,11 @@
                 }
 
                 p {
-
                     &:before {
                         content: '\2014 \00A0';
                         display: block;
                         line-height: 1;
-                        margin-bottom: @base-padding/2;
+                        margin-bottom: @small-padding;
                         .opacity(.5);
                     }
                 }
@@ -335,32 +318,9 @@
         }
     }
 
-    .comments-list {
-        @thumb-width: 10%;
-
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        margin-bottom: @large-margin;
-
-        ul {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            margin-left: @thumb-width;
-
-            li {
-                margin-top: @base-margin;
-            }
-        }
-
-        li {
-            margin-bottom: @base-margin;
-        }
-    }
-
     .sidebar {
         position: relative;
+        margin-top: -@base-margin;
         margin-left: @large-margin;
         margin-bottom: @large-margin;
 
@@ -368,10 +328,11 @@
             font-size: @font-size-h4 + 2;
             margin-bottom: @base-padding;
             border-bottom: 1px solid @border-default;
-            padding-bottom: @base-margin/2;
+            padding-bottom: @small-margin;
         }
 
         .sidebar-content {
+            margin-top: 0;
 
             ul {
                 list-style: none;
@@ -380,14 +341,12 @@
 
                 li {
                     display: block;
-                    padding: @base-padding @base-padding;
+                    padding: @small-padding;
 
                     a {
-                        .transall;
-
                         span {
                             .opacity(.5);
-                            margin-left: @base-padding/2;
+                            margin-left: @small-padding;
                         }
                     }
                 }
@@ -406,28 +365,15 @@
                 li {
                     .clearfix;
 
-
-                    a {
-                        padding-left: 0;
-                        padding-right: 0;
-
-                        &:before {
-                            display: none;
-                        }
-                    }
-
-
                     .thumb {
                         float: left;
                         width: 20%;
-                        .box-sizing(border-box);
                     }
 
                     .details {
                         float: right;
                         width: 80%;
-                        padding-left: @base-margin/2;
-                        .box-sizing(border-box);
+                        padding-left: @large-padding;
 
                         a {
                             font-weight: bold;
@@ -435,7 +381,7 @@
 
                         p {
                             font-size: @font-size-base - 1;
-                            margin-top: @base-padding/2;
+                            margin-top: @small-padding;
                         }
                     }
                 }
