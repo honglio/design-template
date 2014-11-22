@@ -10,7 +10,7 @@ exports.notfound = function(req, res) {
  */
 
 exports.home = function(req, res) {
-  res.render('home', {
+  res.render('home/home', {
     title: '首页'
   });
 };
@@ -21,7 +21,7 @@ exports.home = function(req, res) {
  */
 
 exports.home_2_1 = function(req, res) {
-  res.render('home-2-1', {
+  res.render('home/home-2-1', {
     title: '首页'
   });
 };
@@ -32,7 +32,7 @@ exports.home_2_1 = function(req, res) {
  */
 
 exports.home_3_1 = function(req, res) {
-  res.render('home-3-1', {
+  res.render('home/home-3-1', {
     title: '首页'
   });
 };
@@ -43,7 +43,7 @@ exports.home_3_1 = function(req, res) {
  */
 
 exports.home_4_1 = function(req, res) {
-  res.render('home-4-1', {
+  res.render('home/home-4-1', {
     title: '首页'
   });
 };
@@ -54,7 +54,7 @@ exports.home_4_1 = function(req, res) {
  */
 
 exports.home_5_1 = function(req, res) {
-  res.render('home-5-1', {
+  res.render('home/home-5-1', {
     title: '首页'
   });
 };
@@ -65,7 +65,7 @@ exports.home_5_1 = function(req, res) {
  */
 
 exports.home_2_2 = function(req, res) {
-  res.render('home-2-2', {
+  res.render('home/home-2-2', {
     title: '首页'
   });
 };
@@ -76,7 +76,7 @@ exports.home_2_2 = function(req, res) {
  */
 
 exports.home_3_2 = function(req, res) {
-  res.render('home-3-2', {
+  res.render('home/home-3-2', {
     title: '首页'
   });
 };
@@ -87,7 +87,7 @@ exports.home_3_2 = function(req, res) {
  */
 
 exports.home_4_2 = function(req, res) {
-  res.render('home-4-2', {
+  res.render('home/home-4-2', {
     title: '首页'
   });
 };
@@ -98,7 +98,7 @@ exports.home_4_2 = function(req, res) {
  */
 
 exports.home_5_2 = function(req, res) {
-  res.render('home-5-2', {
+  res.render('home/home-5-2', {
     title: '首页'
   });
 };
@@ -109,7 +109,7 @@ exports.home_5_2 = function(req, res) {
  */
 
 exports.module_advert_1 = function(req, res) {
-  res.render('module-advert-1', {
+  res.render('module/module-advert-1', {
     title: '模块-广告'
   });
 };
@@ -120,7 +120,7 @@ exports.module_advert_1 = function(req, res) {
  */
 
 exports.module_advert_2 = function(req, res) {
-  res.render('module-advert-2', {
+  res.render('module/module-advert-2', {
     title: '模块-广告'
   });
 };
@@ -131,7 +131,7 @@ exports.module_advert_2 = function(req, res) {
  */
 
 exports.module_advert_3 = function(req, res) {
-  res.render('module-advert-3', {
+  res.render('module/module-advert-3', {
     title: '模块-广告'
   });
 };
@@ -142,7 +142,7 @@ exports.module_advert_3 = function(req, res) {
  */
 
 exports.module_advert_4 = function(req, res) {
-  res.render('module-advert-4', {
+  res.render('module/module-advert-4', {
     title: '模块-广告'
   });
 };
@@ -153,7 +153,7 @@ exports.module_advert_4 = function(req, res) {
  */
 
 exports.module_advert_5 = function(req, res) {
-  res.render('module-advert-5', {
+  res.render('module/module-advert-5', {
     title: '模块-广告'
   });
 };
@@ -164,7 +164,7 @@ exports.module_advert_5 = function(req, res) {
  */
 
 exports.module_advert_6 = function(req, res) {
-  res.render('module-advert-6', {
+  res.render('module/module-advert-6', {
     title: '模块-广告'
   });
 };
@@ -175,7 +175,7 @@ exports.module_advert_6 = function(req, res) {
  */
 
 exports.module_slider_1 = function(req, res) {
-  res.render('module-slider-1', {
+  res.render('module/module-slider-1', {
     title: '模块-slider'
   });
 };
@@ -186,7 +186,7 @@ exports.module_slider_1 = function(req, res) {
  */
 
 exports.module_slider_2 = function(req, res) {
-  res.render('module-slider-2', {
+  res.render('module/module-slider-2', {
     title: '模块-slider'
   });
 };
@@ -197,7 +197,7 @@ exports.module_slider_2 = function(req, res) {
  */
 
 exports.module_slider_3 = function(req, res) {
-  res.render('module-slider-3', {
+  res.render('module/module-slider-3', {
     title: '模块-slider'
   });
 };
@@ -208,7 +208,7 @@ exports.module_slider_3 = function(req, res) {
  */
 
 exports.module_slider_4 = function(req, res) {
-  res.render('module-slider-4', {
+  res.render('module/module-slider-4', {
     title: '模块-slider'
   });
 };
@@ -219,7 +219,7 @@ exports.module_slider_4 = function(req, res) {
  */
 
 exports.module_mixitup_1 = function(req, res) {
-  res.render('module-mixitup-1', {
+  res.render('module/module-mixitup-1', {
     title: '模块-mixitup'
   });
 };
@@ -230,7 +230,7 @@ exports.module_mixitup_1 = function(req, res) {
  */
 
 exports.module_mixitup_2 = function(req, res) {
-  res.render('module-mixitup-2', {
+  res.render('module/module-mixitup-2', {
     title: '模块-mixitup'
   });
 };
@@ -241,7 +241,7 @@ exports.module_mixitup_2 = function(req, res) {
  */
 
 exports.module_service_1 = function(req, res) {
-  res.render('module-service-1', {
+  res.render('module/module-service-1', {
     title: '模块-service'
   });
 };
@@ -252,7 +252,7 @@ exports.module_service_1 = function(req, res) {
  */
 
 exports.module_service_2 = function(req, res) {
-  res.render('module-service-2', {
+  res.render('module/module-service-2', {
     title: '模块-service'
   });
 };
@@ -263,7 +263,7 @@ exports.module_service_2 = function(req, res) {
  */
 
 exports.module_service_3 = function(req, res) {
-  res.render('module-service-3', {
+  res.render('module/module-service-3', {
     title: '模块-service'
   });
 };
@@ -274,7 +274,7 @@ exports.module_service_3 = function(req, res) {
  */
 
 exports.module_service_4 = function(req, res) {
-  res.render('module-service-4', {
+  res.render('module/module-service-4', {
     title: '模块-service'
   });
 };
@@ -285,7 +285,7 @@ exports.module_service_4 = function(req, res) {
  */
 
 exports.module_client = function(req, res) {
-  res.render('module-client', {
+  res.render('module/module-client', {
     title: '模块-client'
   });
 };
@@ -296,7 +296,7 @@ exports.module_client = function(req, res) {
  */
 
 exports.module_price = function(req, res) {
-  res.render('module-price', {
+  res.render('module/module-price', {
     title: '模块-price'
   });
 };
@@ -307,7 +307,7 @@ exports.module_price = function(req, res) {
  */
 
 exports.module_team = function(req, res) {
-  res.render('module-team', {
+  res.render('module/module-team', {
     title: '模块-team'
   });
 };
@@ -318,7 +318,7 @@ exports.module_team = function(req, res) {
  */
 
 exports.module_twitter = function(req, res) {
-  res.render('module-twitter', {
+  res.render('module/module-twitter', {
     title: '模块-twitter'
   });
 };
@@ -329,7 +329,7 @@ exports.module_twitter = function(req, res) {
  */
 
 exports.page_about_1 = function(req, res) {
-  res.render('page-about-1', {
+  res.render('page/page-about-1', {
     title: '页面-about'
   });
 };
@@ -340,7 +340,7 @@ exports.page_about_1 = function(req, res) {
  */
 
 exports.page_about_2 = function(req, res) {
-  res.render('page-about-2', {
+  res.render('page/page-about-2', {
     title: '页面-about'
   });
 };
@@ -351,7 +351,7 @@ exports.page_about_2 = function(req, res) {
  */
 
 exports.page_about_3 = function(req, res) {
-  res.render('page-about-3', {
+  res.render('page/page-about-3', {
     title: '页面-about'
   });
 };
@@ -362,7 +362,7 @@ exports.page_about_3 = function(req, res) {
  */
 
 exports.page_services_1 = function(req, res) {
-  res.render('page-services-1', {
+  res.render('page/page-services-1', {
     title: '页面-services'
   });
 };
@@ -373,7 +373,7 @@ exports.page_services_1 = function(req, res) {
  */
 
 exports.page_services_2 = function(req, res) {
-  res.render('page-services-2', {
+  res.render('page/page-services-2', {
     title: '页面-services'
   });
 };
@@ -384,7 +384,7 @@ exports.page_services_2 = function(req, res) {
  */
 
 exports.page_contact = function(req, res) {
-  res.render('page-contact', {
+  res.render('page/page-contact', {
     title: '页面-contact'
   });
 };
@@ -395,7 +395,7 @@ exports.page_contact = function(req, res) {
  */
 
 exports.page_portfolio_single_1 = function(req, res) {
-  res.render('page-portfolio-single-1', {
+  res.render('page/page-portfolio-single-1', {
     title: '页面-portfolio-single'
   });
 };
@@ -406,7 +406,7 @@ exports.page_portfolio_single_1 = function(req, res) {
  */
 
 exports.page_portfolio_single_2 = function(req, res) {
-  res.render('page-portfolio-single-2', {
+  res.render('page/page-portfolio-single-2', {
     title: '页面-portfolio-single'
   });
 };
@@ -417,7 +417,7 @@ exports.page_portfolio_single_2 = function(req, res) {
  */
 
 exports.blog_1 = function(req, res) {
-  res.render('blog-1', {
+  res.render('blog/blog-1', {
     title: 'blog'
   });
 };
@@ -428,7 +428,7 @@ exports.blog_1 = function(req, res) {
  */
 
 exports.blog_2 = function(req, res) {
-  res.render('blog-2', {
+  res.render('blog/blog-2', {
     title: 'blog'
   });
 };
@@ -439,7 +439,7 @@ exports.blog_2 = function(req, res) {
  */
 
 exports.blog_3 = function(req, res) {
-  res.render('blog-3', {
+  res.render('blog/blog-3', {
     title: 'blog'
   });
 };
@@ -450,7 +450,7 @@ exports.blog_3 = function(req, res) {
  */
 
 exports.blog_single_1 = function(req, res) {
-  res.render('blog-single-1', {
+  res.render('blog/blog-single-1', {
     title: 'blog single'
   });
 };
@@ -461,7 +461,7 @@ exports.blog_single_1 = function(req, res) {
  */
 
 exports.blog_single_2 = function(req, res) {
-  res.render('blog-single-2', {
+  res.render('blog/blog-single-2', {
     title: 'blog single'
   });
 };
@@ -472,7 +472,7 @@ exports.blog_single_2 = function(req, res) {
  */
 
 exports.blog_single_3 = function(req, res) {
-  res.render('blog-single-3', {
+  res.render('blog/blog-single-3', {
     title: 'blog single'
   });
 };
@@ -483,7 +483,7 @@ exports.blog_single_3 = function(req, res) {
  */
 
 exports.shop = function(req, res) {
-  res.render('shop', {
+  res.render('shop/shop', {
     title: '购物'
   });
 };
@@ -494,7 +494,7 @@ exports.shop = function(req, res) {
  */
 
 exports.shop_detail = function(req, res) {
-  res.render('shop-detail', {
+  res.render('shop/shop-detail', {
     title: '购物 detail'
   });
 };
@@ -505,7 +505,7 @@ exports.shop_detail = function(req, res) {
  */
 
 exports.shop_checkout = function(req, res) {
-  res.render('shop-checkout', {
+  res.render('shop/shop-checkout', {
     title: '购物 结算'
   });
 };
