@@ -83,6 +83,18 @@ module.exports = function (app, passport) {
     app.get('/shop-detail', index.shop_detail);
     app.get('/shop-checkout', index.shop_checkout);
 
+    app.get('/ui-alerts', index.ui_alerts);
+    app.get('/ui-badges-labels', index.ui_badges_labels);
+    app.get('/ui-blockquotes', index.ui_blockquotes);
+    app.get('/ui-breadcrumbs', index.ui_breadcrumbs);
+    app.get('/ui-modals', index.ui_modals);
+    app.get('/ui-navbars', index.ui_navbars);
+    app.get('/ui-pagination', index.ui_pagination);
+    app.get('/ui-panels', index.ui_panels);
+    app.get('/ui-progress-bars', index.ui_progress_bars);
+    app.get('/ui-tabs-accordions', index.ui_tabs_accordions);
+    app.get('/ui-typography', index.ui_typography);
+
     // page not found
     app.get('*', index.notfound);
 };

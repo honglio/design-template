@@ -1,0 +1,179 @@
+extends ../layout
+
+block scripts
+  script(type='text/javascript').
+    function showAjaxModal() {
+      jQuery('#modal-7').modal('show', {backdrop: 'static'});
+      $.ajax({
+        url: "data/ajax-content.txt",
+        success: function(response)
+        {
+          jQuery('#modal-7 .modal-body').html(response);
+        }
+      });
+    }
+
+block content
+  .container-fluid
+    .container
+      h2= title
+      br
+      .row
+        .col-md-12
+          .panel.panel-primary
+            .panel-heading
+              .panel-title Modals Examples
+            table.table.table-bordered
+              thead
+                tr
+                  th(width='30%') Modal Type
+                  th Example
+              tbody
+                tr
+                  td.middle-align Basic
+                  td
+                    a.btn.btn-default(href='javascript:;', onclick='jQuery(\'#modal-1\').modal(\'show\');') Show Me
+                tr
+                  td.middle-align Custom Width
+                  td
+                    a.btn.btn-default(href='javascript:;', onclick='jQuery(\'#modal-2\').modal(\'show\');') Show Me
+                tr
+                  td.middle-align Full Width
+                  td
+                    a.btn.btn-default(href='javascript:;', onclick='jQuery(\'#modal-3\').modal(\'show\');') Show Me
+                tr
+                  td.middle-align Confirm to Close
+                  td
+                    a.btn.btn-default(href='javascript:;', onclick='jQuery(\'#modal-4\').modal(\'show\', {backdrop: \'static\'});') Show Me
+                tr
+                  td.middle-align Long Modal
+                  td
+                    a.btn.btn-default(href='javascript:;', onclick='jQuery(\'#modal-5\').modal(\'show\', {backdrop: \'static\'});') Show Me
+                tr
+                  td.middle-align Responsive Modal
+                  td
+                    a.btn.btn-default(href='javascript:;', onclick='jQuery(\'#modal-6\').modal(\'show\', {backdrop: \'static\'});') Show Me
+                tr
+                  td.middle-align Ajax Modal
+                  td
+                    a.btn.btn-default(href='javascript:;', onclick='showAjaxModal();') Show Me
+      //
+         Modal 1 (Basic)
+      #modal-1.modal.fade
+        .modal-dialog
+          .modal-content
+            .modal-header
+              button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+              h4.modal-title Basic Modal
+            .modal-body
+              | Hello I am a Modal!
+            .modal-footer
+              button.btn.btn-default(type='button', data-dismiss='modal') Close
+              button.btn.btn-info(type='button') Save changes
+      //
+         Modal 2 (Custom Width)
+      #modal-2.modal.fade.custom-width
+        .modal-dialog(style='width: 60%;')
+          .modal-content
+            .modal-header
+              button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+              h4.modal-title Custom Width Modal
+            .modal-body
+              | Any type of width can be applied.
+            .modal-footer
+              button.btn.btn-default(type='button', data-dismiss='modal') Close
+              button.btn.btn-info(type='button') Save changes
+      //
+         Modal 3 (Custom Width)
+      #modal-3.modal.fade.custom-width
+        .modal-dialog(style='width: 96%;')
+          .modal-content
+            .modal-header
+              button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+              h4.modal-title Full width
+            .modal-body
+              | Its about 100%
+            .modal-footer
+              button.btn.btn-default(type='button', data-dismiss='modal') Close
+              button.btn.btn-info(type='button') Save changes
+      //
+         Modal 4 (Confirm)
+      #modal-4.modal.fade(data-backdrop='static')
+        .modal-dialog
+          .modal-content
+            .modal-header
+              h4.modal-title Confirm Modal
+            .modal-body
+              | You can close this modal when you click on button only!
+            .modal-footer
+              button.btn.btn-info(type='button', data-dismiss='modal') Continue
+      //
+         Modal 5 (Long Modal)
+      #modal-5.modal.fade
+        .modal-dialog
+          .modal-content
+            .modal-header
+              button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+              h4.modal-title Long Height Modal
+            .modal-body
+              img.img-responsive(src='assets/images/burjkhalifa.jpg', alt='')
+            .modal-footer
+              button.btn.btn-default(type='button', data-dismiss='modal') Close
+              button.btn.btn-info(type='button') Save changes
+      //
+         Modal 6 (Long Modal)
+      #modal-6.modal.fade
+        .modal-dialog
+          .modal-content
+            .modal-header
+              button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+              h4.modal-title Modal Content is Responsive
+            .modal-body
+              .row
+                .col-md-6
+                  .form-group
+                    label.control-label(for='field-1') Name
+                    input#field-1.form-control(type='text', placeholder='John')
+                .col-md-6
+                  .form-group
+                    label.control-label(for='field-2') Surname
+                    input#field-2.form-control(type='text', placeholder='Doe')
+              .row
+                .col-md-12
+                  .form-group
+                    label.control-label(for='field-3') Address
+                    input#field-3.form-control(type='text', placeholder='Address')
+              .row
+                .col-md-4
+                  .form-group
+                    label.control-label(for='field-4') City
+                    input#field-4.form-control(type='text', placeholder='Boston')
+                .col-md-4
+                  .form-group
+                    label.control-label(for='field-5') Country
+                    input#field-5.form-control(type='text', placeholder='United States')
+                .col-md-4
+                  .form-group
+                    label.control-label(for='field-6') Zip
+                    input#field-6.form-control(type='text', placeholder='123456')
+              .row
+                .col-md-12
+                  .form-group.no-margin
+                    label.control-label(for='field-7') Personal Info
+                    textarea#field-7.form-control.autogrow(placeholder='Write something about yourself')
+            .modal-footer
+              button.btn.btn-default(type='button', data-dismiss='modal') Close
+              button.btn.btn-info(type='button') Save changes
+      //
+         Modal 7 (Ajax Modal)
+      #modal-7.modal.fade
+        .modal-dialog
+          .modal-content
+            .modal-header
+              button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+              h4.modal-title Dynamic Content
+            .modal-body
+              | Content is loading...
+            .modal-footer
+              button.btn.btn-default(type='button', data-dismiss='modal') Close
+              button.btn.btn-info(type='button') Save changes

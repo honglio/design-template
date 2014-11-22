@@ -1,0 +1,58 @@
+extends ../layout
+
+block content
+  .container-fluid
+    .container
+      h2= title
+      br
+      .row
+        .col-md-12
+          .panel.panel-primary
+            .panel-heading
+              .panel-title Breadcrumb Types
+              .panel-options
+                a.bg(href='#sample-modal', data-toggle='modal', data-target='#sample-modal-dialog-1')
+                  i.fa.fa-cog
+                a(href='#', data-rel='collapse')
+                  i.fa.fa-chevron-down
+                a(href='#', data-rel='reload')
+                  i.fa.fa-refresh
+                a(href='#', data-rel='close')
+                  i.fa.fa-times
+            .panel-body
+              //
+                 Breadcrumb 3
+              ol.breadcrumb.bc-3
+                li
+                  a(href='#')
+                    i.fa.fa-folder
+                    |  Dashboard
+                li
+                  a(href='#') Appearance
+                li
+                  a(href='#') Plugins
+                li.active Widgets
+              //
+                 Breadcrumb 2
+              ol.breadcrumb.bc-2
+                li
+                  a(href='#')
+                    i.fa.fa-folder
+                    |  Dashboard
+                li
+                  a(href='#') Appearance
+                li
+                  a(href='#') Plugins
+                li.active Widgets
+              //
+                 Breadcrumb 1
+              ol.breadcrumb
+                li
+                  a(href='#')
+                    i.fa.fa-folder
+                    |  Dashboard
+                li
+                  a(href='#') Appearance
+                li
+                  a(href='#') Plugins
+                li.active Widgets

@@ -510,11 +510,126 @@ exports.shop_checkout = function(req, res) {
   });
 };
 
+/**
+ * GET /ui_alerts
+ * ui alerts page.
+ */
 
+exports.ui_alerts = function(req, res) {
+  res.render('ui/ui-alerts', {
+    title: 'UI Alerts'
+  });
+};
 
+/**
+ * GET /ui_badges_label
+ * ui badges label page.
+ */
 
+exports.ui_badges_labels = function(req, res) {
+  res.render('ui/ui-badges-labels', {
+    title: 'UI Badges Labels'
+  });
+};
 
+/**
+ * GET /ui_blockquotes
+ * ui blockquotes page.
+ */
 
+exports.ui_blockquotes = function(req, res) {
+  res.render('ui/ui-blockquotes', {
+    title: 'UI Blockquotes'
+  });
+};
+
+/**
+ * GET /ui_breadcrumbs
+ * ui breadcrumbs page.
+ */
+
+exports.ui_breadcrumbs = function(req, res) {
+  res.render('ui/ui-breadcrumbs', {
+    title: 'UI Breadcrumbs'
+  });
+};
+
+/**
+ * GET /ui_modals
+ * ui modals page.
+ */
+
+exports.ui_modals = function(req, res) {
+  res.render('ui/ui-modals', {
+    title: 'UI Modals'
+  });
+};
+
+/**
+ * GET /ui_navbars
+ * ui navbars page.
+ */
+
+exports.ui_navbars = function(req, res) {
+  res.render('ui/ui-navbars', {
+    title: 'UI Navbars'
+  });
+};
+
+/**
+ * GET /ui_pagination
+ * ui pagination page.
+ */
+
+exports.ui_pagination = function(req, res) {
+  res.render('ui/ui-pagination', {
+    title: 'UI Pagination'
+  });
+};
+
+/**
+ * GET /ui_panels
+ * ui panels page.
+ */
+
+exports.ui_panels = function(req, res) {
+  res.render('ui/ui-panels', {
+    title: 'UI Panels'
+  });
+};
+
+/**
+ * GET /ui_progress_bars
+ * ui progress bars page.
+ */
+
+exports.ui_progress_bars = function(req, res) {
+  res.render('ui/ui-progress-bars', {
+    title: 'UI Progress Bars'
+  });
+};
+
+/**
+ * GET /ui_tabs_accordions
+ * ui tabs accordions page.
+ */
+
+exports.ui_tabs_accordions = function(req, res) {
+  res.render('ui/ui-tabs-accordions', {
+    title: 'UI Tabs Accordions'
+  });
+};
+
+/**
+ * GET /ui_typography
+ * ui typography page.
+ */
+
+exports.ui_typography = function(req, res) {
+  res.render('ui/ui-typography', {
+    title: 'UI Typography'
+  });
+};
 
 
 /**

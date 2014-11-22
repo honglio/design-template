@@ -1,0 +1,110 @@
+extends ../layout
+
+block content
+  .container-fluid
+    .container
+      h2= title
+      br
+      .row
+        .col-md-12
+          .panel.panel-primary
+            .panel-heading
+              .panel-title Pagination & Pager
+              .panel-options
+                a(href='#', data-rel='collapse')
+                  i.fa.fa-chevron-down
+                a.bg(href='#', data-rel='close')
+                  i.fa.fa-times
+            .panel-body
+              .row
+                .col-md-6
+                  h5 Normal Pagination
+                  ul.pagination
+                    li
+                      a(href='#')
+                        i.fa.fa-arrow-left
+                    li
+                      a(href='#') 1
+                    li.active
+                      a(href='#') 2
+                    li
+                      a(href='#') 3
+                    li.disabled
+                      a(href='#') 4
+                    li
+                      a(href='#') 5
+                    li
+                      a(href='#') 6
+                    li
+                      a(href='#')
+                        i.fa.fa-arrow-right
+                  p
+                    strong Sizes
+                  ul.pagination.pagination-sm
+                    li
+                      a(href='#')
+                        i.fa.fa-arrow-left
+                    li
+                      a(href='#') 1
+                    li.active
+                      a(href='#') 2
+                    li
+                      a(href='#') 3
+                    li.disabled
+                      a(href='#') 4
+                    li
+                      a(href='#') 5
+                    li
+                      a(href='#') 6
+                    li
+                      a(href='#')
+                        i.fa.fa-arrow-right
+                  .clear
+                  ul.pagination.pagination-lg
+                    li
+                      a(href='#')
+                        i.fa.fa-arrow-left
+                    li
+                      a(href='#') 1
+                    li.active
+                      a(href='#') 2
+                    li
+                      a(href='#') 3
+                    li
+                      a(href='#') 4
+                    li
+                      a(href='#')
+                        i.fa.fa-arrow-right
+                .col-md-6
+                  h5 Pager
+                  ul.pager
+                    li
+                      a(href='#')
+                        i.fa.fa-arrow-left
+                        | Previous
+                    li
+                      a(href='#')
+                        | Next
+                        i.fa.fa-arrow-right
+                  p
+                    strong Floated
+                  ul.pager
+                    li.previous
+                      a(href='#')
+                        i.fa.fa-arrow-left
+                        | Previous
+                    li.next
+                      a(href='#')
+                        | Next
+                        i.fa.fa-arrow-right
+                  p
+                    strong Disabled
+                  ul.pager
+                    li.previous.disabled
+                      a(href='#')
+                        i.fa.fa-arrow-left
+                        | Previous
+                    li.next
+                      a(href='#')
+                        | Next
+                        i.fa.fa-arrow-right
