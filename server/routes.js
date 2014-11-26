@@ -62,6 +62,7 @@ module.exports = function (app, passport) {
     app.get('/page-about-1', index.page_about_1);
     app.get('/page-about-2', index.page_about_2);
     app.get('/page-about-3', index.page_about_3);
+    app.get('/page-about-4', index.page_about_4);
 
     app.get('/page-services-1', index.page_services_1);
     app.get('/page-services-2', index.page_services_2);
@@ -78,6 +79,7 @@ module.exports = function (app, passport) {
     app.get('/blog-single-1', index.blog_single_1);
     app.get('/blog-single-2', index.blog_single_2);
     app.get('/blog-single-3', index.blog_single_3);
+    app.get('/blog-single-4', index.blog_single_4);
 
     app.get('/shop', index.shop);
     app.get('/shop-detail', index.shop_detail);

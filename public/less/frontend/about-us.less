@@ -1,10 +1,66 @@
 /************************************************************************************************************************/
-
 /* About Us Page */
-
 /************************************************************************************************************************/
 
 .aboutus-single-title {
-  margin-top: -@base-margin;
-  margin-bottom: @base-margin;
+    margin-top: -@base-margin;
+    margin-bottom: @base-margin;
+}
+.bg-gray {
+    background: #f2f2f2;
+}
+.staff-member {
+    text-align: center;
+    padding: 10px 0;
+    margin: 30px 0;
+}
+.staff-member .image {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+.staff-member h4 small {
+    display: block;
+    margin-top: 10px;
+    font-weight: 400;
+    font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.staff-member p:before {
+    content: '\2014 \00A0';
+    display: block;
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 5px;
+}
+.staff-member .social-networks {
+    margin-top: 15px;
+}
+.social-networks {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.social-networks > li {
+    display: inline-block;
+    line-height: 1;
+}
+.social-networks > li a {
+    display: inline-block;
+    background: #ffffff;
+    line-height: 24px;
+    text-align: center;
+    font-size: 12px;
+    color: #cccccc;
+    margin-right: 5px;
+    width: 24px;
+    height: 24px;
+    -moz-transition: all 450ms;
+    -o-transition: all 450ms;
+    -webkit-transition: all 450ms;
+    transition: all 450ms;
+    -webkit-border-radius: 2px;
+    -webkit-background-clip: padding-box;
+    -moz-border-radius: 2px;
+    -moz-background-clip: padding;
+    border-radius: 2px;
+    background-clip: padding-box;
 }

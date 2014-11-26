@@ -242,9 +242,8 @@
 
 /**********************************************************************/
 
-.blog {
-
-    .blog-posts {
+.blog{
+    .blog-posts, .blog-single {
         position: relative;
 
         &:after {
@@ -305,18 +304,75 @@
                     }
                 }
 
-                p {
-                    &:before {
-                        content: '\2014 \00A0';
-                        display: block;
-                        line-height: 1;
-                        margin-bottom: @small-padding;
-                        .opacity(.5);
-                    }
+                p:before {
+                    content: '\2014 \00A0';
+                    display: block;
+                    line-height: 1;
+                    margin-bottom: @small-padding;
+                    -webkit-opacity: 0.5;
+                    -moz-opacity: 0.5;
+                    opacity: 0.5;
+                    filter: alpha(opacity=50);
                 }
             }
         }
+
+        .blog-post-single {
+            .post-details {
+                .post-meta {
+                    .meta-info {
+                        display: inline-block;
+                        font-size: @font-size-base - 1;
+
+                        + .meta-info {
+                            margin-left: @small-margin;
+
+                            &:before {
+                                display: inline-block;
+                                content: '';
+                                height: 12px;
+                                width: 1px;
+                                background: @border-default;;
+                                margin-right: @base-padding;
+                            }
+                        }
+                    }
+                }
+
+                p:before {
+                    content: '\2014 \00A0';
+                    display: block;
+                    line-height: 1;
+                    margin-bottom: @small-padding;
+                    -webkit-opacity: 0.5;
+                    -moz-opacity: 0.5;
+                    opacity: 0.5;
+                    filter: alpha(opacity=50);
+                }
+            }
+
+            .post-content:before {
+                content: '\2014 \00A0';
+                display: block;
+                line-height: 1;
+                color: #f2f2f2;
+                margin-bottom: 10px;
+                margin-top: 5px;
+            }
+
+            &:after {
+                content: '';
+                display: block;
+                position: absolute;
+                right: -50px;
+                top: 0;
+                bottom: 0;
+                width: 1px;
+                background: #f2f2f2;
+            }
+        }
     }
+
 
     .sidebar {
         position: relative;
@@ -388,4 +444,68 @@
             }
         }
     }
+
+    .comments-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 60px;
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            margin-left: 10%;
+            li {
+                margin-top: 30px;
+            }
+        }
+        li {
+            margin-bottom: 30px;
+        }
+        .comment {
+            .clearfix;
+            .comment-thumb {
+                width: 10%;
+                padding-right: 15px;
+                img {
+                    display: block;
+                }
+            }
+            .comment-content {
+                width: 90%;
+                border-bottom: 1px solid #f2f2f2;
+                padding-bottom: 30px;
+                .comment-author {
+                    .clearfix;
+                    & > a {
+                        float: left;
+                        display: block;
+                        font-weight: bold;
+                    }
+                    .comment-info {
+                        float: right;
+                        color: #999999;
+                    }
+                }
+                .comment-text {
+                    color: #999999;
+                    margin-top: 10px;
+                    font-size: 12px;
+                    p {
+                        color: #999999;
+                        font-size: inherit;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+section.blog .comments-list .comment .comment-thumb,
+section.blog .comments-list .comment .comment-content {
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }

@@ -357,6 +357,17 @@ exports.page_about_3 = function(req, res) {
 };
 
 /**
+ * GET /page-about-4
+ * About page 4.
+ */
+
+exports.page_about_4 = function(req, res) {
+  res.render('page/page-about-4', {
+    title: '页面-about'
+  });
+};
+
+/**
  * GET /page-services-1
  * page services 1.
  */
@@ -473,6 +484,17 @@ exports.blog_single_2 = function(req, res) {
 
 exports.blog_single_3 = function(req, res) {
   res.render('blog/blog-single-3', {
+    title: 'blog single'
+  });
+};
+
+/**
+ * GET /blog-single-4
+ * blog single 4.
+ */
+
+exports.blog_single_4 = function(req, res) {
+  res.render('blog/blog-single-4', {
     title: 'blog single'
   });
 };
