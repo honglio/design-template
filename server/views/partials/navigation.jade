@@ -1,386 +1,356 @@
 section#top-nav
-    //- Navigation Menu
-    .container-fluid.navigation-menu
-      .container
-        .row
-          //- Logo
-          .col-xs-12.col-sm-12.col-md-2
-            //- Logo Normal
-            .logo.hidden-xs.hidden-sm
-              a(href='#fakelink')
-                img(src='img/theme/logo.png', alt='Logo')
-            //- Logo Retina
-            .logo-xtwo.hidden-lg.hidden-md
-              a(href='#fakelink')
-                img(src='img/theme/logo-2x.png', alt='Logo')
-          //- Menu
-          .col-xs-12.col-sm-12.col-md-10
-            ul.nill-box-menu.nill-box-menu-anim-flip.nill-box-menu-response-to-icons
-              //- Home Page
-              li.hidden-xs
-                a(href='/')
-                  i.fa.fa-single.fa-home
-              //- switcher
-              li.switcher
-                a(href='#')
-                  i.fa.fa-bars
-                  | Menu
-              //- END switcher
-              //- Theme
-              li(aria-haspopup='true')
-                a(href='#')
-                  i.fa.fa-flask
-                  i.fa.fa-indicator.fa-chevron-down
-                  | 模块
-                .grid-container3
-                  ul
-                    li(aria-haspopup='true')
-                      a(href='#')
-                        i.fa.fa-home
+  //- Navigation Menu
+  nav.navbar.navbar-default(role='navigation')
+    .navbar-header
+      button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar-collapse')
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.navbar-brand(href='#') Diversity
+    //- Menu
+    #navbar-collapse.collapse.navbar-collapse
+      ul.nav.navbar-nav
+        //- Home Page
+        li.hidden-xs
+          a(href='/')
+            i.fa.fa-single.fa-home
+        //- Theme
+        li.dropdown(aria-haspopup='true')
+          a.dropdown-toggle(href='#', data-toggle='dropdown')
+            i.fa.fa-flask
+            i.fa.fa-indicator.fa-chevron-down
+            | 模块
+          ul.dropdown-menu(role="menu")
+              li.dropdown-submenu(aria-haspopup='true')
+                a(href='#' tabindex="-1")
+                  i.fa.fa-home
+                  i.fa.fa-indicator.fa-chevron-right
+                  | Home Page
+                ul.dropdown-menu(role="sub-menu")
+                    li.dropdown-submenu(aria-haspopup='true')
+                      a(href='#' tabindex="-1")
+                        i.fa.fa-bars
                         i.fa.fa-indicator.fa-chevron-right
-                        | Home Page
-                      .grid-container3
-                        ul
-                          li(aria-haspopup='true')
-                            a(href='#')
-                              i.fa.fa-bars
-                              i.fa.fa-indicator.fa-chevron-right
-                              | Fullscreen Series
-                            .grid-container3
-                              ul
-                                li
-                                  a(href='/home-2-1')
-                                    i.fa.fa-file
-                                    | Premium
-                                li
-                                  a(href='/home-3-1')
-                                    i.fa.fa-file
-                                    | Business
-                                li
-                                  a(href='/home-4-1')
-                                    i.fa.fa-file
-                                    | Showcase
-                                li
-                                  a(href='/home-5-1')
-                                    i.fa.fa-file
-                                    | Corporate
-                          li(aria-haspopup='true')
-                            a(href='#')
-                              i.fa.fa-bars
-                              i.fa.fa-indicator.fa-chevron-right
-                              | Fullscreen Bottom
-                            .grid-container3
-                              ul
-                                li
-                                  a(href='/home-2-2')
-                                    i.fa.fa-file
-                                    | Premium
-                                li
-                                  a(href='/home-3-2')
-                                    i.fa.fa-file
-                                    | Business
-                                li
-                                  a(href='/home-4-2')
-                                    i.fa.fa-file
-                                    | Showcase
-                                li
-                                  a(href='/home-5-2')
-                                    i.fa.fa-file
-                                    | Corporate
-                    li(aria-haspopup='true')
-                      a(href='#')
-                        i.fa.fa-puzzle-piece
-                        i.fa.fa-indicator.fa-chevron-right
-                        | Basic Modules
-                      .grid-container3
-                        ul
-                          li(aria-haspopup='true')
-                            a(href='#')
-                              i.fa.fa-folder
-                              i.fa.fa-indicator.fa-chevron-right
-                              | Advert Modules
-                            .grid-container3
-                              ul
-                                li
-                                  a(href='/module-advert-1')
-                                    i.fa.fa-sitemap
-                                    | Advert One
-                                li
-                                  a(href='/module-advert-2')
-                                    i.fa.fa-sitemap
-                                    | Advert Two
-                                li
-                                  a(href='/module-advert-3')
-                                    i.fa.fa-sitemap
-                                    | Advert Three
-                                li
-                                  a(href='/module-advert-4')
-                                    i.fa.fa-sitemap
-                                    | Advert Four
-                                li
-                                  a(href='/module-advert-5')
-                                    i.fa.fa-sitemap
-                                    | Advert Five
-                                li
-                                  a(href='/module-advert-6')
-                                    i.fa.fa-sitemap
-                                    | Advert Six
-                          li(aria-haspopup='true')
-                            a(href='#')
-                              i.fa.fa-folder
-                              i.fa.fa-indicator.fa-chevron-right
-                              | Slider Modules
-                            .grid-container3
-                              ul
-                                li
-                                  a(href='/module-slider-1')
-                                    i.fa.fa-sitemap
-                                    | Slider One
-                                li
-                                  a(href='/module-slider-2')
-                                    i.fa.fa-sitemap
-                                    | Slider Two
-                                li
-                                  a(href='/module-slider-3')
-                                    i.fa.fa-sitemap
-                                    | Slider Three
-                                li
-                                  a(href='/module-slider-4')
-                                    i.fa.fa-sitemap
-                                    | Slider Four
-                          li(aria-haspopup='true')
-                            a(href='#')
-                              i.fa.fa-folder
-                              i.fa.fa-indicator.fa-chevron-right
-                              | Mixitup Modules
-                            .grid-container3
-                              ul
-                                li
-                                  a(href='/module-mixitup-1')
-                                    i.fa.fa-sitemap
-                                    | Mixitup One
-                                li
-                                  a(href='/module-mixitup-2')
-                                    i.fa.fa-sitemap
-                                    | Mixitup Two
-                          li(aria-haspopup='true')
-                            a(href='#')
-                              i.fa.fa-folder
-                              i.fa.fa-indicator.fa-chevron-right
-                              | Services Modules
-                            .grid-container3
-                              ul
-                                li
-                                  a(href='/module-service-1')
-                                    i.fa.fa-sitemap
-                                    | Services One
-                                li
-                                  a(href='/module-service-2')
-                                    i.fa.fa-sitemap
-                                    | Services Two
-                                li
-                                  a(href='/module-service-3')
-                                    i.fa.fa-sitemap
-                                    | Services Three
-                                li
-                                  a(href='/module-service-4')
-                                    i.fa.fa-sitemap
-                                    | Services Four
-                          li(aria-haspopup='true')
-                            a(href='/module-client')
-                              i.fa.fa-folder
-                              | Client Modules
-                          li(aria-haspopup='true')
-                            a(href='/module-price')
-                              i.fa.fa-folder
-                              | Price Modules
-                    li(aria-haspopup='true')
-                      a(href='/module-team')
-                        i.fa.fa-group
-                        | Team Modules
-                    li(aria-haspopup='true')
-                      a(href='/module-twitter')
-                        i.fa.fa-twitter
-                        | Twitter Modules
-              //- about
-              //- Page
-              li(aria-haspopup='true')
-                a(href='#')
-                  i.fa.fa-file
-                  i.fa.fa-indicator.fa-chevron-down
-                  | 页面
-                .grid-container3
-                  ul
-                    li(aria-haspopup='true')
-                      a(href='#')
-                        i.fa.fa-user
-                        i.fa.fa-indicator.fa-chevron-right
-                        | About Us
-                      .grid-container3
-                        ul
-                          li(aria-haspopup='true')
-                            a(href='page-about-1')
-                              i.fa.fa-file
-                              | About One
-                          li(aria-haspopup='true')
-                            a(href='page-about-2')
-                              i.fa.fa-file
-                              | About Two
-                          li(aria-haspopup='true')
-                            a(href='page-about-3')
-                              i.fa.fa-file
-                              | About Three
-                          li(aria-haspopup='true')
-                            a(href='page-about-4')
-                              i.fa.fa-file
-                              | About Four
-                    li(aria-haspopup='true')
-                      a(href='#')
-                        i.fa.fa-lightbulb-o
-                        i.fa.fa-indicator.fa-chevron-right
-                        | Services Page
-                      .grid-container3
-                        ul
+                        | Fullscreen Series
+                      ul.dropdown-menu(role="sub-menu-2")
                           li
-                            a(href='page-services-1')
+                            a(href='/home-2-1')
                               i.fa.fa-file
+                              | Premium
+                          li
+                            a(href='/home-3-1')
+                              i.fa.fa-file
+                              | Business
+                          li
+                            a(href='/home-4-1')
+                              i.fa.fa-file
+                              | Showcase
+                          li
+                            a(href='/home-5-1')
+                              i.fa.fa-file
+                              | Corporate
+                    li.dropdown-submenu(aria-haspopup='true')
+                      a(href='#' tabindex="-1")
+                        i.fa.fa-bars
+                        i.fa.fa-indicator.fa-chevron-right
+                        | Fullscreen Bottom
+                      ul.dropdown-menu(role="sub-menu-2")
+                          li
+                            a(href='/home-2-2')
+                              i.fa.fa-file
+                              | Premium
+                          li
+                            a(href='/home-3-2')
+                              i.fa.fa-file
+                              | Business
+                          li
+                            a(href='/home-4-2')
+                              i.fa.fa-file
+                              | Showcase
+                          li
+                            a(href='/home-5-2')
+                              i.fa.fa-file
+                              | Corporate
+              li.dropdown-submenu(aria-haspopup='true')
+                a(href='#' tabindex="-1")
+                  i.fa.fa-puzzle-piece
+                  i.fa.fa-indicator.fa-chevron-right
+                  | Basic Modules
+                ul.dropdown-menu(role="sub-menu")
+                    li.dropdown-submenu(aria-haspopup='true')
+                      a(href='#' tabindex="-1")
+                        i.fa.fa-folder
+                        i.fa.fa-indicator.fa-chevron-right
+                        | Advert Modules
+                      ul.dropdown-menu(role="sub-menu-2")
+                          li
+                            a(href='/module-advert-1')
+                              i.fa.fa-sitemap
+                              | Advert One
+                          li
+                            a(href='/module-advert-2')
+                              i.fa.fa-sitemap
+                              | Advert Two
+                          li
+                            a(href='/module-advert-3')
+                              i.fa.fa-sitemap
+                              | Advert Three
+                          li
+                            a(href='/module-advert-4')
+                              i.fa.fa-sitemap
+                              | Advert Four
+                          li
+                            a(href='/module-advert-5')
+                              i.fa.fa-sitemap
+                              | Advert Five
+                          li
+                            a(href='/module-advert-6')
+                              i.fa.fa-sitemap
+                              | Advert Six
+                    li.dropdown-submenu(aria-haspopup='true')
+                      a(href='#' tabindex="-1")
+                        i.fa.fa-folder
+                        i.fa.fa-indicator.fa-chevron-right
+                        | Slider Modules
+                      ul.dropdown-menu(role="sub-menu-2")
+                          li
+                            a(href='/module-slider-1')
+                              i.fa.fa-sitemap
+                              | Slider One
+                          li
+                            a(href='/module-slider-2')
+                              i.fa.fa-sitemap
+                              | Slider Two
+                          li
+                            a(href='/module-slider-3')
+                              i.fa.fa-sitemap
+                              | Slider Three
+                          li
+                            a(href='/module-slider-4')
+                              i.fa.fa-sitemap
+                              | Slider Four
+                    li.dropdown-submenu(aria-haspopup='true')
+                      a(href='#' tabindex="-1")
+                        i.fa.fa-folder
+                        i.fa.fa-indicator.fa-chevron-right
+                        | Mixitup Modules
+                      ul.dropdown-menu(role="sub-menu-2")
+                          li
+                            a(href='/module-mixitup-1')
+                              i.fa.fa-sitemap
+                              | Mixitup One
+                          li
+                            a(href='/module-mixitup-2')
+                              i.fa.fa-sitemap
+                              | Mixitup Two
+                    li.dropdown-submenu(aria-haspopup='true')
+                      a(href='#' tabindex="-1")
+                        i.fa.fa-folder
+                        i.fa.fa-indicator.fa-chevron-right
+                        | Services Modules
+                      ul.dropdown-menu(role="sub-menu-2")
+                          li
+                            a(href='/module-service-1')
+                              i.fa.fa-sitemap
                               | Services One
                           li
-                            a(href='page-services-2')
-                              i.fa.fa-file
+                            a(href='/module-service-2')
+                              i.fa.fa-sitemap
                               | Services Two
-                    li(aria-haspopup='true')
-                      a(href='#')
-                        i.fa.fa-archive
-                        i.fa.fa-indicator.fa-chevron-right
-                        | Portfolio Single Page
-                      .grid-container3
-                        ul
                           li
-                            a(href='page-portfolio-single-1')
-                              i.fa.fa-file
-                              | Portfolio Right
+                            a(href='/module-service-3')
+                              i.fa.fa-sitemap
+                              | Services Three
                           li
-                            a(href='page-portfolio-single-2')
-                              i.fa.fa-file
-                              | Portfolio Left
-                    li(aria-haspopup='true')
-                      a(href='page-contact')
-                        i.fa.fa-envelope
-                        | Contact Page
-                    li(aria-haspopup='true')
-                      a(href='404-page')
-                        i.fa.fa-cog
-                        | 404 Page
-              //- Blog
-              li(aria-haspopup='true')
-                a(href='#')
-                  i.fa.fa-calendar-o
-                  i.fa.fa-indicator.fa-chevron-down
-                  | Blog
-                .grid-container3
-                  ul
-                    li(aria-haspopup='true')
-                      a(href='#')
-                        i.fa.fa-calendar-o
-                        i.fa.fa-indicator.fa-chevron-right
-                        | Blog Page
-                      .grid-container3
-                        ul
-                          li
-                            a(href='blog-1')
-                              i.fa.fa-file
-                              | Big
-                          li
-                            a(href='blog-2')
-                              i.fa.fa-file
-                              | Medium
-                          li
-                            a(href='blog-3')
-                              i.fa.fa-file
-                              | Small
-                    li(aria-haspopup='true')
-                      a(href='#')
-                        i.fa.fa-pencil
-                        i.fa.fa-indicator.fa-chevron-right
-                        | Single Post Page
-                      .grid-container3
-                        ul
-                          li
-                            a(href='blog-single-4')
-                              i.fa.fa-file
-                              | Small Page
-                          li
-                            a(href='blog-single-1')
-                              i.fa.fa-file
-                              | Image Page
-                          li
-                            a(href='blog-single-2')
-                              i.fa.fa-file
-                              | Video Page
-                          li
-                            a(href='blog-single-3')
-                              i.fa.fa-file
-                              | Music Page
-              //- Shop
-              li(aria-haspopup='true')
-                a(href='#')
-                  i.fa.fa-shopping-cart
-                  i.fa.fa-indicator.fa-chevron-down
-                  | 电商
-                .grid-container3
-                  ul
-                    li(aria-haspopup='true')
-                      a(href='shop')
-                        i.fa.fa-shopping-cart
-                        | 商品列表
-                    li(aria-haspopup='true')
-                      a(href='shop-detail')
-                        i.fa.fa-gift
-                        | 商品描述
-                    li(aria-haspopup='true')
-                      a(href='shop-checkout')
-                        i.fa.fa-credit-card
-                        | 结帐
-              //- UI
-              li(aria-haspopup='true')
-                a(href='#')
+                            a(href='/module-service-4')
+                              i.fa.fa-sitemap
+                              | Services Four
+                    li
+                      a(href='/module-client')
+                        i.fa.fa-folder
+                        | Client Modules
+                    li
+                      a(href='/module-price')
+                        i.fa.fa-folder
+                        | Price Modules
+              li
+                a(href='/module-team')
+                  i.fa.fa-group
+                  | Team Modules
+              li
+                a(href='/module-twitter')
+                  i.fa.fa-twitter
+                  | Twitter Modules
+        //- about
+        //- Page
+        li.dropdown(aria-haspopup='true')
+          a.dropdown-toggle(href='#', data-toggle='dropdown')
+            i.fa.fa-file
+            i.fa.fa-indicator.fa-chevron-down
+            | 页面
+          ul.dropdown-menu(role="menu")
+              li.dropdown-submenu(aria-haspopup='true')
+                a(href='#' tabindex="-1")
+                  i.fa.fa-user
+                  i.fa.fa-indicator.fa-chevron-right
+                  | About Us
+                ul.dropdown-menu(role="sub-menu")
+                    li
+                      a(href='page-about-1')
+                        i.fa.fa-file
+                        | About One
+                    li
+                      a(href='page-about-2')
+                        i.fa.fa-file
+                        | About Two
+                    li
+                      a(href='page-about-3')
+                        i.fa.fa-file
+                        | About Three
+                    li
+                      a(href='page-about-4')
+                        i.fa.fa-file
+                        | About Four
+              li.dropdown-submenu(aria-haspopup='true')
+                a(href='#' tabindex="-1")
+                  i.fa.fa-lightbulb-o
+                  i.fa.fa-indicator.fa-chevron-right
+                  | Services Page
+                ul.dropdown-menu(role="sub-menu")
+                    li
+                      a(href='page-services-1')
+                        i.fa.fa-file
+                        | Services One
+                    li
+                      a(href='page-services-2')
+                        i.fa.fa-file
+                        | Services Two
+              li.dropdown-submenu(aria-haspopup='true')
+                a(href='#' tabindex="-1")
+                  i.fa.fa-archive
+                  i.fa.fa-indicator.fa-chevron-right
+                  | Portfolio Single Page
+                ul.dropdown-menu(role="sub-menu")
+                    li
+                      a(href='page-portfolio-single-1')
+                        i.fa.fa-file
+                        | Portfolio Right
+                    li
+                      a(href='page-portfolio-single-2')
+                        i.fa.fa-file
+                        | Portfolio Left
+              li
+                a(href='page-contact')
+                  i.fa.fa-envelope
+                  | Contact Page
+              li
+                a(href='404-page')
                   i.fa.fa-cog
-                  i.fa.fa-indicator.fa-chevron-down
-                  | UI
-                .grid-container3
-                  ul
-                    li(aria-haspopup='true')
-                      a(href='ui-alerts')
-                        | Alert
-                    li(aria-haspopup='true')
-                      a(href='ui-badges-labels')
-                        | Badges Labels
-                    li(aria-haspopup='true')
-                      a(href='ui-blockquotes')
-                        | Blockquotes
-                    li(aria-haspopup='true')
-                      a(href='ui-breadcrumbs')
-                        | Breadcrumbs
-                    li(aria-haspopup='true')
-                      a(href='ui-modals')
-                        | Modal
-                    li(aria-haspopup='true')
-                      a(href='ui-navbars')
-                        | Navbars
-                    li(aria-haspopup='true')
-                      a(href='ui-pagination')
-                        | Pagination
-                    li(aria-haspopup='true')
-                      a(href='ui-panels')
-                        | Panels
-                    li(aria-haspopup='true')
-                      a(href='ui-progress-bars')
-                        | Progress Bars
-                    li(aria-haspopup='true')
-                      a(href='ui-tabs-accordions')
-                        | Tabs Accordions
-                    li(aria-haspopup='true')
-                      a(href='ui-typography')
-                        | Typography
-    .clearfix.nav-finish
+                  | 404 Page
+        //- Blog
+        li.dropdown(aria-haspopup='true')
+          a.dropdown-toggle(href='#', data-toggle='dropdown')
+            i.fa.fa-calendar-o
+            i.fa.fa-indicator.fa-chevron-down
+            | Blog
+          ul.dropdown-menu(role="menu")
+              li.dropdown-submenu(aria-haspopup='true')
+                a(href='#' tabindex="-1")
+                  i.fa.fa-calendar-o
+                  i.fa.fa-indicator.fa-chevron-right
+                  | Blog Page
+                ul.dropdown-menu(role="sub-menu")
+                    li
+                      a(href='blog-1')
+                        i.fa.fa-file
+                        | Big
+                    li
+                      a(href='blog-2')
+                        i.fa.fa-file
+                        | Medium
+                    li
+                      a(href='blog-3')
+                        i.fa.fa-file
+                        | Small
+              li.dropdown-submenu(aria-haspopup='true')
+                a(href='#' tabindex="-1")
+                  i.fa.fa-pencil
+                  i.fa.fa-indicator.fa-chevron-right
+                  | Single Post Page
+                ul.dropdown-menu(role="sub-menu")
+                    li
+                      a(href='blog-single-4')
+                        i.fa.fa-file
+                        | Small Page
+                    li
+                      a(href='blog-single-1')
+                        i.fa.fa-file
+                        | Image Page
+                    li
+                      a(href='blog-single-2')
+                        i.fa.fa-file
+                        | Video Page
+                    li
+                      a(href='blog-single-3')
+                        i.fa.fa-file
+                        | Music Page
+        //- Shop
+        li.dropdown(aria-haspopup='true')
+          a.dropdown-toggle(href='#', data-toggle='dropdown')
+            i.fa.fa-shopping-cart
+            i.fa.fa-indicator.fa-chevron-down
+            | 电商
+          ul.dropdown-menu(role="menu")
+              li
+                a(href='shop')
+                  i.fa.fa-shopping-cart
+                  | 商品列表
+              li
+                a(href='shop-detail')
+                  i.fa.fa-gift
+                  | 商品描述
+              li
+                a(href='shop-checkout')
+                  i.fa.fa-credit-card
+                  | 结帐
+        //- UI
+        li.dropdown(aria-haspopup='true')
+          a.dropdown-toggle(href='#', data-toggle='dropdown')
+            i.fa.fa-cog
+            i.fa.fa-indicator.fa-chevron-down
+            | UI
+          ul.dropdown-menu(role="menu")
+              li
+                a(href='ui-alerts')
+                  | Alert
+              li
+                a(href='ui-badges-labels')
+                  | Badges Labels
+              li
+                a(href='ui-blockquotes')
+                  | Blockquotes
+              li
+                a(href='ui-breadcrumbs')
+                  | Breadcrumbs
+              li
+                a(href='ui-modals')
+                  | Modal
+              li
+                a(href='ui-navbars')
+                  | Navbars
+              li
+                a(href='ui-pagination')
+                  | Pagination
+              li
+                a(href='ui-panels')
+                  | Panels
+              li
+                a(href='ui-progress-bars')
+                  | Progress Bars
+              li
+                a(href='ui-tabs-accordions')
+                  | Tabs Accordions
+              li
+                a(href='ui-typography')
+                  | Typography
