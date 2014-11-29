@@ -1,20 +1,11 @@
-//
-// Variables
-// --------------------------------------------------
-
-@import "./variables-pink.less";
-
 /************************************************************************************************************************/
-
 /* Font Color */
-
 /************************************************************************************************************************/
-
 body,
 p,
 .advert-ul-one li,
 .btn-footer {
-    color: @main-text-color;
+  color: #8495a5;
 }
 h1,
 .h1,
@@ -36,7 +27,7 @@ h6,
 .blog-slider-list h6 a,
 .sidebar ul li a,
 .sidebar ul li {
-    color: @main-text-title-color;
+  color: #34495e;
 }
 a:hover,
 a:focus,
@@ -159,8 +150,11 @@ a:focus,
 .blog-slider-list h6 a:hover,
 .sidebar ul li a:hover,
 .sidebar ul li:hover,
-.hero-widget .icon {
-    color: @main-color;
+.hero-widget .icon,
+.portfolio-info h3 a,
+.callout-action h2,
+.social-networks > li a:hover {
+  color: #9ba2a3;
 }
 a,
 .btn-link,
@@ -174,8 +168,9 @@ a,
 .mso-icon-six .hi-icon,
 .mso-icon-six:hover .hi-icon-effect-9b .hi-icon,
 .mso-icon-seven .hi-icon,
-.mso-icon-seven:hover .hi-icon-effect-9b .hi-icon {
-    color: @sec-color;
+.mso-icon-seven:hover .hi-icon-effect-9b .hi-icon,
+.portfolio-info h3 a:hover {
+  color: #5e6363;
 }
 .mso-icon .hi-icon,
 .mso-icon:hover .hi-icon-effect-9b .hi-icon,
@@ -194,19 +189,15 @@ a,
 .mso-icon-ten:hover .hi-icon h6,
 .latest-tweet-icon,
 .slide-bottom-title h2,
-.breadcrumb-nav li a,
 .big-title h1,
 .cs-style-3 p,
 .footer-two h6,
-.footer-three h6{
-    color: @alt-main-color;
+.footer-three h6 {
+  color: #ffffff;
 }
 /************************************************************************************************************************/
-
 /* Background Color */
-
 /************************************************************************************************************************/
-
 nav select:focus,
 .progress-bar,
 .dropdown-menu li.active > a,
@@ -222,7 +213,7 @@ nav select:focus,
 .mso-icon-nine:hover .hi-icon,
 .mso-icon-ten:hover .hi-icon,
 .advert-ul-one li i {
-    background: @main-color;
+  background: #9ba2a3;
 }
 nav select,
 .btn-primary:active,
@@ -242,15 +233,16 @@ nav select,
 .dropdown-menu li.selected > a:focus,
 .dropdown-menu li.active > a.highlighted:focus,
 .dropdown-menu li.selected > a.highlighted:focus {
-    background: @sec-color;
+  background: #5e6363;
 }
 .navigation-menu,
-.hero-widget {
-    background-color: @alt-main-color;
+.hero-widget,
+.callout-action {
+  background-color: #ffffff;
 }
 .navbar .nav ul li,
 .dropdown-menu {
-    background-color: @navbar-color;
+  background-color: #f3f4f5;
 }
 .btn-primary,
 .btn-primary.disabled,
@@ -342,7 +334,7 @@ fieldset[disabled] .navbar-form.focus .input-group-btn .btn-default.active,
 .nav-list-vivid > li.active > a:focus,
 .has-switch > div.switch-on label,
 .panel-primary > .panel-heading {
-    background-color: @main-color;
+  background-color: #9ba2a3;
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -366,7 +358,7 @@ fieldset[disabled] .navbar-form.focus .input-group-btn .btn-default.active,
 .nav-pills > li > a:hover,
 .nav-pills > li > a:focus,
 .latest-tweet-icon {
-    background-color: @main-active-color;
+  background-color: #bfc8c9;
 }
 .tagsinput .tag:hover,
 .ui-slider-handle,
@@ -388,7 +380,7 @@ fieldset[disabled] .navbar-form.focus .input-group-btn .btn-default.active,
 .mso-icon-ten .hi-icon,
 .blog-date-circle,
 .grid figcaption {
-    background-color: @sec-color;
+  background-color: #5e6363;
 }
 .btn-inverse,
 .btn-inverse.disabled,
@@ -413,52 +405,48 @@ fieldset[disabled] .btn-inverse.active,
 .dropdown-inverse,
 .dialog.dialog-inverse,
 .has-switch span.switch-left {
-    background-color: @main-text-title-color;
+  background-color: #34495e;
 }
 .bottom-menu-inverse {
-    background-color: @footer-color;
+  background-color: #2c3d4f;
 }
 .navbar-inverse {
-    background: @main-text-title-color;
+  background: #34495e;
 }
 .module-background-one,
 .blog-slider-two,
 .well {
-    background-color: @border-sec;
+  background-color: #f8fafc;
 }
 .module-background-two,
 .modul-price-one {
-    background-color: @border-third;
+  background-color: #f3f5f7;
 }
 .module-background-three,
 .portlio-list,
 .blog-slider,
 .blog-info {
-    background-color: @border-four;
+  background-color: #ebedef;
 }
 .module-background-four {
-    background-color: @main-text-title-color;
+  background-color: #34495e;
 }
 .module-background-five {
-    background-color: @sec-color;
+  background-color: #5e6363;
 }
 /************************************************************************************************************************/
-
 /* Border Color */
-
 /************************************************************************************************************************/
-
 /* Border */
-
 .btn-footer,
 .footer-two ul li img,
 .footer-two h6,
 .footer-three ul li img,
 .footer-three h6 {
-    border-color: @main-text-color;
+  border-color: #8495a5;
 }
 .ui-datepicker:before {
-    border-color: transparent transparent @main-color;
+  border-color: transparent transparent #9ba2a3;
 }
 .navbar.navbar-inverse .navbar-form .form-control:focus,
 .navbar .navbar-form .form-control:focus,
@@ -485,7 +473,7 @@ fieldset[disabled] .btn-inverse.active,
 .switch-square label,
 .footer-two ul li:hover img,
 .footer-three ul li:hover img {
-    border-color: @main-color;
+  border-color: #9ba2a3;
 }
 .btn-primary:hover,
 .btn-primary:focus,
@@ -502,18 +490,18 @@ fieldset[disabled] .btn-inverse.active,
 .navbar-form.focus .input-group-btn .btn-default.active,
 .open .dropdown-toggle.form-group.focus .input-group-btn .btn-default,
 .open .dropdown-toggle.navbar-form.focus .input-group-btn .btn-default {
-    border-color: @main-active-color;
+  border-color: #bfc8c9;
 }
 .pagination-minimal > ul > li > a:active,
 .pagination-minimal > ul > li > span:active {
-    border-color: @sec-color;
+  border-color: #5e6363;
 }
 .bottom-shape-right > i {
-    border-right: 0.8em solid @bottom-shape-color;
-    border-top: 0.8em solid @bottom-shape-color;
+  border-right: 0.8em solid #eeeeee;
+  border-top: 0.8em solid #eeeeee;
 }
 .modul-bb-bold {
-    border-color: @border-five;
+  border-color: #f1f1f1;
 }
 .modul-bo-one,
 .modul-bt-one,
@@ -524,17 +512,18 @@ fieldset[disabled] .btn-inverse.active,
 .modul-price-one,
 .latest-tweet-icon,
 .blog-info,
-.author-image {
-    border-color: @border-default;
+.author-image,
+.callout-action {
+  border-color: #e4e6e8;
 }
 .modul-bo-two,
 .modul-bt-two {
-    border-color: @border-sec;
+  border-color: #f8fafc;
 }
 .modul-bo-three,
 .modul-bt-three,
 .comment-list ul li {
-    border-color: @border-third;
+  border-color: #f3f5f7;
 }
 .modul-bo-four,
 .modul-bt-four,
@@ -543,58 +532,61 @@ fieldset[disabled] .btn-inverse.active,
 .comment-img,
 .hero-widget,
 .well {
-    border-color: @border-four;
+  border-color: #ebedef;
 }
 .modul-bo-five,
 .modul-bt-five {
-    border-color: @border-five;
+  border-color: #f1f1f1;
 }
 /* Border Top */
-
 .navbar .nav li.dropdown.open > .dropdown-toggle .caret,
 .navbar .nav li.dropdown > .dropdown-toggle:hover .caret,
 .navbar .nav li.dropdown > .dropdown-toggle:focus .caret,
 .nav-tabs > li .dropdown-toggle:hover .caret,
 .nav-tabs > li .dropdown-toggle:focus .caret {
-    border-top-color: @main-color;
+  border-top-color: #9ba2a3;
 }
-
+.caret,
+.tooltip.top .tooltip-arrow {
+  border-top-color: #34495e;
+}
 /* Border Right */
-
 .tooltip.right .tooltip-arrow {
-    border-right-color: @main-text-title-color;
+  border-right-color: #34495e;
 }
 /* Border Bottom */
-
 .navbar .nav li.dropdown.open > .dropdown-toggle .caret,
 .navbar .nav li.dropdown > .dropdown-toggle:hover .caret,
 .navbar .nav li.dropdown > .dropdown-toggle:focus .caret,
 .nav-tabs > li .dropdown-toggle:hover .caret,
 .nav-tabs > li .dropdown-toggle:focus .caret {
-    border-bottom-color: @main-color;
+  border-bottom-color: #9ba2a3;
 }
 .pagination > .btn:first-child.btn-primary,
 .pagination > .btn + ul + .btn.btn-primary {
-    border-bottom-color: @main-active-color;
+  border-bottom-color: #bfc8c9;
 }
 .navbar-inverse .nav > li.active > a,
 .navbar-inverse .nav > li.active > a:hover,
 .navbar-inverse .nav > li.active > a:focus,
 .navbar.navbar-inverse .nav li.dropdown.open > .dropdown-toggle,
 .ui-spinner.focus .ui-spinner-up {
-    border-bottom-color: @sec-color;
+  border-bottom-color: #5e6363;
 }
-
+.caret,
+.navbar .nav li.dropdown .dropdown-menu:after,
+.tooltip.bottom .tooltip-arrow {
+  border-bottom-color: #34495e;
+}
 /* Border Left */
-
 .well {
-    border-left-color: @main-color;
+  border-left-color: #9ba2a3;
 }
 .form-group.focus .input-group-btn > .btn-default + .btn-default,
 .navbar-form.focus .input-group-btn > .btn-default + .btn-default,
 .nav-pills > li > a {
-    border-left-color: @sec-color;
+  border-left-color: #5e6363;
 }
 .tooltip.left .tooltip-arrow {
-    border-left-color: @main-text-title-color;
+  border-left-color: #34495e;
 }
