@@ -313,21 +313,21 @@ block content
               #tab3.tab-pane
                 ul.nav.nav-list.tag-cloud
                   li
-                    a.badge.tag-cloud-tags(href='#Fakelink') Web
+                    a.tag-cloud-tags(href='#Fakelink') Web
                   li
-                    a.badge.tag-cloud-tags(href='#Fakelink') Rap
+                    a.tag-cloud-tags(href='#Fakelink') Rap
                   li
-                    a.badge.tag-cloud-tags(href='#Fakelink') Pop
+                    a.tag-cloud-tags(href='#Fakelink') Pop
                   li
-                    a.badge.tag-cloud-tags(href='#Fakelink') Design
+                    a.tag-cloud-tags(href='#Fakelink') Design
                   li
-                    a.badge.tag-cloud-tags(href='#Fakelink') Wordpress Themes
+                    a.tag-cloud-tags(href='#Fakelink') Wordpress Themes
                   li
-                    a.badge.tag-cloud-tags(href='#Fakelink') Rock
+                    a.tag-cloud-tags(href='#Fakelink') Rock
                   li
-                    a.badge.tag-cloud-tags(href='#Fakelink') Jazz
+                    a.tag-cloud-tags(href='#Fakelink') Jazz
                   li
-                    a.badge.tag-cloud-tags(href='#Fakelink') PSD Design
+                    a.tag-cloud-tags(href='#Fakelink') PSD Design
             // /tab-content
           // Share Post
           .post-share
@@ -442,37 +442,35 @@ block content
                   var $2990
                   label.text-muted Vehicula Enean Hendrerit
                 hr
-                .btn-group.select.select-block.mbl
-                  button.btn.dropdown-toggle.clearfix.btn-sm.btn-default(data-toggle='dropdown')
-                    span.pull-left 型号
+                .dropdown.mbl
+                  button.btn.dropdown-toggle.clearfix.btn-lg.btn-default(data-toggle='dropdown')
+                    | 型号
                     span.caret
-                  i.dropdown-arrow
-                  ul.dropdown-menu(role='menu', style='overflow-y: auto; min-height: 108px;')
+                  ul.dropdown-menu(role='menu')
                     li.selected(rel='0')
-                      a.opt.active(tabindex='-1', href='#')
-                        span.pull-left XLarge
+                      a.active(tabindex='-1', href='#')
+                        | XLarge
                     li(rel='1')
-                      a.opt.active(tabindex='-1', href='#')
-                        span.pull-left Medium
+                      a(tabindex='-1', href='#')
+                        | Medium
                     li(rel='1')
-                      a.opt.active(tabindex='-1', href='#')
-                        span.pull-left Small
-                .btn-group.select.select-block.mbl
-                  button.btn.dropdown-toggle.clearfix.btn-sm.btn-default(data-toggle='dropdown')
-                    span.pull-left 颜色
+                      a(tabindex='-1', href='#')
+                        | Small
+                .dropdown.mbl
+                  button.btn.dropdown-toggle.clearfix.btn-lg.btn-default(data-toggle='dropdown')
+                    | 颜色
                     span.caret
-                  i.dropdown-arrow
-                  ul.dropdown-menu(role='menu', style='overflow-y: auto; min-height: 108px;')
+                  ul.dropdown-menu(role='menu')
                     li.selected(rel='0')
-                      a.opt.active(tabindex='-1', href='#')
-                        span.pull-left 红色
+                      a.active(tabindex='-1', href='#')
+                        | 红色
                     li(rel='1')
-                      a.opt.active(tabindex='-1', href='#')
-                        span.pull-left 蓝色
+                      a(tabindex='-1', href='#')
+                        | 蓝色
                     li(rel='1')
-                      a.opt.active(tabindex='-1', href='#')
-                        span.pull-left 绿色
-                h6.pull-left 数量 &#160;
+                      a(tabindex='-1', href='#')
+                        | 绿色
+                h6.pull-left 数量
                 .form-group.pull-left
                   span.ui-spinner.ui-widget.ui-widget-content.ui-corner-all
                     input#spinner-01.form-control.spinner.ui-spinner-input(type='text', value='0')
