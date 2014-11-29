@@ -57,7 +57,7 @@ $(function() {
   function switchStylestyle(styleName) {
     $('link[rel*=style][title]').each(function(i) {
       this.disabled = true;
-      if (this.getAttribute('title') == styleName) this.disabled = false;
+      if ( this.getAttribute('title') == styleName ) this.disabled = false;
     });
     createCookie('style', styleName, 365);
   }
