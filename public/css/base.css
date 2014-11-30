@@ -231,6 +231,9 @@ pre,
 /**/
 /* dropdown sub-menu */
 /**/
+.dropdown-menu li {
+  overflow: visible;
+}
 .dropdown-submenu {
   position: relative;
 }

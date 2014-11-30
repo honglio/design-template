@@ -13,7 +13,7 @@
         "npm": "1.3.x"
     },
     "scripts": {
-        "start": "NODE_ENV=development ./node_modules/.bin/nodemon app.js",
+        "start": "grunt watch && nodemon app.js",
         "test": "grunt test"
     },
     "dependencies": {

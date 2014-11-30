@@ -123,4 +123,7 @@ $(function() {
             });
         }
     });
+
+    // Enable Material Design for element
+    $.material.init()
 });
