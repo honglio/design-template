@@ -2255,17 +2255,18 @@ section.blog .comments-list .comment .comment-content {
   transition: transform 0.2s, opacity 0.2s;
 }
 /* Effects */
+/* Image Hover */
 /* Individual Caption Styles */
 /* Caption Style 1 */
 .cs-style-1 figcaption {
-  height: 100%;
+  height: 140px;
   width: 100%;
   opacity: 0;
   text-align: center;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  transition: -webkit-transform 0.3s, opacity 0.3s;
-  transition: transform 0.3s, opacity 0.3s;
+  transition: -webkit-transform 0.3s, opacity 0.4s;
+  transition: transform 0.3s, opacity 0.4s;
 }
 .cs-style-1 figcaption h3 {
   margin-top: 60px;
@@ -2279,9 +2280,9 @@ section.blog .comments-list .comment .comment-content {
 .no-touch .cs-style-1 figure:hover figcaption,
 .cs-style-1 figure.cs-hover figcaption {
   opacity: 1;
-  -webkit-transform: translate(15px, 15px);
-  -ms-transform: translate(15px, 15px);
-  transform: translate(15px, 15px);
+  -webkit-transform: translate(0, -140px);
+  -ms-transform: translate(0, -140px);
+  transform: translate(0, -140px);
 }
 /* Caption Style 2 */
 .cs-style-2 figure img {
@@ -2530,7 +2531,7 @@ section.blog .comments-list .comment .comment-content {
   transition: opacity 0.3s 0.2s;
   opacity: 1;
 }
-/* Image Hover */
+/* Image position */
 .grid {
   text-align: center;
 }
