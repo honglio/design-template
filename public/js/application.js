@@ -30,6 +30,14 @@ function eraseCookie(name) {
     createCookie(name, "", -1);
 }
 
+// Element Attribute Helper
+function attrDefault($el, data_var, default_val) {
+    if (typeof $el.data(data_var) != 'undefined') {
+        return $el.data(data_var);
+    }
+
+    return default_val;
+}
 
 $(function() {
     // Disable link clicks to prevent page scrolling
@@ -63,6 +71,36 @@ $(function() {
     }).on('blur', '.form-control', function() {
         $(this).closest('.form-group, .navbar-search').removeClass('focus');
     });
+
+    // Scrollable
+    if ($.isFunction($.fn.slimScroll)) {
+        $(".scrollable").each(function(i, el) {
+            var $this = $(el),
+                height = attrDefault($this, 'height', $this.height());
+
+            if ($this.is(':visible')) {
+                $this.removeClass('scrollable');
+
+                if ($this.height() < parseInt(height, 10)) {
+                    height = $this.outerHeight(true) + 10;
+                }
+
+                $this.addClass('scrollable');
+            }
+
+            $this.css({
+                maxHeight: ''
+            }).slimScroll({
+                height: height,
+                position: attrDefault($this, 'scroll-position', 'right'),
+                color: attrDefault($this, 'rail-color', '#000'),
+                size: attrDefault($this, 'rail-width', 6),
+                borderRadius: attrDefault($this, 'rail-radius', 3),
+                opacity: attrDefault($this, 'rail-opacity', .3),
+                alwaysVisible: parseInt(attrDefault($this, 'autohide', 1), 10) == 1 ? false : true
+            });
+        });
+    }
 
     //Scroll Up
     $.scrollUp({
