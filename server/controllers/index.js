@@ -653,6 +653,17 @@ exports.ui_typography = function(req, res) {
     });
 };
 
+/**
+ * GET /ui_buttons
+ * ui buttons page.
+ */
+
+exports.ui_buttons = function(req, res) {
+    res.render('ui/ui-buttons', {
+        title: 'UI Buttons'
+    });
+};
+
 
 /**
  * GET /login

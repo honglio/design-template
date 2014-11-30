@@ -96,6 +96,7 @@ module.exports = function (app, passport) {
     app.get('/ui-progress-bars.html', index.ui_progress_bars);
     app.get('/ui-tabs-accordions.html', index.ui_tabs_accordions);
     app.get('/ui-typography.html', index.ui_typography);
+    app.get('/ui-buttons.html', index.ui_buttons);
 
     // page not found
     app.get('*', index.notfound);
