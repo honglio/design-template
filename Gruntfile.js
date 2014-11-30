@@ -28,8 +28,8 @@ module.exports = function(grunt) {
         yeoman: yeomanConfig,
 
         clean: {
-            release: ['.tmp', '<%= yeoman.release %>', '<%= yeoman.app %>/css/*.css'],
-            dev: '.tmp'
+            release: ['.tmp', '<%= yeoman.release %>'],
+            dev: ['.tmp']
         },
         jsbeautifier: {
             fix: {
@@ -205,6 +205,13 @@ module.exports = function(grunt) {
                     dest: '<%= yeoman.app %>/css',
                     src: '*.*'
                 }]
+            },
+            dev: {
+                expand: true,
+                dot: true,
+                cwd: '<%= yeoman.release %>/css',
+                dest: '<%= yeoman.app %>/css',
+                src: '*.css'
             }
         },
         jade: {
@@ -301,6 +308,18 @@ module.exports = function(grunt) {
                     logConcurrentOutput: true
                 }
             }
+        },
+        watch: {
+            css: {
+                files: [
+                    '<%= yeoman.app %>/less/**/*.less'
+                ],
+                tasks: [
+                    'less',
+                    'autoprefixer',
+                    'copy:dev'
+                ]
+            }
         }
     });
 
@@ -322,6 +341,11 @@ module.exports = function(grunt) {
     grunt.registerTask('build', [
         'clean:release',
         'concurrent:build',
+    ]);
+
+    grunt.registerTask('dev', [
+        'clean:dev',
+        'watch'
     ]);
 
     grunt.registerTask('default', [
