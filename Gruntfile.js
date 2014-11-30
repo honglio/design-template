@@ -281,6 +281,7 @@ module.exports = function(grunt) {
                     "<%= yeoman.release %>/ui-progress-bars.html": "<%= yeoman.server %>/views/ui/ui-progress-bars.jade",
                     "<%= yeoman.release %>/ui-tabs-accordions.html": "<%= yeoman.server %>/views/ui/ui-tabs-accordions.jade",
                     "<%= yeoman.release %>/ui-typography.html": "<%= yeoman.server %>/views/ui/ui-typography.jade",
+                    "<%= yeoman.release %>/ui-buttons.html": "<%= yeoman.server %>/views/ui/ui-buttons.jade",
                     "<%= yeoman.release %>/404-page.html": "<%= yeoman.server %>/views/404.jade",
                 }
             }
