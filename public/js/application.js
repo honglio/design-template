@@ -32,7 +32,7 @@ function eraseCookie(name) {
 
 // Element Attribute Helper
 function attrDefault($el, data_var, default_val) {
-    if (typeof $el.data(data_var) != 'undefined') {
+    if (typeof $el.data(data_var) !== 'undefined') {
         return $el.data(data_var);
     }
 
@@ -96,8 +96,8 @@ $(function() {
                 color: attrDefault($this, 'rail-color', '#000'),
                 size: attrDefault($this, 'rail-width', 6),
                 borderRadius: attrDefault($this, 'rail-radius', 3),
-                opacity: attrDefault($this, 'rail-opacity', .3),
-                alwaysVisible: parseInt(attrDefault($this, 'autohide', 1), 10) == 1 ? false : true
+                opacity: attrDefault($this, 'rail-opacity', 0.3),
+                alwaysVisible: parseInt(attrDefault($this, 'autohide', 1), 10) === 1 ? false : true
             });
         });
     }
@@ -163,5 +163,5 @@ $(function() {
     });
 
     // Enable Material Design for element
-    $.material.init()
+    $.material.init();
 });
