@@ -1,4 +1,4 @@
-extends ../layout
+extends ../layout2
 
 block scripts
   script(type='text/javascript', src='js/vendors/jquery.mixitup.js')
@@ -67,19 +67,23 @@ block scripts
     });
 
 block content
-  include ../partials/module-slider-4
+  #wrapper
+    include ../partials/module-slider-4
   //- Services Modul
-  .container-fluid.modul-bt-one
-    .container.modul-space-two
-      include ../partials/module-service-1-1
+  #service1
+    .container-fluid.module-background-one.modul-bt-one
+      .container.modul-space-two
+        include ../partials/module-service-1-1
   //- Advert Module
-  .container-fluid.modul-bt-one.parallax-one(data-speed='10', data-type='background')
-    .container.modul-space-four
-      include ../partials/module-advert-1-right
+  #advert1
+    .container-fluid.modul-bt-one.parallax-one(data-speed='10', data-type='background')
+      .container.modul-space-four
+        include ../partials/module-advert-1-right
   //- Portfolio Module
-  .container-fluid.modul-bt-one
-    .container.modul-space-eight
-      include ../partials/module-mixitup-1
+  #portfolio
+    .container-fluid.module-background-one.modul-bt-one
+      .container.modul-space-eight
+        include ../partials/module-mixitup-1
   include ../partials/modal-portfolio-1
   include ../partials/modal-portfolio-2
   include ../partials/modal-portfolio-3
@@ -87,35 +91,41 @@ block content
   include ../partials/modal-portfolio-5
   include ../partials/modal-portfolio-6
   //- Advert Module
-  .container-fluid.modul-bt-one.parallax-two(data-speed='10', data-type='background')
-    .container.modul-space-eight
-      include ../partials/module-advert-5-left
+  #advert2
+    .container-fluid.modul-bt-one.parallax-two(data-speed='10', data-type='background')
+      .container.modul-space-eight
+        include ../partials/module-advert-5-left
   //- Team Module
-  .container-fluid.modul-bt-one
-    .container.modul-space-twelve
-      include ../partials/module-slider-2
+  //- .container-fluid.modul-bt-one
+  //-   .container.modul-space-twelve
+  //-     include ../partials/module-slider-2
   //- Advert Module
-  .container-fluid.modul-bt-one.parallax-four(data-speed='10', data-type='background')
-    .container.modul-space-eight
-      include ../partials/module-slider-3
+  #wrapper2
+    .container-fluid.module-background-one.modul-bt-one
+      .container.modul-space-eight
+        include ../partials/module-slider-3
   //- Advert Module
-  .container-fluid.modul-bt-one
-    .container.modul-space-eight
-      include ../partials/advert-title-2
-      include ../partials/module-advert-6
+  #advert3
+    .container-fluid.modul-bt-one.parallax-three(data-speed='15', data-type='background')
+      .container.modul-space-eight
+        include ../partials/module-advert-3-left
   //- Price Modul
-  .container-fluid.modul-bt-one.parallax-three(data-speed='15', data-type='background')
-    .container.modul-space-two
-      include ../partials/module-price-1
-  //- Blog Module
-  .container-fluid.modul-bt-one
-    .container.modul-space-twelve
-      include ../partials/module-slider-1-right
-  //- Client Module
-  .container-fluid.module-background-one.modul-bt-one
-    .container.modul-space-eleven
-      include ../partials/module-client
+  #price
+    .container-fluid.module-background-two.modul-bt-one
+      .container.modul-space-two
+        include ../partials/module-price-1
   //- Advert Module
-  .container-fluid.modul-bt-one.parallax-five(data-speed='20', data-type='background')
-    .container.modul-space-seven
-      include ../partials/module-advert-4
+  #advert4
+    .container-fluid.modul-bt-one.parallax-four(data-speed='15', data-type='background')
+      .container.modul-space-twelve
+        include ../partials/module-advert-3-right
+  //- Client Module
+  #client
+    .container-fluid.module-background-one.modul-bt-one
+      .container.modul-space-eleven
+        include ../partials/module-client
+  //- Advert Module
+  #advert5
+    .container-fluid.modul-bt-one.parallax-five(data-speed='20', data-type='background')
+      .container.modul-space-seven
+        include ../partials/module-advert-4

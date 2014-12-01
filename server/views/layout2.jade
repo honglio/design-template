@@ -1,0 +1,78 @@
+doctype html
+html.js.no-touch
+  head
+    include partials/head
+    block head
+
+  body
+    header
+      include partials/navigation2
+
+    main
+      block content
+
+    footer
+      include partials/footer
+
+    script(type='text/javascript', src='js/vendors/jquery.slimscroll.min.js')
+    script(type='text/javascript', src='js/vendors/jquery.scrollUp.js')
+    script(type="text/javascript", src='js/vendors/jquery.stickup.min.js')
+    script(type='text/javascript', src='js/application.js')
+    script(type='text/javascript').
+      //enabling stickUp on the '.navbar-wrapper' class
+      $(function() {
+        $('#top-nav').stickUp({
+          parts: {
+            0: 'wrapper',
+            1: 'service1',
+            2: 'advert1',
+            3: 'portfolio',
+            4: 'advert2',
+            5: 'wrapper2',
+            6: 'advert3',
+            7: 'price',
+            8: 'advert4',
+            9: 'client',
+            10: 'advert5'
+          },
+          itemClass: 'menuItem',
+          itemHover: 'active',
+          topMargin: 'auto'
+        });
+      });
+
+      // In mobile browser, navbar collapse when click on 'a'.
+      $('.navbar.navbar-inverse.navbar-static-top a').click(function() {
+        $('.navbar-collapse').addClass('hideClass');
+      });
+
+
+      $('.navbar.navbar-inverse.navbar-static-top a').click(function() {
+        $('.navbar-collapse').addClass('collapse');
+      });
+
+
+      $('.navbar.navbar-inverse.navbar-static-top a').click(function() {
+        $('.navbar-collapse').removeClass('in');
+      });
+
+      $('.navbar-toggle').click(function() {
+        $('.navbar-collapse').removeClass('hideClass');
+      });
+
+      // Smoth page scroll
+      $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+          if (location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') && location.hostname === this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+              $('html,body').animate({
+                scrollTop: target.offset().top - 45
+              }, 1000);
+              return false;
+            }
+          }
+        });
+      });
+    block scripts
