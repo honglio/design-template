@@ -105,9 +105,8 @@
 # Nov 30, 2014  V 1.0.1
 
 * [Fix] Overall fixes and improvements
-* [Fix] Fail-safe page transitions are added.
 * [Added] Modals are now shown in better way (ui-modals.html)
-* [Added] Dropzone now shows info for uploaded files (forms-file-upload.html)
+* [Added] Jade files are now separated into partials for better use
 
 # Nov 12, 2014 v 1.0.0
 

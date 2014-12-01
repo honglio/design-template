@@ -91,7 +91,7 @@ block content
   //
      Blog
   .container-fluid.modul-bt-one
-    .container.modul-space-fourteen.hidden-xs
+    .container.modul-space-fourteen.hidden-xs.hidden-sm
       .row
         //
            Shop
@@ -397,66 +397,40 @@ block content
                 a(href='#')
                   img(src='img/yellow.jpg', alt='')
           //
-             Size
+             Pool Sidebar
           .sidebar
             h6
-              i.fa.fa-male.sidebar-icon
-              | 车型
-            ul.nav.nav-list.sidebar-categories
-              li.active
-                a(href='#')
-                  | 大客
-                  span.badge.pull-right 30
-              li
-                a(href='#')
-                  | 中型
-                  span.badge.pull-right 28
-              li
-                a(href='#')
-                  | 卡车
-                  span.badge.pull-right 74
-              li
-                a(href='#')
-                  | 3箱
-                  span.badge.pull-right 62
-              li
-                a(href='#')
-                  | 2箱半
-                  span.badge.pull-right 26
-              li
-                a(href='#')
-                  | 2箱
-                  span.badge.pull-right 28
-              li
-                a(href='#')
-                  | Mini
-                  span.badge.pull-right 28
-          //
-             Tag Cloud
-          .sidebar
-            h6
-              i.fa.fa-tags.sidebar-icon
-              | 标签云
-            ul.nav.nav-list.tag-cloud.sidebar-categories-two
-              li
-                a.badge.badge-primary.badge-roundless.tag-cloud-tags(href='#Fakelink') 省油
-              li
-                a.badge.badge-primary.badge-roundless.tag-cloud-tags(href='#Fakelink') 动力强劲
-              li
-                a.badge.badge-primary.badge-roundless.tag-cloud-tags(href='#Fakelink') 维修方便
-              li
-                a.badge.badge-primary.badge-roundless.tag-cloud-tags(href='#Fakelink') 配件便宜
-              li
-                a.badge.badge-primary.badge-roundless.tag-cloud-tags(href='#Fakelink') 服务周到
-              li
-                a.badge.badge-primary.badge-roundless.tag-cloud-tags(href='#Fakelink') 车型美观
-              li
-                a.badge.badge-primary.badge-roundless.tag-cloud-tags(href='#Fakelink') 进口车
-              li
-                a.badge.badge-primary.badge-roundless.tag-cloud-tags(href='#Fakelink') 二手
-        //
-           Shop
-    .container.modul-space-fourteen.visible-xs
+              i.fa.fa-bar-chart-o.sidebar-icon
+              | Shop Pool
+            .sidebar-categories
+              h5
+                em What is like color?
+              strong Red
+              span.pull-right 30%
+              .progress.progress-striped.active
+                .progress-bar(style='width: 30%;')
+              strong Green
+              span.pull-right 40%
+              .progress.progress-striped.active
+                .progress-bar(style='width: 40%;')
+              strong Blue
+              span.pull-right 10%
+              .progress.progress-striped.active
+                .progress-bar(style='width: 10%;')
+              strong Yellow
+              span.pull-right 5%
+              .progress.progress-striped.active
+                .progress-bar(style='width: 5%;')
+              strong Black
+              span.pull-right 15%
+              .progress.progress-striped.active
+                .progress-bar(style='width: 15%;')
+              p.vote-button
+                a.btn.btn-large.btn-success(href='#') Vote
+                a.pull-right(href='#') View detailed results
+    //
+       Shop
+    .container.modul-space-fourteen.visible-xs.visible-sm
       .row
         //
            Sidebar
@@ -568,41 +542,6 @@ block content
                 a(href='#')
                   img(src='img/yellow.jpg', alt='')
           //
-             Size
-          .sidebar
-            h6
-              i.fa.fa-male.sidebar-icon
-              | 车型
-            ul.nav.nav-list.sidebar-categories
-              li.active
-                a(href='#')
-                  | 大客
-                  span.badge.pull-right 30
-              li
-                a(href='#')
-                  | 中型
-                  span.badge.pull-right 28
-              li
-                a(href='#')
-                  | 卡车
-                  span.badge.pull-right 74
-              li
-                a(href='#')
-                  | 3箱
-                  span.badge.pull-right 62
-              li
-                a(href='#')
-                  | 2箱半
-                  span.badge.pull-right 26
-              li
-                a(href='#')
-                  | 2箱
-                  span.badge.pull-right 28
-              li
-                a(href='#')
-                  | Mini
-                  span.badge.pull-right 28
-          //
              Pool Sidebar
           .sidebar
             h6
@@ -634,29 +573,6 @@ block content
               p.vote-button
                 a.btn.btn-large.btn-success(href='#') Vote
                 a.pull-right(href='#') View detailed results
-          //
-             Tag Cloud
-          .sidebar
-            h6
-              i.fa.fa-tags.sidebar-icon
-              | Product Tags Cloud
-            ul.nav.nav-list.tag-cloud.sidebar-categories-two
-              li
-                a.badge.badge-primary.badge-roundless.tag-cloud-tags(href='#Fakelink') Web
-              li
-                a.badge.badge-primary.badge-roundless.tag-cloud-tags(href='#Fakelink') Rap
-              li
-                a.badge.badge-primary.badge-roundless.tag-cloud-tags(href='#Fakelink') Pop
-              li
-                a.badge.badge-primary.badge-roundless.tag-cloud-tags(href='#Fakelink') Design
-              li
-                a.badge.badge-primary.badge-roundless.tag-cloud-tags(href='#Fakelink') Wordpress Themes
-              li
-                a.badge.badge-primary.badge-roundless.tag-cloud-tags(href='#Fakelink') Rock
-              li
-                a.badge.badge-primary.badge-roundless.tag-cloud-tags(href='#Fakelink') Jazz
-              li
-                a.badge.badge-primary.badge-roundless.tag-cloud-tags(href='#Fakelink') PSD Design
         //
            Shop
         .col-md-12
@@ -692,199 +608,7 @@ block content
                   .tp-caption.largewhitebg.customin.customout(data-x='center', data-hoffset='0', data-y='center', data-voffset='64', data-customin='x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;', data-customout='x:0;y:0;z:400;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;', data-speed='1000', data-start='1700', data-easing='Back.easeInOut', data-endeasing='Back.easeInOut', data-endspeed='1000', style='z-index: 11;')
                     | $49,99
               .tp-bannertimer
-          //
-             FILTER CONTROLS
-          .portfolio-filter-two.controls.modul-space-thirtytwo.hidden-xs
-            ul
-              li.btn.btn-primary.filter.active(data-filter='all') All
-              li.btn.btn-default.filter(data-filter='category_1') New
-              li.btn.btn-default.filter(data-filter='category_2') Sales
-              li.btn.btn-default.filter(data-filter='category_3') Best
-          //
-             Product
-          #Grid.shop-product
-            //
-               One
-            .col-xs-12.col-sm-12.col-md-4.mix.category_1.mix_all
-              .portlio-list(data-cat='1', style='display: inline-block; opacity: 1;')
-                .grid.cs-style-1
-                  figure
-                    img.portlio-list-img(src='img/theme/s1.jpg', alt='img04')
-                    figcaption
-                      .image-buttons
-                        a.btn.btn-primary
-                          i.fa.fa-shopping-cart(data-toggle='tooltip', data-placement='top', title='Add to Cart')
-                        a.btn.btn-primary
-                          i.fa.fa-plus(data-toggle='tooltip', data-placement='top', title='Read More')
-                h6 Pellen Mattiso
-                p $19.90
-            //
-               Two
-            .col-xs-12.col-sm-12.col-md-4.mix.category_2.mix_all
-              .portlio-list(data-cat='2', style='display: inline-block; opacity: 1;')
-                .grid.cs-style-1
-                  figure
-                    img.portlio-list-img(src='img/theme/s2.jpg', alt='img04')
-                    figcaption
-                      .image-buttons
-                        a.btn.btn-primary
-                          i.fa.fa-shopping-cart(data-toggle='tooltip', data-placement='top', title='Add to Cart')
-                        a.btn.btn-primary
-                          i.fa.fa-plus(data-toggle='tooltip', data-placement='top', title='Read More')
-                h6 Pellen Mattiso
-                p $29.90
-            //
-               Three
-            .col-xs-12.col-sm-12.col-md-4.mix.category_3.mix_all
-              .portlio-list(data-cat='3', style='display: inline-block; opacity: 1;')
-                .grid.cs-style-1
-                  figure
-                    img.portlio-list-img(src='img/theme/s3.jpg', alt='img04')
-                    figcaption
-                      .image-buttons
-                        a.btn.btn-primary
-                          i.fa.fa-shopping-cart(data-toggle='tooltip', data-placement='top', title='Add to Cart')
-                        a.btn.btn-primary
-                          i.fa.fa-plus(data-toggle='tooltip', data-placement='top', title='Read More')
-                h6 Pellen Mattiso
-                p $49.90
-            //
-               One
-            .col-xs-12.col-sm-12.col-md-4.mix.category_1.mix_all
-              .portlio-list(data-cat='1', style='display: inline-block; opacity: 1;')
-                .grid.cs-style-1
-                  figure
-                    img.portlio-list-img(src='img/theme/s7.jpg', alt='img04')
-                    figcaption
-                      .image-buttons
-                        a.btn.btn-primary
-                          i.fa.fa-shopping-cart(data-toggle='tooltip', data-placement='top', title='Add to Cart')
-                        a.btn.btn-primary
-                          i.fa.fa-plus(data-toggle='tooltip', data-placement='top', title='Read More')
-                h6 Pellen Mattiso
-                p $19.90
-            //
-               Two
-            .col-xs-12.col-sm-12.col-md-4.mix.category_2.mix_all
-              .portlio-list(data-cat='2', style='display: inline-block; opacity: 1;')
-                .grid.cs-style-1
-                  figure
-                    img.portlio-list-img(src='img/theme/s8.jpg', alt='img04')
-                    figcaption
-                      .image-buttons
-                        a.btn.btn-primary
-                          i.fa.fa-shopping-cart(data-toggle='tooltip', data-placement='top', title='Add to Cart')
-                        a.btn.btn-primary
-                          i.fa.fa-plus(data-toggle='tooltip', data-placement='top', title='Read More')
-                h6 Pellen Mattiso
-                p $29.90
-            //
-               Three
-            .col-xs-12.col-sm-12.col-md-4.mix.category_3.mix_all
-              .portlio-list(data-cat='3', style='display: inline-block; opacity: 1;')
-                .grid.cs-style-1
-                  figure
-                    img.portlio-list-img(src='img/theme/s9.jpg', alt='img04')
-                    figcaption
-                      .image-buttons
-                        a.btn.btn-primary
-                          i.fa.fa-shopping-cart(data-toggle='tooltip', data-placement='top', title='Add to Cart')
-                        a.btn.btn-primary
-                          i.fa.fa-plus(data-toggle='tooltip', data-placement='top', title='Read More')
-                h6 Pellen Mattiso
-                p $49.90
-            //
-               One
-            .col-xs-12.col-sm-12.col-md-4.mix.category_1.mix_all
-              .portlio-list(data-cat='1', style='display: inline-block; opacity: 1;')
-                .grid.cs-style-1
-                  figure
-                    img.portlio-list-img(src='img/theme/s4.jpg', alt='img04')
-                    figcaption
-                      .image-buttons
-                        a.btn.btn-primary
-                          i.fa.fa-shopping-cart(data-toggle='tooltip', data-placement='top', title='Add to Cart')
-                        a.btn.btn-primary
-                          i.fa.fa-plus(data-toggle='tooltip', data-placement='top', title='Read More')
-                h6 Pellen Mattiso
-                p $19.90
-            //
-               Two
-            .col-xs-12.col-sm-12.col-md-4.mix.category_2.mix_all
-              .portlio-list(data-cat='2', style='display: inline-block; opacity: 1;')
-                .grid.cs-style-1
-                  figure
-                    img.portlio-list-img(src='img/theme/s5.jpg', alt='img04')
-                    figcaption
-                      .image-buttons
-                        a.btn.btn-primary
-                          i.fa.fa-shopping-cart(data-toggle='tooltip', data-placement='top', title='Add to Cart')
-                        a.btn.btn-primary
-                          i.fa.fa-plus(data-toggle='tooltip', data-placement='top', title='Read More')
-                h6 Pellen Mattiso
-                p $29.90
-            //
-               Three
-            .col-xs-12.col-sm-12.col-md-4.mix.category_3.mix_all
-              .portlio-list(data-cat='3', style='display: inline-block; opacity: 1;')
-                .grid.cs-style-1
-                  figure
-                    img.portlio-list-img(src='img/theme/s6.jpg', alt='img04')
-                    figcaption
-                      .image-buttons
-                        a.btn.btn-primary
-                          i.fa.fa-shopping-cart(data-toggle='tooltip', data-placement='top', title='Add to Cart')
-                        a.btn.btn-primary
-                          i.fa.fa-plus(data-toggle='tooltip', data-placement='top', title='Read More')
-                h6 Pellen Mattiso
-                p $49.90
-            //
-               One
-            .col-xs-12.col-sm-12.col-md-4.mix.category_1.mix_all
-              .portlio-list(data-cat='1', style='display: inline-block; opacity: 1;')
-                .grid.cs-style-1
-                  figure
-                    img.portlio-list-img(src='img/theme/s10.jpg', alt='img04')
-                    figcaption
-                      .image-buttons
-                        a.btn.btn-primary
-                          i.fa.fa-shopping-cart(data-toggle='tooltip', data-placement='top', title='Add to Cart')
-                        a.btn.btn-primary
-                          i.fa.fa-plus(data-toggle='tooltip', data-placement='top', title='Read More')
-                h6 Pellen Mattiso
-                p $19.90
-            //
-               Two
-            .col-xs-12.col-sm-12.col-md-4.mix.category_2.mix_all
-              .portlio-list(data-cat='2', style='display: inline-block; opacity: 1;')
-                .grid.cs-style-1
-                  figure
-                    img.portlio-list-img(src='img/theme/s11.jpg', alt='img04')
-                    figcaption
-                      .image-buttons
-                        a.btn.btn-primary
-                          i.fa.fa-shopping-cart(data-toggle='tooltip', data-placement='top', title='Add to Cart')
-                        a.btn.btn-primary
-                          i.fa.fa-plus(data-toggle='tooltip', data-placement='top', title='Read More')
-                h6 Pellen Mattiso
-                p $29.90
-            //
-               Three
-            .col-xs-12.col-sm-12.col-md-4.mix.category_3.mix_all
-              .portlio-list(data-cat='3', style='display: inline-block; opacity: 1;')
-                .grid.cs-style-1
-                  figure
-                    img.portlio-list-img(src='img/theme/s12.jpg', alt='img04')
-                    figcaption
-                      .image-buttons
-                        a.btn.btn-primary
-                          i.fa.fa-shopping-cart(data-toggle='tooltip', data-placement='top', title='Add to Cart')
-                        a.btn.btn-primary
-                          i.fa.fa-plus(data-toggle='tooltip', data-placement='top', title='Read More')
-                h6 Pellen Mattiso
-                p $49.90
-        //
-           Shop
+
   //
      Page Navi
   .container-fluid.module-background-one.modul-bt-one

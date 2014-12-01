@@ -1523,6 +1523,9 @@ section.blog .comments-list .comment .comment-content {
 .latest-tweet-icon {
   padding: 30px;
   border-radius: 50%;
+}
+.latest-tweet-icon:hover,
+.latest-tweet-icon:focus {
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.23), 0 3px 10px rgba(0, 0, 0, 0.16);
 }
 /************************************************************************************************************************/

@@ -29,29 +29,7 @@ block content
       .container.modul-space-twentythree
         .row
           .col-md-6
-            //
-               Post Detail
-            .post-detail
-              //
-                 Image
-              .tp-banner-container
-                .tp-banner
-                  ul
-                    //
-                       SLIDE ONE
-                    li(data-transition='boxfade', data-slotamount='5', data-masterspeed='1000')
-                      //
-                         MAIN IMAGE
-                      img(src='img/theme/p3.jpg', alt='slidebg1', data-bgfit='cover', data-bgposition='center center', data-bgrepeat='no-repeat')
-                    li(data-transition='boxfade', data-slotamount='5', data-masterspeed='1000')
-                      //
-                         MAIN IMAGE
-                      img(src='img/theme/p8.jpg', alt='slidebg1', data-bgfit='cover', data-bgposition='center center', data-bgrepeat='no-repeat')
-                    li(data-transition='boxfade', data-slotamount='5', data-masterspeed='1000')
-                      //
-                         MAIN IMAGE
-                      img(src='img/theme/p5.jpg', alt='slidebg1', data-bgfit='cover', data-bgposition='center center', data-bgrepeat='no-repeat')
-                  .tp-bannertimer
+            include ../partials/module-slider-5
             .clearfix
           .col-md-6
             //
@@ -68,193 +46,15 @@ block content
        Advert Module Three
     .container-fluid.parallax-four.modul-bt-one(data-speed='10', data-type='background')
       .container.modul-space-twentyfour
-        .row
-          //
-             One
-          .col-xs-12.col-md-4
-            .advert-list-one
-              .grid.cs-style-1
-                figure
-                  img(src='img/theme/bussiness1.jpg', alt='img04')
-                  figcaption
-                    h6 Marry Doe
-                    p Jacob Cummings
-                    .image-buttons-two.pull-right
-                      a.btn.btn-primary
-                        i.fa.fa-plus
-              .advert-list-bottom-shape
-                i.bottom-shape-right
-                  i
-              h6 Our Mission
-              p
-                | Cras sed mauris augue. In at pellentesque sem. Vestibulum suscipit mi sodales tortor vehicula laoreet. Sed a purus vitae nisl sagittis.
-          //
-             Two
-          .col-xs-12.col-md-4
-            .advert-list-one
-              .grid.cs-style-1
-                figure
-                  img(src='img/theme/bussiness2.jpg', alt='img04')
-                  figcaption
-                    h6 John Smith
-                    p Jacob Cummings
-                    .image-buttons-two.pull-right
-                      a.btn.btn-primary
-                        i.fa.fa-plus
-              .advert-list-bottom-shape
-                i.bottom-shape-right
-                  i
-              h6 Our Strategy
-              p
-                | Vivamus eu consectetur tortor, nec facilisis turpis. Aenean malesuada lorem sed ante pharetra, in porta enim pellentesque.
-          //
-             One
-          .col-xs-12.col-md-4
-            .advert-list-one
-              .grid.cs-style-1
-                figure
-                  img(src='img/theme/bussiness3.jpg', alt='img04')
-                  figcaption
-                    h6 Smith Doe
-                    p Jacob Cummings
-                    .image-buttons-two.pull-right
-                      a.btn.btn-primary
-                        i.fa.fa-plus
-              .advert-list-bottom-shape
-                i.bottom-shape-right
-                  i
-              h6 Our Vision
-              p
-                | Suspendisse potenti. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas dapibus placerat.
+        include ../partials/module-advert-2
     //
        Product Modul
     .container-fluid.modul-bt-one
       .container.modul-space-eight
-        .row
-          .col-md-2
-          .col-xs-12.col-md-8
-            .advert-two-title
-              h1 Maecenas Condimentum Placerat Elit
-              p
-                | Cras sed mauris augue. In at pellentesque sem. Vestibulum suscipit mi sodales tortor vehicula laoreet. Sed a purus vitae nisl sagittis consequat eget id velit.
-          .col-md-2
-          .clearfix
-          .col-xs-12.col-md-4.clearfix.hidden-lg.hidden-md
-            .advert-big-image.modul-phone-four
-              img(src='img/theme/advert2.png', alt='Image')
-          .col-xs-12.col-md-4.clearfix
-            //
-               One
-            .modul-services-three.mso-icon-eight
-              .hi-icon-wrap.hi-icon-effect-9.hi-icon-effect-9b.mso-icon-space.pull-right
-                i.fa.fa-bell.hi-icon
-              h6 Etiam Sodales Justo
-              p Cras eget mattis justo. Fusce eget viendose commodo enim.
-            .clearfix
-            //
-               One
-            .modul-services-three.mso-icon-eight
-              .hi-icon-wrap.hi-icon-effect-9.hi-icon-effect-9b.mso-icon-space.pull-right
-                i.fa.fa-thumbs-up.hi-icon
-              h6 Etiam Sodales Justo
-              p Cras eget mattis justo. Fusce eget viendose commodo enim.
-            .clearfix
-            //
-               One
-            .modul-services-three.mso-icon-eight
-              .hi-icon-wrap.hi-icon-effect-9.hi-icon-effect-9b.mso-icon-space.pull-right
-                i.fa.fa-camera.hi-icon
-              h6 Etiam Sodales Justo
-              p Cras eget mattis justo. Fusce eget viendose commodo enim.
-            .clearfix
-          .col-xs-12.col-md-4.clearfix.hidden-sm.hidden-xs
-            .advert-big-image
-              img(src='img/theme/advert2.png', alt='Image')
-          .col-xs-12.col-md-4.clearfix
-            //
-               One
-            .modul-services-two.mso-icon-eight
-              .hi-icon-wrap.hi-icon-effect-9.hi-icon-effect-9b.mso-icon-space.pull-left
-                i.fa.fa-flask.hi-icon
-              h6 Etiam Sodales Justo
-              p Cras eget mattis justo. Fusce eget viendose commodo enim.
-            .clearfix
-            //
-               One
-            .modul-services-two.mso-icon-eight
-              .hi-icon-wrap.hi-icon-effect-9.hi-icon-effect-9b.mso-icon-space.pull-left
-                i.fa.fa-heart.hi-icon
-              h6 Etiam Sodales Justo
-              p Cras eget mattis justo. Fusce eget viendose commodo enim.
-            .clearfix
-            //
-               One
-            .modul-services-two.mso-icon-eight
-              .hi-icon-wrap.hi-icon-effect-9.hi-icon-effect-9b.mso-icon-space.pull-left
-                i.fa.fa-gift.hi-icon
-              h6 Etiam Sodales Justo
-              p Cras eget mattis justo. Fusce eget viendose commodo enim.
-            .clearfix
+        include ../partials/advert-title-2
+        include ../partials/module-advert-6
     //
        Client
     .container-fluid.module-background-two.modul-bt-one(data-speed='10', data-type='background')
       .container.modul-space-twentyfive
-        .row
-          .container
-            .row
-              .col-xs-12.col-md-6
-                .mso-icon-nine
-                  .hi-icon-wrap.hi-icon-effect-9.hi-icon-effect-9b.mso-icon-space.pull-left
-                    img.img-circle.mso-nine-img.hi-icon(src='img/theme/c1.jpg', alt='Client')
-                  a.btn.btn-default.btn-sm.btn-mso-nine.pull-right
-                    i.fa.fa-facebook
-                  a.btn.btn-default.btn-sm.btn-mso-nine.pull-right
-                    i.fa.fa-twitter
-                  a.btn.btn-default.btn-sm.btn-mso-nine.pull-right
-                    i.fa.fa-linkedin
-                  h6 Etiam Sodales Justo
-                  small Themeforest / 14 Jan 2013
-                  p Cras eget mattis justo. Fusce eget viendose commodo enim, quis condimentum use.
-                .clearfix
-              .col-xs-12.col-md-6
-                .mso-icon-nine
-                  .hi-icon-wrap.hi-icon-effect-9.hi-icon-effect-9b.mso-icon-space.pull-left
-                    img.img-circle.mso-nine-img.hi-icon(src='img/theme/c2.jpg', alt='Client')
-                  a.btn.btn-default.btn-sm.btn-mso-nine.pull-right
-                    i.fa.fa-facebook
-                  a.btn.btn-default.btn-sm.btn-mso-nine.pull-right
-                    i.fa.fa-twitter
-                  a.btn.btn-default.btn-sm.btn-mso-nine.pull-right
-                    i.fa.fa-linkedin
-                  h6 Etiam Sodales Justo
-                  small Graphicriver / 14 Jan 2013
-                  p Cras eget mattis justo. Fusce eget viendose commodo enim, quis condimentum use.
-                .clearfix
-              .col-xs-12.col-md-6
-                .mso-icon-nine
-                  .hi-icon-wrap.hi-icon-effect-9.hi-icon-effect-9b.mso-icon-space.pull-left
-                    img.img-circle.mso-nine-img.hi-icon(src='img/theme/c3.jpg', alt='Client')
-                  a.btn.btn-default.btn-sm.btn-mso-nine.pull-right
-                    i.fa.fa-facebook
-                  a.btn.btn-default.btn-sm.btn-mso-nine.pull-right
-                    i.fa.fa-twitter
-                  a.btn.btn-default.btn-sm.btn-mso-nine.pull-right
-                    i.fa.fa-linkedin
-                  h6 Etiam Sodales Justo
-                  small Codecanyon / 14 Jan 2013
-                  p Cras eget mattis justo. Fusce eget viendose commodo enim, quis condimentum use.
-                .clearfix
-              .col-xs-12.col-md-6
-                .mso-icon-nine
-                  .hi-icon-wrap.hi-icon-effect-9.hi-icon-effect-9b.mso-icon-space.pull-left
-                    img.img-circle.mso-nine-img.hi-icon(src='img/theme/c4.jpg', alt='Client')
-                  a.btn.btn-default.btn-sm.btn-mso-nine.pull-right
-                    i.fa.fa-facebook
-                  a.btn.btn-default.btn-sm.btn-mso-nine.pull-right
-                    i.fa.fa-twitter
-                  a.btn.btn-default.btn-sm.btn-mso-nine.pull-right
-                    i.fa.fa-linkedin
-                  h6 Etiam Sodales Justo
-                  small Envato / 14 Jan 2013
-                  p Cras eget mattis justo. Fusce eget viendose commodo enim, quis condimentum use.
-                .clearfix
+        include ../partials/module-client
