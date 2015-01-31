@@ -7,14 +7,11 @@
 .cs-style-1 figcaption {
   height:130px;
   width:100%;
-  opacity:0;
+  visibility: hidden;
   text-align:center;
   -webkit-backface-visibility:hidden;
   -moz-backface-visibility:hidden;
   backface-visibility:hidden;
-  -webkit-transition:-webkit-transform 0.3s, opacity 0s;
-  -moz-transition:-moz-transform 0.3s, opacity 0s;
-  transition:transform 0.3s, opacity 0s;
   h3 {
     margin-top:@large-margin;
   }
@@ -26,13 +23,25 @@
   }
 }
 .no-touch .cs-style-1 figure:hover figcaption, .cs-style-1 figure.cs-hover figcaption {
-  opacity:1;
+  visibility: visible;
   -webkit-transform:translate(0,-130px);
   -moz-transform:translate(0,-130px);
   -ms-transform:translate(0,-130px);
   transform:translate(0,-130px);
+  -webkit-transition:-webkit-transform 0.3s, opacity 0s;
+  -moz-transition:-moz-transform 0.3s, opacity 0s;
+  transition:transform 0.3s, opacity 0s;
 }
-
+.no-touch .cs-style-1 figure:hover .blog-date-circle, .cs-style-1 figure.cs-hover .blog-date-circle {
+    opacity: 0;
+    -webkit-transform:translateY(-90px);
+    -moz-transform:translateY(-90px);
+    -ms-transform:translateY(-90px);
+    transform:translateY(-90px);
+    -webkit-transition:-webkit-transform 0.4s, opacity 0.3s;
+    -moz-transition:-moz-transform 0.4s, opacity 0.3s;
+    transition:transform 0.4s, opacity 0.3s;
+}
 /* Caption Style 2 */
 
 .cs-style-2 figure img {

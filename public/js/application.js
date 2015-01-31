@@ -107,11 +107,11 @@ $(function() {
         scrollName: 'scrollUp', // Element ID
         scrollDistance: 300, // Distance from top/bottom before showing element (px)
         scrollFrom: 'top', // 'top' or 'bottom'
-        scrollSpeed: 300, // Speed back to top (ms)
+        scrollSpeed: 3000, // Speed back to top (ms)
         easingType: 'linear', // Scroll to top easing (see http://easings.net/)
         animation: 'fade', // Fade, slide, none
-        animationInSpeed: 200, // Animation in speed (ms)
-        animationOutSpeed: 200, // Animation out speed (ms)
+        animationInSpeed: 500, // Animation in speed (ms)
+        animationOutSpeed: 500, // Animation out speed (ms)
         scrollText: 'Scroll to top', // Text for element, can contain HTML
         scrollTitle: false, // Set a custom <a> title if required. Defaults to scrollText
         scrollImg: true, // Set true to use image

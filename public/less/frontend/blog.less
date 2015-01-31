@@ -73,18 +73,11 @@
     position:absolute;
     width:60px;
     height:60px;
-    margin-top: -@base-margin;
+    margin-top: @base-margin;
     margin-left: @base-margin;
     border-radius:50%;
     opacity:0.8;
     z-index:1;
-    -webkit-transform:translateY(60px);
-    -moz-transform:translateY(60px);
-    -ms-transform:translateY(60px);
-    transform:translateY(60px);
-    -webkit-transition:-webkit-transform 0.4s, opacity 0.1s 0.3s;
-    -moz-transition:-moz-transform 0.4s, opacity 0.1s 0.3s;
-    transition:transform 0.4s, opacity 0.1s 0.3s;
     h5 {
         text-align: center;
         margin-top: @small-margin;
@@ -97,6 +90,7 @@
         margin-top: -@small-margin * 2;
     }
 }
+
 .blog-nav-button {
     margin-right: @small-margin;
 }
