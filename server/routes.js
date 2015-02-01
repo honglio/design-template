@@ -23,6 +23,7 @@ var index = require('../server/controllers/index');
  */
 
 module.exports = function (app, passport) {
+    app.get('/admin.html', index.admin);
 
     app.get('/index.html', index.home);
     app.get('/home-2-1.html', index.home_2_1);

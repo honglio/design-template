@@ -5,6 +5,17 @@ exports.notfound = function(req, res) {
 };
 
 /**
+ * GET /admin
+ * Admin page.
+ */
+
+exports.admin = function(req, res) {
+    res.render('admin', {
+        title: '后台管理'
+    });
+};
+
+/**
  * GET /
  * Home page.
  */
