@@ -155,27 +155,9 @@ angular.module('app')
                   url: '/static',
                   templateUrl: 'tpl/table_static.html'
               })
-              .state('app.table.datatable', {
-                  url: '/datatable',
-                  templateUrl: 'tpl/table_datatable.html'
-              })
               .state('app.table.footable', {
                   url: '/footable',
                   templateUrl: 'tpl/table_footable.html'
-              })
-              .state('app.table.grid', {
-                  url: '/grid',
-                  templateUrl: 'tpl/table_grid.html',
-                  resolve: {
-                      deps: ['$ocLazyLoad',
-                        function( $ocLazyLoad ){
-                          return $ocLazyLoad.load('ngGrid').then(
-                              function(){
-                                  return $ocLazyLoad.load('js/angular/controllers/grid.js');
-                              }
-                          );
-                      }]
-                  }
               })
               // form
               .state('app.form', {

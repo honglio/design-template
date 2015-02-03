@@ -28,9 +28,6 @@ angular.module('app')
                           'js/vendors/jquery/spinner/jquery.bootstrap-touchspin.css'],
       wysiwyg:        ['js/vendors/jquery/wysiwyg/bootstrap-wysiwyg.js',
                           'js/vendors/jquery/wysiwyg/jquery.hotkeys.js'],
-      dataTable:      ['js/vendors/jquery/datatables/jquery.dataTables.min.js',
-                          'js/vendors/jquery/datatables/dataTables.bootstrap.js',
-                          'js/vendors/jquery/datatables/dataTables.bootstrap.css'],
       vectorMap:      ['js/vendors/jquery/jvectormap/jquery-jvectormap.min.js',
                           'js/vendors/jquery/jvectormap/jquery-jvectormap-world-mill-en.js',
                           'js/vendors/jquery/jvectormap/jquery-jvectormap-us-aea-en.js',
@@ -46,14 +43,6 @@ angular.module('app')
           debug:  false,
           events: true,
           modules: [
-              {
-                  name: 'ngGrid',
-                  files: [
-                      'js/vendors/modules/ng-grid/ng-grid.min.js',
-                      'js/vendors/modules/ng-grid/ng-grid.min.css',
-                      'js/vendors/modules/ng-grid/theme.css'
-                  ]
-              },
               {
                   name: 'ui.select',
                   files: [

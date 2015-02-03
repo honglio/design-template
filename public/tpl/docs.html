@@ -12,7 +12,7 @@
         <li class="padder b-b l-h-2x bg text-info"><em>Build</em></li>
         <li><a ui-scroll="node-req">Requirements</a></li>
         <li><a ui-scroll="bower">Bower</a></li>
-        <li><a ui-scroll="grunt">Grunt</a></li>      
+        <li><a ui-scroll="grunt">Grunt</a></li>
         <li><a ui-scroll="dev-server">Local Server</a></li>
 
         <li class="padder b-b l-h-2x bg text-success"><em>CSS</em></li>
@@ -23,7 +23,7 @@
         <li><a ui-scroll="layout">Layout</a></li>
         <li><a ui-scroll="utilities">Utilities</a></li>
 
-        <li ui-scroll="core" class="padder b-b b-t l-h-2x bg text-danger"><em>Core</em></li>        
+        <li ui-scroll="core" class="padder b-b b-t l-h-2x bg text-danger"><em>Core</em></li>
         <li><a ui-scroll="ui-router">ui-router</a></li>
         <li><a ui-scroll="ui-load">ui-load</a></li>
         <li><a ui-scroll="ui-jq">ui-jq</a></li>
@@ -53,14 +53,14 @@
       <p>
         In order to utilize <a href="http://gruntjs.com" class="text-info font-bold">Grunt</a> you will need to have installed <a href="http://nodejs.org" class="text-info font-bold">Node.js</a> on your computer. Also
         insure that you have <a href="https://www.npmjs.org/" class="text-info font-bold">NPM</a> installed. <br />
-        You can check if these are installed properly by opening up a Terminal (Linux or Mac) or Command Prompt (Windows) <br /> 
+        You can check if these are installed properly by opening up a Terminal (Linux or Mac) or Command Prompt (Windows) <br />
         and entering the command: <code>node --version</code> and <code>npm --version</code>
         These commands should output something similar to "v0.10.31" and "1.4.23" respectively.
       </p>
       <p>
         Once you have installed these programs, you'll need to get grunt and bower. You can achieve this by running the following command:
         <code>npm install -g bower grunt-cli</code> <br />
-        Now you should be able to exectue the commands "grunt" and "bower". 
+        Now you should be able to exectue the commands "grunt" and "bower".
       </p>
       <p class="well b bg-light lt wrapper-sm m-t text-danger font-bold">
         Please note that any commands we tell you to run must be ran from the project's root folder.
@@ -128,7 +128,7 @@
       <div class="line b-b"></div>
       <h4 class="m-t-xl">Icons</h4>
       <ul>
-        <li>FontAwesome icons <label class="label bg-info">4.1</label>  <p>Check <strong><a href="http://fortawesome.github.io/Font-Awesome/">FontAwesome</a></strong> for more details to see how to use and examples</p></li>            
+        <li>FontAwesome icons <label class="label bg-info">4.1</label>  <p>Check <strong><a href="http://fortawesome.github.io/Font-Awesome/">FontAwesome</a></strong> for more details to see how to use and examples</p></li>
         <li>Glyphicons <p>Bootstrap default icons</p></li>
         <li>Simple Line Icons</li>
       </ul>
@@ -543,7 +543,7 @@
           <tr>
             <td>.thumb-xxs</td>
             <td>width: 30px</td>
-          </tr>          
+          </tr>
           <tr>
             <td>.img-full</td>
             <td>width: 100%</td>
@@ -716,9 +716,9 @@
       <div class="line b-b"></div>
       <h4 class="m-t-xl">ui-load</h4>
       <p>ui-load for <strong>lazy loading</strong> the js and css files. </p>
-      <p class="well text-black bg-light lter">        
+      <p class="well text-black bg-light lter">
         angular.module('myModule', ['ui.load']);<br><br>
-        uiLoad.load( 
+        uiLoad.load(
           ['path/style.css', 'path/script.js']
         ).then(function() {<br>
           <span class="text-muted m-l">// loaded succesfully.</span><br>
@@ -739,7 +739,7 @@
       <div class="line b-b"></div>
       <h4 class="m-t-xl">ui-module</h4>
       <p>
-        <code>ui-module</code> Load other dependences for child directive. 
+        <code>ui-module</code> Load other dependences for child directive.
         you need config the dependences in "js/app.js" constant "MODULE_CONFIG".
         <br>example: check the "ui-select2" directive on "form/element"
       </p>
@@ -790,18 +790,15 @@
       <div id="plugins" class="wrapper"></div>
       <div class="line b-b"></div>
       <h3 class="text-info font-thin m-t-xl m-b-lg">Plugins</h3>
-      <p>All jQuery plugins are depended on <code>ui-jq</code>, do not need create the Angular Directive for each of the plugin. you can config in the js/app.js Angular Constant <code>JQ_CONFIG</code>, <code>functionName => pluginPath</code>, the js and css files are lazy loaded.</p>       
+      <p>All jQuery plugins are depended on <code>ui-jq</code>, do not need create the Angular Directive for each of the plugin. you can config in the js/app.js Angular Constant <code>JQ_CONFIG</code>, <code>functionName => pluginPath</code>, the js and css files are lazy loaded.</p>
       <div class="row m-b-xl">
         <div class="col-md-6">
             <h4 class="m-t-md">FullCalendar</h4>
             <p>Check the online <a href="http://arshaw.com/fullcalendar/"><strong>document</strong></a> and <a href="http://angular-ui.github.io/ui-calendar/"><strong>Angular Fullcalendar Wrapper</strong></a></p>
 
-            <h4 class="m-t-md">Datatables</h4>
-            <p>Check the online <a href="http://datatables.net/"><strong>document</strong></a>. </p>
-            
             <h4 class="m-t-md">Chosen</h4>
             <p>Check the online <a href="http://github.com/harvesthq/chosen"><strong>document</strong></a>. </p>
-            
+
             <h4 class="m-t-md">File-input</h4>
             <p>Check the online <a href="http://dev.tudosobreweb.com.br/bootstrap-filestyle/"><strong>document</strong></a>. </p>
 
@@ -838,7 +835,7 @@
             <p>Check the online <a href="http://jvectormap.com/"><strong>document</strong></a>. </p>
         </div>
       </div>
- 
+
     </div>
   </div>
 </div>
