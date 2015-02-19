@@ -405,17 +405,6 @@ angular.module('app')
                   url: '/apps',
                   templateUrl: 'tpl/layout.html'
               })
-              .state('apps.note', {
-                  url: '/note',
-                  templateUrl: 'tpl/apps_note.html',
-                  resolve: {
-                      deps: ['uiLoad',
-                        function( uiLoad ){
-                          return uiLoad.load( ['js/angular/app/note/note.js',
-                                               'js/vendors/libs/moment.min.js'] );
-                      }]
-                  }
-              })
               .state('apps.contact', {
                   url: '/contact',
                   templateUrl: 'tpl/apps_contact.html',
