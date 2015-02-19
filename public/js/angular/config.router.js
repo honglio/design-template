@@ -322,30 +322,6 @@ angular.module('app')
                   templateUrl: 'tpl/page_404.html'
               })
 
-              // fullCalendar
-              .state('app.calendar', {
-                  url: '/calendar',
-                  templateUrl: 'tpl/app_calendar.html',
-                  // use resolve to load other dependences
-                  resolve: {
-                      deps: ['$ocLazyLoad', 'uiLoad',
-                        function( $ocLazyLoad, uiLoad ){
-                          return uiLoad.load(
-                            ['js/vendors/jquery/fullcalendar/fullcalendar.css',
-                              'js/vendors/jquery/fullcalendar/theme.css',
-                              'js/vendors/jquery/jquery-ui-1.10.3.custom.min.js',
-                              'js/vendors/libs/moment.min.js',
-                              'js/vendors/jquery/fullcalendar/fullcalendar.min.js',
-                              'js/angular/app/calendar/calendar.js']
-                          ).then(
-                            function(){
-                              return $ocLazyLoad.load('ui.calendar');
-                            }
-                          )
-                      }]
-                  }
-              })
-
               // mail
               .state('app.mail', {
                   abstract: true,

@@ -57,10 +57,6 @@ angular.module('app')
                   ]
               },
               {
-                  name:'ui.calendar',
-                  files: ['js/vendors/modules/angular-ui-calendar/calendar.js']
-              },
-              {
                   name: 'ngImgCrop',
                   files: [
                       'js/vendors/modules/ngImgCrop/ng-img-crop.js',
