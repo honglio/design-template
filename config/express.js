@@ -15,7 +15,7 @@ var express = require('express'),
     mongoStore = require('connect-mongo')({
         session: session
     }),
-    csrf = require('lusca').csrf(),
+    // csrf = require('lusca').csrf(),
     helpers = require('view-helpers'),
     config = require('./config'),
     whitelist = ['/url1', '/url2'];
@@ -94,13 +94,13 @@ module.exports = function(app, passport) {
     // should be declared after session and flash
     app.use(helpers('Niukj'));
     // adds CSRF attack protect
-    app.use(function(req, res, next) {
-        if (whitelist.indexOf(req.path) !== -1) {
-            next();
-        } else {
-            csrf(req, res, next);
-        }
-    });
+    // app.use(function(req, res, next) {
+    //     if (whitelist.indexOf(req.path) !== -1) {
+    //         next();
+    //     } else {
+    //         csrf(req, res, next);
+    //     }
+    // });
     app.use(function(req, res, next) {
         res.locals.user = req.user;
         next();

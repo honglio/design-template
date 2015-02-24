@@ -348,3 +348,11 @@ section#top-nav
         li
           a(href='admin.html')
             i.fa.fa-single.fa-tachometer
+      ul.nav.nav-pills.navbar-nav.navbar-right
+        if user
+          li.dropdown
+              a.dropdown-toggle(data-target="#" data-toggle='dropdown' role="button")
+                | #{user.username}&nbsp;
+                span.caret
+              ul.dropdown-menu(role="menu")
+                li: a(href='/logout') 登出

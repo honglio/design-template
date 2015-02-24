@@ -1,0 +1,52 @@
+extends ../layout
+
+block content
+  .login-page
+    .login-form
+      .login-content
+        .form-login-error
+          h3 Invalid login
+          p
+            | Enter
+            strong demo
+            | /
+            strong demo
+            |  as login and password.
+        form#form_login(method='post', role='form')
+          .form-group
+            .input-group
+              .input-group-addon
+                i.fa.fa-user
+              input#username.form-control(type='email', name='username', placeholder='Username', autocomplete='off')
+          .form-group
+            .input-group
+              .input-group-addon
+                i.fa.fa-key
+              input#password.form-control(type='password', name='password', placeholder='Password', autocomplete='off')
+          .form-group
+            button.btn.btn-primary.btn-block.btn-login(type='submit')
+              i.fa.fa-sign-in
+              |                 Sign In
+          // Implemented in v1.1.4
+          //- .form-group
+          //-   em - or -
+          //- .form-group
+          //-   button.btn.btn-default.btn-lg.btn-block.facebook-button(type='button')
+          //-     i.fa.fa-facebook
+          //-     |                    |  Login with Facebook
+          //
+            You can also use other social network buttons
+          //- .form-group
+          //-   button.btn.btn-default.btn-lg.btn-block.twitter-button(type='button')
+          //-     i.fa.fa-twitter
+          //-     |                    |  Login with Twitter
+          //- .form-group
+          //-   button.btn.btn-default.btn-lg.btn-block.google-button(type='button')
+          //-     i.fa.fa-google-plus
+          //-     |                    |  Login with Google+
+        .login-bottom-links
+          a.link(href='#') Forgot your password?
+          br
+          a(href='#') ToS
+          |   -
+          a(href='#') Privacy Policy
