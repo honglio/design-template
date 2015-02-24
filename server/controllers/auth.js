@@ -1,3 +1,4 @@
+var userRoles = require('../../public/js/routingConfig').userRoles;
 /**
  * POST /login
  * Sign in using email and password.
@@ -15,13 +16,14 @@ exports.postLogin = function( req, res, next ) {
       req.flash('errors', errors);
       return res.redirect('/login');
   }
-
+  console.log(userRoles);
   /*
    * request
    */
   if (req.body.username === 'admin@diversity.com' && req.body.password === 'WenJie0107') {
     var user = {
-      username: req.body.username
+      username: req.body.username,
+      role: userRoles.user
     }
     req.logIn( user, function( err ) {
       if ( err ) {

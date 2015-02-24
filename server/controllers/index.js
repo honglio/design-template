@@ -1,3 +1,5 @@
+var userRoles = require('../../public/js/routingConfig').userRoles;
+
 exports.notfound = function(req, res) {
     res.render('404', {
         title: '网页无法访问'
@@ -10,6 +12,15 @@ exports.notfound = function(req, res) {
  */
 
 exports.admin = function(req, res) {
+    var role = userRoles.public, username = '';
+    if(req.user) {
+        role = req.user.role;
+        username = req.user.username;
+    }
+    res.cookie('user', JSON.stringify({
+        'username': username,
+        'role': role
+    }));
     res.render('admin', {
         title: '后台管理'
     });

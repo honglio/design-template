@@ -5,24 +5,48 @@
  */
 angular.module('app')
   .run(
-    [          '$rootScope', '$state', '$stateParams',
-      function ($rootScope,   $state,   $stateParams) {
+    [          '$rootScope', '$state', '$stateParams', 'Auth',
+      function ($rootScope,   $state,   $stateParams, Auth) {
           $rootScope.$state = $state;
           $rootScope.$stateParams = $stateParams;
+          $rootScope.$on("$stateChangeStart", function (event, toState, toParams, fromState, fromParams) {
+
+              if(!('data' in toState) || !('access' in toState.data)){
+                  $rootScope.error = "Access undefined for this state";
+                  event.preventDefault();
+              }
+              else if (!Auth.authorize(toState.data.access)) {
+                  $rootScope.error = "Seems like you tried accessing a route you don't have access to...";
+                  event.preventDefault();
+
+                  if(fromState.url === '^') {
+                      if(Auth.isLoggedIn()) {
+                          $state.go('apps.chart');
+                      } else {
+                          $rootScope.error = null;
+                          $state.go('access.signin');
+                      }
+                  }
+              }
+          });
       }
     ]
   )
   .config(
-    [          '$stateProvider', '$urlRouterProvider',
-      function ($stateProvider,   $urlRouterProvider) {
-
+    [          '$stateProvider', '$urlRouterProvider', '$httpProvider',
+      function ($stateProvider,   $urlRouterProvider, $httpProvider) {
+          var access = routingConfig.accessLevels;
           $urlRouterProvider
-              .otherwise('/app/dashboard-v1');
+              .otherwise('/404');
+
           $stateProvider
               .state('app', {
                   abstract: true,
                   url: '/app',
-                  templateUrl: 'tpl/app.html'
+                  templateUrl: 'tpl/app.html',
+                  data: {
+                      access: access.user
+                  }
               })
               .state('app.dashboard-v1', {
                   url: '/dashboard-v1',
@@ -133,16 +157,6 @@ angular.module('app')
                                 return loadGoogleMaps();
                               }
                             );
-                      }]
-                  }
-              })
-              .state('app.chart', {
-                  url: '/chart',
-                  templateUrl: 'tpl/ui_chart.html',
-                  resolve: {
-                      deps: ['uiLoad',
-                        function( uiLoad){
-                          return uiLoad.load('js/angular/controllers/chart.js');
                       }]
                   }
               })
@@ -284,44 +298,6 @@ angular.module('app')
                   url: '/docs',
                   templateUrl: 'tpl/docs.html'
               })
-              // others
-              .state('lockme', {
-                  url: '/lockme',
-                  templateUrl: 'tpl/page_lockme.html'
-              })
-              .state('access', {
-                  url: '/access',
-                  template: '<div ui-view class="fade-in-right-big smooth"></div>'
-              })
-              .state('access.signin', {
-                  url: '/signin',
-                  templateUrl: 'tpl/page_signin.html',
-                  resolve: {
-                      deps: ['uiLoad',
-                        function( uiLoad ){
-                          return uiLoad.load( ['js/angular/controllers/signin.js'] );
-                      }]
-                  }
-              })
-              .state('access.signup', {
-                  url: '/signup',
-                  templateUrl: 'tpl/page_signup.html',
-                  resolve: {
-                      deps: ['uiLoad',
-                        function( uiLoad ){
-                          return uiLoad.load( ['js/angular/controllers/signup.js'] );
-                      }]
-                  }
-              })
-              .state('access.forgotpwd', {
-                  url: '/forgotpwd',
-                  templateUrl: 'tpl/page_forgotpwd.html'
-              })
-              .state('access.404', {
-                  url: '/404',
-                  templateUrl: 'tpl/page_404.html'
-              })
-
               // mail
               .state('app.mail', {
                   abstract: true,
@@ -348,12 +324,16 @@ angular.module('app')
               .state('app.mail.compose', {
                   url: '/compose',
                   templateUrl: 'tpl/mail.new.html'
-              })
+              });
 
+          $stateProvider
               .state('layout', {
                   abstract: true,
                   url: '/layout',
-                  templateUrl: 'tpl/layout.html'
+                  templateUrl: 'tpl/layout.html',
+                  data: {
+                      access: access.admin
+                  }
               })
               .state('layout.fullwidth', {
                   url: '/fullwidth',
@@ -400,10 +380,66 @@ angular.module('app')
                       }]
                   }
               })
+              // others
+              .state('lockme', {
+                  url: '/lockme',
+                  templateUrl: 'tpl/page_lockme.html',
+                  data: {
+                      access: access.public
+                  }
+              });
+          // Anonymous routes
+          $stateProvider
+              .state('access', {
+                  abstract: true,
+                  template: '<div ui-view class="fade-in-right-big smooth"></div>',
+                  data: {
+                      access: access.anon
+                  }
+              })
+              .state('access.signin', {
+                  url: '/signin',
+                  templateUrl: 'tpl/page_signin.html',
+                  resolve: {
+                      deps: ['uiLoad',
+                        function( uiLoad ){
+                          return uiLoad.load( ['js/angular/controllers/signin.js'] );
+                      }]
+                  }
+              })
+              .state('access.signup', {
+                  url: '/signup',
+                  templateUrl: 'tpl/page_signup.html',
+                  resolve: {
+                      deps: ['uiLoad',
+                        function( uiLoad ){
+                          return uiLoad.load( ['js/angular/controllers/signup.js'] );
+                      }]
+                  }
+              })
+              .state('access.forgotpwd', {
+                  url: '/forgotpwd',
+                  templateUrl: 'tpl/page_forgotpwd.html',
+                  data: {
+                      access: access.public
+                  }
+              })
+              .state('access.404', {
+                  url: '/404',
+                  templateUrl: 'tpl/page_404.html',
+                  data: {
+                      access: access.public
+                  }
+              });
+
+          $stateProvider
               .state('apps', {
                   abstract: true,
                   url: '/apps',
-                  templateUrl: 'tpl/layout.html'
+                  templateUrl: 'tpl/layout.html',
+                  data: {
+                      access: access.anon
+                  }
               })
               .state('apps.contact', {
                   url: '/contact',
@@ -413,9 +449,12 @@ angular.module('app')
                         function( uiLoad ){
                           return uiLoad.load( ['js/angular/app/contact/contact.js'] );
                       }]
+                  },
+                  data: {
+                      access: access.user
                   }
               })
-              .state('app.weather', {
+              .state('apps.weather', {
                   url: '/weather',
                   templateUrl: 'tpl/apps_weather.html',
                   resolve: {
@@ -431,8 +470,23 @@ angular.module('app')
                               }
                           );
                       }]
+                  },
+                  data: {
+                      access: access.user
                   }
               })
+              .state('apps.chart', {
+                  url: '/chart',
+                  templateUrl: 'tpl/ui_chart.html',
+                  resolve: {
+                      deps: ['uiLoad',
+                        function( uiLoad){
+                          return uiLoad.load('js/angular/controllers/chart.js');
+                      }]
+                  }
+              });
+
+          $stateProvider
               .state('music', {
                   url: '/music',
                   templateUrl: 'tpl/music.html',
@@ -450,32 +504,46 @@ angular.module('app')
                             'js/angular/app/music/theme.css'
                           ]);
                       }]
+                  },
+                  data: {
+                      access: access.user
                   }
               })
-                .state('music.home', {
-                    url: '/home',
-                    templateUrl: 'tpl/music.home.html'
-                })
-                .state('music.genres', {
-                    url: '/genres',
-                    templateUrl: 'tpl/music.genres.html'
-                })
-                .state('music.detail', {
-                    url: '/detail',
-                    templateUrl: 'tpl/music.detail.html'
-                })
-                .state('music.mtv', {
-                    url: '/mtv',
-                    templateUrl: 'tpl/music.mtv.html'
-                })
-                .state('music.mtvdetail', {
-                    url: '/mtvdetail',
-                    templateUrl: 'tpl/music.mtv.detail.html'
-                })
-                .state('music.playlist', {
-                    url: '/playlist/{fold}',
-                    templateUrl: 'tpl/music.playlist.html'
-                })
+              .state('music.home', {
+                  url: '/home',
+                  templateUrl: 'tpl/music.home.html'
+              })
+              .state('music.genres', {
+                  url: '/genres',
+                  templateUrl: 'tpl/music.genres.html'
+              })
+              .state('music.detail', {
+                  url: '/detail',
+                  templateUrl: 'tpl/music.detail.html'
+              })
+              .state('music.mtv', {
+                  url: '/mtv',
+                  templateUrl: 'tpl/music.mtv.html'
+              })
+              .state('music.mtvdetail', {
+                  url: '/mtvdetail',
+                  templateUrl: 'tpl/music.mtv.detail.html'
+              })
+              .state('music.playlist', {
+                  url: '/playlist/{fold}',
+                  templateUrl: 'tpl/music.playlist.html'
+              });
+
+          $httpProvider.interceptors.push(function($q, $location) {
+              return {
+                  'responseError': function(response) {
+                      if(response.status === 401 || response.status === 403) {
+                          $location.path('/login');
+                      }
+                      return $q.reject(response);
+                  }
+              };
+          });
       }
     ]
   );
