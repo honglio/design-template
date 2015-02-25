@@ -21,10 +21,10 @@ angular.module('app')
 
                   if(fromState.url === '^') {
                       if(Auth.isLoggedIn()) {
-                          $state.go('apps.chart');
+                          $state.go('app.dashboard-v1');
                       } else {
                           $rootScope.error = null;
-                          $state.go('access.signin');
+                          $state.go('apps.chart');
                       }
                   }
               }
@@ -397,33 +397,6 @@ angular.module('app')
                       access: access.anon
                   }
               })
-              .state('access.signin', {
-                  url: '/signin',
-                  templateUrl: 'tpl/page_signin.html',
-                  resolve: {
-                      deps: ['uiLoad',
-                        function( uiLoad ){
-                          return uiLoad.load( ['js/angular/controllers/signin.js'] );
-                      }]
-                  }
-              })
-              .state('access.signup', {
-                  url: '/signup',
-                  templateUrl: 'tpl/page_signup.html',
-                  resolve: {
-                      deps: ['uiLoad',
-                        function( uiLoad ){
-                          return uiLoad.load( ['js/angular/controllers/signup.js'] );
-                      }]
-                  }
-              })
-              .state('access.forgotpwd', {
-                  url: '/forgotpwd',
-                  templateUrl: 'tpl/page_forgotpwd.html',
-                  data: {
-                      access: access.public
-                  }
-              })
               .state('access.404', {
                   url: '/404',
                   templateUrl: 'tpl/page_404.html',
@@ -438,7 +411,7 @@ angular.module('app')
                   url: '/apps',
                   templateUrl: 'tpl/layout.html',
                   data: {
-                      access: access.anon
+                      access: access.public
                   }
               })
               .state('apps.contact', {

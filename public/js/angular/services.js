@@ -10,7 +10,7 @@ angular.module('app')
     $cookieStore.remove('user');
 
     function changeUser(user) {
-        angular.extend(currentUser, user);
+        currentUser.username = user.username;
     }
 
     return {
@@ -26,27 +26,6 @@ angular.module('app')
                 user = currentUser;
             }
             return user.role.title === userRoles.user.title || user.role.title === userRoles.admin.title;
-        },
-        register: function(user, success, error) {
-            $http.post('/register', user).success(function(res) {
-                changeUser(res);
-                success();
-            }).error(error);
-        },
-        login: function(user, success, error) {
-            $http.post('/login', user).success(function(user){
-                changeUser(user);
-                success(user);
-            }).error(error);
-        },
-        logout: function(success, error) {
-            $http.post('/logout').success(function(){
-                changeUser({
-                    username: '',
-                    role: userRoles.public
-                });
-                success();
-            }).error(error);
         },
         accessLevels: accessLevels,
         userRoles: userRoles,

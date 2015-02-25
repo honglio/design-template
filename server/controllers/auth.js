@@ -29,11 +29,11 @@ exports.postLogin = function( req, res, next ) {
       if ( err ) {
           return next( err );
       }
-      return res.redirect('/');
+      res.redirect('/admin.html');
     });
 
   } else {
     req.flash('errors', {msg: 'Auth Failed!'});
-    return res.redirect('/login');
+    res.redirect('/login');
   }
 };
