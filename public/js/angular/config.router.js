@@ -33,8 +33,8 @@ angular.module('app')
     ]
   )
   .config(
-    [          '$stateProvider', '$urlRouterProvider', '$httpProvider',
-      function ($stateProvider,   $urlRouterProvider, $httpProvider) {
+    [          '$stateProvider', '$urlRouterProvider',
+      function ($stateProvider,   $urlRouterProvider) {
           var access = routingConfig.accessLevels;
           $urlRouterProvider
               .otherwise('/404');
@@ -506,17 +506,6 @@ angular.module('app')
                   url: '/playlist/{fold}',
                   templateUrl: 'tpl/music.playlist.html'
               });
-
-          $httpProvider.interceptors.push(function($q, $location) {
-              return {
-                  'responseError': function(response) {
-                      if(response.status === 401 || response.status === 403) {
-                          $location.path('/login');
-                      }
-                      return $q.reject(response);
-                  }
-              };
-          });
       }
     ]
   );
