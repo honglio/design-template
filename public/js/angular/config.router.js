@@ -48,26 +48,6 @@ angular.module('app')
                       access: access.user
                   }
               })
-              .state('app.dashboard-v1', {
-                  url: '/dashboard-v1',
-                  templateUrl: 'tpl/app_dashboard_v1.html',
-                  resolve: {
-                    deps: ['$ocLazyLoad',
-                      function( $ocLazyLoad ){
-                        return $ocLazyLoad.load(['js/angular/controllers/chart.js']);
-                    }]
-                  }
-              })
-              .state('app.dashboard-v2', {
-                  url: '/dashboard-v2',
-                  templateUrl: 'tpl/app_dashboard_v2.html',
-                  resolve: {
-                    deps: ['$ocLazyLoad',
-                      function( $ocLazyLoad ){
-                        return $ocLazyLoad.load(['js/angular/controllers/chart.js']);
-                    }]
-                  }
-              })
               .state('app.ui', {
                   url: '/ui',
                   template: '<div ui-view class="fade-in-up"></div>'
@@ -83,10 +63,6 @@ angular.module('app')
               .state('app.ui.grid', {
                   url: '/grid',
                   templateUrl: 'tpl/ui_grid.html'
-              })
-              .state('app.ui.widgets', {
-                  url: '/widgets',
-                  templateUrl: 'tpl/ui_widgets.html'
               })
               .state('app.ui.bootstrap', {
                   url: '/bootstrap',
@@ -159,19 +135,6 @@ angular.module('app')
                             );
                       }]
                   }
-              })
-              // table
-              .state('app.table', {
-                  url: '/table',
-                  template: '<div ui-view></div>'
-              })
-              .state('app.table.static', {
-                  url: '/static',
-                  templateUrl: 'tpl/table_static.html'
-              })
-              .state('app.table.footable', {
-                  url: '/footable',
-                  templateUrl: 'tpl/table_footable.html'
               })
               // form
               .state('app.form', {
@@ -268,62 +231,6 @@ angular.module('app')
                           );
                       }]
                   }
-              })
-              // pages
-              .state('app.page', {
-                  url: '/page',
-                  template: '<div ui-view class="fade-in-down"></div>'
-              })
-              .state('app.page.profile', {
-                  url: '/profile',
-                  templateUrl: 'tpl/page_profile.html'
-              })
-              .state('app.page.post', {
-                  url: '/post',
-                  templateUrl: 'tpl/page_post.html'
-              })
-              .state('app.page.search', {
-                  url: '/search',
-                  templateUrl: 'tpl/page_search.html'
-              })
-              .state('app.page.invoice', {
-                  url: '/invoice',
-                  templateUrl: 'tpl/page_invoice.html'
-              })
-              .state('app.page.price', {
-                  url: '/price',
-                  templateUrl: 'tpl/page_price.html'
-              })
-              .state('app.docs', {
-                  url: '/docs',
-                  templateUrl: 'tpl/docs.html'
-              })
-              // mail
-              .state('app.mail', {
-                  abstract: true,
-                  url: '/mail',
-                  templateUrl: 'tpl/mail.html',
-                  // use resolve to load other dependences
-                  resolve: {
-                      deps: ['uiLoad',
-                        function( uiLoad ){
-                          return uiLoad.load( ['js/angular/app/mail/mail.js',
-                                               'js/angular/app/mail/mail-service.js',
-                                               'js/vendors/libs/moment.min.js'] );
-                      }]
-                  }
-              })
-              .state('app.mail.list', {
-                  url: '/inbox/{fold}',
-                  templateUrl: 'tpl/mail.list.html'
-              })
-              .state('app.mail.detail', {
-                  url: '/{mailId:[0-9]{1,4}}',
-                  templateUrl: 'tpl/mail.detail.html'
-              })
-              .state('app.mail.compose', {
-                  url: '/compose',
-                  templateUrl: 'tpl/mail.new.html'
               });
 
           $stateProvider
@@ -379,15 +286,8 @@ angular.module('app')
                           return uiLoad.load( ['js/angular/controllers/tab.js'] );
                       }]
                   }
-              })
-              // others
-              .state('lockme', {
-                  url: '/lockme',
-                  templateUrl: 'tpl/page_lockme.html',
-                  data: {
-                      access: access.public
-                  }
               });
+
           // Anonymous routes
           $stateProvider
               .state('access', {
@@ -403,108 +303,6 @@ angular.module('app')
                   data: {
                       access: access.public
                   }
-              });
-
-          $stateProvider
-              .state('apps', {
-                  abstract: true,
-                  url: '/apps',
-                  templateUrl: 'tpl/layout.html',
-                  data: {
-                      access: access.public
-                  }
-              })
-              .state('apps.contact', {
-                  url: '/contact',
-                  templateUrl: 'tpl/apps_contact.html',
-                  resolve: {
-                      deps: ['uiLoad',
-                        function( uiLoad ){
-                          return uiLoad.load( ['js/angular/app/contact/contact.js'] );
-                      }]
-                  },
-                  data: {
-                      access: access.user
-                  }
-              })
-              .state('apps.weather', {
-                  url: '/weather',
-                  templateUrl: 'tpl/apps_weather.html',
-                  resolve: {
-                      deps: ['$ocLazyLoad',
-                        function( $ocLazyLoad ){
-                          return $ocLazyLoad.load(
-                              {
-                                  name: 'angular-skycons',
-                                  files: ['js/angular/app/weather/skycons.js',
-                                          'js/vendors/libs/moment.min.js',
-                                          'js/angular/app/weather/angular-skycons.js',
-                                          'js/angular/app/weather/ctrl.js' ]
-                              }
-                          );
-                      }]
-                  },
-                  data: {
-                      access: access.user
-                  }
-              })
-              .state('apps.chart', {
-                  url: '/chart',
-                  templateUrl: 'tpl/ui_chart.html',
-                  resolve: {
-                      deps: ['uiLoad',
-                        function( uiLoad){
-                          return uiLoad.load('js/angular/controllers/chart.js');
-                      }]
-                  }
-              });
-
-          $stateProvider
-              .state('music', {
-                  url: '/music',
-                  templateUrl: 'tpl/music.html',
-                  controller: 'MusicCtrl',
-                  resolve: {
-                      deps: ['$ocLazyLoad',
-                        function( $ocLazyLoad ){
-                          return $ocLazyLoad.load([
-                            'com.2fdevs.videogular',
-                            'com.2fdevs.videogular.plugins.controls',
-                            'com.2fdevs.videogular.plugins.overlayplay',
-                            'com.2fdevs.videogular.plugins.poster',
-                            'com.2fdevs.videogular.plugins.buffering',
-                            'js/angular/app/music/ctrl.js',
-                            'js/angular/app/music/theme.css'
-                          ]);
-                      }]
-                  },
-                  data: {
-                      access: access.user
-                  }
-              })
-              .state('music.home', {
-                  url: '/home',
-                  templateUrl: 'tpl/music.home.html'
-              })
-              .state('music.genres', {
-                  url: '/genres',
-                  templateUrl: 'tpl/music.genres.html'
-              })
-              .state('music.detail', {
-                  url: '/detail',
-                  templateUrl: 'tpl/music.detail.html'
-              })
-              .state('music.mtv', {
-                  url: '/mtv',
-                  templateUrl: 'tpl/music.mtv.html'
-              })
-              .state('music.mtvdetail', {
-                  url: '/mtvdetail',
-                  templateUrl: 'tpl/music.mtv.detail.html'
-              })
-              .state('music.playlist', {
-                  url: '/playlist/{fold}',
-                  templateUrl: 'tpl/music.playlist.html'
               });
       }
     ]

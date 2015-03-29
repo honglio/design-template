@@ -1,75 +1,5 @@
 <!-- list -->
 <ul class="nav">
-  <li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
-    <span translate="aside.nav.HEADER">Navigation</span>
-  </li>
-  <li>
-    <a href class="auto">
-      <span class="pull-right text-muted">
-        <i class="fa fa-fw fa-angle-right text"></i>
-        <i class="fa fa-fw fa-angle-down text-active"></i>
-      </span>
-      <i class="glyphicon glyphicon-stats icon text-primary-dker"></i>
-      <span class="font-bold" translate="aside.nav.DASHBOARD">Dashboard</span>
-    </a>
-    <ul class="nav nav-sub dk">
-      <li class="nav-sub-header">
-        <a href>
-          <span translate="aside.nav.DASHBOARD">Dashboard</span>
-        </a>
-      </li>
-      <li ui-sref-active="active" data-access-level='accessLevels.user'>
-        <a ui-sref="app.dashboard-v1">
-          <span>Dashboard v1</span>
-        </a>
-      </li>
-      <li ui-sref-active="active" data-access-level='accessLevels.user'>
-        <a ui-sref="app.dashboard-v2">
-          <b class="label bg-info pull-right">N</b>
-          <span>Dashboard v2</span>
-        </a>
-      </li>
-    </ul>
-  </li>
-  <li ui-sref-active="active" data-access-level='accessLevels.user'>
-    <a ui-sref="app.mail.list">
-      <b class="badge bg-info pull-right">9</b>
-      <i class="glyphicon glyphicon-envelope icon text-info-lter"></i>
-      <span class="font-bold" translate="aside.nav.EMAIL">Email</span>
-    </a>
-  </li>
-  <li>
-    <a href class="auto">
-      <span class="pull-right text-muted">
-        <i class="fa fa-fw fa-angle-right text"></i>
-        <i class="fa fa-fw fa-angle-down text-active"></i>
-      </span>
-      <i class="glyphicon glyphicon-th-large icon text-success"></i>
-      <span class="font-bold">Apps</span>
-    </a>
-    <ul class="nav nav-sub dk">
-      <li class="nav-sub-header">
-        <a href>
-          <span>Apps</span>
-        </a>
-      </li>
-      <li ui-sref-active="active" data-access-level='accessLevels.user'>
-        <a ui-sref="apps.contact">
-          <span>Contacts</span>
-        </a>
-      </li>
-      <li ui-sref-active="active" data-access-level='accessLevels.user'>
-        <a ui-sref="apps.weather">
-          <span>Weather</span>
-        </a>
-      </li>
-      <li ui-sref-active="active" data-access-level='accessLevels.user'>
-        <a ui-sref="music">
-          <span>Music</span>
-        </a>
-      </li>
-    </ul>
-  </li>
 
   <li class="line dk"></li>
 
@@ -141,12 +71,6 @@
         </a>
       </li>
       <li ui-sref-active="active" data-access-level='accessLevels.user'>
-        <a ui-sref="app.ui.widgets">
-          <b class="badge bg-success pull-right">13</b>
-          <span translate="aside.nav.WIDGETS">Widgets</span>
-        </a>
-      </li>
-      <li ui-sref-active="active" data-access-level='accessLevels.user'>
         <a ui-sref="app.ui.bootstrap">
           <b class="badge bg-primary pull-right">16</b>
           <span translate="aside.nav.components.ui_kits.BOOTSTRAP">Bootstrap</span>
@@ -185,34 +109,6 @@
       <li ui-sref-active="active" data-access-level='accessLevels.user'>
         <a ui-sref="app.ui.googlemap">
           <span>Google Map</span>
-        </a>
-      </li>
-    </ul>
-  </li>
-  <li ng-class="{active:$state.includes('app.table')}">
-    <a href class="auto">
-      <span class="pull-right text-muted">
-        <i class="fa fa-fw fa-angle-right text"></i>
-        <i class="fa fa-fw fa-angle-down text-active"></i>
-      </span>
-      <b class="label bg-primary pull-right">2</b>
-      <i class="glyphicon glyphicon-list"></i>
-      <span translate="aside.nav.components.table.TABLE">Table</span>
-    </a>
-    <ul class="nav nav-sub dk">
-      <li class="nav-sub-header">
-        <a href>
-          <span translate="aside.nav.components.table.TABLE">Table</span>
-        </a>
-      </li>
-      <li ui-sref-active="active" data-access-level='accessLevels.user'>
-        <a ui-sref="app.table.static">
-          <span translate="aside.nav.components.table.TABLE_STATIC">Table static</span>
-        </a>
-      </li>
-      <li ui-sref-active="active" data-access-level='accessLevels.user'>
-        <a ui-sref="app.table.footable">
-          <span translate="aside.nav.components.table.FOOTABLE">Footable</span>
         </a>
       </li>
     </ul>
@@ -274,77 +170,7 @@
       </li>
     </ul>
   </li>
-  <li ui-sref-active="active" data-access-level='accessLevels.anon'>
-    <a ui-sref="apps.chart">
-      <i class="glyphicon glyphicon-signal"></i>
-      <span translate="aside.nav.components.CHART">Chart</span>
-    </a>
-  </li>
-  <li ng-class="{active:$state.includes('app.page')}">
-    <a href class="auto">
-      <span class="pull-right text-muted">
-        <i class="fa fa-fw fa-angle-right text"></i>
-        <i class="fa fa-fw fa-angle-down text-active"></i>
-      </span>
-      <i class="glyphicon glyphicon-file icon"></i>
-      <span translate="aside.nav.components.pages.PAGES">Pages</span>
-    </a>
-    <ul class="nav nav-sub dk">
-      <li class="nav-sub-header">
-        <a href>
-          <span translate="aside.nav.components.pages.PAGES">Pages</span>
-        </a>
-      </li>
-      <li ui-sref-active="active" data-access-level='accessLevels.user'>
-        <a ui-sref="app.page.profile">
-          <span translate="aside.nav.components.pages.PROFILE">Profile</span>
-        </a>
-      </li>
-      <li ui-sref-active="active" data-access-level='accessLevels.user'>
-        <a ui-sref="app.page.post">
-          <span translate="aside.nav.components.pages.POST">Post</span>
-        </a>
-      </li>
-      <li ui-sref-active="active" data-access-level='accessLevels.user'>
-        <a ui-sref="app.page.search">
-          <span translate="aside.nav.components.pages.SEARCH">Search</span>
-        </a>
-      </li>
-      <li ui-sref-active="active" data-access-level='accessLevels.user'>
-        <a ui-sref="app.page.invoice">
-          <span translate="aside.nav.components.pages.INVOICE">Invoice</span>
-        </a>
-      </li>
-      <li ui-sref-active="active" data-access-level='accessLevels.user'>
-        <a ui-sref="app.page.price">
-          <span>Price</span>
-        </a>
-      </li>
-      <li>
-        <a ui-sref="lockme" data-access-level='accessLevels.anon'>
-          <span translate="aside.nav.components.pages.LOCK_SCREEN">Lock screen</span>
-        </a>
-      </li>
-      <li>
-        <a ui-sref="access.404" data-access-level='accessLevels.anon'>
-          <span translate="aside.nav.components.pages.404">404</span>
-        </a>
-      </li>
-    </ul>
-  </li>
-
   <li class="line dk hidden-folded"></li>
-
-  <li class="hidden-folded padder m-t m-b-sm text-muted text-xs">
-    <span translate="aside.nav.your_stuff.YOUR_STUFF">Your Stuff</span>
-  </li>
-  <li>
-    <a ui-sref="app.page.profile" data-access-level='accessLevels.user'>
-      <i class="icon-user icon text-success-lter"></i>
-      <b class="badge bg-success pull-right">30%</b>
-      <span translate="aside.nav.your_stuff.PROFILE">Profile</span>
-    </a>
-  </li>
   <li>
     <a ui-sref="app.docs" data-access-level='accessLevels.user'>
       <i class="icon-question icon"></i>
