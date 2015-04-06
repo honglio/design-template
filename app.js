@@ -18,7 +18,7 @@ require('./config/express')(app, passport);
 require('./server/routes')(app, passport);
 
 app.listen(8000);
-console.log("Relax is listening to port 8000.");
+console.log("Design-Template is listening to port 8000.");
 
 // expose app
 exports = module.exports = app;
