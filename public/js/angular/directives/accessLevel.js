@@ -1,12 +1,13 @@
 angular.module('app')
 .directive('accessLevel', ['Auth', function(Auth) {
     return {
-        restrict: 'A',
+        restrict: 'EA',
         link: function($scope, element, attrs) {
             var prevDisp = element.css('display')
                 , userRole
                 , accessLevel;
 
+            $scope.accessLevels = Auth.accessLevels;
             $scope.user = Auth.user;
             $scope.$watch('user', function(user) {
                 if(user.role)
@@ -19,6 +20,7 @@ angular.module('app')
                 updateCSS();
             });
 
+            // the executed function to change the element
             function updateCSS() {
                 if(userRole && accessLevel) {
                     if(!Auth.authorize(accessLevel, userRole))

@@ -9,6 +9,7 @@ angular.module('app')
       function ($rootScope,   $state,   $stateParams, Auth) {
           $rootScope.$state = $state;
           $rootScope.$stateParams = $stateParams;
+
           $rootScope.$on("$stateChangeStart", function (event, toState, toParams, fromState, fromParams) {
 
               if(!('data' in toState) || !('access' in toState.data)){
@@ -19,6 +20,7 @@ angular.module('app')
                   $rootScope.error = "Seems like you tried accessing a route you don't have access to...";
                   event.preventDefault();
 
+                  // action when user don't have access right.
                   if(fromState.url === '^') {
                       if(Auth.isLoggedIn()) {
                           $state.go('app.dashboard-v1');
@@ -304,6 +306,12 @@ angular.module('app')
                       access: access.public
                   }
               });
+          // turn on html5 mode
+          // $locationProvider.html5Mode( true );
+
+          // enable angular csrf protection
+          // $httpProvider.defaults.xsrfCookieName = '_csrf';
+          // $httpProvider.defaults.xsrfHeaderName = 'x-csrf-token';
       }
     ]
   );
