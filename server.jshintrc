@@ -1,7 +1,7 @@
 {
     "maxerr"        : 50,
 
-    "bitwise"       : false,
+    "bitwise"       : true,
     "camelcase"     : false,
     "curly"         : true,
     "eqeqeq"        : true,
@@ -10,7 +10,7 @@
     "immed"         : true,
     "indent"        : 4,
     "latedef"       : "nofunc",
-    "newcap"        : false,
+    "newcap"        : true,
     "noarg"         : true,
     "nonbsp"        : true,
     "noempty"       : true,
@@ -19,15 +19,14 @@
     "quotmark"      : false,
     "regexp"        : true,
     "undef"         : true,
-    "unused"        : false,
+    "unused"        : true,
     "strict"        : false,
     "trailing"      : true,
-    "maxparams"     : 6,
-    "maxdepth"      : 5,
-    "maxstatements" : 32,
-    "maxcomplexity" : 28,
-    "maxstatements" : 128,
-    "maxlen"        : 256,
+    "maxparams"     : 8,
+    "maxdepth"      : 4,
+    "maxstatements" : 64,
+    "maxcomplexity" : 16,
+    "maxlen"        : 150,
 
     "asi"           : false,
     "boss"          : false,
@@ -85,10 +84,6 @@
         "define"         : true,
         "calledOnce"     : true,
         "to"             : true,
-        "be"             : true,
-        "next"           : true,
-        "extend"         : true,
-        "before"         : true,
-        "after"          : true
+        "be"             : true
     }
 }
