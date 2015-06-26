@@ -1,4 +1,4 @@
-- if (messages.errors)
+- if (messages && messages.errors)
   .alert.alert-error.fade.in
     button.close(type='button', data-dismiss='alert') ×
     span.alert-icon
@@ -6,7 +6,7 @@
     | &#160; &#160;
     strong= messages.errors[messages.errors.length - 1].msg
 
-- if (messages.inform)
+- if (messages && messages.inform)
   .alert.alert-info.fade.in
     button.close(type='button', data-dismiss='alert') ×
     span.alert-icon
@@ -14,7 +14,7 @@
     | &#160; &#160;
     strong= messages.inform[messages.inform.length -1].msg
 
-- if (messages.successful)
+- if (messages && messages.successful)
   .alert.alert-success.fade.in
     button.close(type='button', data-dismiss='alert') ×
     span.alert-icon

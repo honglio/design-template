@@ -7,14 +7,14 @@ app.controller('FileUploadCtrl', ['$scope', 'FileUploader', function($scope, Fil
 
     uploader.filters.push({
         name: 'customFilter',
-        fn: function(item /*{File|FileLikeObject}*/, options) {
+        fn: function(item /*{File|FileLikeObject}*/ , options) {
             return this.queue.length < 10;
         }
     });
 
     // CALLBACKS
 
-    uploader.onWhenAddingFileFailed = function(item /*{File|FileLikeObject}*/, filter, options) {
+    uploader.onWhenAddingFileFailed = function(item /*{File|FileLikeObject}*/ , filter, options) {
         console.info('onWhenAddingFileFailed', item, filter, options);
     };
     uploader.onAfterAddingFile = function(fileItem) {

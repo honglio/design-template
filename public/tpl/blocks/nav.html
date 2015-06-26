@@ -111,6 +111,16 @@
           <span>Google Map</span>
         </a>
       </li>
+      <li ui-sref-active="active" data-access-level='accessLevels.user'>
+        <a ui-sref="app.ui.chart">
+          <span>Chart</span>
+        </a>
+      </li>
+      <li ui-sref-active="active" data-access-level='accessLevels.user'>
+        <a ui-sref="app.ui.widgets">
+          <span>Widgets</span>
+        </a>
+      </li>
     </ul>
   </li>
   <li ng-class="{active:$state.includes('app.form')}">
@@ -172,7 +182,7 @@
   </li>
   <li class="line dk hidden-folded"></li>
   <li>
-    <a ui-sref="app.docs" data-access-level='accessLevels.user'>
+    <a ui-sref="docs" data-access-level='accessLevels.admin'>
       <i class="icon-question icon"></i>
       <span translate="aside.nav.your_stuff.DOCUMENTS">Documents</span>
     </a>

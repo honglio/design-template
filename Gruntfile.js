@@ -127,7 +127,7 @@ module.exports = function(grunt) {
         less: {
             dist: {
                 files: {
-                    '.tmp/css/base.css': '<%= yeoman.app %>/less/base.less',
+                    '.tmp/css/base.css': '<%= yeoman.app %>/less/frontend/base.less',
                     '.tmp/css/style-blue.css': '<%= yeoman.app %>/less/theme/style-blue.less',
                     '.tmp/css/style-black.css': '<%= yeoman.app %>/less/theme/style-black.less',
                     '.tmp/css/style-cyan.css': '<%= yeoman.app %>/less/theme/style-cyan.less',
@@ -137,6 +137,7 @@ module.exports = function(grunt) {
                     '.tmp/css/style-purple.css': '<%= yeoman.app %>/less/theme/style-purple.less',
                     '.tmp/css/style-red.css': '<%= yeoman.app %>/less/theme/style-red.less',
                     '.tmp/css/style-yellow.css': '<%= yeoman.app %>/less/theme/style-yellow.less',
+                    '.tmp/css/app.css': '<%= yeoman.app %>/less/app/app.less'
                 }
             }
         },
@@ -204,6 +205,12 @@ module.exports = function(grunt) {
                     cwd: '<%= yeoman.release %>/css',
                     dest: '<%= yeoman.app %>/css',
                     src: '*.*'
+                }, {
+                    expand: true,
+                    dot: true,
+                    cwd: '<%= yeoman.app %>/js',
+                    dest: '<%= yeoman.release %>/js',
+                    src: '{,**/}*.*'
                 }]
             },
             dev: {
@@ -247,7 +254,7 @@ module.exports = function(grunt) {
                 files: [{
                     expand: true,
                     cwd: '<%= yeoman.app %>/js',
-                    src: '{,*/}*.js',
+                    src: '{,**/}*.js',
                     dest: '<%= yeoman.release %>/js'
                 }]
             }
@@ -260,7 +267,7 @@ module.exports = function(grunt) {
                 }
             },
             build: {
-                tasks: ['imagemin', 'jade', 'uglify', 'less2css'],
+                tasks: ['imagemin', 'jade', 'less2css'],
                 options: {
                     logConcurrentOutput: true
                 }

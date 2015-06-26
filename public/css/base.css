@@ -430,7 +430,7 @@ span a:active {
   background-clip: padding-box;
   border-radius: 1px;
 }
-@media only screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
   .demo_changer {
     display: none;
   }
@@ -756,13 +756,13 @@ span a:active {
   top: 0;
   bottom: 0;
   width: 2px;
-  background: #e4e6e8;
+  background: #dce2e4;
 }
 .blog .blog-posts .blog-post,
 .blog .blog-single .blog-post {
   margin-bottom: 30px;
   padding-bottom: 30px;
-  border-bottom: 1px solid #e4e6e8;
+  border-bottom: 1px solid #dce2e4;
 }
 .blog .blog-posts .blog-post:before,
 .blog .blog-single .blog-post:before,
@@ -800,7 +800,7 @@ span a:active {
 .blog .blog-posts .blog-post .post-details .post-meta .meta-info,
 .blog .blog-single .blog-post .post-details .post-meta .meta-info {
   display: inline-block;
-  font-size: 12px;
+  font-size: 13px;
 }
 .blog .blog-posts .blog-post .post-details .post-meta .meta-info + .meta-info,
 .blog .blog-single .blog-post .post-details .post-meta .meta-info + .meta-info {
@@ -812,7 +812,7 @@ span a:active {
   content: '';
   height: 12px;
   width: 1px;
-  background: #e4e6e8;
+  background: #dce2e4;
   margin-right: 10px;
 }
 .blog .blog-posts .blog-post .post-details p:before,
@@ -829,7 +829,7 @@ span a:active {
 .blog .blog-posts .blog-post-single .post-details .post-meta .meta-info,
 .blog .blog-single .blog-post-single .post-details .post-meta .meta-info {
   display: inline-block;
-  font-size: 12px;
+  font-size: 13px;
 }
 .blog .blog-posts .blog-post-single .post-details .post-meta .meta-info + .meta-info,
 .blog .blog-single .blog-post-single .post-details .post-meta .meta-info + .meta-info {
@@ -841,7 +841,7 @@ span a:active {
   content: '';
   height: 12px;
   width: 1px;
-  background: #e4e6e8;
+  background: #dce2e4;
   margin-right: 10px;
 }
 .blog .blog-posts .blog-post-single .post-details p:before,
@@ -882,9 +882,9 @@ span a:active {
   margin-bottom: 60px;
 }
 .blog .sidebar h3 {
-  font-size: 19px;
+  font-size: 23px;
   margin-bottom: 10px;
-  border-bottom: 1px solid #e4e6e8;
+  border-bottom: 1px solid #dce2e4;
   padding-bottom: 10px;
 }
 .blog .sidebar .sidebar-content {
@@ -905,7 +905,7 @@ span a:active {
   margin-left: 5px;
 }
 .blog .sidebar .sidebar-content ul > li {
-  border-bottom: 1px solid #e4e6e8;
+  border-bottom: 1px solid #dce2e4;
 }
 .blog .sidebar .sidebar-content ul > li:last-child {
   border-bottom: 0;
@@ -931,7 +931,7 @@ span a:active {
   font-weight: bold;
 }
 .blog .sidebar .sidebar-content .discussion-list li .details p {
-  font-size: 12px;
+  font-size: 13px;
   margin-top: 5px;
 }
 .blog .comments-list {

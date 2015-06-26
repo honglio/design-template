@@ -12,8 +12,9 @@ exports.notfound = function(req, res) {
  */
 
 exports.admin = function(req, res) {
-    var role = userRoles.public, username = '';
-    if(req.user) {
+    var role = userRoles.public,
+        username = '';
+    if (req.user) {
         role = req.user.role;
         username = req.user.username;
     }

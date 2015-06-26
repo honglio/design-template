@@ -13,11 +13,14 @@
 @gray-light:             lighten(#000, 60%);   // #999
 @gray-lighter:           lighten(#000, 93.5%); // #eee
 
-@brand-primary:         #428bca;
-@brand-success:         #5cb85c;
-@brand-info:            #5bc0de;
-@brand-warning:         #f0ad4e;
-@brand-danger:          #ff6264;
+@brand-primary:         #A531FC;
+@brand-info:            #53C5FD;
+@brand-success:         #35DC5B;
+@brand-warning:         #F0C515;
+@brand-danger:          #E74C38;
+@brand-light:           #EAEEEF;
+@brand-dark:            #32465D;
+@brand-black:           #1c2b36;
 
 
 //== Scaffolding
@@ -25,9 +28,10 @@
 // ## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-@body-bg:               #fff;
+@body-bg:               lighten(@brand-light, 1%);
 //** Global text color on `<body>`.
-@text-color:            #555;//@gray-dark;
+@text-color:            @gray-dark;
+@text-muted:            lighten(@text-color, 25%);
 
 //** Global textual link color.
 @link-color:            @brand-primary;
@@ -39,42 +43,29 @@
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-@font-family-sans-serif:  "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-sans-serif:  "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 @font-family-serif:       Georgia, "Times New Roman", Times, serif;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-sans-serif;
 
-@font-size-base:          13px;
-@font-size-large:         ceil((@font-size-base * 1.25)); // ~18px
-@font-size-small:         ceil((@font-size-base * 0.85)); // ~12px
+@font-size-base:          14px;
+@font-size-lg:            ceil(@font-size-base * 1.23); // ~20px
+@font-size-md:            ceil(@font-size-base * 1.14); // ~16px
+@font-size-sm:            ceil(@font-size-base * 0.92); // ~13px
+@font-size-xs:            ceil(@font-size-base * 0.85); // ~12px
 
-@font-size-h1:            floor((@font-size-base * 2.6)); // ~36px
-@font-size-h2:            floor((@font-size-base * 2.15)); // ~30px
-@font-size-h3:            ceil((@font-size-base * 1.7)); // ~24px
-@font-size-h4:            ceil((@font-size-base * 1.25)); // ~18px
-@font-size-h5:            @font-size-base + 1;
-@font-size-h6:            ceil((@font-size-base * 0.85)); // ~12px
+@font-size-h1:            floor((@font-size-base * 2.57)); // ~36px
+@font-size-h2:            floor((@font-size-base * 2.14)); // ~30px
+@font-size-h3:            ceil((@font-size-base * 1.79)); // ~25px
+@font-size-h4:            ceil((@font-size-base * 1.5)); // ~21px
+@font-size-h5:            ceil((@font-size-base * 1.29)); // ~18px
+@font-size-h6:            @font-size-md;                  // ~16px
 
 //** Unit-less `line-height` for use in components like buttons.
 @line-height-base:        1.428571429; // 20/14
 //** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
 @line-height-computed:    floor((@font-size-base * @line-height-base)); // ~20px
-
-//** By default, this inherits from the `<body>`.
-@headings-font-family:    "Montserrat", sans-serif;
-@headings-font-weight:    400;
-@headings-line-height:    1.1;
-@headings-color:          inherit;
-
-
-//-- Iconography
-//
-//## Specify custom locations of the include Glyphicons icon font. Useful for those including Bootstrap via Bower.
-
-@icon-font-path:          "../fonts/";
-@icon-font-name:          "glyphicons-halflings-regular";
-@icon-font-svg-id:        "glyphicons_halflingsregular";
 
 //== Components
 //
@@ -95,9 +86,16 @@
 @line-height-large:         1.33;
 @line-height-small:         1.5;
 
-@border-radius-base:        3px;
+@border-color: @border-default;
+@border-default: darken(@brand-light, 5%);
+@border-sec: #F8FAFC;
+@border-third: #F3F5F7;
+@border-four: #EBEDEF;
+@border-five: #f1f1f1;
+
+@border-radius-base:        2px;
 @border-radius-large:       3px;
-@border-radius-small:       2px;
+@border-radius-small:       1px;
 
 //** Global color for active items (e.g., navs or dropdowns).
 @component-active-color:    #fff;
@@ -128,38 +126,43 @@
 @table-bg-active:               @table-bg-hover;
 
 //** Border color for table and cell borders.
-@table-border-color:            #ddd;
-
+@table-border-color:            lighten(@border-color, 4%);
+@table-striped-color:            lighten(@brand-light, 4.5%);
 
 //== Buttons
 //
 //## For each of Bootstrap's buttons, define text, background and border color.
 
 @btn-font-weight:                normal;
+@btn-border-radius:              @border-radius-base;
 
-@btn-default-color:              #333;
-@btn-default-bg:                 #fff;
-@btn-default-border:             #ccc;
+@btn-default-color:              @text-color;
+@btn-default-bg:                 lighten(@brand-light, 5%);
+@btn-default-border:             @border-color;
 
-@btn-primary-color:              #fff;
-@btn-primary-bg:                 @brand-primary;
-@btn-primary-border:             darken(@btn-primary-bg, 5%);
+@btn-primary-color:              @text-color;
+@btn-primary-bg:                 lighten(@brand-primary, 5%);
+@btn-primary-border:             darken(@brand-primary, 5%);
 
-@btn-success-color:              #fff;
-@btn-success-bg:                 @brand-success;
-@btn-success-border:             darken(@btn-success-bg, 5%);
+@btn-success-color:              @text-color;
+@btn-success-bg:                 lighten(@brand-success, 5%);
+@btn-success-border:             darken(@brand-success, 5%);
 
-@btn-info-color:                 #fff;
-@btn-info-bg:                    @brand-info;
-@btn-info-border:                darken(@btn-info-bg, 5%);
+@btn-info-color:                 @text-color;
+@btn-info-bg:                    lighten(@brand-info, 5%);
+@btn-info-border:                darken(@brand-info, 5%);
 
-@btn-warning-color:              #fff;
-@btn-warning-bg:                 @brand-warning;
-@btn-warning-border:             darken(@btn-warning-bg, 5%);
+@btn-warning-color:              @text-color;
+@btn-warning-bg:                 lighten(@brand-warning, 5%);
+@btn-warning-border:             darken(@brand-warning, 5%);
 
-@btn-danger-color:               #fff;
-@btn-danger-bg:                  @brand-danger;
-@btn-danger-border:              darken(@btn-danger-bg, 5%);
+@btn-danger-color:               @text-color;
+@btn-danger-bg:                  lighten(@brand-danger, 5%);
+@btn-danger-border:              darken(@brand-danger, 5%);
+
+@btn-dark-color:                 @text-color;
+@btn-dark-bg:                    lighten(@brand-dark, 5%);
+@btn-dark-border:                darken(@brand-dark, 5%);
 
 @btn-link-disabled-color:        @gray-light;
 
@@ -168,15 +171,13 @@
 //
 //##
 
-//** `<input>` background color
-@input-bg:                       #f5f5f5;
 //** `<input disabled>` background color
 @input-bg-disabled:              @gray-lighter;
 
 //** Text color for `<input>`s
 @input-color:                    @gray;
 //** `<input>` border color
-@input-border:                   @input-bg;//@border-default;
+@input-border:                   @border-color;
 //** `<input>` border radius
 @input-border-radius:            @border-radius-base;
 //** Border color for inputs on focus
@@ -188,9 +189,9 @@
 //** Default `.form-control` height
 @input-height-base:              (@line-height-computed + (@padding-base-vertical * 3) + 2);
 //** Large `.form-control` height
-@input-height-large:             (ceil(@font-size-large * @line-height-large) + (@padding-large-vertical * 3) + 2);
+@input-height-large:             (ceil(@font-size-lg * @line-height-large) + (@padding-large-vertical * 3) + 2);
 //** Small `.form-control` height
-@input-height-small:             (floor(@font-size-small * @line-height-small) + (@padding-small-vertical * 3) + 2);
+@input-height-small:             (floor(@font-size-sm * @line-height-small) + (@padding-small-vertical * 3) + 2);
 
 @legend-color:                   @gray-dark;
 @legend-border-color:            #e5e5e5;
@@ -386,6 +387,7 @@
 //== Navs
 //
 //##
+@nav-bg:                         lighten(@brand-light, 3%);
 
 //=== Shared nav styles
 @nav-link-padding:                          10px 15px;
@@ -645,8 +647,10 @@
 
 //** Background color of single list elements on hover
 @list-group-hover-bg:           #f5f5f5;
+@list-group-focus-bg:           darken(@list-group-hover-bg, 20%);
 //** Text color of active list elements
 @list-group-active-color:       @component-active-color;
+@list-group-select-color:       darken(@list-group-active-color, 20%);
 //** Background color of active list elements
 @list-group-active-bg:          @component-active-bg;
 //** Border color of active list elements
@@ -663,7 +667,12 @@
 
 @panel-bg:                    #fff;
 @panel-body-padding:          15px;
+@panel-border:                @border-color;
+@panel-heading-border:        lighten(@border-color, 5%);
+@panel-list-group-border:     lighten(@border-color, 5%);
 @panel-border-radius:         @border-radius-base;
+@panel-heading-bg:            lighten(@brand-light, 3%);
+@panel-footer-bg:             #fff;
 
 //** Border color for elements within panels
 @panel-inner-border:          #ddd;
@@ -728,7 +737,7 @@
 @badge-color:                 #fff;
 //** Linked badge text color on hover
 @badge-link-hover-color:      #fff;
-@badge-bg:                    @gray-light;
+@badge-bg:                    darken(@brand-light, 10%);
 
 //** Badge text color in active nav link
 @badge-active-color:          @link-color;
@@ -825,3 +834,31 @@
 
 //** Horizontal offset for forms and lists.
 @component-offset-horizontal: 180px;
+
+
+@arrow-width:                    8px;
+@arrow-color:                    #fff;
+@arrow-outer-width:              (@arrow-width + 1);
+@arrow-outer-color:              rgba(0,0,0,.1);
+
+@app-header-height:              50px;
+@app-header-md-height:           60px;
+
+@app-aside-width:                200px;
+@app-aside-nav-height:           40px;
+@app-aside-folded-width:         60px;
+@app-aside-folded-nav-height:    50px;
+@app-aside-dock-media:           992px;
+
+@scroll-bar-width:               17px;
+@butterbar-height:               3px;
+@butterbar-time:                 0.75s;
+
+@off-screen-width:               75%;
+
+@switch-width:                   35px;
+@switch-height:                  20px;
+@switch-md-width:                40px;
+@switch-md-height:               24px;
+@switch-lg-width:                50px;
+@switch-lg-height:               30px;

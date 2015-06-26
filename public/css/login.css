@@ -7,9 +7,6 @@
   margin: 0 auto;
   text-align: center;
   padding: 20px 0;
-  -moz-transition: all 550ms ease-in-out;
-  -o-transition: all 550ms ease-in-out;
-  -webkit-transition: all 550ms ease-in-out;
   transition: all 550ms ease-in-out;
 }
 .login-page .login-content a {
@@ -19,18 +16,12 @@
   position: relative;
   background: #373e4a;
   padding: 100px 0;
-  -moz-transition: all 550ms ease-in-out;
-  -o-transition: all 550ms ease-in-out;
-  -webkit-transition: all 550ms ease-in-out;
   transition: all 550ms ease-in-out;
 }
 .login-page .login-header .description {
   font-size: 13px;
   margin-top: 20px;
   margin-bottom: 0;
-  -moz-transition: all 550ms ease-in-out;
-  -o-transition: all 550ms ease-in-out;
-  -webkit-transition: all 550ms ease-in-out;
   transition: all 550ms ease-in-out;
 }
 .login-page .login-header.login-caret:after {
@@ -45,24 +36,15 @@
   border-width: 13px 12.5px 0 12.5px;
   border-color: #373e4a transparent transparent transparent;
   bottom: -13px;
-  -moz-transition: all 550ms ease-in-out;
-  -o-transition: all 550ms ease-in-out;
-  -webkit-transition: all 550ms ease-in-out;
   transition: all 550ms ease-in-out;
 }
 .login-page .login-form {
   position: relative;
   padding-top: 60px;
-  -moz-transition: all 550ms ease-in-out;
-  -o-transition: all 550ms ease-in-out;
-  -webkit-transition: all 550ms ease-in-out;
   transition: all 550ms ease-in-out;
 }
 .login-page .login-form .form-group {
   margin-bottom: 20px;
-  -moz-transition: all 550ms ease-in-out;
-  -o-transition: all 550ms ease-in-out;
-  -webkit-transition: all 550ms ease-in-out;
   transition: all 550ms ease-in-out;
 }
 .login-page .login-form .form-group .input-group {
@@ -70,15 +52,8 @@
   border: 1px solid #373e4a;
   padding-top: 6px;
   padding-bottom: 6px;
-  -moz-transition: all 300ms ease-in-out;
-  -o-transition: all 300ms ease-in-out;
-  -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding;
   background-clip: padding-box;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
   border-radius: 3px;
 }
 .login-page .login-form .form-group .input-group.focused {
@@ -114,8 +89,6 @@
   width: 1px;
   background: #454a54;
   -webkit-transform: scaleY(.56);
-  -moz-transform: scaleY(.56);
-  -o-transform: scaleY(.56);
   -ms-transform: scaleY(.56);
   transform: scaleY(.56);
 }
@@ -123,8 +96,6 @@
   color: #ffffff;
 }
 .login-page .login-form .form-group .input-group .form-control:focus {
-  -moz-box-shadow: none;
-  -webkit-box-shadow: none;
   box-shadow: none;
 }
 .login-page .login-form .form-group.lockscreen-input {
@@ -151,15 +122,8 @@
   line-height: 145px;
   background: rgba(0, 0, 0, 0.3);
   visibility: hidden;
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding;
   background-clip: padding-box;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
   border-radius: 50%;
-  -moz-transition: all 550ms ease-in-out;
-  -o-transition: all 550ms ease-in-out;
-  -webkit-transition: all 550ms ease-in-out;
   transition: all 550ms ease-in-out;
   -webkit-opacity: 0;
   -moz-opacity: 0;
@@ -188,9 +152,6 @@
   text-align: left;
   padding: 15px 20px;
   font-size: 14px;
-  -moz-transition: all 300ms ease-in-out;
-  -o-transition: all 300ms ease-in-out;
-  -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
 .login-page .login-form .form-group .btn-login i {
@@ -206,9 +167,6 @@
   color: #fff;
   background-color: #3b5998;
   font-size: 12px;
-  -moz-transition: all 300ms ease-in-out;
-  -o-transition: all 300ms ease-in-out;
-  -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
 .login-page .login-form .form-group .facebook-button i,
@@ -216,9 +174,6 @@
 .login-page .login-form .form-group .google-button i {
   margin: 0 auto;
   background-color: #385490;
-  -moz-transition: all 300ms ease-in-out;
-  -o-transition: all 300ms ease-in-out;
-  -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
 .login-page .login-form .form-group .facebook-button:hover,
@@ -276,9 +231,6 @@
   padding-bottom: 30px;
 }
 .login-page .login-bottom-links a {
-  -moz-transition: all 300ms ease-in-out;
-  -o-transition: all 300ms ease-in-out;
-  -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
 .login-page .login-bottom-links a:hover {
@@ -289,9 +241,6 @@
   display: inline-block;
   margin-bottom: 10px;
   color: rgba(255, 255, 255, 0.7);
-  -moz-transition: all 550ms ease-in-out;
-  -o-transition: all 550ms ease-in-out;
-  -webkit-transition: all 550ms ease-in-out;
   transition: all 550ms ease-in-out;
 }
 .login-page .login-bottom-links .link:hover {
@@ -301,16 +250,10 @@
   height: 0px;
   width: 100%;
   overflow: hidden;
-  -moz-transition: all 550ms ease-in-out;
-  -o-transition: all 550ms ease-in-out;
-  -webkit-transition: all 550ms ease-in-out;
   transition: all 550ms ease-in-out;
 }
 .login-page .login-progressbar div {
   width: 0%;
-  -moz-transition: 700ms all cubic-bezier(0.770, 0.000, 0.175, 1.000);
-  -o-transition: 700ms all cubic-bezier(0.770, 0.000, 0.175, 1.000);
-  -webkit-transition: 700ms all cubic-bezier(0.770, 0.000, 0.175, 1.000);
   transition: 700ms all cubic-bezier(0.770, 0.000, 0.175, 1.000);
 }
 .login-page .login-progressbar-indicator {
@@ -326,13 +269,8 @@
   opacity: 0;
   filter: alpha(opacity=0);
   -webkit-transform: translateY(100px) scale(0.2);
-  -moz-transform: translateY(100px) scale(0.2);
-  -o-transform: translateY(100px) scale(0.2);
   -ms-transform: translateY(100px) scale(0.2);
   transform: translateY(100px) scale(0.2);
-  -moz-transition: all 550ms ease-in-out;
-  -o-transition: all 550ms ease-in-out;
-  -webkit-transition: all 550ms ease-in-out;
   transition: all 550ms ease-in-out;
 }
 .login-page .login-progressbar-indicator h3 {
@@ -370,8 +308,6 @@
   opacity: 0;
   filter: alpha(opacity=0);
   -webkit-transform: translateY(-200px) scale(0.8);
-  -moz-transform: translateY(-200px) scale(0.8);
-  -o-transform: translateY(-200px) scale(0.8);
   -ms-transform: translateY(-200px) scale(0.8);
   transform: translateY(-200px) scale(0.8);
 }
@@ -391,8 +327,6 @@
   opacity: 1;
   filter: alpha(opacity=100);
   -webkit-transform: translateY(0px) scale(1);
-  -moz-transform: translateY(0px) scale(1);
-  -o-transform: translateY(0px) scale(1);
   -ms-transform: translateY(0px) scale(1);
   transform: translateY(0px) scale(1);
 }
@@ -412,8 +346,6 @@
   opacity: 0;
   filter: alpha(opacity=0);
   -webkit-transform: translateY(-50px) scale(0.5);
-  -moz-transform: translateY(-50px) scale(0.5);
-  -o-transform: translateY(-50px) scale(0.5);
   -ms-transform: translateY(-50px) scale(0.5);
   transform: translateY(-50px) scale(0.5);
 }
@@ -424,19 +356,10 @@
   opacity: 0;
   filter: alpha(opacity=0);
   top: -100px;
-  -moz-transition: all 550ms ease-in-out;
-  -o-transition: all 550ms ease-in-out;
-  -webkit-transition: all 550ms ease-in-out;
   transition: all 550ms ease-in-out;
 }
 .login-page.login-form-fall .login-form .form-group {
-  -moz-transition: all 550ms ease-in-out;
-  -o-transition: all 550ms ease-in-out;
-  -webkit-transition: all 550ms ease-in-out;
   transition: all 550ms ease-in-out;
-  -moz-transition-delay: 250ms;
-  -o-transition-delay: 250ms;
-  -webkit-transition-delay: 250ms;
   transition-delay: 250ms;
   -webkit-opacity: 0;
   -moz-opacity: 0;
@@ -445,45 +368,24 @@
   filter: alpha(opacity=0);
 }
 .login-page.login-form-fall .login-form .form-group:nth-child(2) {
-  -moz-transition-delay: 350ms;
-  -o-transition-delay: 350ms;
-  -webkit-transition-delay: 350ms;
   transition-delay: 350ms;
 }
 .login-page.login-form-fall .login-form .form-group:nth-child(3) {
-  -moz-transition-delay: 450ms;
-  -o-transition-delay: 450ms;
-  -webkit-transition-delay: 450ms;
   transition-delay: 450ms;
 }
 .login-page.login-form-fall .login-form .form-group:nth-child(4) {
-  -moz-transition-delay: 550ms;
-  -o-transition-delay: 550ms;
-  -webkit-transition-delay: 550ms;
   transition-delay: 550ms;
 }
 .login-page.login-form-fall .login-form .form-group:nth-child(5) {
-  -moz-transition-delay: 650ms;
-  -o-transition-delay: 650ms;
-  -webkit-transition-delay: 650ms;
   transition-delay: 650ms;
 }
 .login-page.login-form-fall .login-form .form-group:nth-child(6) {
-  -moz-transition-delay: 750ms;
-  -o-transition-delay: 750ms;
-  -webkit-transition-delay: 750ms;
   transition-delay: 750ms;
 }
 .login-page.login-form-fall .login-form .form-group:nth-child(8) {
-  -moz-transition-delay: 850ms;
-  -o-transition-delay: 850ms;
-  -webkit-transition-delay: 850ms;
   transition-delay: 850ms;
 }
 .login-page.login-form-fall .login-form .form-group:nth-child(9) {
-  -moz-transition-delay: 950ms;
-  -o-transition-delay: 950ms;
-  -webkit-transition-delay: 950ms;
   transition-delay: 950ms;
 }
 .login-page.login-form-fall-init .login-form {
@@ -514,11 +416,7 @@
   background: #00a651;
   color: #ffffff;
   padding: 10px;
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding;
   background-clip: padding-box;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
   border-radius: 3px;
   margin-bottom: 30px;
   overflow: hidden;
@@ -541,11 +439,7 @@
   margin-top: -10px;
   margin-left: -10px;
   margin-right: -10px;
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding;
   background-clip: padding-box;
-  -webkit-border-radius: 3px 3px 0 0;
-  -moz-border-radius: 3px 3px 0 0;
   border-radius: 3px 3px 0 0;
 }
 .login-page .form-register-success h3,
@@ -577,11 +471,7 @@
   margin: 0;
   margin-bottom: 5px;
   font-size: 12px;
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding;
   background-clip: padding-box;
-  -webkit-border-radius: 3px 3px 0 0;
-  -moz-border-radius: 3px 3px 0 0;
   border-radius: 3px 3px 0 0;
 }
 .login-page .form-register-success.form-login-error p,
@@ -609,8 +499,6 @@
   .login-page.logging-in .login-form form,
   .login-page.logging-in .login-form .link {
     -webkit-transform: translateY(-100px) scale(0.6);
-    -moz-transform: translateY(-100px) scale(0.6);
-    -o-transform: translateY(-100px) scale(0.6);
     -ms-transform: translateY(-100px) scale(0.6);
     transform: translateY(-100px) scale(0.6);
   }
@@ -629,9 +517,6 @@
   margin: 0 auto;
   text-align: center;
   padding: 20px 0;
-  -webkit-transition: all 550ms ease-in-out;
-  -moz-transition: all 550ms ease-in-out;
-  -o-transition: all 550ms ease-in-out;
   transition: all 550ms ease-in-out;
 }
 .login-page .login-content a {
@@ -641,18 +526,12 @@
   position: relative;
   background: #373e4a;
   padding: 100px 0;
-  -webkit-transition: all 550ms ease-in-out;
-  -moz-transition: all 550ms ease-in-out;
-  -o-transition: all 550ms ease-in-out;
   transition: all 550ms ease-in-out;
 }
 .login-page .login-header .description {
   font-size: 13px;
   margin-top: 20px;
   margin-bottom: 0;
-  -webkit-transition: all 550ms ease-in-out;
-  -moz-transition: all 550ms ease-in-out;
-  -o-transition: all 550ms ease-in-out;
   transition: all 550ms ease-in-out;
 }
 .login-page .login-header.login-caret:after {
@@ -667,24 +546,15 @@
   border-width: 13px 12.5px 0 12.5px;
   border-color: #373e4a transparent transparent transparent;
   bottom: -13px;
-  -webkit-transition: all 550ms ease-in-out;
-  -moz-transition: all 550ms ease-in-out;
-  -o-transition: all 550ms ease-in-out;
   transition: all 550ms ease-in-out;
 }
 .login-page .login-form {
   position: relative;
   padding-top: 60px;
-  -webkit-transition: all 550ms ease-in-out;
-  -moz-transition: all 550ms ease-in-out;
-  -o-transition: all 550ms ease-in-out;
   transition: all 550ms ease-in-out;
 }
 .login-page .login-form .form-group {
   margin-bottom: 20px;
-  -webkit-transition: all 550ms ease-in-out;
-  -moz-transition: all 550ms ease-in-out;
-  -o-transition: all 550ms ease-in-out;
   transition: all 550ms ease-in-out;
 }
 .login-page .login-form .form-group .input-group {
@@ -692,15 +562,8 @@
   border: 1px solid #373e4a;
   padding-top: 6px;
   padding-bottom: 6px;
-  -webkit-transition: all 300ms ease-in-out;
-  -moz-transition: all 300ms ease-in-out;
-  -o-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding;
   background-clip: padding-box;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
   border-radius: 3px;
 }
 .login-page .login-form .form-group .input-group.focused {
@@ -736,8 +599,6 @@
   width: 1px;
   background: #454a54;
   -webkit-transform: scaleY(.56);
-  -moz-transform: scaleY(.56);
-  -o-transform: scaleY(.56);
   -ms-transform: scaleY(.56);
   transform: scaleY(.56);
 }
@@ -745,8 +606,6 @@
   color: #ffffff;
 }
 .login-page .login-form .form-group .input-group .form-control:focus {
-  -moz-box-shadow: none;
-  -webkit-box-shadow: none;
   box-shadow: none;
 }
 .login-page .login-form .form-group.lockscreen-input {
@@ -773,15 +632,8 @@
   line-height: 145px;
   background: rgba(0, 0, 0, 0.3);
   visibility: hidden;
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding;
   background-clip: padding-box;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
   border-radius: 50%;
-  -webkit-transition: all 550ms ease-in-out;
-  -moz-transition: all 550ms ease-in-out;
-  -o-transition: all 550ms ease-in-out;
   transition: all 550ms ease-in-out;
   -webkit-opacity: 0;
   -moz-opacity: 0;
@@ -810,9 +662,6 @@
   text-align: left;
   padding: 15px 20px;
   font-size: 14px;
-  -webkit-transition: all 300ms ease-in-out;
-  -moz-transition: all 300ms ease-in-out;
-  -o-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
 .login-page .login-form .form-group .btn-login i {
@@ -829,18 +678,12 @@
   color: #fff;
   background-color: #3b5998;
   font-size: 12px;
-  -webkit-transition: all 300ms ease-in-out;
-  -moz-transition: all 300ms ease-in-out;
-  -o-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
 .login-page .login-form .form-group .facebook-button i,
 .login-page .login-form .form-group .twitter-button i,
 .login-page .login-form .form-group .google-button i {
   background-color: #385490;
-  -webkit-transition: all 300ms ease-in-out;
-  -moz-transition: all 300ms ease-in-out;
-  -o-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
 .login-page .login-form .form-group .facebook-button:hover,
@@ -898,9 +741,6 @@
   padding-bottom: 30px;
 }
 .login-page .login-bottom-links a {
-  -webkit-transition: all 300ms ease-in-out;
-  -moz-transition: all 300ms ease-in-out;
-  -o-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;
 }
 .login-page .login-bottom-links a:hover {
@@ -911,9 +751,6 @@
   display: inline-block;
   margin-bottom: 10px;
   color: rgba(255, 255, 255, 0.7);
-  -webkit-transition: all 550ms ease-in-out;
-  -moz-transition: all 550ms ease-in-out;
-  -o-transition: all 550ms ease-in-out;
   transition: all 550ms ease-in-out;
 }
 .login-page .login-bottom-links .link:hover {
@@ -923,16 +760,10 @@
   height: 0px;
   width: 100%;
   overflow: hidden;
-  -webkit-transition: all 550ms ease-in-out;
-  -moz-transition: all 550ms ease-in-out;
-  -o-transition: all 550ms ease-in-out;
   transition: all 550ms ease-in-out;
 }
 .login-page .login-progressbar div {
   width: 0%;
-  -webkit-transition: 700ms all cubic-bezier(0.770, 0.000, 0.175, 1.000);
-  -moz-transition: 700ms all cubic-bezier(0.770, 0.000, 0.175, 1.000);
-  -o-transition: 700ms all cubic-bezier(0.770, 0.000, 0.175, 1.000);
   transition: 700ms all cubic-bezier(0.770, 0.000, 0.175, 1.000);
 }
 .login-page .login-progressbar-indicator {
@@ -948,13 +779,8 @@
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   filter: alpha(opacity=0);
   -webkit-transform: translateY(100px) scale(0.2);
-  -moz-transform: translateY(100px) scale(0.2);
-  -o-transform: translateY(100px) scale(0.2);
   -ms-transform: translateY(100px) scale(0.2);
   transform: translateY(100px) scale(0.2);
-  -webkit-transition: all 550ms ease-in-out;
-  -moz-transition: all 550ms ease-in-out;
-  -o-transition: all 550ms ease-in-out;
   transition: all 550ms ease-in-out;
 }
 .login-page .login-progressbar-indicator h3 {
@@ -992,8 +818,6 @@
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   filter: alpha(opacity=0);
   -webkit-transform: translateY(-200px) scale(0.8);
-  -moz-transform: translateY(-200px) scale(0.8);
-  -o-transform: translateY(-200px) scale(0.8);
   -ms-transform: translateY(-200px) scale(0.8);
   transform: translateY(-200px) scale(0.8);
 }
@@ -1013,8 +837,6 @@
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   filter: alpha(opacity=100);
   -webkit-transform: translateY(0px) scale(1);
-  -moz-transform: translateY(0px) scale(1);
-  -o-transform: translateY(0px) scale(1);
   -ms-transform: translateY(0px) scale(1);
   transform: translateY(0px) scale(1);
 }
@@ -1034,8 +856,6 @@
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   filter: alpha(opacity=0);
   -webkit-transform: translateY(-50px) scale(0.5);
-  -moz-transform: translateY(-50px) scale(0.5);
-  -o-transform: translateY(-50px) scale(0.5);
   -ms-transform: translateY(-50px) scale(0.5);
   transform: translateY(-50px) scale(0.5);
 }
@@ -1046,19 +866,10 @@
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   filter: alpha(opacity=0);
   top: -100px;
-  -webkit-transition: all 550ms ease-in-out;
-  -moz-transition: all 550ms ease-in-out;
-  -o-transition: all 550ms ease-in-out;
   transition: all 550ms ease-in-out;
 }
 .login-page.login-form-fall .login-form .form-group {
-  -webkit-transition: all 550ms ease-in-out;
-  -moz-transition: all 550ms ease-in-out;
-  -o-transition: all 550ms ease-in-out;
   transition: all 550ms ease-in-out;
-  -moz-transition-delay: 250ms;
-  -o-transition-delay: 250ms;
-  -webkit-transition-delay: 250ms;
   transition-delay: 250ms;
   -webkit-opacity: 0;
   -moz-opacity: 0;
@@ -1067,45 +878,24 @@
   filter: alpha(opacity=0);
 }
 .login-page.login-form-fall .login-form .form-group:nth-child(2) {
-  -moz-transition-delay: 350ms;
-  -o-transition-delay: 350ms;
-  -webkit-transition-delay: 350ms;
   transition-delay: 350ms;
 }
 .login-page.login-form-fall .login-form .form-group:nth-child(3) {
-  -moz-transition-delay: 450ms;
-  -o-transition-delay: 450ms;
-  -webkit-transition-delay: 450ms;
   transition-delay: 450ms;
 }
 .login-page.login-form-fall .login-form .form-group:nth-child(4) {
-  -moz-transition-delay: 550ms;
-  -o-transition-delay: 550ms;
-  -webkit-transition-delay: 550ms;
   transition-delay: 550ms;
 }
 .login-page.login-form-fall .login-form .form-group:nth-child(5) {
-  -moz-transition-delay: 650ms;
-  -o-transition-delay: 650ms;
-  -webkit-transition-delay: 650ms;
   transition-delay: 650ms;
 }
 .login-page.login-form-fall .login-form .form-group:nth-child(6) {
-  -moz-transition-delay: 750ms;
-  -o-transition-delay: 750ms;
-  -webkit-transition-delay: 750ms;
   transition-delay: 750ms;
 }
 .login-page.login-form-fall .login-form .form-group:nth-child(8) {
-  -moz-transition-delay: 850ms;
-  -o-transition-delay: 850ms;
-  -webkit-transition-delay: 850ms;
   transition-delay: 850ms;
 }
 .login-page.login-form-fall .login-form .form-group:nth-child(9) {
-  -moz-transition-delay: 950ms;
-  -o-transition-delay: 950ms;
-  -webkit-transition-delay: 950ms;
   transition-delay: 950ms;
 }
 .login-page.login-form-fall-init .login-form {
@@ -1136,11 +926,7 @@
   background: #00a651;
   color: #ffffff;
   padding: 10px;
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding;
   background-clip: padding-box;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
   border-radius: 3px;
   margin-bottom: 30px;
   overflow: hidden;
@@ -1163,11 +949,7 @@
   margin-top: -10px;
   margin-left: -10px;
   margin-right: -10px;
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding;
   background-clip: padding-box;
-  -webkit-border-radius: 3px 3px 0 0;
-  -moz-border-radius: 3px 3px 0 0;
   border-radius: 3px 3px 0 0;
 }
 .login-page .form-register-success h3,
@@ -1199,11 +981,7 @@
   margin: 0;
   margin-bottom: 5px;
   font-size: 12px;
-  -webkit-background-clip: padding-box;
-  -moz-background-clip: padding;
   background-clip: padding-box;
-  -webkit-border-radius: 3px 3px 0 0;
-  -moz-border-radius: 3px 3px 0 0;
   border-radius: 3px 3px 0 0;
 }
 .login-page .form-register-success.form-login-error p,
@@ -1231,8 +1009,6 @@
   .login-page.logging-in .login-form form,
   .login-page.logging-in .login-form .link {
     -webkit-transform: translateY(-100px) scale(0.6);
-    -moz-transform: translateY(-100px) scale(0.6);
-    -o-transform: translateY(-100px) scale(0.6);
     -ms-transform: translateY(-100px) scale(0.6);
     transform: translateY(-100px) scale(0.6);
   }

@@ -39,7 +39,7 @@ module.exports = function(app, passport) {
         // app.use(favicon(config.root + '/public/img/ico/favicon.ico'));
         app.use(express.static(config.root + '/public'));
     } else {
-        app.use(favicon(config.root + '/built/img/ico/favicon.ico'));
+        // app.use(favicon(config.root + '/built/img/ico/favicon.ico'));
         app.use(express.static(config.root + '/built'));
     }
 
