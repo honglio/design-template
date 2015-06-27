@@ -114,99 +114,6 @@ pre,
 .has-switch {
   line-height: 1.62222;
 }
-/************************************************************************************************************************/
-/* Footer */
-/************************************************************************************************************************/
-/* Footer One */
-.footer-logo {
-  margin-bottom: 30px;
-}
-.footer-one p {
-  margin-bottom: 30px;
-  text-align: justify;
-}
-.btn-footer {
-  min-width: 50px;
-  border: 2px solid;
-  margin-right: 10px;
-  margin-bottom: 10px;
-}
-/* Footer Two*/
-.footer-two h6 {
-  padding-bottom: 20px;
-  margin-bottom: 30px;
-  border-bottom: 2px solid;
-}
-.footer-two ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.footer-two ul li {
-  margin-bottom: 30px;
-}
-.footer-two ul li img {
-  float: left;
-  width: 80px;
-  height: 80px;
-  margin-right: 20px;
-  border: 10px solid;
-}
-.footer-two ul li small {
-  font-style: italic;
-}
-.footer-two ul li p {
-  margin-bottom: 0;
-}
-.footer-icon {
-  margin-right: 10px;
-}
-.footer-icon-two {
-  margin-right: 10px;
-  margin-left: 10px;
-}
-/* Footer Three*/
-.footer-three {
-  text-align: justify;
-}
-.footer-three h6 {
-  padding-bottom: 20px;
-  margin-bottom: 30px;
-  border-bottom: 2px solid;
-}
-.footer-three ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  width: 110%;
-}
-.footer-three ul li img {
-  float: left;
-  width: 75px;
-  height: 75px;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  border: 10px solid;
-}
-.footer-three ul li small {
-  font-style: italic;
-}
-.footer-three ul li p {
-  margin-bottom: 0;
-}
-.bottom-links {
-  margin-top: 10px;
-  margin-bottom: 0;
-  margin-right: -10px;
-}
-@media (max-width: 979px) {
-  .footer-one {
-    margin-bottom: 60px;
-  }
-  .footer-two {
-    margin-bottom: 60px;
-  }
-}
 /* Page (element) */
 /************************************************************************************************************************/
 /* General Options */
@@ -1151,6 +1058,99 @@ section.blog .comments-list .comment .comment-content {
   }
   100% {
     background-position: 100% 50%;
+  }
+}
+/************************************************************************************************************************/
+/* Footer */
+/************************************************************************************************************************/
+/* Footer One */
+.footer-logo {
+  margin-bottom: 30px;
+}
+.footer-one p {
+  margin-bottom: 30px;
+  text-align: justify;
+}
+.btn-footer {
+  min-width: 50px;
+  border: 2px solid;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+/* Footer Two*/
+.footer-two h6 {
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid;
+}
+.footer-two ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.footer-two ul li {
+  margin-bottom: 30px;
+}
+.footer-two ul li img {
+  float: left;
+  width: 80px;
+  height: 80px;
+  margin-right: 20px;
+  border: 10px solid;
+}
+.footer-two ul li small {
+  font-style: italic;
+}
+.footer-two ul li p {
+  margin-bottom: 0;
+}
+.footer-icon {
+  margin-right: 10px;
+}
+.footer-icon-two {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+/* Footer Three*/
+.footer-three {
+  text-align: justify;
+}
+.footer-three h6 {
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid;
+}
+.footer-three ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 110%;
+}
+.footer-three ul li img {
+  float: left;
+  width: 75px;
+  height: 75px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border: 10px solid;
+}
+.footer-three ul li small {
+  font-style: italic;
+}
+.footer-three ul li p {
+  margin-bottom: 0;
+}
+.bottom-links {
+  margin-top: 10px;
+  margin-bottom: 0;
+  margin-right: -10px;
+}
+@media (max-width: 979px) {
+  .footer-one {
+    margin-bottom: 60px;
+  }
+  .footer-two {
+    margin-bottom: 60px;
   }
 }
 /* Module */
