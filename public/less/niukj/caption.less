@@ -8,7 +8,7 @@
   z-index:10;
 }
 .cs-style-2 figcaption {
-  height:80px;
+  height:100%;
   width:100%;
   top:auto;
   bottom:0;
@@ -33,7 +33,7 @@
   }
 }
 .cs-style-3 figcaption {
-  height:100px;
+  height:100%;
   width:100%;
   top:auto;
   bottom:0;
@@ -41,6 +41,7 @@
   a {
     position:relative;
     margin-left:5px;
+    z-index: 2000;
   }
 }
 .no-touch .cs-style-3 figure:hover figcaption, .cs-style-3 figure.cs-hover figcaption {
@@ -48,19 +49,22 @@
   -webkit-animation: fadeInLeft 0.5s;
   animation: fadeInLeft 0.5s;
 }
+
+/* Image position */
+
+.cover-link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  border: 0 !important;
+  z-index: 1000;
+}
+
 .image-buttons {
   text-align:center;
 }
-.image-buttons-two {
-  margin-top: -30px;
-}
-.image-buttons-three {
-  text-align:center;
-  margin-top:15px;
-  margin-left:-15px;
-}
-
-/* Image position */
 
 .grid {
   text-align:center;

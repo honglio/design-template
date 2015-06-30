@@ -198,8 +198,8 @@ a.list-group-item.hover {
 }
 .list-group-item.active {
   color: #fff;
-  border-color: #ffffff !important;
-  background-color: #ffffff !important;
+  border-color: #dce2e4 !important;
+  background-color: #dce2e4 !important;
 }
 .list-group-item.active .text-muted {
   color: #ffffff !important;
@@ -213,8 +213,8 @@ a.list-group-item.hover {
 .list-group-item.select {
   position: relative;
   z-index: 1;
-  background-color: #cccccc !important;
-  border-color: #bfbfbf;
+  background-color: #a2b3b8 !important;
+  border-color: #93a8ad;
 }
 .list-group-alt .list-group-item:nth-child(2n+2) {
   background-color: rgba(0, 0, 0, 0.02) !important;

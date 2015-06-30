@@ -98,7 +98,7 @@
 @border-radius-small:       1px;
 
 //** Global color for active items (e.g., navs or dropdowns).
-@component-active-color:    #fff;
+@component-active-color:    @border-color;
 //** Global background color for active items (e.g., navs or dropdowns).
 @component-active-bg:       @border-default;
 
@@ -361,7 +361,7 @@
 // Inverted navbar
 // Reset inverted navbar basics
 @navbar-inverse-color:                      @gray-light;
-@navbar-inverse-bg:                         #222;
+@navbar-inverse-bg:                         #272b31;
 @navbar-inverse-border:                     darken(@navbar-inverse-bg, 10%);
 
 // Inverted navbar links
@@ -593,6 +593,7 @@
 //## Define alert colors, border radius, and padding.
 
 @alert-padding:               15px;
+@alert-margin:                36px;
 @alert-border-radius:         @border-radius-base;
 @alert-link-font-weight:      bold;
 
