@@ -13,7 +13,7 @@
         "npm": "1.4.x"
     },
     "scripts": {
-        "start": "grunt watch && nodemon app.js",
+        "start": "grunt dev && nodemon app.js",
         "test": "grunt test"
     },
     "dependencies": {
