@@ -137,8 +137,7 @@ module.exports = function(grunt) {
                     '.tmp/css/style-purple.css': '<%= yeoman.app %>/less/theme/style-purple.less',
                     '.tmp/css/style-red.css': '<%= yeoman.app %>/less/theme/style-red.less',
                     '.tmp/css/style-yellow.css': '<%= yeoman.app %>/less/theme/style-yellow.less',
-                    '.tmp/css/app.css': '<%= yeoman.app %>/less/app/app.less',
-                    '.tmp/css/custom.css': '<%= yeoman.app %>/less/niukj/custom.less'
+                    '.tmp/css/app.css': '<%= yeoman.app %>/less/app/app.less'
                 }
             }
         },
