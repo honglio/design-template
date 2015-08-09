@@ -357,8 +357,7 @@ body {
 a {
   color: #16a085;
   text-decoration: none;
-  -webkit-transition: .25s;
-          transition: .25s;
+  transition: .25s;
 }
 a:hover,
 a:focus {
@@ -377,8 +376,7 @@ a:focus {
   background-color: #ffffff;
   border: 2px solid #bdc3c7;
   border-radius: 6px;
-  -webkit-transition: all 0.25s ease-in-out;
-          transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
   display: inline-block;
   max-width: 100%;
   height: auto;
@@ -657,8 +655,7 @@ pre {
   background-color: #ffffff;
   border: 2px solid #bdc3c7;
   border-radius: 6px;
-  -webkit-transition: border 0.25s ease-in-out;
-          transition: border 0.25s ease-in-out;
+  transition: border 0.25s ease-in-out;
 }
 .thumbnail > img,
 .thumbnail a > img {
@@ -685,8 +682,7 @@ a.thumbnail.active {
   border-radius: 4px;
   padding: 10px 15px;
   -webkit-font-smoothing: subpixel-antialiased;
-  -webkit-transition: border 0.25s linear, color 0.25s linear, background-color 0.25s linear;
-          transition: border 0.25s linear, color 0.25s linear, background-color 0.25s linear;
+  transition: border 0.25s linear, color 0.25s linear, background-color 0.25s linear;
 }
 .btn:hover,
 .btn:focus {
@@ -1235,8 +1231,7 @@ fieldset[disabled] .btn-link:focus {
 }
 .btn-group:focus .dropdown-toggle {
   outline: none;
-  -webkit-transition: .25s;
-          transition: .25s;
+  transition: .25s;
 }
 .btn-group.open .dropdown-toggle {
   color: rgba(255, 255, 255, 0.75);
@@ -1296,8 +1291,7 @@ label {
   height: 42px;
   border-radius: 6px;
   box-shadow: none;
-  -webkit-transition: border 0.25s linear, color 0.25s linear, background-color 0.25s linear;
-          transition: border 0.25s linear, color 0.25s linear, background-color 0.25s linear;
+  transition: border 0.25s linear, color 0.25s linear, background-color 0.25s linear;
 }
 .form-group.focus .form-control,
 .form-control:focus,
@@ -1723,8 +1717,7 @@ select[multiple].input-group-sm > .select2-search input[type="text"] {
   background-color: #bdc3c7;
   border: 2px solid #bdc3c7;
   border-radius: 6px;
-  -webkit-transition: border 0.25s linear, color 0.25s linear, background-color 0.25s linear;
-          transition: border 0.25s linear, color 0.25s linear, background-color 0.25s linear;
+  transition: border 0.25s linear, color 0.25s linear, background-color 0.25s linear;
 }
 .input-group-hg .input-group-addon,
 .input-group-lg .input-group-addon,
@@ -1958,8 +1951,7 @@ fieldset[disabled] .input-group-btn .btn-default.active {
   margin-bottom: 12px;
   padding-left: 32px;
   position: relative;
-  -webkit-transition: color .25s linear;
-          transition: color .25s linear;
+  transition: color .25s linear;
   font-size: 14px;
   line-height: 1.5;
 }
@@ -1995,8 +1987,7 @@ fieldset[disabled] .input-group-btn .btn-default.active {
   opacity: 1;
   -webkit-filter: none;
           filter: none;
-  -webkit-transition: color .25s linear;
-          transition: color .25s linear;
+  transition: color .25s linear;
 }
 .checkbox .icon-checked:before,
 .radio .icon-checked:before,
@@ -2255,8 +2246,7 @@ fieldset[disabled] .input-group-btn .btn-default.active {
   line-height: 15px;
   height: 27px;
   padding: 6px 21px;
-  -webkit-transition: .25s linear;
-          transition: .25s linear;
+  transition: .25s linear;
 }
 .bootstrap-tagsinput .tag > span {
   color: #ffffff;
@@ -2273,8 +2263,7 @@ fieldset[disabled] .input-group-btn .btn-default.active {
   z-index: 2;
   opacity: 0;
   filter: alpha(opacity=0);
-  -webkit-transition: opacity .25s linear;
-          transition: opacity .25s linear;
+  transition: opacity .25s linear;
 }
 .bootstrap-tagsinput .tag > span:after {
   content: "\e609";
@@ -2417,8 +2406,7 @@ fieldset[disabled] .input-group-btn .btn-default.active {
   position: absolute;
   width: 18px;
   z-index: 2;
-  -webkit-transition: background .25s;
-          transition: background .25s;
+  transition: background .25s;
 }
 .ui-slider-handle:hover,
 .ui-slider-handle:focus {
@@ -2664,8 +2652,7 @@ fieldset[disabled] .input-group-btn .btn-default.active {
   outline: none;
   padding: 12px 10px;
   text-align: center;
-  -webkit-transition: 0.25s ease-out;
-          transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
 }
 .pagination li > a:hover,
 .pagination li > span:hover,
@@ -2980,8 +2967,7 @@ fieldset[disabled] .input-group-btn .btn-default.active {
   padding: 0 4px;
   border-radius: 50px;
   background-clip: padding-box;
-  -webkit-transition: background 0.2s ease-out, border-color 0s ease-out, color 0.2s ease-out;
-          transition: background 0.2s ease-out, border-color 0s ease-out, color 0.2s ease-out;
+  transition: background 0.2s ease-out, border-color 0s ease-out, color 0.2s ease-out;
 }
 .pagination-minimal > ul > li > a:hover,
 .pagination-minimal > ul > li > span:hover,
@@ -2990,8 +2976,7 @@ fieldset[disabled] .input-group-btn .btn-default.active {
   background-color: #1abc9c;
   border-color: #1abc9c;
   color: #ffffff;
-  -webkit-transition: background 0.2s ease-out, border-color 0.2s ease-out, color 0.2s ease-out;
-          transition: background 0.2s ease-out, border-color 0.2s ease-out, color 0.2s ease-out;
+  transition: background 0.2s ease-out, border-color 0.2s ease-out, color 0.2s ease-out;
 }
 .pagination-minimal > ul > li > a:active,
 .pagination-minimal > ul > li > span:active {
@@ -3136,8 +3121,7 @@ fieldset[disabled] .input-group-btn .btn-default.active {
   border-top: 8px solid;
   border-right: 6px solid transparent;
   border-left: 6px solid transparent;
-  -webkit-transition: border-color 0.25s, color 0.25s;
-          transition: border-color 0.25s, color 0.25s;
+  transition: border-color 0.25s, color 0.25s;
 }
 .dropdown-menu,
 .select2-drop {
@@ -3310,8 +3294,7 @@ fieldset[disabled] .input-group-btn .btn-default.active {
   line-height: 1.4;
   border-radius: 4px;
   padding: 10px 39px 10px 15px;
-  -webkit-transition: border 0.25s linear, color 0.25s linear, background-color 0.25s linear;
-          transition: border 0.25s linear, color 0.25s linear, background-color 0.25s linear;
+  transition: border 0.25s linear, color 0.25s linear, background-color 0.25s linear;
 }
 .select2-choice:hover,
 .select2-choice:focus {
@@ -3627,8 +3610,7 @@ fieldset[disabled] .input-group-btn .btn-default.active {
   line-height: 15px;
   height: 27px;
   padding: 6px 21px;
-  -webkit-transition: .25s linear;
-          transition: .25s linear;
+  transition: .25s linear;
 }
 .select2-search-choice:hover {
   padding-right: 28px;
@@ -3656,8 +3638,7 @@ fieldset[disabled] .input-group-btn .btn-default.active {
   z-index: 2;
   opacity: 0;
   filter: alpha(opacity=0);
-  -webkit-transition: opacity .25s linear;
-          transition: opacity .25s linear;
+  transition: opacity .25s linear;
 }
 .select2-search-choice .select2-search-choice-close:after {
   content: "\e609";
@@ -3760,8 +3741,7 @@ fieldset[disabled] .input-group-btn .btn-default.active {
   position: absolute;
   z-index: 9999;
   top: 100%;
-  -webkit-transition: none;
-          transition: none;
+  transition: none;
 }
 .select2-drop.select2-drop-above {
   margin-top: -9px;
@@ -3807,8 +3787,7 @@ fieldset[disabled] .input-group-btn .btn-default.active {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  -webkit-transition: background-color 0.25s, color 0.25s;
-          transition: background-color 0.25s, color 0.25s;
+  transition: background-color 0.25s, color 0.25s;
 }
 .select2-drop .select2-result-selectable .select2-result-label {
   color: rgba(52, 73, 94, 0.85);
@@ -4114,8 +4093,7 @@ fieldset[disabled] .input-group-btn .btn-default.active {
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-transition: color .25s linear;
-          transition: color .25s linear;
+  transition: color .25s linear;
 }
 .navbar-toggle:hover,
 .navbar-toggle:focus {
@@ -4869,8 +4847,7 @@ fieldset[disabled] .navbar-inverse .navbar-btn.active {
   text-align: center;
   z-index: 1;
   width: 66px;
-  -webkit-transition: box-shadow 0.25s ease-out;
-          transition: box-shadow 0.25s ease-out;
+  transition: box-shadow 0.25s ease-out;
 }
 .bootstrap-switch > div > span > [class^="fui-"] {
   text-indent: 0;
@@ -4965,12 +4942,10 @@ fieldset[disabled] .navbar-inverse .navbar-btn.active {
   left: 51px;
   z-index: 100;
   background-clip: padding-box;
-  -webkit-transition: border-color 0.25s ease-out, background-color 0.25s ease-out;
-          transition: border-color 0.25s ease-out, background-color 0.25s ease-out;
+  transition: border-color 0.25s ease-out, background-color 0.25s ease-out;
 }
 .bootstrap-switch-animate > div {
-  -webkit-transition: margin-left 0.25s ease-out;
-          transition: margin-left 0.25s ease-out;
+  transition: margin-left 0.25s ease-out;
 }
 .bootstrap-switch-on > div {
   margin-left: 0;
@@ -5229,14 +5204,12 @@ fieldset[disabled] .navbar-inverse .navbar-btn.active {
 .vjs-fade-in {
   visibility: visible !important;
   opacity: 1 !important;
-  -webkit-transition: visibility 0s linear 0s, opacity .3s linear;
-          transition: visibility 0s linear 0s, opacity .3s linear;
+  transition: visibility 0s linear 0s, opacity .3s linear;
 }
 .vjs-fade-out {
   visibility: hidden !important;
   opacity: 0 !important;
-  -webkit-transition: visibility 0s linear 1.5s, opacity 1.5s linear;
-          transition: visibility 0s linear 1.5s, opacity 1.5s linear;
+  transition: visibility 0s linear 1.5s, opacity 1.5s linear;
 }
 .vjs-control {
   background-position: center;
@@ -5284,8 +5257,7 @@ fieldset[disabled] .navbar-inverse .navbar-btn.active {
   left: 50%;
   margin: -0.5em 0 0 -0.5em;
   -webkit-font-smoothing: antialiased;
-  -webkit-transition: color .25s, opacity .25s;
-          transition: color .25s, opacity .25s;
+  transition: color .25s, opacity .25s;
 }
 .vjs-play-control > div:after {
   content: "\e615";
@@ -5350,8 +5322,7 @@ fieldset[disabled] .navbar-inverse .navbar-btn.active {
   margin: 0 0 0 -0.5em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-transition: color .25s, opacity .25s;
-          transition: color .25s, opacity .25s;
+  transition: color .25s, opacity .25s;
 }
 .vjs-mute-control > div:after {
   content: "\e617";
@@ -5424,8 +5395,7 @@ fieldset[disabled] .navbar-inverse .navbar-btn.active {
   position: absolute;
   margin: -3px 0 0 -3px;
   border-radius: 50%;
-  -webkit-transition: background-color 0.25s;
-          transition: background-color 0.25s;
+  transition: background-color 0.25s;
 }
 .vjs-seek-handle[style*="95."] {
   margin-left: 3px;
@@ -5491,8 +5461,7 @@ fieldset[disabled] .navbar-inverse .navbar-btn.active {
   margin: 0 0 0 -0.5em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-transition: color .25s, opacity .25s;
-          transition: color .25s, opacity .25s;
+  transition: color .25s, opacity .25s;
 }
 .vjs-menu-button {
   display: none !important;
@@ -5571,8 +5540,7 @@ fieldset[disabled] .navbar-inverse .navbar-btn.active {
   margin-top: 2px;
   padding: 18px 42px 21px 25px;
   position: relative;
-  -webkit-transition: .25s;
-          transition: .25s;
+  transition: .25s;
 }
 .todo li:first-child {
   margin-top: 0;
@@ -5839,8 +5807,7 @@ fieldset[disabled] .navbar-inverse .navbar-btn.active {
   position: absolute;
   right: 15px;
   top: 3px;
-  -webkit-transition: all .25s;
-          transition: all .25s;
+  transition: all .25s;
 }
 .login-link {
   color: #bfc9ca;
@@ -6117,4 +6084,3 @@ footer p {
 .mal {
   margin-left: 20px;
 }
-/*# sourceMappingURL=flat-ui.css.map */

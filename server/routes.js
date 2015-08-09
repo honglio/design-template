@@ -38,20 +38,6 @@ module.exports = function (app, passport) {
     app.get('/shop.html', passportConf.isAuthenticated, index.shop);
     app.get('/shop-detail.html', passportConf.isAuthenticated, index.shop_detail);
     app.get('/shop-checkout.html', passportConf.isAuthenticated, index.shop_checkout);
-
-    app.get('/ui-alerts.html', passportConf.isAuthenticated, index.ui_alerts);
-    app.get('/ui-badges-labels.html', passportConf.isAuthenticated, index.ui_badges_labels);
-    app.get('/ui-blockquotes.html', passportConf.isAuthenticated, index.ui_blockquotes);
-    app.get('/ui-breadcrumbs.html', passportConf.isAuthenticated, index.ui_breadcrumbs);
-    app.get('/ui-modals.html', passportConf.isAuthenticated, index.ui_modals);
-    app.get('/ui-navbars.html', passportConf.isAuthenticated, index.ui_navbars);
-    app.get('/ui-pagination.html', passportConf.isAuthenticated, index.ui_pagination);
-    app.get('/ui-panels.html', passportConf.isAuthenticated, index.ui_panels);
-    app.get('/ui-progress-bars.html', passportConf.isAuthenticated, index.ui_progress_bars);
-    app.get('/ui-tabs-accordions.html', passportConf.isAuthenticated, index.ui_tabs_accordions);
-    app.get('/ui-typography.html', passportConf.isAuthenticated, index.ui_typography);
-    app.get('/ui-buttons.html', passportConf.isAuthenticated, index.ui_buttons);
-
     // page not found
     app.get('*', index.notfound);
 };
