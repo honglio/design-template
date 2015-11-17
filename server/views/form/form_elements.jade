@@ -1,0 +1,531 @@
+extends ../layout
+
+block content
+    #myModal.modal.fade(tabindex="-1" role="dialog" aria-labelledby="something")
+      .modal-content.modal-body.wrapper-lg
+        .row
+          .col-sm-6.b-r
+            h3.m-t-none.m-b.font-thin Sign in
+            p Sign in to meet your friends.
+            form(role='form')
+              .form-group
+                label Email
+                input.form-control(type='email', placeholder='Enter email')
+              .form-group
+                label Password
+                input.form-control(type='password', placeholder='Password')
+              .checkbox.m-t-lg
+                button.btn.btn-sm.btn-success.pull-right.text-uc.m-t-n-xs(type='submit', ng-click='ok()')
+                  strong Log in
+                label.i-checks
+                  input(type='checkbox')
+                  i
+                  |  Remember me
+          .col-sm-6
+            h4 Not a member?
+            p
+              | You can create an account 
+              a.text-info(href='') here
+            p OR
+            a.btn.btn-primary.btn-block.m-b-sm(href='')
+              i.fa.fa-facebook.pull-left
+              | Sign in with Facebook
+            a.btn.btn-info.btn-block.m-b-sm(href='')
+              i.fa.fa-twitter.pull-left
+              | Sign in with Twitter
+            a.btn.btn-danger.btn-block(href='')
+              i.fa.fa-google-plus.pull-left
+              | Sign in with Google+
+
+    .bg-light.lter.b-b.wrapper-md
+      h1.m-n.font-thin.h3 Form Elements
+    .wrapper-md
+      .row
+        .col-sm-6
+          .panel.panel-default
+            .panel-heading.font-bold Basic form
+            .panel-body
+              form(role='form')
+                .form-group
+                  label Email address
+                  input.form-control(type='email', placeholder='Enter email')
+                .form-group
+                  label Password
+                  input.form-control(type='password', placeholder='Password')
+                .checkbox
+                  label.i-checks
+                    input(type='checkbox', checked='', disabled='')
+                    i
+                    |  Check me out
+                button.btn.btn-sm.btn-primary(type='submit') Submit
+        .col-sm-6
+          .panel.panel-default
+            .panel-heading.font-bold Horizontal form
+            .panel-body
+              form.bs-example.form-horizontal
+                .form-group
+                  label.col-lg-2.control-label Email
+                  .col-lg-10
+                    input.form-control(type='email', placeholder='Email')
+                    span.help-block.m-b-none Example block-level help text here.
+                .form-group
+                  label.col-lg-2.control-label Password
+                  .col-lg-10
+                    input.form-control(type='password', placeholder='Password')
+                .form-group
+                  .col-lg-offset-2.col-lg-10
+                    .checkbox
+                      label.i-checks
+                        input(type='checkbox', checked='')
+                        i
+                        |  Remember me
+                .form-group
+                  .col-lg-offset-2.col-lg-10
+                    button.btn.btn-sm.btn-info(type='submit') Sign in
+      .panel.panel-default
+        .panel-heading.font-bold
+          | Inline form
+        .panel-body
+          form.form-inline(role='form')
+            .form-group
+              label.sr-only(for='exampleInputEmail2') Email address
+              input#exampleInputEmail2.form-control(type='email', placeholder='Enter email')
+            .form-group
+              label.sr-only(for='exampleInputPassword2') Password
+              input#exampleInputPassword2.form-control(type='password', placeholder='Password')
+            .checkbox.m-l.m-r-xs
+              label.i-checks
+                input(type='checkbox')
+                i
+                |  Remember me
+            button.btn.btn-default(type='submit') Sign in
+            span
+              button.btn.btn-success(type="button" data-toggle="modal" data-target="#myModal") Form in a modal
+      .panel.panel-default
+        .panel-heading.font-bold
+          | Form elements
+        .panel-body
+          form.form-horizontal(method='get')
+            .form-group
+              label.col-sm-2.control-label Rounded
+              .col-sm-10
+                input.form-control.rounded(type='text')
+            .line.line-dashed.b-b.line-lg.pull-in
+            .form-group
+              label.col-sm-2.control-label With help
+              .col-sm-10
+                input.form-control(type='text')
+                span.help-block.m-b-none A block of help text that breaks onto a new line and may extend beyond one line.
+            .line.line-dashed.b-b.line-lg.pull-in
+            .form-group
+              label.col-sm-2.control-label(for='input-id-1') Label focus
+              .col-sm-10
+                input#input-id-1.form-control(type='text')
+            .line.line-dashed.b-b.line-lg.pull-in
+            .form-group
+              label.col-sm-2.control-label Password
+              .col-sm-10
+                input.form-control(type='password', name='password')
+            .line.line-dashed.b-b.line-lg.pull-in
+            .form-group
+              label.col-sm-2.control-label Placeholder
+              .col-sm-10
+                input.form-control(type='text', placeholder='placeholder')
+            .line.line-dashed.b-b.line-lg.pull-in
+            .form-group
+              label.col-lg-2.control-label Disabled
+              .col-lg-10
+                input.form-control(type='text', placeholder='Disabled input here...', disabled='')
+            .line.line-dashed.b-b.line-lg.pull-in
+            .form-group
+              label.col-lg-2.control-label Static control
+              .col-lg-10
+                p.form-control-static email@example.com
+            .line.line-dashed.b-b.line-lg.pull-in
+            .form-group
+              label.col-sm-2.control-label Checkboxes and radios
+              .col-sm-10
+                .checkbox
+                  label
+                    input(type='checkbox', value='')
+                    |                 Option one is this and that—be sure to include why it's great
+                .radio
+                  label
+                    input#optionsRadios1(type='radio', name='optionsRadios', value='option1', checked='')
+                    |                 Option one is this and that—be sure to include why it's great
+                .radio
+                  label
+                    input#optionsRadios2(type='radio', name='optionsRadios', value='option2')
+                    |                 Option two can be something else and selecting it will deselect option one
+            .line.line-dashed.b-b.line-lg.pull-in
+            .form-group
+              label.col-sm-2.control-label Inline checkboxes
+              .col-sm-10
+                label.checkbox-inline
+                  input(type='checkbox', value='option1')
+                  |  a
+                label.checkbox-inline
+                  input(type='checkbox', value='option2')
+                  |  b
+                label.checkbox-inline
+                  input(type='checkbox', value='option3')
+                  |  c
+            .line.line-dashed.b-b.line-lg.pull-in
+            .form-group
+              label.col-sm-2.control-label CSS3 Checkboxes & radios
+              .col-sm-10
+                .checkbox
+                  label.i-checks
+                    input(type='checkbox', value='')
+                    i
+                    |                 Option one
+                .checkbox
+                  label.i-checks
+                    input(type='checkbox', checked, value='')
+                    i
+                    |                 Option two checked
+                .checkbox
+                  label.i-checks
+                    input(type='checkbox', checked, disabled, value='')
+                    i
+                    |                 Option three checked and disabled
+                .checkbox
+                  label.i-checks
+                    input(type='checkbox', disabled, value='')
+                    i
+                    |                 Option four disabled
+                .radio
+                  label.i-checks
+                    input(type='radio', name='a', value='option1')
+                    i
+                    |                 Option one
+                .radio
+                  label.i-checks
+                    input(type='radio', name='a', value='option2', checked)
+                    i
+                    |                 Option two checked
+                .radio
+                  label.i-checks
+                    input(type='radio', value='option2', checked, disabled)
+                    i
+                    |                 Option three checked and disabled
+                .radio
+                  label.i-checks
+                    input(type='radio', name='a', disabled)
+                    i
+                    |                 Option four disabled
+                .radio
+                  label.i-checks.i-checks-sm
+                    input(type='radio', name='a')
+                    i
+                    |                 Small size radio
+                .checkbox
+                  label.i-checks.i-checks-sm
+                    input(type='checkbox')
+                    i
+                    |                 Small size checkbox
+                .m-b-xs.m-t
+                  label.i-checks.i-checks-lg
+                    input(type='radio', name='a')
+                    i
+                    |                 Large size radio
+                .checkbox
+                  label.i-checks.i-checks-lg
+                    input(type='checkbox')
+                    i
+                    |                 Large size checkbox
+            .line.line-dashed.b-b.line-lg.pull-in
+            .form-group
+              label.col-sm-2.control-label Inline checkboxes
+              .col-sm-10
+                label.checkbox-inline.i-checks
+                  input(type='checkbox', value='option1')
+                  i
+                  |  a
+                label.checkbox-inline.i-checks
+                  input(type='checkbox', value='option2')
+                  i
+                  |  b
+                label.checkbox-inline.i-checks
+                  input(type='checkbox', value='option3')
+                  i
+                  |  c
+            .line.line-dashed.b-b.line-lg.pull-in
+            .form-group
+              label.col-sm-2.control-label Switch
+              .col-sm-10
+                label.i-switch.m-t-xs.m-r
+                  input(type='checkbox', checked)
+                  i
+                label.i-switch.bg-info.m-t-xs.m-r
+                  input(type='checkbox', checked)
+                  i
+                label.i-switch.bg-primary.m-t-xs.m-r
+                  input(type='checkbox', checked)
+                  i
+                label.i-switch.bg-danger.m-t-xs.m-r
+                  input(type='checkbox', checked)
+                  i
+            .line.line-dashed.b-b.line-lg.pull-in
+            .form-group
+              label.col-sm-2.control-label Radio Switch
+              .col-sm-10
+                label.i-switch.bg-primary.m-t-xs.m-r
+                  input(type='radio', name='switch', checked)
+                  i
+                label.i-switch.bg-warning.m-t-xs.m-r
+                  input(type='radio', name='switch')
+                  i
+            .line.line-dashed.b-b.line-lg.pull-in
+            .form-group
+              label.col-sm-2.control-label Switch size
+              .col-sm-10
+                label.i-switch.i-switch-md.bg-info.m-t-xs.m-r
+                  input(type='checkbox', checked)
+                  i
+                label.i-switch.i-switch-lg.bg-dark.m-t-xs.m-r
+                  input(type='checkbox')
+                  i
+            .line.line-dashed.b-b.line-lg.pull-in
+            .form-group
+              label.col-sm-2.control-label Select
+              .col-sm-10
+                select.form-control.m-b(name='account')
+                  option option 1
+                  option option 2
+                  option option 3
+                  option option 4
+                .col-lg-4.m-l-n
+                  select.form-control(multiple)
+                    option option 1
+                    option option 2
+                    option option 3
+                    option option 4
+            .line.line-dashed.b-b.line-lg.pull-in
+            .form-group.has-success
+              label.col-sm-2.control-label Input with success
+              .col-sm-10
+                input.form-control(type='text')
+            .line.line-dashed.b-b.line-lg.pull-in
+            .form-group.has-warning
+              label.col-sm-2.control-label Input with warning
+              .col-sm-10
+                input.form-control(type='text')
+            .line.line-dashed.b-b.line-lg.pull-in
+            .form-group.has-error
+              label.col-sm-2.control-label Input with error
+              .col-sm-10
+                input.form-control(type='text')
+            .line.line-dashed.b-b.line-lg.pull-in
+            .form-group
+              label.col-sm-2.control-label Control sizing
+              .col-sm-10
+                input.form-control.input-lg.m-b(type='text', placeholder='.input-lg')
+                input.form-control.m-b(type='text', placeholder='Default input')
+                input.form-control.input-sm(type='text', placeholder='.input-sm')
+            .line.line-dashed.b-b.line-lg.pull-in
+            .form-group
+              label.col-sm-2.control-label Column sizing
+              .col-sm-10
+                .row
+                  .col-md-2
+                    input.form-control(type='text', placeholder='.col-md-2')
+                  .col-md-3
+                    input.form-control(type='text', placeholder='.col-md-3')
+                  .col-md-4
+                    input.form-control(type='text', placeholder='.col-md-4')
+            .line.line-dashed.b-b.line-lg.pull-in
+            .form-group
+              label.col-sm-2.control-label Input groups
+              .col-sm-10
+                .input-group.m-b
+                  span.input-group-addon @
+                  input.form-control(type='text', placeholder='Username')
+                .input-group.m-b
+                  input.form-control(type='text')
+                  span.input-group-addon .00
+                .input-group.m-b
+                  span.input-group-addon $
+                  input.form-control(type='text')
+                  span.input-group-addon .00
+                .input-group.m-b
+                  span.input-group-addon
+                    input(type='checkbox')
+                  input.form-control(type='text')
+                .input-group
+                  span.input-group-addon
+                    input(type='radio')
+                  input.form-control(type='text')
+            .line.line-dashed.b-b.line-lg.pull-in
+            .form-group
+              label.col-sm-2.control-label Button addons
+              .col-sm-10
+                .input-group.m-b
+                  span.input-group-btn
+                    button.btn.btn-default(type='button') Go!
+                  input.form-control(type='text')
+                .input-group
+                  input.form-control(type='text')
+                  span.input-group-btn
+                    button.btn.btn-default(type='button') Go!
+            .line.line-dashed.b-b.line-lg.pull-in
+            .form-group
+              label.col-sm-2.control-label With dropdowns
+              .col-sm-10
+                .input-group.m-b
+                  .input-group-btn.dropdown
+                    button.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown')
+                      | Action 
+                      span.caret
+                    ul.dropdown-menu
+                      li
+                        a(href='') Action
+                      li
+                        a(href='') Another action
+                      li
+                        a(href='') Something else here
+                      li.divider
+                      li
+                        a(href='') Separated link
+                  // /btn-group
+                  input.form-control(type='text')
+                .input-group
+                  input.form-control(type='text')
+                  .input-group-btn.dropdown
+                    button.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown')
+                      | Action 
+                      span.caret
+                    ul.dropdown-menu.pull-right
+                      li
+                        a(href='') Action
+                      li
+                        a(href='') Another action
+                      li
+                        a(href='') Something else here
+                      li.divider
+                      li
+                        a(href='') Separated link
+                  // /btn-group
+            .line.line-dashed.b-b.line-lg.pull-in
+            .form-group
+              label.col-sm-2.control-label Segmented
+              .col-sm-10
+                .input-group.m-b
+                  .input-group-btn.dropdown
+                    button.btn.btn-default(type='button', tabindex='-1') Action
+                    button.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown')
+                      span.caret
+                    ul.dropdown-menu
+                      li
+                        a(href='') Action
+                      li
+                        a(href='') Another action
+                      li
+                        a(href='') Something else here
+                      li.divider
+                      li
+                        a(href='') Separated link
+                  // /btn-group
+                  input.form-control(type='text')
+                .input-group
+                  input.form-control(type='text')
+                  .input-group-btn.dropdown
+                    button.btn.btn-default(type='button', tabindex='-1') Action
+                    button.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown')
+                      span.caret
+                    ul.dropdown-menu.pull-right
+                      li
+                        a(href='') Action
+                      li
+                        a(href='') Another action
+                      li
+                        a(href='') Something else here
+                      li.divider
+                      li
+                        a(href='') Separated link
+                  // /btn-group
+            
+            .line.line-dashed.b-b.line-lg.pull-in
+            .form-group
+              label.col-sm-2.control-label Chosen
+              .col-sm-10
+                select.w-md(ui-jq='chosen')
+                  optgroup(label='Alaskan/Hawaiian Time Zone')
+                    option(value='AK') Alaska
+                    option(value='HI') Hawaii
+                  optgroup(label='Pacific Time Zone')
+                    option(value='CA') California
+                    option(value='NV') Nevada
+                    option(value='OR') Oregon
+                    option(value='WA') Washington
+                  optgroup(label='Mountain Time Zone')
+                    option(value='AZ') Arizona
+                    option(value='CO') Colorado
+                    option(value='ID') Idaho
+                    option(value='MT') Montana
+                    option(value='NE') Nebraska
+                    option(value='NM') New Mexico
+                    option(value='ND') North Dakota
+                    option(value='UT') Utah
+                    option(value='WY') Wyoming
+                  optgroup(label='Central Time Zone')
+                    option(value='AL') Alabama
+                    option(value='AR') Arkansas
+                    option(value='IL') Illinois
+                    option(value='IA') Iowa
+                    option(value='KS') Kansas
+                    option(value='KY') Kentucky
+                    option(value='LA') Louisiana
+                    option(value='MN') Minnesota
+                    option(value='MS') Mississippi
+                    option(value='MO') Missouri
+                    option(value='OK') Oklahoma
+                    option(value='SD') South Dakota
+                    option(value='TX') Texas
+                    option(value='TN') Tennessee
+                    option(value='WI') Wisconsin
+                  optgroup(label='Eastern Time Zone')
+                    option(value='CT') Connecticut
+                    option(value='DE') Delaware
+                    option(value='FL') Florida
+                    option(value='GA') Georgia
+                    option(value='IN') Indiana
+                    option(value='ME') Maine
+                    option(value='MD') Maryland
+                    option(value='MA') Massachusetts
+                    option(value='MI') Michigan
+                    option(value='NH') New Hampshire
+                    option(value='NJ') New Jersey
+                    option(value='NY') New York
+                    option(value='NC') North Carolina
+                    option(value='OH') Ohio
+                    option(value='PA') Pennsylvania
+                    option(value='RI') Rhode Island
+                    option(value='SC') South Carolina
+                    option(value='VT') Vermont
+                    option(value='VA') Virginia
+                    option(value='WV') West Virginia
+            .line.line-dashed.b-b.line-lg.pull-in
+            .form-group
+              label.col-sm-2.control-label Chosen multiple
+              .col-sm-10
+                select.w-md(ui-jq='chosen', multiple='')
+                  option(value='AK') Alaska
+                  option(value='HI') Hawaii
+                  option(value='CA') California
+                  option(value='NV') Nevada
+                  option(value='OR') Oregon
+                  option(value='WA') Washington
+            
+            .line.line-dashed.b-b.line-lg.pull-in
+            .form-group
+              .col-sm-4.col-sm-offset-2
+                button.btn.btn-default(type='submit') Cancel
+                button.btn.btn-primary(type='submit') Save changes
+
+
+append scripts
+  script(type='text/javascript').
+    $(function() {
+      
+    });

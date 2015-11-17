@@ -34,6 +34,50 @@ section#top-nav
               a(href='shop-checkout.html')
                 i.fa.fa-credit-card
                 |  结帐
+        li.dropdown(aria-haspopup='true')
+          a.dropdown-toggle(href='', data-toggle='dropdown')
+            i.fa.fa-shopping-cart
+            |  UI
+            i.caret
+          ul.dropdown-menu(role="menu")
+            li
+              a(href='ui_buttons.html')
+                i.fa.fa-btn
+                |  Buttons
+            li
+              a(href='ui_listView.html')
+                i.fa.fa-listView
+                |  listView
+            li
+              a(href='ui_timeline.html')
+                i.fa.fa-timeline
+                |  Timeline
+            li
+              a(href='ui_widgets.html')
+                i.fa.fa-widgets
+                |  Widgets
+        li.dropdown(aria-haspopup='true')
+          a.dropdown-toggle(href='', data-toggle='dropdown')
+            i.fa.fa-edit
+            |  Form
+            i.caret
+          ul.dropdown-menu(role="menu")
+            li
+              a(href='form_elements.html')
+                i.fa.fa-btn
+                |  Elements
+            li
+              a(href='ui_listView.html')
+                i.fa.fa-listView
+                |  listView
+            li
+              a(href='ui_timeline.html')
+                i.fa.fa-timeline
+                |  Timeline
+            li
+              a(href='ui_widgets.html')
+                i.fa.fa-widgets
+                |  Widgets
         //- Admin Page
         li
           a(href='admin.html')
@@ -46,3 +90,4 @@ section#top-nav
                 span.caret
               ul.dropdown-menu(role="menu")
                 li: a(href='/logout') 登出
+

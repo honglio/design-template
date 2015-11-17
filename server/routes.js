@@ -38,6 +38,13 @@ module.exports = function (app, passport) {
     app.get('/shop.html', passportConf.isAuthenticated, index.shop);
     app.get('/shop-detail.html', passportConf.isAuthenticated, index.shop_detail);
     app.get('/shop-checkout.html', passportConf.isAuthenticated, index.shop_checkout);
+
+    app.get('/ui_buttons.html', passportConf.isAuthenticated, index.ui_buttons);
+    app.get('/ui_listView.html', passportConf.isAuthenticated, index.ui_listView);
+    app.get('/ui_timeline.html', passportConf.isAuthenticated, index.ui_timeline);
+    app.get('/ui_widgets.html', passportConf.isAuthenticated, index.ui_widgets);
+
+    app.get('/form_elements.html', passportConf.isAuthenticated, index.form_elements);
     // page not found
     app.get('*', index.notfound);
 };

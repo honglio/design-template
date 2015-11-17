@@ -1,0 +1,241 @@
+extends ../layout
+
+block content
+  .bg-light.lter.b-b.wrapper-md
+    h1.m-n.font-thin.h3 Buttons
+  .wrapper-md
+    .row
+      .col-md-6
+        h4.m-t-xs Button options
+        div
+          button.btn.m-b-xs.w-xs.btn-default Default
+          button.btn.m-b-xs.w-xs.btn-primary Primary
+          button.btn.m-b-xs.w-xs.btn-success Success
+          button.btn.m-b-xs.w-xs.btn-info Info
+          button.btn.m-b-xs.w-xs.btn-warning Warning
+          button.btn.m-b-xs.w-xs.btn-danger Danger
+          button.btn.m-b-xs.w-xs.btn-dark Dark
+          button.btn.m-b-xs.w-xs.btn-default.disabled Disabled
+        h4.m-t-lg
+          | Button addon
+        p
+          button.btn.m-b-xs.btn-sm.btn-primary.btn-addon
+            i.fa.fa-plus
+            | Primary
+          button.btn.m-b-xs.btn-sm.btn-info.btn-addon
+            i.fa.fa-trash-o
+            | Info
+          button.btn.m-b-xs.btn-sm.btn-success.btn-addon
+            i.fa.fa-minus.pull-right
+            | Success
+          button.btn.m-b-xs.btn-sm.btn-warning.btn-addon
+            i.fa.fa-circle
+            | Warning
+          button.btn.m-b-xs.btn-sm.btn-default.btn-addon
+            i.fa.fa-plus
+            | Default
+        p
+          button.btn.btn-default.btn-addon
+            i.fa.fa-music
+            | Default
+          button.btn.btn-info.btn-addon
+            i.fa.fa-play
+            | Info
+        h4.m-t Button size
+        p
+          button.btn.btn-default.btn-lg Large
+          button.btn.btn-primary.btn-addon.btn-lg
+            i.fa.fa-plus
+            | Addon
+        p
+          button.btn.btn-default Default button
+        p
+          button.btn.btn-default.btn-sm Small button
+        p
+          button.btn.btn-default.btn-xs Extra small button
+        h4.m-t-lg Button dropdowns
+        p.text-muted Single button dropdowns
+        .m-b-sm
+          .btn-group.dropdown
+            button.btn.btn-default.dropdown-toggle(href='', data-toggle='dropdown')
+              | Action 
+              span.caret
+            ul.dropdown-menu
+              li
+                a(href='') Action
+              li
+                a(href='') Another action
+              li
+                a(href='') Something else here
+              li.divider
+              li
+                a(href='') Separated link
+          .btn-group.dropdown
+            button.btn.btn-success.dropdown-toggle(href='', data-toggle='dropdown')
+              | Action 
+              span.caret
+            ul.dropdown-menu
+              li
+                a(href='') Action
+              li
+                a(href='') Another action
+              li
+                a(href='') Something else here
+              li.divider
+              li
+                a(href='') Separated link
+        .m-b-sm
+          .btn-group.dropdown
+            button.btn.btn-default.btn-sm.dropdown-toggle(href='', data-toggle='dropdown')
+              | Action 
+              span.caret
+            ul.dropdown-menu
+              li
+                a(href='') Action
+              li
+                a(href='') Another action
+              li
+                a(href='') Something else here
+              li.divider
+              li
+                a(href='') Separated link
+        .m-b-sm
+          .btn-group.dropdown
+            button.btn.btn-default.btn-xs.dropdown-toggle(href='', data-toggle='dropdown')
+              | Action 
+              span.caret
+            ul.dropdown-menu
+              li
+                a(href='') Action
+              li
+                a(href='') Another action
+              li
+                a(href='') Something else here
+              li.divider
+              li
+                a(href='') Separated link
+        p.text-muted Split button dropdowns & variation 
+        .m-b-sm
+          .btn-group.dropdown
+            button.btn.btn-default Action
+            button.btn.btn-default.dropdown-toggle(href='', data-toggle='dropdown')
+              span.caret
+            ul.dropdown-menu
+              li
+                a(href='') Action
+              li
+                a(href='') Another action
+              li
+                a(href='') Something else here
+              li.divider
+              li
+                a(href='') Separated link
+          .btn-group.dropdown.dropup
+            button.btn.btn-default Action
+            button.btn.btn-default.dropdown-toggle(href='', data-toggle='dropdown')
+              span.caret
+            ul.dropdown-menu
+              li
+                a(href='') Action
+              li
+                a(href='') Another action
+              li
+                a(href='') Something else here
+              li.divider
+              li
+                a(href='') Separated link
+        h4.m-t-lg Button with icon
+        p
+          button.btn.btn-default
+            i.fa.fa-html5
+            |  Html5
+          button.btn.btn-info
+            i.fa.fa-css3
+            |  CSS3
+        p
+          button.btn.btn-default.btn-lg.btn-block
+            i.fa.fa-bars.pull-right
+            |  Block button with icon
+        p
+          button.btn.btn-default.btn-block
+            i.fa.fa-bars.pull-left
+            |  Block button with icon
+        h4.m-t-lg
+          | Button icon
+        p
+          button.btn.btn-sm.btn-icon.btn-info
+            i.fa.fa-twitter
+          button.btn.btn-sm.btn-icon.btn-danger
+            i.fa.fa-google-plus
+        h4.m-t-lg
+          | Button icon rounded
+        p
+          button.btn.btn-rounded.btn-sm.btn-icon.btn-default
+            i.fa.fa-twitter
+          button.btn.btn-rounded.btn.btn-icon.btn-default
+            i.fa.fa-facebook
+          button.btn.btn-rounded.btn-lg.btn-icon.btn-default
+            i.fa.fa-google-plus
+      .col-md-6
+        h4.m-t-xs Rounded button
+        div
+          button.btn.m-b-xs.w-xs.btn-default.btn-rounded Default
+          button.btn.m-b-xs.w-xs.btn-primary.btn-rounded Primary
+          button.btn.m-b-xs.w-xs.btn-success.btn-rounded Success
+          button.btn.m-b-xs.w-xs.btn-info.btn-rounded Info
+          button.btn.m-b-xs.w-xs.btn-warning.btn-rounded Warning
+          button.btn.m-b-xs.w-xs.btn-danger.btn-rounded Danger
+          button.btn.m-b-xs.w-xs.btn-dark.btn-rounded Dark
+          button.btn.m-b-xs.w-xs.btn-default.btn-rounded.disabled Disabled
+        h4.m-t-lg Button groups
+        .m-b-sm
+          .btn-group
+            button.btn.btn-default(type='button') Left
+            button.btn.btn-default(type='button') Middle
+            button.btn.btn-default(type='button') Right
+        p.text-muted Vertical button groups
+        .btn-group-vertical.m-b-sm
+          button.btn.btn-default(type='button') Top
+          button.btn.btn-default(type='button') Middle
+          button.btn.btn-default(type='button') Bottom
+        p.text-muted Nested button groups
+        .btn-group.m-b-sm
+          button.btn.btn-default(type='button') 1
+          button.btn.btn-success(type='button') 2
+          button.btn.btn-default(type='button') 3
+          .btn-group.dropdown
+            button.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown')
+              | Dropdown
+              span.caret
+            ul.dropdown-menu
+              li
+                a(href='') Dropdown link
+              li
+                a(href='') Dropdown link
+              li
+                a(href='') Dropdown link
+        p.text-muted Justified button groups
+        .m-b-sm
+          .btn-group.btn-group-justified
+            a.btn.btn-primary(href='') Left
+            a.btn.btn-info(href='') Middle
+            a.btn.btn-success(href='') Right
+        p.text-muted Multiple button groups
+        .btn-toolbar
+          .btn-group
+            button.btn.btn-default(type='button') 1
+            button.btn.btn-default.active(type='button') 2
+            button.btn.btn-default(type='button') 3
+            button.btn.btn-default(type='button') 4
+          .btn-group
+            button.btn.btn-default(type='button') 5
+            button.btn.btn-default(type='button') 6
+            button.btn.btn-default(type='button') 7
+          .btn-group
+            button.btn.btn-default(type='button') 8
+
+append scripts
+  script(type='text/javascript').
+    $(function() {
+      
+    });
