@@ -83,20 +83,20 @@ exports.ui_buttons = function(req, res) {
 };
 
 exports.ui_listView = function(req, res) {
-  res.render('ui/ui_listView');
-}
+    res.render('ui/ui_listView');
+};
 
 exports.ui_timeline = function(req, res) {
-  res.render('ui/ui_timeline');
-}
+    res.render('ui/ui_timeline');
+};
 
 exports.ui_widgets = function(req, res) {
-  res.render('ui/ui_widgets');
-}
+    res.render('ui/ui_widgets');
+};
 
 exports.form_elements = function(req, res) {
-  res.render('form/form_elements');
-}
+    res.render('form/form_elements');
+};
 /**
  * GET /login
  * Login page.
