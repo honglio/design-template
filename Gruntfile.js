@@ -218,7 +218,7 @@ module.exports = function(grunt) {
                 dot: true,
                 cwd: '<%= yeoman.release %>/css',
                 dest: '<%= yeoman.app %>/css',
-                src: '*.css'
+                src: '{,**/}*.*'
             }
         },
         jade: {
