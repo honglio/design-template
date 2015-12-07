@@ -663,13 +663,13 @@ span a:active {
   top: 0;
   bottom: 0;
   width: 2px;
-  background: #dce2e4;
+  background: #c1bfbf;
 }
 .blog .blog-posts .blog-post,
 .blog .blog-single .blog-post {
   margin-bottom: 30px;
   padding-bottom: 30px;
-  border-bottom: 1px solid #dce2e4;
+  border-bottom: 1px solid #c1bfbf;
 }
 .blog .blog-posts .blog-post:before,
 .blog .blog-single .blog-post:before,
@@ -719,7 +719,7 @@ span a:active {
   content: '';
   height: 12px;
   width: 1px;
-  background: #dce2e4;
+  background: #c1bfbf;
   margin-right: 10px;
 }
 .blog .blog-posts .blog-post .post-details p:before,
@@ -748,7 +748,7 @@ span a:active {
   content: '';
   height: 12px;
   width: 1px;
-  background: #dce2e4;
+  background: #c1bfbf;
   margin-right: 10px;
 }
 .blog .blog-posts .blog-post-single .post-details p:before,
@@ -791,7 +791,7 @@ span a:active {
 .blog .sidebar h3 {
   font-size: 23px;
   margin-bottom: 10px;
-  border-bottom: 1px solid #dce2e4;
+  border-bottom: 1px solid #c1bfbf;
   padding-bottom: 10px;
 }
 .blog .sidebar .sidebar-content {
@@ -812,7 +812,7 @@ span a:active {
   margin-left: 5px;
 }
 .blog .sidebar .sidebar-content ul > li {
-  border-bottom: 1px solid #dce2e4;
+  border-bottom: 1px solid #c1bfbf;
 }
 .blog .sidebar .sidebar-content ul > li:last-child {
   border-bottom: 0;

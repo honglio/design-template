@@ -4,15 +4,53 @@
 	-ms-animation-fill-mode:both;
 	-o-animation-fill-mode:both;
 	animation-fill-mode:both;
-	-webkit-animation-duration:0.5s;
-	-moz-animation-duration:0.5s;
-	-ms-animation-duration:0.5s;
-	-o-animation-duration:0.5s;
-	animation-duration:0.5s;
+	-webkit-animation-duration:1.5s;
+	-moz-animation-duration:1.5s;
+	-ms-animation-duration:1.5s;
+	-o-animation-duration:1.5s;
+	animation-duration:1.5s;
+	-webkit-transform-origin: 0% 100%;
+	-moz-transform-origin: 0% 100%;
+	-ms-transform-origin: 0% 100%;
+	-o-transform-origin: 0% 100%;
+	transform-origin: 0% 100%;
+	-webkit-transform-timing-function: linear;
+	-moz-transform-timing-function: linear;
+	-ms-transform-timing-function: linear;
+	-o-transform-timing-function: linear;
+	animation-timing-function: linear;
+}
+
+@-webkit-keyframes fadeInRightScale {
+	0% {opacity: 0; transform: scaleX(0.2);}	
+	100% {opacity: 1; transform: scaleX(1);}
+}
+
+@-moz-keyframes fadeInRightScale {
+	0% {opacity: 0; transform: scaleX(0.2);}	
+	100% {opacity: 1; transform: scaleX(1);}
+}
+
+@-o-keyframes fadeInRightScale {
+	0% {opacity: 0; transform: scaleX(0.2);}	
+	100% {opacity: 1; transform: scaleX(1);}
+}
+
+@keyframes fadeInRightScale {
+	0% {opacity: 0; transform: scaleX(0.2);}	
+	100% {opacity: 1; transform: scaleX(1);}
+}
+
+.fadeInRightScale {
+	-webkit-animation-name: fadeInRightScale;
+	-moz-animation-name: fadeInRightScale;
+	-o-animation-name: fadeInRightScale;
+	animation-name: fadeInRightScale;
 }
 
 @-webkit-keyframes fadeIn {
-	0% {opacity: 0;}	100% {opacity: 1;}
+	0% {opacity: 0;}	
+	100% {opacity: 1;}
 }
 
 @-moz-keyframes fadeIn {
