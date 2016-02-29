@@ -142,29 +142,6 @@ blockquote small {
 pre {
   font-size: 15px;
 }
-/* Line Height */
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
-  margin: 0;
-  line-height: 1.5;
-}
-body,
-p,
-dt,
-dd,
-small,
-blockquote small,
-address,
-pre,
-input,
-select,
-label {
-  line-height: 1.42857143;
-}
 .container {
   margin-right: auto;
   margin-left: auto;
@@ -1071,43 +1048,6 @@ fieldset[disabled] .btn-black.active {
 }
 .btn-groups .btn {
   margin-bottom: 5px;
-}
-.avatar {
-  position: relative;
-  display: block;
-  white-space: nowrap;
-}
-.avatar img {
-  border-radius: 500px;
-  width: 48px;
-  height: 48px;
-  margin: 6px 12px;
-}
-.avatar input.center {
-  margin-left: 10px;
-  margin-top: 6px;
-  margin-bottom: 6px;
-}
-.avatar i.center {
-  margin-left: 10px;
-  margin-top: 6px;
-  margin-bottom: 6px;
-}
-.avatar i.on {
-  background-color: #a0dc94;
-}
-.avatar i.off {
-  background-color: #858585;
-}
-.avatar i.busy {
-  background-color: #f67a71;
-}
-.avatar i.away {
-  background-color: #fae379;
-}
-.avatar .name {
-  position: relative;
-  bottom: 24px;
 }
 .form-control.validation .error {
   display: none;
