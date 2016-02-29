@@ -1,78 +1,99 @@
 /* Font Size */
 
-body {
-  font-size: 18px;
+h1,
+.h1 {
+    font-size: @font-size-h1;
 }
-p, ul, li, .advert-ul-one li {
-  font-size: 18px;
-  font-weight: 300;
+
+h2,
+.h2 {
+    font-size: @font-size-h2;
 }
-h1, .h1 {
-  font-size: 58px;
-  font-weight: 500;
+
+h3,
+.h3 {
+    font-size: @font-size-h3;
 }
-h2, .h2 {
-  font-size: 40px;
-  font-weight: 500;
+
+h4,
+.h4 {
+    font-size: @font-size-h4;
 }
-h3, .h3 {
-  font-size: 36px;
-  font-weight: 500;
+
+h5,
+.h5 {
+    font-size: @font-size-h5;
 }
-h4, .h4 {
-  font-size: 30px;
-  font-weight: 500;
+
+h6,
+.h6 {
+    font-size: @font-size-h6;
 }
-h5, .h5 {
-  font-size: 24px;
-  font-weight: 500;
+
+.text-3x {
+    font-size: 3em;
 }
-h6, .h6 {
-  font-size: 20px;
-  font-weight: 500;
+
+.text-2x {
+    font-size: 2em;
 }
-.img-comment {
-  font-size: 18px;
+
+.text-lg {
+    font-size: @font-size-lg;
 }
-.lead {
-  font-size: 26px;
+
+.text-md {
+    font-size: @font-size-md;
 }
+
+.text-base {
+    font-size: @font-size-base;
+}
+
+.text-sm {
+    font-size: @font-size-sm;
+}
+
+.text-xs {
+    font-size: @font-size-xs;
+}
+
 blockquote {
-  p {
-    font-size: 15px;
-  }
-  small {
-    font-size: 13px;
-  }
+    p {
+        font-size: @font-size-md;
+    }
+    small {
+        font-size: @font-size-sm;
+    }
 }
+
 pre {
-  font-size: 13px;
+    font-size: @font-size-sm;
 }
-.btn {
-  font-size: 15px;
-}
-.btn-hg {
-  font-size: 22px;
-  line-height: 1.227;
-}
-.btn-lg {
-  font-size: 17px;
-}
-.btn-sm {
-  font-size: 13px;
-}
-.btn-xs {
-  font-size: 12px;
-}
-.sidebar ul li a, .sidebar ul li {
-  font-size: 14px;
-  font-weight: 400;
-}
+
+
 /* Line Height */
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-  line-height: 1;
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    margin: 0;
+    line-height: @line-height-large;
 }
-body, .img-comment, p, dt, dd, blockquote small, address, pre, .input-sm, .input-lg, .input-hg, .input-group-hg > .form-control, .input-group-hg > .input-group-addon, .input-group-hg > .input-group-btn > .btn, .input-group-lg > .form-control, .input-group-lg > .input-group-addon, .input-group-lg > .input-group-btn > .btn, .input-group-sm > .form-control, .input-group-sm > .input-group-addon, .input-group-sm > .input-group-btn > .btn, .has-switch {
-  line-height: 1.7em;
+
+body,
+p,
+dt,
+dd,
+small,
+blockquote small,
+address,
+pre,
+input,
+select,
+label {
+    line-height: @line-height-base;
 }

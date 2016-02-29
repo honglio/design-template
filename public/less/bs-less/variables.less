@@ -13,15 +13,15 @@
 @gray-light:             lighten(#000, 60%);   // #999
 @gray-lighter:           lighten(#000, 93.5%); // #eee
 
-@brand-primary:         #02d9b8;
-@brand-info:            #b4f5f2;
-@brand-success:         #caff41;
+@brand-primary:         #4cc9d5;
+@brand-info:            #566179;
+@brand-success:         #a0dc94;
 @brand-warning:         #fae379;
-@brand-danger:          #ff998d;
+@brand-danger:          #f67a71;
 @brand-light:           #EAE8E8;
-@brand-dark:            #32465D;
-@brand-black:           #000;
-@brand-gray:			#c7c7c7;
+@brand-dark:            #1f8dc8;
+@brand-black:           #414141;
+@brand-gray:			#ccc;
 
 
 //== Scaffolding
@@ -31,8 +31,8 @@
 //** Background color for `<body>`.
 @body-bg:               #fff;
 //** Global text color on `<body>`.
-@text-color:            @gray-dark;
-@text-muted:            lighten(@text-color, 25%);
+@text-color:            @brand-black;
+@text-muted:            @brand-gray;
 
 //** Global textual link color.
 @link-color:            @brand-primary;
@@ -50,18 +50,18 @@
 @font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
 @font-family-base:        @font-family-sans-serif;
 
-@font-size-base:          14px;
-@font-size-lg:            ceil(@font-size-base * 1.23); // ~20px
-@font-size-md:            ceil(@font-size-base * 1.14); // ~16px
-@font-size-sm:            ceil(@font-size-base * 0.92); // ~13px
-@font-size-xs:            ceil(@font-size-base * 0.85); // ~12px
+@font-size-base:          17px;
+@font-size-lg:            ceil(@font-size-base * 1.16); // ~20px
+@font-size-md:            ceil(@font-size-base * 1.05); // ~18px
+@font-size-sm:            ceil(@font-size-base * 0.88); // ~15px
+@font-size-xs:            ceil(@font-size-base * 0.75); // ~13px
 
-@font-size-h1:            floor((@font-size-base * 2.57)); // ~36px
-@font-size-h2:            floor((@font-size-base * 2.14)); // ~30px
-@font-size-h3:            ceil((@font-size-base * 1.79)); // ~25px
-@font-size-h4:            ceil((@font-size-base * 1.5)); // ~21px
-@font-size-h5:            ceil((@font-size-base * 1.29)); // ~18px
-@font-size-h6:            @font-size-md;                  // ~16px
+@font-size-h1:            floor((@font-size-base * 2.16)); // ~36px
+@font-size-h2:            floor((@font-size-base * 1.78)); // ~30px
+@font-size-h3:            ceil((@font-size-base * 1.48)); // ~26px
+@font-size-h4:            ceil((@font-size-base * 1.37)); // ~24px
+@font-size-h5:            ceil((@font-size-base * 1.25)); // ~22px
+@font-size-h6:            @font-size-md;                  // ~18px
 
 //** Unit-less `line-height` for use in components like buttons.
 @line-height-base:        1.428571429; // 20/14
@@ -84,24 +84,19 @@
 @padding-xs-vertical:       1px;
 @padding-xs-horizontal:     5px;
 
-@line-height-large:         1.33;
-@line-height-small:         1.5;
+@line-height-large:         1.5;
+@line-height-small:         1.33;
 
-@border-color: @border-default;
-@border-default: rgba(160, 160, 160, 0.3);
-@border-sec: #F8FAFC;
-@border-third: #F3F5F7;
-@border-four: #EBEDEF;
-@border-five: #f1f1f1;
+@border-color:              @gray;
 
-@border-radius-base:        2px;
-@border-radius-large:       3px;
-@border-radius-small:       1px;
+@border-radius-base:        4px;
+@border-radius-large:       6px;
+@border-radius-small:       3px;
 
 //** Global color for active items (e.g., navs or dropdowns).
-@component-active-color:    @border-color;
+@component-active-color:    lighten(@brand-primary,40%);
 //** Global background color for active items (e.g., navs or dropdowns).
-@component-active-bg:       @border-default;
+@component-active-bg:       @brand-primary;
 
 //** Width of the `border` for generating carets that indicator dropdowns.
 @caret-width-base:          4px;
@@ -260,25 +255,25 @@
 
 // Extra small screen / phone
 // Note: Deprecated @screen-xs and @screen-phone as of v3.0.1
-@screen-xs:                  480px;
+@screen-xs:                  320px;
 @screen-xs-min:              @screen-xs;
 @screen-phone:               @screen-xs-min;
 
 // Small screen / tablet
 // Note: Deprecated @screen-sm and @screen-tablet as of v3.0.1
-@screen-sm:                  768px;
+@screen-sm:                  360px;
 @screen-sm-min:              @screen-sm;
 @screen-tablet:              @screen-sm-min;
 
 // Medium screen / desktop
 // Note: Deprecated @screen-md and @screen-desktop as of v3.0.1
-@screen-md:                  992px;
+@screen-md:                  480px;
 @screen-md-min:              @screen-md;
 @screen-desktop:             @screen-md-min;
 
 // Large screen / wide desktop
 // Note: Deprecated @screen-lg and @screen-lg-desktop as of v3.0.1
-@screen-lg:                  1200px;
+@screen-lg:                  720px;
 @screen-lg-min:              @screen-lg;
 @screen-lg-desktop:          @screen-lg-min;
 
@@ -328,7 +323,7 @@
 //##
 
 // Basics of a navbar
-@navbar-height:                    50px;
+@navbar-height:                    60px;
 @navbar-margin-bottom:             @line-height-computed;
 @navbar-border-radius:             @border-radius-base;
 @navbar-padding-horizontal:        floor((@grid-gutter-width / 2));
@@ -423,11 +418,11 @@
 
 @pagination-color:                     @link-color;
 @pagination-bg:                        #fff;
-@pagination-border:                    @border-default;
+@pagination-border:                    @border-color;
 
 @pagination-hover-color:               @link-hover-color;
 @pagination-hover-bg:                  #f5f5f5;
-@pagination-hover-border:              @border-default;
+@pagination-hover-border:              @border-color;
 
 @pagination-active-color:              #fff;
 @pagination-active-bg:                 @brand-primary;
@@ -469,20 +464,24 @@
 //
 //## Define colors for form feedback states and, by default, alerts.
 
-@state-success-text:             #3c763d;
-@state-success-bg:               #dff0d8;
+@state-primary-text:             @brand-primary;
+@state-primary-bg:               lighten(@brand-primary, 30%);
+@state-primary-border:           darken(spin(@state-primary-bg, -10), 5%);
+
+@state-success-text:             @brand-success;
+@state-success-bg:               lighten(@brand-success, 30%);
 @state-success-border:           darken(spin(@state-success-bg, -10), 5%);
 
-@state-info-text:                #31708f;
-@state-info-bg:                  #d9edf7;
+@state-info-text:                @brand-info;
+@state-info-bg:                  lighten(@brand-info, 30%);
 @state-info-border:              darken(spin(@state-info-bg, -10), 7%);
 
-@state-warning-text:             #8a6d3b;
-@state-warning-bg:               #fcf8e3;
+@state-warning-text:             @brand-warning;
+@state-warning-bg:               lighten(@brand-warning, 30%);
 @state-warning-border:           darken(spin(@state-warning-bg, -10), 5%);
 
-@state-danger-text:              #a94442;
-@state-danger-bg:                #f2dede;
+@state-danger-text:              @brand-danger;
+@state-danger-bg:                lighten(@brand-danger, 30%);
 @state-danger-border:            darken(spin(@state-danger-bg, -10), 5%);
 
 
@@ -685,9 +684,9 @@
 @panel-default-border:        #ddd;
 @panel-default-heading-bg:    rgb(246, 246, 246);
 
-@panel-primary-text:          #fff;
-@panel-primary-border:        @brand-primary;
-@panel-primary-heading-bg:    @brand-primary;
+@panel-primary-text:          @state-primary-text;
+@panel-primary-border:        @state-primary-border;
+@panel-primary-heading-bg:    @state-primary-bg;
 
 @panel-success-text:          @state-success-text;
 @panel-success-border:        @state-success-border;

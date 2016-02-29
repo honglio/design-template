@@ -1,105 +1,33 @@
-html{
-  background: url('../../img/bg.jpg');
-  background-attachment: fixed;
-  background-size: cover;
+.container{
+  .container-fixed();
 }
 
-.app.container{
-  padding-left: 0;
-  padding-right: 0;
+.row {
+  .make-row();
+}
+.make-grid-columns();
+.make-grid-columns-float(xs);
+.make-grid(12, xs, width);
+.make-grid(12, xs, offset);
+.make-grid(12, xs, pull);
+.make-grid(12, xs, push);
+
+
+/*cols*/
+.row.no-gutter{
+  margin-left: 0;
+  margin-right: 0;
 }
 
-@media screen and (min-width: 768px) {
-  .app.container{
-    width: 750px;
-    .box-shadow(0 0 30px rgba(0,0,0,0.3));
-    .app-aside{
-      overflow-x: hidden;
-    }
-
-    &.app-aside-folded{
-      .app-aside{
-        overflow-x: visible;
-      }
-    }
-    &.app-aside-fixed{
-      .aside-wrap{
-        left: inherit;
-      }
-      &.app-aside-folded{
-        .app-aside{
-          > ul.nav{
-            position: absolute;
-          }
-        }
-      }
-    }
-
-    .app-header,
-    .app-aside{
-      max-width: 750px;
-    }
-    .app-footer-fixed{
-      left: auto;
-      right: auto;
-      width: 100%;
-      max-width: 750 - @app-aside-width;
-    }
-    &.app-aside-folded{
-      .app-footer-fixed{
-        max-width: 750 - @app-aside-folded-width;
-      }
-    }
-    &.app-aside-dock{
-      .app-footer-fixed{
-        max-width: 750px;
-      }
-    }
-  }
+.no-gutter [class*="col"]{
+  padding: 0;
 }
 
-@media (min-width: 992px) {
-  .app.container{
-    width: 970px;
-    .app-header,
-    .app-aside{
-      max-width: 970px;
-    }
-    .app-footer-fixed{
-      max-width: 970 - @app-aside-width;
-    }
-    &.app-aside-folded{
-      .app-footer-fixed{
-        max-width: 970 - @app-aside-folded-width;
-      }
-    }
-    &.app-aside-dock{
-      .app-footer-fixed{
-        max-width: 970px;
-      }
-    }
-  }
-}
-
-@media (min-width: 1200px) {
-  .app.container{
-    width: 1170px;
-    .app-header,
-    .app-aside{
-      max-width: 1170px;
-    }
-    .app-footer-fixed{
-      max-width: 1170 - @app-aside-width;
-    }
-    &.app-aside-folded{
-      .app-footer-fixed{
-        max-width: 1170 - @app-aside-folded-width;
-      }
-    }
-    &.app-aside-dock{
-      .app-footer-fixed{
-        max-width: 1170px;
-      }
-    }
+.row-sm{
+  margin-left: -10px;
+  margin-right: -10px;
+  > div{
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }

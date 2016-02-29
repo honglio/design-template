@@ -9,7 +9,7 @@
   margin: 0;
 	input{
 		position: absolute;
-		.opacity(0);
+		opacity: 0;
 		&:checked{
 			+ i{
         &:before{
@@ -92,23 +92,27 @@
 }
 
 .i-checks{
-  padding-left: 20px;
-  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  cursor: default;
+  .user-select(none);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
   input{
     opacity: 0;
     position: absolute;
     margin-left: -20px;
-    width: 22px;
-    height: 22px;
+    .square(24px);
     z-index: 100;
+    margin-top: 2px;
     &:checked + i{
-      border-color: @brand-info;
       &:before{
-        left: 4px;
-        top: 4px;
-        width: 10px;
-        height: 10px;
-        background-color: @brand-info;
+        background-color: @brand-primary;
+      }
+      &:after {
+          opacity: 1;
       }
     }
     &:checked + span .active{
@@ -137,26 +141,35 @@
     }
   }
   > i{
-    width: 20px;
-    height: 20px;
+    .square(24px);
     line-height: 1;
     border: 1px solid @input-border;
     background-color: #fff;
     margin-left: -20px;
-    margin-top: -2px;
+    margin-top: -4px;
     display: inline-block;
-    vertical-align: middle;
-    margin-right: 4px;
     position: relative;
     &:before{
       content:"";
       position: absolute;
-      left: 50%;
-      top: 50%;
-      width: 0px;
-      height: 0px;
+      .square(px);
       background-color: transparent;
       .transition(all 0.2s);
+    }
+    &:after{
+      content: '';
+      position: absolute;
+      top: 7px;
+      left: 6px;
+      width: 12px;
+      height: 6px;
+      background-color: transparent;
+      border: 3px solid #fff;
+      border-width: 2px;
+      border-top: none;
+      border-right: none;
+      .rotate( -45deg );
+      opacity: 0;
     }
   }
   > span{
@@ -169,20 +182,17 @@
 
 .i-checks-sm{
   input{
-    width: 17px;
-    height: 17px;
+    .square(17px);
     &:checked + i{
       &:before{
         left: 3px;
         top: 3px;
-        width: 8px;
-        height: 8px;
+        .square(8px);
       }
     }
   }
   > i{
-    width: 16px;
-    height: 16px;
+    .square(16px);
     margin-left: -18px;
     margin-right: 6px;
   }
@@ -190,20 +200,17 @@
 
 .i-checks-lg{
   input{
-    width: 32px;
-    height: 32px;
+    .square(32px);
     &:checked + i{
       &:before{
         left: 8px;
         top: 8px;
-        width: 12px;
-        height: 12px;
+        .square(12px);
       }
     }
   }
   > i{
-    width: 30px;
-    height: 30px;
+    .square(30px);
   }
 }
 
@@ -212,3 +219,138 @@
 .datepicker .btn-default{border-width: 0;box-shadow: none;}
 .datepicker .btn[disabled]{opacity: 0.4}
 .datepicker .btn-info .text-info{color: #fff !important;}
+
+// dropdown
+.dropdown-menu{
+  border-radius: @border-radius-base;
+  .box-shadow(0 2px 6px rgba(0, 0, 0, 0.1));
+  border: 1px solid @border-color;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  &.pull-left{
+    left:100%;
+  }
+  > .panel{
+    border: none;
+    margin: -5px 0;
+  }
+  > li > a{
+    padding: 5px 15px;
+  }
+  > li > a:hover,
+  > li > a:focus,
+  > .active > a,
+  > .active > a:hover,
+  > .active > a:focus{
+    background-image: none;
+    filter:none;
+    background-color: @brand-light !important;
+    color: @link-hover-color;
+  }
+}
+
+.dropdown-header{
+  padding: 5px 15px;
+}
+
+.dropdown-submenu{
+  position: relative;
+  &:hover,
+  &:focus{
+    > a{
+      background-color: @brand-light !important;
+      color: @text-color;
+    }
+    > .dropdown-menu {
+      display: block;
+    }
+  }
+  &.pull-left{
+    float: none !important;
+    > .dropdown-menu{
+      left: -100%;
+      margin-left: 10px;
+    }
+  }
+  .dropdown-menu{
+    left:100%;
+    top:0;
+    margin-top: -6px;
+    margin-left: -1px
+  }
+
+  .dropup & {
+    > .dropdown-menu{
+      top: auto;
+      bottom: 0;
+    }
+  }
+}
+
+/*modal*/
+.modal-backdrop{
+  background-color: @brand-black;
+  &.in{
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+  }
+}
+
+.modal-over{
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: fixed;
+}
+
+.modal-center{
+  position: absolute;
+  left:50%;
+  top:50%;
+}
+
+.backdrop {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  &.fade{
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+  &.in{
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+  }
+}
+
+
+/*badge*/
+.badge{
+  background-color: @badge-bg;
+  &.up{
+    position: relative;
+    top: -10px;
+    padding:3px 6px;
+    margin-left: -10px;
+  }
+}
+
+.badge-sm{
+  font-size: 85%;
+  padding: 2px 5px !important;
+}
+
+.badge-white {
+  background-color: transparent;
+  border: 1px solid rgba(255,255,255,0.35);
+  padding: 2px 6px;
+}
+
+.badge-empty {
+  background-color: transparent;
+  border: 1px solid rgba(0,0,0,0.15);
+  color: inherit;
+}

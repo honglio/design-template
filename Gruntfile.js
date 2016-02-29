@@ -137,7 +137,7 @@ module.exports = function(grunt) {
                     '.tmp/css/style-purple.css': '<%= yeoman.app %>/less/theme/style-purple.less',
                     '.tmp/css/style-red.css': '<%= yeoman.app %>/less/theme/style-red.less',
                     '.tmp/css/style-yellow.css': '<%= yeoman.app %>/less/theme/style-yellow.less',
-                    '.tmp/css/angular/app.css': '<%= yeoman.app %>/less/app/app.less'
+                    '<%= yeoman.release %>/css/angular/app.css': '<%= yeoman.app %>/less/app/app.less'
                 }
             }
         },
@@ -280,7 +280,7 @@ module.exports = function(grunt) {
                 ],
                 tasks: [
                     'less',
-                    'autoprefixer',
+                    // 'autoprefixer',
                     'copy:dev'
                 ]
             }
@@ -294,7 +294,7 @@ module.exports = function(grunt) {
     grunt.registerTask('less2css', [
         'copy:styles',
         'less',
-        'autoprefixer',
+        // 'autoprefixer',
         'copy:dist'
     ]);
 
