@@ -1,170 +1,223 @@
 // timeline
-// .timeline {
-//     padding: 0;
-//     margin: 0;
-//     overflow-x: hidden;
-// }
-
-// .tl-item {
-//     display: block;
-//     .clearfix();
-// }
-
-// .visible-left {
-//     display: none;
-// }
-
-// .tl-wrap {
-//     display: block;
-//     padding: 0 0 0 20px;
-//     margin-left: 44px;
-//     border-bottom: 1px @border-color solid;
-//     border-left: 6px @brand-primary solid;
-//     .clearfix();
-//     &:before {
-//         position: relative;
-//         top: 54px;
-//         float: left;
-//         .square(20px);
-//         margin-left: -34px;
-//         content: '';
-//         border-color: @brand-primary;
-//         border-style: solid;
-//         border-width: 11px;
-//         border-radius: 50%;
-//         // background: @brand-light;
-//         // box-shadow: 0 0 0 4px @body-bg;		
-//     }
-//     &:hover:before {
-//         // background: transparent;
-//         // border-color: #fff;
-//     }
-// }
-
-// .tl-content {
-//     position: relative;
-//     display: inline-block;
-//     &.block {
-//         display: block;
-//         width: 100%;
-//     }
-//     &.panel {
-//         margin-bottom: 0;
-//     }
-// }
-
-// .tl-header {
-//     display: block;
-//     // width: 12em;
-//     // text-align: center;
-//     .tl-header-body {
-//         margin-left: 30px;
-//     }
-//     .tl-header-wrap {
-//         display: block;
-//         padding: 0 0 0 20px;
-//         margin-left: 44px;
-//         border-bottom: 1px @border-color solid;
-//         border-left: 6px @brand-primary solid;
-//         .clearfix();
-//     }
-//     .tl-header-btn {
-//         margin-top: 20px;
-//     }
-// }
-
-// .timeline-center {
-//     .tl-item {
-//         margin-left: 50%;
-//         .tl-wrap {
-//             margin-left: -2px;
-//         }
-//     }
-//     .tl-header {
-//         width: auto;
-//         margin: 0;
-//     }
-//     .tl-left {
-//         margin-right: 50%;
-//         margin-left: 0;
-//         .hidden-left {
-//             display: none !important;
-//         }
-//         .visible-left {
-//             display: inherit;
-//         }
-//         .tl-wrap {
-//             float: right;
-//             padding-right: 20px;
-//             padding-left: 0;
-//             margin-right: -2px;
-//             border-right-width: 4px;
-//             border-left-width: 0;
-//             &:before {
-//                 float: right;
-//                 margin-right: -27px;
-//                 margin-left: 0;
-//             }
-//         }
-//         .tl-date {
-//             float: right;
-//             margin-right: -8.5em;
-//             margin-left: 0;
-//             text-align: left;
-//         }
-//     }
-// }
-
-
+.timeline {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+.tl-item {
+    display: block;
+    .clearfix();
+}
+.visible-left {
+    display: none;
+}
+.tl-wrap {
+    display: block;
+    padding: 0 0 0 20px;
+    margin-left: 44px;
+    border-bottom: 1px @border-color solid;
+    border-left: 6px @brand-primary solid;
+    .clearfix();
+    &:before {
+        position: relative;
+        top: 54px;
+        float: left;
+        .square(20px);
+        margin-left: -34px;
+        content: '';
+        border-color: @brand-primary;
+        border-style: solid;
+        border-width: 11px;
+        border-radius: 50%;
+        // background: @brand-light;
+        // box-shadow: 0 0 0 4px @body-bg;   
+    }
+    &:hover:before {
+        // background: transparent;
+        // border-color: #fff;
+    }
+}
+.tl-content {
+    position: relative;
+    display: inline-block;
+    &.block {
+        display: block;
+        width: 100%;
+    }
+    &.panel {
+        margin-bottom: 0;
+    }
+}
+.tl-header {
+    display: block;
+    // width: 12em;
+    // text-align: center;
+    .tl-header-body {
+        margin-left: 30px;
+    }
+    .tl-header-wrap {
+        display: block;
+        padding: 0 0 0 20px;
+        margin-left: 44px;
+        border-bottom: 1px @border-color solid;
+        border-left: 6px @brand-primary solid;
+        .clearfix();
+    }
+    .tl-header-btn {
+        margin-top: 20px;
+    }
+}
+.timeline-center {
+    .tl-item {
+        margin-left: 50%;
+        .tl-wrap {
+            margin-left: -2px;
+        }
+    }
+    .tl-header {
+        width: auto;
+        margin: 0;
+    }
+    .tl-left {
+        margin-right: 50%;
+        margin-left: 0;
+        .hidden-left {
+            display: none !important;
+        }
+        .visible-left {
+            display: inherit;
+        }
+        .tl-wrap {
+            float: right;
+            padding-right: 20px;
+            padding-left: 0;
+            margin-right: -2px;
+            border-right-width: 4px;
+            border-left-width: 0;
+            &:before {
+                float: right;
+                margin-right: -27px;
+                margin-left: 0;
+            }
+        }
+        .tl-date {
+            float: right;
+            margin-right: -8.5em;
+            margin-left: 0;
+            text-align: left;
+        }
+    }
+}
 // avatar
-.avatar{
-  position: relative;
-  display: block;
-  white-space: nowrap;
-  img{
-    border-radius: 500px;
-    .square(48px);
-    margin: @padding-base-vertical @padding-base-horizontal;
-  }
-  input {
-    &.center {
-        margin-left: 10px;
-        margin-top: 6px;
-        margin-bottom: 6px;
-    }
-  }
-  i{
-    &.center {
-        margin-left: 10px;
-        margin-top: 6px;
-        margin-bottom: 6px;
-    }
-    &.on{
-      background-color: @brand-success;
-    }
-    &.off{
-      background-color: @text-muted;
-    }
-    &.busy{
-      background-color: @brand-danger;
-    }
-    &.away{
-      background-color: @brand-warning;
-    }
-  }
-  .name {
+.avatar {
     position: relative;
-    bottom: 34px;
-  }
-  .age {
-    position: relative;
-    bottom: 12px;
-    left: -54px;
-  }
-  .gender {
-    position: relative;
-    bottom: 14px;
-    left: -60px;
-  }
+    display: block;
+    white-space: nowrap;
+    img {
+        border-radius: 500px;
+        width: 100%;
+    }
+    i {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 10px;
+        height: 10px;
+        margin: 2px;
+        border-width: 2px;
+        border-style: solid;
+        border-radius: 100%;
+        background-color: white;
+        &.center {
+            margin-left: 10px;
+            margin-top: 6px;
+            margin-bottom: 6px;
+        }
+        &.bottom {
+            left: auto;
+            top: auto;
+            bottom: 0;
+            right: 0;
+        }
+        &.on {
+            background-color: @brand-success;
+        }
+        &.off {
+            background-color: @text-muted;
+        }
+        &.busy {
+            background-color: @brand-danger;
+        }
+        &.away {
+            background-color: @brand-warning;
+        }
+    }
 }
 
+// pie chart
+
+.pie-chart {
+    .circle {
+        margin: 0 0 0 80px;
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        border-radius: 50%;
+        background: @brand-primary;
+    }
+    
+    .pie_left,
+    .pie_right {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
+    .left {
+        width: 200px;
+        height: 200px;
+        background: @brand-warning;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
+    .right {
+        width: 200px;
+        height: 200px;
+        background: @brand-info;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
+    .pie_right,
+    .right {
+        clip: rect(0, auto, auto, 100px);
+        transform: rotate(80deg);
+    }
+    
+    .pie_left,
+    .left {
+        clip: rect(0, 100px, auto, 0);
+    }
+    
+    .mask {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        left: 25px;
+        top: 25px;
+        background: #FFF;
+        position: absolute;
+        text-align: center;
+        line-height: 150px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #00aacc;
+    }
+}
