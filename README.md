@@ -1,3 +1,7 @@
-# Niukj #
+## Getting Started
 
-## Less 2 CSS converter of my Theme ##
+```sh
+npm install -g grunt-cli
+npm install
+grunt
+```
