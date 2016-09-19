@@ -8,19 +8,15 @@
     display: block;
     .clearfix();
 }
-.visible-left {
-    display: none;
-}
 .tl-wrap {
     display: block;
     padding: 0 0 0 20px;
     margin-left: 44px;
-    border-bottom: 1px @border-color solid;
     border-left: 6px @brand-primary solid;
     .clearfix();
     &:before {
         position: relative;
-        top: 54px;
+        top: 40px;
         float: left;
         .square(20px);
         margin-left: -34px;
@@ -29,12 +25,12 @@
         border-style: solid;
         border-width: 11px;
         border-radius: 50%;
-        // background: @brand-light;
-        // box-shadow: 0 0 0 4px @body-bg;   
+        background: @brand-light;
+        box-shadow: 0 0 0 4px @body-bg;   
     }
     &:hover:before {
-        // background: transparent;
-        // border-color: #fff;
+        background: transparent;
+        border-color: @brand-info;
     }
 }
 .tl-content {
@@ -43,9 +39,6 @@
     &.block {
         display: block;
         width: 100%;
-    }
-    &.panel {
-        margin-bottom: 0;
     }
 }
 .tl-header {
@@ -59,7 +52,6 @@
         display: block;
         padding: 0 0 0 20px;
         margin-left: 44px;
-        border-bottom: 1px @border-color solid;
         border-left: 6px @brand-primary solid;
         .clearfix();
     }
@@ -71,12 +63,18 @@
     .tl-item {
         margin-left: 50%;
         .tl-wrap {
-            margin-left: -2px;
+            margin-left: 0;
         }
     }
     .tl-header {
         width: auto;
         margin: 0;
+        .tl-header-body {
+            margin-left: 48%;
+        }
+        .tl-header-wrap {
+            margin-left: 50%;
+        }
     }
     .tl-left {
         margin-right: 50%;
@@ -91,12 +89,12 @@
             float: right;
             padding-right: 20px;
             padding-left: 0;
-            margin-right: -2px;
-            border-right-width: 4px;
+            margin-right: -6px;
             border-left-width: 0;
+            border-right: 6px @brand-primary solid;
             &:before {
                 float: right;
-                margin-right: -27px;
+                margin-right: -34px;
                 margin-left: 0;
             }
         }
