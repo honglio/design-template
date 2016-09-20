@@ -1,11 +1,12 @@
 .btn{
   font-weight: 500;
   border-radius: @btn-border-radius;
-  outline: 0!important;
+  outline: 0 !important;
   &.collapsed {
     padding: 6px 12px;
   }
 }
+
 .btn-link{
   color: @text-color;
   &.active{
@@ -126,14 +127,17 @@
   }
 }
 
-.btn-rounded{
+.btn-rounded {
+  border-radius: 50px;
+  padding: 5px;
+
   &.btn-xs{
-    border-radius: 40px;
-    padding: 3px;
+    border-radius: 30px;
+    padding: 2px;
   }
   &.btn-sm{
-    border-radius: 50px;
-    padding: 5px;
+    border-radius: 40px;
+    padding: 3px;
   }
   &.btn-md{
     border-radius: 60px;
